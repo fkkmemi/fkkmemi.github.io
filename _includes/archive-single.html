@@ -31,8 +31,18 @@
       {% endif %}
     </h2>
     {% if post.read_time %}
-      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
+      <p class="page__meta">
+        <i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}
+      </p>
     {% endif %}
-    {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html | truncate: 160 }}</p>{% endif %}
+    {% if post.excerpt %}
+      <p class="archive__item-excerpt" itemprop="description">
+        <!--{{ post.excerpt | markdownify | strip_html | truncate: 160 }}-->
+        {{ post.content | markdownify | strip_html | truncatewords: 40 }}
+        &nbsp;
+        <a href="{{ site.baseurl }}{{ post.url }}#disqus_thread" class="read-more">Comment</a>
+      </p>
+    {% endif %}
   </article>
 </div>
+<script id="dsq-count-scr" src="//fkkmemi.disqus.com/count.js" async></script>
