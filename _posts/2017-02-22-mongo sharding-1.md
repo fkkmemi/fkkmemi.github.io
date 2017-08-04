@@ -1,9 +1,11 @@
 ---
-layout: post
-title: Mongo Sharding 1 (shard 구성)
+layout: single
+title: Mongo Sharding 1 - shard 구성
 category: mongoDB
 tag: [database, mongo]
 comments: true
+sidebar:
+  nav: "mongos"
 ---
 
 ## 개요
@@ -741,5 +743,3 @@ node.js & npm 조합이 그리움...
 실제로는 어플리케이션 서버(node.js + mongoose api)에서만 접속하게 방화벽 세팅을 해야한다.
  
 공인 포트로는 들어갈 일이 없게 만들어야한다.
-
-**다음 [2편 : config,router](/mongo-sharding-2/)**

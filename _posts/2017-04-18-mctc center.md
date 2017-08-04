@@ -1,8 +1,8 @@
 ---
-layout: post
+layout: single
 title: 가산 GSM Test 후기
-category: gsm
-tag: [mctc, gsm]
+category: talk
+tag: [mctc, gsm, talk]
 comments: true
 ---
 

@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-08-04T14:30:11+09:00</updated><id>http://localhost:4000/</id><title type="html">fkkmemi.notes</title><subtitle>dev.logs --save</subtitle><author><name>jh</name><email>fkkmemi@gmail.com</email><uri>http://fkkmemi.com</uri></author><entry><title type="html">GTD(시간 관리)</title><link href="http://localhost:4000/idea/gtd/" rel="alternate" type="text/html" title="GTD(시간 관리)" /><published>2017-08-03T00:00:00+09:00</published><updated>2017-08-03T00:00:00+09:00</updated><id>http://localhost:4000/idea/gtd</id><content type="html" xml:base="http://localhost:4000/idea/gtd/">&lt;h2 id=&quot;개요&quot;&gt;개요&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-08-04T17:34:11+09:00</updated><id>http://localhost:4000/</id><title type="html">fkkmemi.notes</title><subtitle>dev.logs --save</subtitle><author><name>fkkmemi</name><email>fkkmemi@gmail.com</email></author><entry><title type="html">Renewal github page</title><link href="http://localhost:4000/talk/renewal/" rel="alternate" type="text/html" title="Renewal github page" /><published>2017-08-04T00:00:00+09:00</published><updated>2017-08-04T00:00:00+09:00</updated><id>http://localhost:4000/talk/renewal</id><content type="html" xml:base="http://localhost:4000/talk/renewal/">&lt;h2 id=&quot;개요&quot;&gt;개요&lt;/h2&gt;
+
+&lt;p&gt;기존 jekyll-now 기본테마가 너무 흉해서 변경중&lt;/p&gt;
+
+&lt;p&gt;변경하고 있는 테마는 minimal-mistakes&lt;/p&gt;
+
+&lt;blockquote&gt;
+
+&lt;/blockquote&gt;</content><author><name>fkkmemi</name><email>fkkmemi@gmail.com</email></author><category term="talk" /><category term="talk" /><summary type="html">개요</summary></entry><entry><title type="html">GTD(시간 관리)</title><link href="http://localhost:4000/talk/gtd/" rel="alternate" type="text/html" title="GTD(시간 관리)" /><published>2017-08-03T00:00:00+09:00</published><updated>2017-08-03T00:00:00+09:00</updated><id>http://localhost:4000/talk/gtd</id><content type="html" xml:base="http://localhost:4000/talk/gtd/">&lt;h2 id=&quot;개요&quot;&gt;개요&lt;/h2&gt;
 
 &lt;p&gt;GTD란 데이비드 앨런(David Aallan)의 책, 할 일 관리(Getting Things Done, GTD)라는 것이다.&lt;/p&gt;
 
@@ -223,7 +231,7 @@
 &lt;blockquote&gt;
   &lt;p&gt;내가 해결 못할 문제를 다른 사람과 같이 논의해서 푸는 것도 능력이다..&lt;br /&gt;
 오히려 훌륭한 프로그래머보다 일을 마무리 할 수 있는 사람이 더 중요하다..&lt;/p&gt;
-&lt;/blockquote&gt;</content><author><name>jh</name><email>fkkmemi@gmail.com</email><uri>http://fkkmemi.com</uri></author><category term="idea" /><category term="idea" /><category term="talk" /><summary type="html">개요</summary></entry><entry><title type="html">NEMV 5 - vue.js 설치</title><link href="http://localhost:4000/nemv/nemv-5/" rel="alternate" type="text/html" title="NEMV 5 - vue.js 설치" /><published>2017-08-02T00:00:00+09:00</published><updated>2017-08-02T00:00:00+09:00</updated><id>http://localhost:4000/nemv/nemv%205</id><content type="html" xml:base="http://localhost:4000/nemv/nemv-5/">&lt;h3 id=&quot;webpack&quot;&gt;webpack&lt;/h3&gt;
+&lt;/blockquote&gt;</content><author><name>fkkmemi</name><email>fkkmemi@gmail.com</email></author><category term="talk" /><category term="idea" /><category term="talk" /><category term="gtd" /><summary type="html">개요</summary></entry><entry><title type="html">NEMV 5 - vue.js 설치</title><link href="http://localhost:4000/nemv/nemv-5/" rel="alternate" type="text/html" title="NEMV 5 - vue.js 설치" /><published>2017-08-02T00:00:00+09:00</published><updated>2017-08-02T00:00:00+09:00</updated><id>http://localhost:4000/nemv/nemv%205</id><content type="html" xml:base="http://localhost:4000/nemv/nemv-5/">&lt;h3 id=&quot;webpack&quot;&gt;webpack&lt;/h3&gt;
 
 &lt;p&gt;vue-cli로 빌드하기 위해서는 웹팩이 필요한 것 같다.&lt;/p&gt;
 
@@ -294,7 +302,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
   &lt;p&gt;잠시 쉼..&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;&lt;strong&gt;이전 &lt;a href=&quot;/nemv-4/&quot;&gt;NEMV 4 - node.js &amp;amp; express &amp;amp; mongoDB 설치&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;</content><author><name>jh</name><email>fkkmemi@gmail.com</email><uri>http://fkkmemi.com</uri></author><category term="nemv" /><category term="node" /><category term="webpack" /><category term="vue" /><summary type="html">webpack</summary></entry><entry><title type="html">NEMV 4 - node.js &amp;amp; express &amp;amp; mongoDB 설치</title><link href="http://localhost:4000/nemv/nemv-4/" rel="alternate" type="text/html" title="NEMV 4 - node.js &amp; express &amp; mongoDB 설치" /><published>2017-08-02T00:00:00+09:00</published><updated>2017-08-02T00:00:00+09:00</updated><id>http://localhost:4000/nemv/nemv%204</id><content type="html" xml:base="http://localhost:4000/nemv/nemv-4/">&lt;ol&gt;
+&lt;p&gt;&lt;strong&gt;이전 &lt;a href=&quot;/nemv-4/&quot;&gt;NEMV 4 - node.js &amp;amp; express &amp;amp; mongoDB 설치&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;</content><author><name>fkkmemi</name><email>fkkmemi@gmail.com</email></author><category term="nemv" /><category term="node" /><category term="mongo" /><category term="express" /><category term="vue" /><summary type="html">webpack</summary></entry><entry><title type="html">NEMV 4 - node.js &amp;amp; express &amp;amp; mongoDB 설치</title><link href="http://localhost:4000/nemv/nemv-4/" rel="alternate" type="text/html" title="NEMV 4 - node.js &amp; express &amp; mongoDB 설치" /><published>2017-08-02T00:00:00+09:00</published><updated>2017-08-02T00:00:00+09:00</updated><id>http://localhost:4000/nemv/nemv%204</id><content type="html" xml:base="http://localhost:4000/nemv/nemv-4/">&lt;ol&gt;
   &lt;li&gt;
     &lt;p&gt;node.js&lt;/p&gt;
 
@@ -454,7 +462,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 &lt;p&gt;&lt;strong&gt;이전 &lt;a href=&quot;/nemv-3/&quot;&gt;NEMV 3 - git 등록&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;다음 &lt;a href=&quot;/nemv-5/&quot;&gt;NEMV 5 - vue.js 설치&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;</content><author><name>jh</name><email>fkkmemi@gmail.com</email><uri>http://fkkmemi.com</uri></author><category term="nemv" /><category term="node" /><category term="webpack" /><category term="vue" /><summary type="html">node.js</summary></entry><entry><title type="html">NEMV 3 - git 등록</title><link href="http://localhost:4000/nemv/nemv-3/" rel="alternate" type="text/html" title="NEMV 3 - git 등록" /><published>2017-08-01T00:00:00+09:00</published><updated>2017-08-01T00:00:00+09:00</updated><id>http://localhost:4000/nemv/nemv%203</id><content type="html" xml:base="http://localhost:4000/nemv/nemv-3/">&lt;h2 id=&quot;준비&quot;&gt;준비&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;다음 &lt;a href=&quot;/nemv-5/&quot;&gt;NEMV 5 - vue.js 설치&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;</content><author><name>fkkmemi</name><email>fkkmemi@gmail.com</email></author><category term="nemv" /><category term="node" /><category term="mongo" /><category term="express" /><category term="vue" /><summary type="html">node.js</summary></entry><entry><title type="html">NEMV 3 - git 등록</title><link href="http://localhost:4000/nemv/nemv-3/" rel="alternate" type="text/html" title="NEMV 3 - git 등록" /><published>2017-08-01T00:00:00+09:00</published><updated>2017-08-01T00:00:00+09:00</updated><id>http://localhost:4000/nemv/nemv%203</id><content type="html" xml:base="http://localhost:4000/nemv/nemv-3/">&lt;h2 id=&quot;준비&quot;&gt;준비&lt;/h2&gt;
 
 &lt;p&gt;OS별로 약간의 차이가 있는데.. 주로 경로형식 차이 말고는 거의 차이가 없다 &lt;br /&gt;
 unix(mac,linux,…) 계열과는 달리 윈도우 계열은 putty, git등을 따로 설치 해줘야하는 것 말고는 나머지는 다 멀티플랫폼이라 상관없다.&lt;/p&gt;
@@ -591,7 +599,7 @@ To https://github.com/fkkmemi/nem.git
 
 &lt;p&gt;&lt;strong&gt;이전 &lt;a href=&quot;/nemv-2/&quot;&gt;NEMV 2 - API 설계&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;다음 &lt;a href=&quot;/nemv-4/&quot;&gt;NEMV 4 - node.js &amp;amp; express &amp;amp; mongoDB 설치&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;</content><author><name>jh</name><email>fkkmemi@gmail.com</email><uri>http://fkkmemi.com</uri></author><category term="nemv" /><category term="node" /><category term="mongo" /><summary type="html">준비</summary></entry><entry><title type="html">NEMV 2 - API 설계</title><link href="http://localhost:4000/nemv/nemv-2/" rel="alternate" type="text/html" title="NEMV 2 - API 설계" /><published>2017-08-01T00:00:00+09:00</published><updated>2017-08-01T00:00:00+09:00</updated><id>http://localhost:4000/nemv/nemv%202</id><content type="html" xml:base="http://localhost:4000/nemv/nemv-2/">&lt;h2 id=&quot;규격&quot;&gt;규격&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;다음 &lt;a href=&quot;/nemv-4/&quot;&gt;NEMV 4 - node.js &amp;amp; express &amp;amp; mongoDB 설치&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;</content><author><name>fkkmemi</name><email>fkkmemi@gmail.com</email></author><category term="nemv" /><category term="node" /><category term="mongo" /><category term="express" /><category term="vue" /><summary type="html">준비</summary></entry><entry><title type="html">NEMV 2 - API 설계</title><link href="http://localhost:4000/nemv/nemv-2/" rel="alternate" type="text/html" title="NEMV 2 - API 설계" /><published>2017-08-01T00:00:00+09:00</published><updated>2017-08-01T00:00:00+09:00</updated><id>http://localhost:4000/nemv/nemv%202</id><content type="html" xml:base="http://localhost:4000/nemv/nemv-2/">&lt;h2 id=&quot;규격&quot;&gt;규격&lt;/h2&gt;
 
 &lt;p&gt;RESTful api의 형태로 제작한다.&lt;/p&gt;
 
@@ -632,7 +640,7 @@ To https://github.com/fkkmemi/nem.git
 
 &lt;p&gt;&lt;strong&gt;이전 &lt;a href=&quot;/nemv-1/&quot;&gt;NEMV 1 - 소개&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;다음 &lt;a href=&quot;/nemv-3/&quot;&gt;NEMV 3 - git 등록&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;</content><author><name>jh</name><email>fkkmemi@gmail.com</email><uri>http://fkkmemi.com</uri></author><category term="nemv" /><category term="node" /><category term="mongo" /><summary type="html">규격</summary></entry><entry><title type="html">NEMV 1 - 소개</title><link href="http://localhost:4000/nemv/nemv-1/" rel="alternate" type="text/html" title="NEMV 1 - 소개" /><published>2017-08-01T00:00:00+09:00</published><updated>2017-08-01T00:00:00+09:00</updated><id>http://localhost:4000/nemv/nemv%201</id><content type="html" xml:base="http://localhost:4000/nemv/nemv-1/">&lt;h2 id=&quot;개요&quot;&gt;개요&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;다음 &lt;a href=&quot;/nemv-3/&quot;&gt;NEMV 3 - git 등록&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;</content><author><name>fkkmemi</name><email>fkkmemi@gmail.com</email></author><category term="nemv" /><category term="node" /><category term="mongo" /><category term="express" /><category term="vue" /><summary type="html">규격</summary></entry><entry><title type="html">NEMV 1 - 소개</title><link href="http://localhost:4000/nemv/nemv-1/" rel="alternate" type="text/html" title="NEMV 1 - 소개" /><published>2017-08-01T00:00:00+09:00</published><updated>2017-08-01T00:00:00+09:00</updated><id>http://localhost:4000/nemv/nemv%201</id><content type="html" xml:base="http://localhost:4000/nemv/nemv-1/">&lt;h2 id=&quot;개요&quot;&gt;개요&lt;/h2&gt;
 
 &lt;p&gt;NEMV란?&lt;/p&gt;
 
@@ -768,7 +776,7 @@ non-os(쌩펌)로 https 패킷 만들기는 쉽지 않다.&lt;/li&gt;
   &lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;&lt;strong&gt;다음 &lt;a href=&quot;/nemv-2/&quot;&gt;NEMV 2 - API 설계&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;</content><author><name>jh</name><email>fkkmemi@gmail.com</email><uri>http://fkkmemi.com</uri></author><category term="nemv" /><category term="node" /><category term="mongo" /><summary type="html">개요</summary></entry><entry><title type="html">Communication(통신) 5. 구현-수신</title><link href="http://localhost:4000/communication/comm-5/" rel="alternate" type="text/html" title="Communication(통신) 5. 구현-수신" /><published>2017-07-20T00:00:00+09:00</published><updated>2017-07-20T00:00:00+09:00</updated><id>http://localhost:4000/communication/comm%205</id><content type="html" xml:base="http://localhost:4000/communication/comm-5/">&lt;h3 id=&quot;개요&quot;&gt;개요&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;다음 &lt;a href=&quot;/nemv-2/&quot;&gt;NEMV 2 - API 설계&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;</content><author><name>fkkmemi</name><email>fkkmemi@gmail.com</email></author><category term="nemv" /><category term="node" /><category term="mongo" /><category term="express" /><category term="vue" /><summary type="html">개요</summary></entry><entry><title type="html">Communication(통신) 5. 구현-수신</title><link href="http://localhost:4000/communication/comm-5/" rel="alternate" type="text/html" title="Communication(통신) 5. 구현-수신" /><published>2017-07-20T00:00:00+09:00</published><updated>2017-07-20T00:00:00+09:00</updated><id>http://localhost:4000/communication/comm%205</id><content type="html" xml:base="http://localhost:4000/communication/comm-5/">&lt;h3 id=&quot;개요&quot;&gt;개요&lt;/h3&gt;
 
 &lt;p&gt;이제 바이트 단위로 파악하여 원하는 데이터를 꺼내보도록 하겠다..&lt;/p&gt;
 
@@ -1067,9 +1075,7 @@ R.tx(0x00,[0x01],function(err) {R.step=0}); 형태로 제작해야한다..&lt;/p
 
 &lt;blockquote&gt;
   &lt;p&gt;피곤해서 급 종료..&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;strong&gt;이전 &lt;a href=&quot;/comm-4/&quot;&gt;4편 : Communication(통신) 4. 구현-송신&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;</content><author><name>jh</name><email>fkkmemi@gmail.com</email><uri>http://fkkmemi.com</uri></author><category term="communication" /><category term="communication" /><category term="idea" /><category term="talk" /><summary type="html">개요</summary></entry><entry><title type="html">Communication(통신) 4. 구현-송신</title><link href="http://localhost:4000/communication/comm-4/" rel="alternate" type="text/html" title="Communication(통신) 4. 구현-송신" /><published>2017-07-19T00:00:00+09:00</published><updated>2017-07-19T00:00:00+09:00</updated><id>http://localhost:4000/communication/comm%204</id><content type="html" xml:base="http://localhost:4000/communication/comm-4/">&lt;h3 id=&quot;개요&quot;&gt;개요&lt;/h3&gt;
+&lt;/blockquote&gt;</content><author><name>fkkmemi</name><email>fkkmemi@gmail.com</email></author><category term="communication" /><category term="communication" /><category term="node" /><summary type="html">개요</summary></entry><entry><title type="html">Communication(통신) 4. 구현-송신</title><link href="http://localhost:4000/communication/comm-4/" rel="alternate" type="text/html" title="Communication(통신) 4. 구현-송신" /><published>2017-07-19T00:00:00+09:00</published><updated>2017-07-19T00:00:00+09:00</updated><id>http://localhost:4000/communication/comm%204</id><content type="html" xml:base="http://localhost:4000/communication/comm-4/">&lt;h3 id=&quot;개요&quot;&gt;개요&lt;/h3&gt;
 
 &lt;p&gt;바이트로 들어오는 데이터를 이제 명확하게 확인 할 수 있는 준비가 되었으니 실제 프로토콜을 이용해 송/수신 을 구현해보겠다.&lt;/p&gt;
 
@@ -1309,11 +1315,7 @@ ecmascript 6 버전 표현력으로 끝에 지저분한 }), 형태를 막아준�
 
 &lt;h3 id=&quot;결론&quot;&gt;결론&lt;/h3&gt;
 
-&lt;p&gt;이제 R.rx() 코드 작성을 통해 받기만 하면 된다&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;이전 &lt;a href=&quot;/comm-3/&quot;&gt;3편 : Communication(통신) 3. 구현-응용&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;다음 &lt;a href=&quot;/comm-5/&quot;&gt;5편 : Communication(통신) 5. 구현-수신&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;</content><author><name>jh</name><email>fkkmemi@gmail.com</email><uri>http://fkkmemi.com</uri></author><category term="communication" /><category term="communication" /><category term="idea" /><category term="talk" /><summary type="html">개요</summary></entry><entry><title type="html">Communication(통신) 3. 구현-기본</title><link href="http://localhost:4000/communication/comm-3/" rel="alternate" type="text/html" title="Communication(통신) 3. 구현-기본" /><published>2017-07-18T00:00:00+09:00</published><updated>2017-07-18T00:00:00+09:00</updated><id>http://localhost:4000/communication/comm%203</id><content type="html" xml:base="http://localhost:4000/communication/comm-3/">&lt;h3 id=&quot;개요&quot;&gt;개요&lt;/h3&gt;
+&lt;p&gt;이제 R.rx() 코드 작성을 통해 받기만 하면 된다&lt;/p&gt;</content><author><name>fkkmemi</name><email>fkkmemi@gmail.com</email></author><category term="communication" /><category term="communication" /><category term="node" /><summary type="html">개요</summary></entry><entry><title type="html">Communication(통신) 3. 구현-기본</title><link href="http://localhost:4000/communication/comm-3/" rel="alternate" type="text/html" title="Communication(통신) 3. 구현-기본" /><published>2017-07-18T00:00:00+09:00</published><updated>2017-07-18T00:00:00+09:00</updated><id>http://localhost:4000/communication/comm%203</id><content type="html" xml:base="http://localhost:4000/communication/comm-3/">&lt;h3 id=&quot;개요&quot;&gt;개요&lt;/h3&gt;
 
 &lt;p&gt;간단하게 프로토콜을 만들어보았다. 이제 정의된 프로토콜 대로 구현해보도록 하겠다..&lt;/p&gt;
 
@@ -1470,207 +1472,4 @@ eg) c++ : IntToHex(data[i],2)&lt;/p&gt;
 &lt;blockquote&gt;
   &lt;p&gt;http packet이 궁금하지 않은가? 브라우저에서 http://localhost:1234 접속해보면..  &lt;br /&gt;
 0x47 0x45 0x54 0x20 0x2F 0x20 0x48 0x54 0x54 … http protocol 뭔지 적나라하게 보일 것이다..&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;strong&gt;이전 &lt;a href=&quot;/comm-2/&quot;&gt;2편 : Communication(통신) 2. Protocol&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;다음 &lt;a href=&quot;/comm-4/&quot;&gt;4편 : Communication(통신) 4. 구현-송신&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;</content><author><name>jh</name><email>fkkmemi@gmail.com</email><uri>http://fkkmemi.com</uri></author><category term="communication" /><category term="communication" /><category term="idea" /><category term="talk" /><summary type="html">개요</summary></entry><entry><title type="html">Communication(통신) 2. Protocol</title><link href="http://localhost:4000/communication/comm-2/" rel="alternate" type="text/html" title="Communication(통신) 2. Protocol" /><published>2017-07-17T00:00:00+09:00</published><updated>2017-07-17T00:00:00+09:00</updated><id>http://localhost:4000/communication/comm%202</id><content type="html" xml:base="http://localhost:4000/communication/comm-2/">&lt;h3 id=&quot;개요&quot;&gt;개요&lt;/h3&gt;
-
-&lt;p&gt;가상의 바이너리 프로토콜을 만들어 232 혹은 소켓등에서 어떤 방법으로 데이터를 취득해야 하는지 알아보도록 하겠다..&lt;/p&gt;
-
-&lt;p&gt;사실 프로토콜은 어렵게 접근할 것이 아닌 사전적의미 그대로의 약속이다.&lt;/p&gt;
-
-&lt;p&gt;프로토콜 설계는 간단하다 이미 기존에 잘되어 있는 것을 써도 되고 보안이나 추가 필드가 필요하면 이미 쓰이고 있는 개념에서 약간의 변형만 해주면 된다.&lt;/p&gt;
-
-&lt;h3 id=&quot;설계&quot;&gt;설계&lt;/h3&gt;
-
-&lt;p&gt;자동화쪽에서 많이 쓰는 프로토콜 중에 모드버스라는 것이 있다 232/422/485/tcp통신등에서 다양하게 쓰이기 때문에 이중 필요한것만 개념만 가져와서 만들어보겠다.&lt;/p&gt;
-
-&lt;p&gt;모드버스도 종류가 여러가지가 있다 아스키,바이너리,tcp 등이 있고 각각 당연히 내용도 다르다.&lt;/p&gt;
-
-&lt;p&gt;그 중 중요한 개념만 가져다 쓰면&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;시작과 끝 구분&lt;/li&gt;
-  &lt;li&gt;데이터 길이, 데이터&lt;/li&gt;
-  &lt;li&gt;데이터 유효성 판단&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;개념을 토대로 3단 프레임을 짜본다.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;해당 내용 컬럼 정의는 취향 껏 하면 된다..&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Header(or Head, Top)
-    &lt;ul&gt;
-      &lt;li&gt;Start(or STX, First): 시작 byte 혹은 bytes(1바이트는 약하지만 귀찮으니 일단 하나만..)&lt;/li&gt;
-      &lt;li&gt;Command(Option) : 명령 구분&lt;/li&gt;
-      &lt;li&gt;Length : Data의 길이&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Data(or Body, Middle) : 데이터.. 커맨드별 따로 정의&lt;/li&gt;
-  &lt;li&gt;Footer(or Tail, Bottom)
-    &lt;ul&gt;
-      &lt;li&gt;Checksum(or crc) : 데이터 유효성 판단.. 데이터 부분을 개수만큼 다 더한 값..(데이터가 없을때 판단이 어려워서 헤더부 crc가 좋지만 편의상..) 소켓에선 이미 처리되어있으므로 대부분 안쓰지만 범용성을 위해 넣었다.&lt;/li&gt;
-      &lt;li&gt;End(or ETX, Last) : 마지막 byte 혹은 bytes(역시 1바이트는 약하다.. 귀찮으니 일단 하나만..)&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;표로 만들어 보았다&lt;/p&gt;
-
-&lt;h4 id=&quot;frame&quot;&gt;frame&lt;/h4&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt; &lt;/th&gt;
-      &lt;th&gt;Start&lt;/th&gt;
-      &lt;th&gt;Command&lt;/th&gt;
-      &lt;th&gt;Length&lt;/th&gt;
-      &lt;th&gt;Data&lt;/th&gt;
-      &lt;th&gt;Checksum&lt;/th&gt;
-      &lt;th&gt;End&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;길이&lt;/td&gt;
-      &lt;td&gt;1&lt;/td&gt;
-      &lt;td&gt;1&lt;/td&gt;
-      &lt;td&gt;4&lt;/td&gt;
-      &lt;td&gt;가변&lt;/td&gt;
-      &lt;td&gt;2&lt;/td&gt;
-      &lt;td&gt;1&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;정의&lt;/td&gt;
-      &lt;td&gt;0x09&lt;/td&gt;
-      &lt;td&gt;0~9&lt;/td&gt;
-      &lt;td&gt;가변&lt;/td&gt;
-      &lt;td&gt;가변&lt;/td&gt;
-      &lt;td&gt;가변&lt;/td&gt;
-      &lt;td&gt;0x90&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;0x09, 0x90 등 선정 이유는 대부분 아스키 표현은 0x20~0x7f 까지인데 그 외의 제어문자등으로 나름 “나 아스키프로토콜 아니야” 라고 말하는 느낌을 주기 위함이다..&lt;/p&gt;
-
-&lt;h4 id=&quot;command&quot;&gt;command&lt;/h4&gt;
-
-&lt;p&gt;이제 커맨드 별로 데이터를 정의하면 된다.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;0x00 : 메세지 전송&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h5 id=&quot;send&quot;&gt;send&lt;/h5&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt; &lt;/th&gt;
-      &lt;th&gt;받는 사람&lt;/th&gt;
-      &lt;th&gt;내용&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;길이&lt;/td&gt;
-      &lt;td&gt;10&lt;/td&gt;
-      &lt;td&gt;1~140&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;유형&lt;/td&gt;
-      &lt;td&gt;char&lt;/td&gt;
-      &lt;td&gt;char&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h5 id=&quot;ack&quot;&gt;ack&lt;/h5&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt; &lt;/th&gt;
-      &lt;th&gt;내용&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;길이&lt;/td&gt;
-      &lt;td&gt;1&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;유형&lt;/td&gt;
-      &lt;td&gt;int&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;0x01 : 사진 전송&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h5 id=&quot;send-1&quot;&gt;send&lt;/h5&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt; &lt;/th&gt;
-      &lt;th&gt;받는 사람&lt;/th&gt;
-      &lt;th&gt;사진&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;길이&lt;/td&gt;
-      &lt;td&gt;10&lt;/td&gt;
-      &lt;td&gt;0x100~0xffffffff&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;유형&lt;/td&gt;
-      &lt;td&gt;char&lt;/td&gt;
-      &lt;td&gt;bin&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h5 id=&quot;ack-1&quot;&gt;ack&lt;/h5&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt; &lt;/th&gt;
-      &lt;th&gt;내용&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;길이&lt;/td&gt;
-      &lt;td&gt;1&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;유형&lt;/td&gt;
-      &lt;td&gt;int&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h3 id=&quot;결론&quot;&gt;결론&lt;/h3&gt;
-
-&lt;p&gt;개념 이해를 돕기 위한 프로토콜이므로 실제 사용시엔 헤더에 몇가지 필드(대용량 데이터 처리를 위한 인덱스/카운트 개념, 아이덴티티 등)가 더 추가되어야한다.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;너무 간결해서 문제될 것 같은 프로토콜이지만..&lt;br /&gt;
-대화형이고 길이가 가변이기 때문에 상당히 자유롭게 응용이 가능하다..&lt;br /&gt;
-대화형이 아닌&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;strong&gt;이전 &lt;a href=&quot;/comm-1/&quot;&gt;1편 : Communication(통신) 1. 개념&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;다음 &lt;a href=&quot;/comm-3/&quot;&gt;3편 : Communication(통신) 3. 구현-기본&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;</content><author><name>jh</name><email>fkkmemi@gmail.com</email><uri>http://fkkmemi.com</uri></author><category term="communication" /><category term="communication" /><category term="idea" /><category term="talk" /><summary type="html">개요</summary></entry></feed>
+&lt;/blockquote&gt;</content><author><name>fkkmemi</name><email>fkkmemi@gmail.com</email></author><category term="communication" /><category term="communication" /><category term="node" /><summary type="html">개요</summary></entry></feed>

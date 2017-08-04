@@ -85,14 +85,14 @@ author:
   bio              : "github page fixing..."
   #location         : "Somewhere"
   email            : "fkkmemi@gmail.com"
-  uri              : "http://fkkmemi.com"
+  #uri              : "http://fkkmemi.com"
   bitbucket        :
   codepen          :
   dribbble         :
   flickr           :
   facebook         :
   foursquare       :
-  github           :
+  github           : "https://github.com/fkkmemi"
   gitlab           :
   google_plus      :
   keybase          :
@@ -109,7 +109,6 @@ author:
   weibo            :
   xing             :
   youtube          : # "https://youtube.com/c/MichaelRoseDesign"
-
 
 # Reading Files
 include:
@@ -245,6 +244,9 @@ defaults:
   - scope:
       path: ""
       type: posts
+#    values:
+#      sidebar:
+#        nav: "docs"
     values:
       layout: single
       author_profile: true
@@ -253,4 +255,5 @@ defaults:
       share: true
       related: true
 
-theme: minimal-mistakes-jekyll
+#theme: minimal-mistakes-jekyll
+

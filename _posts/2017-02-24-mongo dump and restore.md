@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Mongo dump & restore
 category: mongoDB
 tag: [database, mongo]

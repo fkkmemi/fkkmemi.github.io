@@ -1,8 +1,8 @@
 ---
-layout: post
+layout: single
 title: SSL server setting
 category: server
-tag: [node, talk]
+tag: [server, ssl]
 comments: true
 ---
 

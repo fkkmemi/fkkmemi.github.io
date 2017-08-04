@@ -29,7 +29,7 @@
 
 
 
-<meta name="author" content="jh">
+<meta name="author" content="fkkmemi">
 
 <meta property="og:locale" content="ko">
 <meta property="og:site_name" content="fkkmemi.notes">
@@ -56,7 +56,7 @@
   
 
   
-    <meta name="twitter:creator" content="@jh">
+    <meta name="twitter:creator" content="@fkkmemi">
   
 
 
@@ -134,7 +134,7 @@
 <!-- end custom head snippets -->
   </head>
 
-  <body class="layout--post">
+  <body class="layout--single">
 
     <!--[if lt IE 9]>
 <div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
@@ -148,6 +148,12 @@
           
             
             <li class="masthead__menu-item"><a href="http://localhost:4000/categories/">Categories</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/tags/">Tags</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/links/">Links</a></li>
           
             
             <li class="masthead__menu-item"><a href="http://localhost:4000/about/">About</a></li>
@@ -166,6 +172,180 @@
 
 <div id="main" role="main">
   
+  <div class="sidebar sticky">
+  
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+        <img src="https://s.gravatar.com/avatar/fb8e318ec64f25e2bef47a26dde12270?s=80" alt="fkkmemi" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name" itemprop="name">fkkmemi</h3>
+    
+      <p class="author__bio" itemprop="description">
+        github page fixing...
+      </p>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">팔로우</button>
+    <ul class="author__urls social-icons">
+      
+
+      
+
+      
+        <li>
+          <a href="mailto:fkkmemi@gmail.com">
+            <meta itemprop="email" content="fkkmemi@gmail.com" />
+            <i class="fa fa-fw fa-envelope-square" aria-hidden="true"></i> 이메일
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="https://github.com/https://github.com/fkkmemi" itemprop="sameAs">
+            <i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs">
+      <i class="fa fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+    
+      
+      
+      
+    
+    
+      
+
+<nav class="nav__list">
+  
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">토글 메뉴</label>
+  <ul class="nav__items">
+    
+      <li>
+        
+          <span class="nav__sub-title">Commnunication</span>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="http://localhost:4000/communication/comm-1/" class="active">1. 개념</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="http://localhost:4000/communication/comm-2/" class="">2. Protocol</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="http://localhost:4000/communication/comm-3/" class="">3. 구현-기본</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="http://localhost:4000/communication/comm-4/" class="">4. 구현-송신</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="http://localhost:4000/communication/comm-5/" class="">5. 구현-수신</a></li>
+          
+        </ul>
+        
+      </li>
+    
+  </ul>
+</nav>
+    
+  
+  </div>
+
 
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
     <meta itemprop="headline" content="Communication(통신) 1. 개념">
@@ -178,6 +358,14 @@
         <header>
           <h1 class="page__title" itemprop="headline">Communication(통신) 1. 개념
 </h1>
+          
+            <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+
+
+  3 분 소요
+</p>
           
         </header>
       
@@ -300,8 +488,6 @@ http method도 없는 모뎀이라 http header body(쌩 텍스트. 데이터 간
 
 <p>어떤 통신이든 한바이트가 중요한 것이다..</p>
 
-<p><strong>다음 <a href="/comm-2/">2편 : Communication(통신) 2. Protocol</a></strong></p>
-
         
       </section>
 
@@ -325,11 +511,7 @@ http method도 없는 모뎀이라 http header body(쌩 텍스트. 데이터 간
     
       
       
-      <a href="http://localhost:4000/tags/#idea" class="page__taxonomy-item" rel="tag">idea</a><span class="sep">, </span>
-    
-      
-      
-      <a href="http://localhost:4000/tags/#talk" class="page__taxonomy-item" rel="tag">talk</a>
+      <a href="http://localhost:4000/tags/#node" class="page__taxonomy-item" rel="tag">node</a>
     
     </span>
   </p>
@@ -361,12 +543,25 @@ http method도 없는 모뎀이라 http header body(쌩 텍스트. 데이터 간
         
       </footer>
 
-      
+      <section class="page__share">
+  
+    <h4 class="page__share-title">공유하기</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?via=fkkmemi&text=Communication(통신) 1. 개념 http://localhost:4000/communication/comm-1/" class="btn btn--twitter" title="공유하기 Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/communication/comm-1/" class="btn btn--facebook" title="공유하기 Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://plus.google.com/share?url=http://localhost:4000/communication/comm-1/" class="btn btn--google-plus" title="공유하기 Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/communication/comm-1/" class="btn btn--linkedin" title="공유하기 LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
 
       
   <nav class="pagination">
     
-      <a href="http://localhost:4000/idea/again-1/" class="pagination--pager" title="Again posting
+      <a href="http://localhost:4000/talk/again-1/" class="pagination--pager" title="Again posting
 ">이전</a>
     
     
@@ -409,6 +604,8 @@ http method도 없는 모뎀이라 http header body(쌩 텍스트. 데이터 간
     
       <li><a href="https://facebook.com/fkkmemi"><i class="fa fa-fw fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
     
+    
+      <li><a href="http://github.com/https://github.com/fkkmemi"><i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
     
     
     

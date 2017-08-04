@@ -1,9 +1,11 @@
 ---
-layout: post
-title: Mongo Sharding 2 (config,router)
+layout: single
+title: Mongo Sharding 2 - config,router 구성
 category: mongoDB
 tag: [database, mongo]
 comments: true
+sidebar:
+  nav: "mongos"
 ---
 
 ## 개요
@@ -185,7 +187,3 @@ stackoverflow.com등의 정보는 고맙지만 배껴 쓰고 더 혼란이 가�
 특히 deprecated 된 항목이 많아서 갱신된 최신 레퍼런스 매뉴얼을 참고해야한다..
 
 > nodejs를 할꺼면 nodejs.org, mongo를 할꺼면 mongodb.com, android를 할꺼면 google.com, angularjs를 할꺼면 angularjs.org
-
-
-**이전 [1편 : shard 구성](/mongo-sharding-1/)**
-**다음 [3편 : add shards](/mongo-sharding-3/)**

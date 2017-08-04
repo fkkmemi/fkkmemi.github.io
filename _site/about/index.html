@@ -24,12 +24,12 @@
 
 
 
-<meta name="description" content="Minimal Mistakes is a flexible two-column Jekyll theme.">
+<meta name="description" content="dev.logs –save">
 
 
 
 
-<meta name="author" content="jh">
+<meta name="author" content="fkkmemi">
 
 <meta property="og:locale" content="ko">
 <meta property="og:site_name" content="fkkmemi.notes">
@@ -41,13 +41,11 @@
 
 
 
-  <meta property="og:description" content="Minimal Mistakes is a flexible two-column Jekyll theme.">
-
 
 
   <meta name="twitter:site" content="@fkkmemi">
   <meta name="twitter:title" content="About">
-  <meta name="twitter:description" content="Minimal Mistakes is a flexible two-column Jekyll theme.">
+  <meta name="twitter:description" content="dev.logs –save">
   <meta name="twitter:url" content="http://localhost:4000/about/">
 
   
@@ -56,7 +54,7 @@
   
 
   
-    <meta name="twitter:creator" content="@jh">
+    <meta name="twitter:creator" content="@fkkmemi">
   
 
 
@@ -131,7 +129,7 @@
 <!-- end custom head snippets -->
   </head>
 
-  <body class="layout--splash">
+  <body class="layout--single">
 
     <!--[if lt IE 9]>
 <div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
@@ -147,6 +145,12 @@
             <li class="masthead__menu-item"><a href="http://localhost:4000/categories/">Categories</a></li>
           
             
+            <li class="masthead__menu-item"><a href="http://localhost:4000/tags/">Tags</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/links/">Links</a></li>
+          
+            
             <li class="masthead__menu-item"><a href="http://localhost:4000/about/">About</a></li>
           
         </ul>
@@ -159,15 +163,132 @@
 
     
 
-<div id="main" role="main">
-  <article class="splash" itemscope itemtype="http://schema.org/CreativeWork">
-    <meta itemprop="headline" content="About">
-    <meta itemprop="description" content="Minimal Mistakes is a flexible two-column Jekyll theme.">
-    
-    <meta itemprop="dateModified" content="February 15, 2017">
 
-    <section class="page__content" itemprop="text">
-      <div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">me</span> <span class="o">=</span> <span class="p">{</span>
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+        <img src="https://s.gravatar.com/avatar/fb8e318ec64f25e2bef47a26dde12270?s=80" alt="fkkmemi" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name" itemprop="name">fkkmemi</h3>
+    
+      <p class="author__bio" itemprop="description">
+        github page fixing...
+      </p>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">팔로우</button>
+    <ul class="author__urls social-icons">
+      
+
+      
+
+      
+        <li>
+          <a href="mailto:fkkmemi@gmail.com">
+            <meta itemprop="email" content="fkkmemi@gmail.com" />
+            <i class="fa fa-fw fa-envelope-square" aria-hidden="true"></i> 이메일
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="https://github.com/https://github.com/fkkmemi" itemprop="sameAs">
+            <i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs">
+      <i class="fa fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="About">
+    
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">About
+</h1>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        <div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">me</span> <span class="o">=</span> <span class="p">{</span>
     <span class="na">contact</span> <span class="p">:</span> <span class="p">{</span>
         <span class="na">name</span> <span class="p">:</span> <span class="s1">'memi'</span><span class="p">,</span>
         <span class="na">email</span> <span class="p">:</span> <span class="s1">'fkkmemi@gmail.com'</span><span class="p">,</span>
@@ -339,9 +460,29 @@
 </code></pre>
 </div>
 
-    </section>
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+      </footer>
+
+      
+
+      
+    </div>
+
+    
   </article>
+
+  
+  
 </div>
+
 
     <div class="page__footer">
       <footer>
@@ -359,6 +500,8 @@
     
       <li><a href="https://facebook.com/fkkmemi"><i class="fa fa-fw fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
     
+    
+      <li><a href="http://github.com/https://github.com/fkkmemi"><i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
     
     
     

@@ -1,8 +1,8 @@
 ---
-layout: post
+layout: single
 title: Server log
 category: server
-tag: [node, talk]
+tag: [server]
 comments: true
 ---
 

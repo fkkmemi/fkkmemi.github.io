@@ -1,5 +1,5 @@
 ---
-layout: archive
+layout: single
 title: github hosting
 category: github
 tag: [web, github]

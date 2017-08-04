@@ -2,6 +2,10 @@
 main:
   - title: "Categories"
     url: /categories/
+  - title: "Tags"
+    url: /tags/
+  - title: "Links"
+    url: /links/
   - title: "About"
     url: /about/
   #  - title: "Quick-Start Guide"
@@ -14,3 +18,41 @@ main:
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
+
+comm:
+  - title: Commnunication
+    children:
+      - title: "1. 개념"
+        url: /communication/comm-1/
+      - title: "2. Protocol"
+        url: /communication/comm-2/
+      - title: "3. 구현-기본"
+        url: /communication/comm-3/
+      - title: "4. 구현-송신"
+        url: /communication/comm-4/
+      - title: "5. 구현-수신"
+        url: /communication/comm-5/
+
+nemv:
+  - title: NEMV
+    children:
+      - title: "1. 소개"
+        url: /nemv/nemv-1/
+      - title: "2. API 설계"
+        url: /nemv/nemv-2/
+      - title: "3. git 등록"
+        url: /nemv/nemv-3/
+      - title: "4. node.js & express & mongoDB 설치"
+        url: /nemv/nemv-4/
+      - title: "5. vue.js 설치"
+        url: /nemv/nemv-5/
+
+mongos:
+  - title: MongoDB Sharding
+    children:
+      - title: "1. shard 구성"
+        url: /mongodb/mongo-sharding-1/
+      - title: "2. config,router 구성"
+        url: /mongodb/mongo-sharding-2/
+      - title: "3. 서버 확장"
+        url: /mongodb/mongo-sharding-3/

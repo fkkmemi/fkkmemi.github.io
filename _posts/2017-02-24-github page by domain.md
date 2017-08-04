@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: github page domain 설정
 category: github
 tag: [web, github]

@@ -1,8 +1,8 @@
 ---
-layout: post
+layout: single
 title: Monitoring System
 category: server
-tag: [node, mongo]
+tag: [server, node, mongo]
 comments: true
 ---
 

@@ -1,9 +1,11 @@
 ---
-layout: post
-title: Mongo Sharding 3 (add servers)
+layout: single
+title: Mongo Sharding 3 - 서버 확장
 category: mongoDB
 tag: [database, mongo]
 comments: true
+sidebar:
+  nav: "mongos"
 ---
 
 ## 개요
@@ -203,6 +205,3 @@ arbiter 설정도 해야하고, 백업 플랜도 짜야하지만...
 여기까지 하고 이제 화려한 front-end로 넘어가야할 시기인 것 같다..
 
 > 더 파면 가성비가 안나온다..
-
-
-**이전 [2편 : config, router](/mongo-sharding-2/)**
