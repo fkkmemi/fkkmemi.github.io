@@ -1,0 +1,554 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.4.2 by Michael Rose
+  Copyright 2017 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE.txt
+-->
+<html lang="ko" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>Communication(통신) 2. Protocol - fkkmemi.notes</title>
+
+
+
+
+<meta name="description" content="개요">
+
+
+
+
+<meta name="author" content="jh">
+
+<meta property="og:locale" content="ko">
+<meta property="og:site_name" content="fkkmemi.notes">
+<meta property="og:title" content="Communication(통신) 2. Protocol">
+
+
+  <link rel="canonical" href="http://localhost:4000/communication/comm-2/">
+  <meta property="og:url" content="http://localhost:4000/communication/comm-2/">
+
+
+
+  <meta property="og:description" content="개요">
+
+
+
+  <meta name="twitter:site" content="@fkkmemi">
+  <meta name="twitter:title" content="Communication(통신) 2. Protocol">
+  <meta name="twitter:description" content="개요">
+  <meta name="twitter:url" content="http://localhost:4000/communication/comm-2/">
+
+  
+    <meta name="twitter:card" content="summary">
+    
+  
+
+  
+    <meta name="twitter:creator" content="@jh">
+  
+
+
+
+  
+
+  
+
+
+
+
+
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2017-07-17T00:00:00+09:00">
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "fkkmemi",
+      "url" : "http://localhost:4000",
+      "sameAs" : ["https://twitter.com/fkkmemi","https://facebook.com/fkkmemi","https://www.linkedin.com/in/fkkmemi"]
+    }
+  </script>
+
+
+
+
+
+
+<!-- end SEO -->
+
+
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="fkkmemi.notes Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+
+<!--[if lte IE 9]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+<meta http-equiv="cleartype" content="on">
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use http://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+  </head>
+
+  <body class="layout--post">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <a class="site-title" href="http://localhost:4000/">fkkmemi.notes</a>
+        <ul class="visible-links">
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/categories/">Categories</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/about/">About</a></li>
+          
+        </ul>
+        <button><div class="navicon"></div></button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    
+
+
+
+<div id="main" role="main">
+  
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Communication(통신) 2. Protocol">
+    <meta itemprop="description" content="개요">
+    <meta itemprop="datePublished" content="July 17, 2017">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">Communication(통신) 2. Protocol
+</h1>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        <h3 id="개요">개요</h3>
+
+<p>가상의 바이너리 프로토콜을 만들어 232 혹은 소켓등에서 어떤 방법으로 데이터를 취득해야 하는지 알아보도록 하겠다..</p>
+
+<p>사실 프로토콜은 어렵게 접근할 것이 아닌 사전적의미 그대로의 약속이다.</p>
+
+<p>프로토콜 설계는 간단하다 이미 기존에 잘되어 있는 것을 써도 되고 보안이나 추가 필드가 필요하면 이미 쓰이고 있는 개념에서 약간의 변형만 해주면 된다.</p>
+
+<h3 id="설계">설계</h3>
+
+<p>자동화쪽에서 많이 쓰는 프로토콜 중에 모드버스라는 것이 있다 232/422/485/tcp통신등에서 다양하게 쓰이기 때문에 이중 필요한것만 개념만 가져와서 만들어보겠다.</p>
+
+<p>모드버스도 종류가 여러가지가 있다 아스키,바이너리,tcp 등이 있고 각각 당연히 내용도 다르다.</p>
+
+<p>그 중 중요한 개념만 가져다 쓰면</p>
+
+<ul>
+  <li>시작과 끝 구분</li>
+  <li>데이터 길이, 데이터</li>
+  <li>데이터 유효성 판단</li>
+</ul>
+
+<p>개념을 토대로 3단 프레임을 짜본다.</p>
+
+<blockquote>
+  <p>해당 내용 컬럼 정의는 취향 껏 하면 된다..</p>
+</blockquote>
+
+<ol>
+  <li>Header(or Head, Top)
+    <ul>
+      <li>Start(or STX, First): 시작 byte 혹은 bytes(1바이트는 약하지만 귀찮으니 일단 하나만..)</li>
+      <li>Command(Option) : 명령 구분</li>
+      <li>Length : Data의 길이</li>
+    </ul>
+  </li>
+  <li>Data(or Body, Middle) : 데이터.. 커맨드별 따로 정의</li>
+  <li>Footer(or Tail, Bottom)
+    <ul>
+      <li>Checksum(or crc) : 데이터 유효성 판단.. 데이터 부분을 개수만큼 다 더한 값..(데이터가 없을때 판단이 어려워서 헤더부 crc가 좋지만 편의상..) 소켓에선 이미 처리되어있으므로 대부분 안쓰지만 범용성을 위해 넣었다.</li>
+      <li>End(or ETX, Last) : 마지막 byte 혹은 bytes(역시 1바이트는 약하다.. 귀찮으니 일단 하나만..)</li>
+    </ul>
+  </li>
+</ol>
+
+<p>표로 만들어 보았다</p>
+
+<h4 id="frame">frame</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th>Start</th>
+      <th>Command</th>
+      <th>Length</th>
+      <th>Data</th>
+      <th>Checksum</th>
+      <th>End</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>길이</td>
+      <td>1</td>
+      <td>1</td>
+      <td>4</td>
+      <td>가변</td>
+      <td>2</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>정의</td>
+      <td>0x09</td>
+      <td>0~9</td>
+      <td>가변</td>
+      <td>가변</td>
+      <td>가변</td>
+      <td>0x90</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>0x09, 0x90 등 선정 이유는 대부분 아스키 표현은 0x20~0x7f 까지인데 그 외의 제어문자등으로 나름 “나 아스키프로토콜 아니야” 라고 말하는 느낌을 주기 위함이다..</p>
+
+<h4 id="command">command</h4>
+
+<p>이제 커맨드 별로 데이터를 정의하면 된다.</p>
+
+<ul>
+  <li>0x00 : 메세지 전송</li>
+</ul>
+
+<h5 id="send">send</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th>받는 사람</th>
+      <th>내용</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>길이</td>
+      <td>10</td>
+      <td>1~140</td>
+    </tr>
+    <tr>
+      <td>유형</td>
+      <td>char</td>
+      <td>char</td>
+    </tr>
+  </tbody>
+</table>
+
+<h5 id="ack">ack</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th>내용</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>길이</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>유형</td>
+      <td>int</td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li>0x01 : 사진 전송</li>
+</ul>
+
+<h5 id="send-1">send</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th>받는 사람</th>
+      <th>사진</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>길이</td>
+      <td>10</td>
+      <td>0x100~0xffffffff</td>
+    </tr>
+    <tr>
+      <td>유형</td>
+      <td>char</td>
+      <td>bin</td>
+    </tr>
+  </tbody>
+</table>
+
+<h5 id="ack-1">ack</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th>내용</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>길이</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>유형</td>
+      <td>int</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="결론">결론</h3>
+
+<p>개념 이해를 돕기 위한 프로토콜이므로 실제 사용시엔 헤더에 몇가지 필드(대용량 데이터 처리를 위한 인덱스/카운트 개념, 아이덴티티 등)가 더 추가되어야한다.</p>
+
+<blockquote>
+  <p>너무 간결해서 문제될 것 같은 프로토콜이지만..<br />
+대화형이고 길이가 가변이기 때문에 상당히 자유롭게 응용이 가능하다..<br />
+대화형이 아닌</p>
+</blockquote>
+
+<p><strong>이전 <a href="/comm-1/">1편 : Communication(통신) 1. 개념</a></strong></p>
+
+<p><strong>다음 <a href="/comm-3/">3편 : Communication(통신) 3. 구현-기본</a></strong></p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fa fa-fw fa-tags" aria-hidden="true"></i> 태그: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="http://localhost:4000/tags/#communication" class="page__taxonomy-item" rel="tag">communication</a><span class="sep">, </span>
+    
+      
+      
+      <a href="http://localhost:4000/tags/#idea" class="page__taxonomy-item" rel="tag">idea</a><span class="sep">, </span>
+    
+      
+      
+      <a href="http://localhost:4000/tags/#talk" class="page__taxonomy-item" rel="tag">talk</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fa fa-fw fa-folder-open" aria-hidden="true"></i> 카테고리: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="http://localhost:4000/categories/#communication" class="page__taxonomy-item" rel="tag">communication</a>
+    
+    </span>
+  </p>
+
+
+        
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> 업데이트:</strong> <time datetime="2017-07-17T00:00:00+09:00">July 17, 2017</time></p>
+        
+      </footer>
+
+      
+
+      
+  <nav class="pagination">
+    
+      <a href="http://localhost:4000/communication/comm-1/" class="pagination--pager" title="Communication(통신) 1. 개념
+">이전</a>
+    
+    
+      <a href="http://localhost:4000/communication/comm-3/" class="pagination--pager" title="Communication(통신) 3. 구현-기본
+">다음</a>
+    
+  </nav>
+
+    </div>
+
+    
+      <div class="page__comments">
+  
+    
+        <h4 class="page__comments-title">댓글남기기</h4>
+        <section id="disqus_thread"></section>
+      
+</div>
+    
+  </article>
+
+  
+  
+</div>
+
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>팔로우:</strong></li>
+    
+    
+      <li><a href="https://twitter.com/fkkmemi"><i class="fa fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+    
+    
+      <li><a href="https://facebook.com/fkkmemi"><i class="fa fa-fw fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
+    
+    
+    
+    
+    <li><a href="http://localhost:4000/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> 피드</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2017 fkkmemi. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    <script src="http://localhost:4000/assets/js/main.min.js"></script>
+
+
+
+
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-93372301-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+
+  
+      
+  <script type="text/javascript">
+  	/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+  	var disqus_shortname = 'fkkmemi';
+
+  	/* * * DON'T EDIT BELOW THIS LINE * * */
+  	(function() {
+  		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+  		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  	})();
+
+  	/* * * DON'T EDIT BELOW THIS LINE * * */
+  	(function () {
+  		var s = document.createElement('script'); s.async = true;
+  		s.type = 'text/javascript';
+  		s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+  		(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+  	}());
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+    
+
+
+
+  </body>
+</html>

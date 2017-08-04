@@ -1,0 +1,515 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.4.2 by Michael Rose
+  Copyright 2017 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE.txt
+-->
+<html lang="ko" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>NEMV 4 - node.js &amp; express &amp; mongoDB 설치 - fkkmemi.notes</title>
+
+
+
+
+<meta name="description" content="  node.js">
+
+
+
+
+<meta name="author" content="jh">
+
+<meta property="og:locale" content="ko">
+<meta property="og:site_name" content="fkkmemi.notes">
+<meta property="og:title" content="NEMV 4 - node.js &amp; express &amp; mongoDB 설치">
+
+
+  <link rel="canonical" href="http://localhost:4000/nemv/nemv-4/">
+  <meta property="og:url" content="http://localhost:4000/nemv/nemv-4/">
+
+
+
+  <meta property="og:description" content="  node.js">
+
+
+
+  <meta name="twitter:site" content="@fkkmemi">
+  <meta name="twitter:title" content="NEMV 4 - node.js &amp; express &amp; mongoDB 설치">
+  <meta name="twitter:description" content="  node.js">
+  <meta name="twitter:url" content="http://localhost:4000/nemv/nemv-4/">
+
+  
+    <meta name="twitter:card" content="summary">
+    
+  
+
+  
+    <meta name="twitter:creator" content="@jh">
+  
+
+
+
+  
+
+  
+
+
+
+
+
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2017-08-02T00:00:00+09:00">
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "fkkmemi",
+      "url" : "http://localhost:4000",
+      "sameAs" : ["https://twitter.com/fkkmemi","https://facebook.com/fkkmemi","https://www.linkedin.com/in/fkkmemi"]
+    }
+  </script>
+
+
+
+
+
+
+<!-- end SEO -->
+
+
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="fkkmemi.notes Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+
+<!--[if lte IE 9]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+<meta http-equiv="cleartype" content="on">
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use http://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+  </head>
+
+  <body class="layout--post">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <a class="site-title" href="http://localhost:4000/">fkkmemi.notes</a>
+        <ul class="visible-links">
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/categories/">Categories</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/about/">About</a></li>
+          
+        </ul>
+        <button><div class="navicon"></div></button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    
+
+
+
+<div id="main" role="main">
+  
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="NEMV 4 - node.js &amp; express &amp; mongoDB 설치">
+    <meta itemprop="description" content="  node.js">
+    <meta itemprop="datePublished" content="August 02, 2017">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">NEMV 4 - node.js &amp; express &amp; mongoDB 설치
+</h1>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        <ol>
+  <li>
+    <p>node.js</p>
+
+    <p>node.js는 현재 목적에서는 javascript언어로 제작가능한 서버 정도가 되겠다..</p>
+
+    <p>하지만 노드를 서버로 국한시키는 것은 말도 안되는 이야기다..</p>
+
+    <p>예전에 ARM 기반 임베디드 리눅스로 노드가 한 일은 아래와 같다.. by artik : <a href="https://www.artik.io">https://www.artik.io</a></p>
+
+    <ul>
+      <li>웹서버</li>
+      <li>RS232로 lcd monitor 출력</li>
+      <li>mariadb</li>
+      <li>tcp client/server</li>
+      <li>linux command(eg: $ reboot)</li>
+      <li>bluetooth : beacon search</li>
+    </ul>
+
+    <p>노드는 다양한 플랫폼에서 돌아가는 프레임워크라고 보는게 맞다. 아래의 다운로드 링크를 보면 다양한 플랫폼에서 돌아가게 되어있다..</p>
+
+    <blockquote>
+      <p>더 자세한 것은 구글링하여 말재주가 화려한 사이트에서 확인해본다..</p>
+    </blockquote>
+
+    <p>어떤 CPU든, 어떤 OS든 손쉽게 다양한 어플리케이션(꼭 서버가 아닌..)을 작성할 수 있는 것이다.</p>
+
+    <p><a href="https://nodejs.org/en/download/">https://nodejs.org/en/download/</a></p>
+
+    <p>이중 안정적인 LTS(Long Term Support)버전을 깔면된다.</p>
+
+    <p>리눅스 서버를 사용하고 있다면 패키지매니저를 통해 설치하는 것이 편리하다.  아래에서 확인해본다.</p>
+
+    <p><a href="https://nodejs.org/en/download/package-manager/">https://nodejs.org/en/download/package-manager/</a></p>
+
+    <p>npm은 패키지 설치 매니저인데 왠만한 것들은 npm을 이용해 죄다 깔 수가 있다..
+ node가 클 수 있었던건 아마도 npm일듯하다. 방대한량의 자료들을 보라.. <a href="https://www.npmjs.com">https://www.npmjs.com</a></p>
+
+    <p>노드를 윈도우에 깔던 맥에 깔던 리눅스에 깔던 고맙게 패스 다잡아주기 때문에 node가 잘 깔린지는 터미널 열어서 간단히 확인해보면 된다.</p>
+
+    <div class="language-console highlighter-rouge"><pre class="highlight"><code> node -v
+ npm -v
+</code></pre>
+    </div>
+
+    <blockquote>
+      <p>설치는 너무 쉬운 것이라 구체적인 설명 패스하는데 간혹 임베디드 리눅스에서 문제가 생길 수 있다. <br />
+ 그때는 npm을 먼저 깔고 n이라는 모듈(npm install n -g) 를 이용하면된다.. 더 자세한건 검색</p>
+    </blockquote>
+  </li>
+  <li>
+    <p>express</p>
+
+    <p>노드의 웹애플리케이션 모듈이다.</p>
+
+    <p>한글 매뉴얼을 제공하고 있고 설치도 쉽다..</p>
+
+    <p><a href="http://expressjs.com/ko/">http://expressjs.com/ko/</a></p>
+
+    <blockquote>
+      <p>자바 친구 스프링, 파이썬 친구 장고, 루비 친구 레일, 그리고 노드 친구 익스프레스가 있다..<br />
+ 웹서버기능은 물론이며 직관적인 라우팅 설계가 가능하기 때문에 RESTful한 서버가 거저 만들 수 있다.</p>
+    </blockquote>
+
+    <p>뭐든 새롭게 시작할때 고민하는 것은..  시작을 어떻게 할 것이냐인데.. 바로 그것이 진입장벽이되어 추진력을 잃게 만든다..</p>
+
+    <p>그래서 있는 것이 generator! 프로젝트를 어떻게 구성할지 css는 어따 놓을 지, router들은 어떻게 모듈로 나눌 껀지 모두 다! 골격을 만들어 놓으셨다..</p>
+
+    <p><strong>express-generator 전역설치</strong></p>
+
+    <div class="language-text highlighter-rouge"><pre class="highlight"><code> $ sudo npm install express-generator -g
+</code></pre>
+    </div>
+
+    <p><strong>기존에 git에 만들어두었던 nem을 nemv로 이름 변경하였다.</strong></p>
+
+    <p><img src="/images/nemv/4.png" alt="alt repo" /></p>
+
+    <p><strong>앞전에 만든 nemv dir 밖에서 아래 실행한다. 비어있지 않기 때문에 y를 누르자</strong></p>
+
+    <div class="language-text highlighter-rouge"><pre class="highlight"><code> $ express --view=pug nemv
+ destination is not empty, continue? [y/N] y
+    
+    create : nemv
+    create : nemv/package.json
+    create : nemv/app.js
+    create : nemv/public
+    create : nemv/routes
+    create : nemv/routes/index.js
+    create : nemv/routes/users.js
+    create : nemv/views
+    create : nemv/views/index.pug
+    create : nemv/views/layout.pug
+    create : nemv/views/error.pug
+    create : nemv/bin
+    create : nemv/bin/www
+    create : nemv/public/javascripts
+    create : nemv/public/stylesheets
+    create : nemv/public/stylesheets/style.css
+    
+    install dependencies:
+      $ cd nemv &amp;&amp; npm install
+    
+    run the app:
+      $ DEBUG=nemv:* npm start
+    
+    create : nemv/public/images
+</code></pre>
+    </div>
+
+    <p><strong>nemv/package.json에 적혀있는 종속항목을 설치하자</strong></p>
+
+    <div class="language-text highlighter-rouge"><pre class="highlight"><code> $ cd nemv
+ $ npm install
+ npm notice created a lockfile as package-lock.json. You should commit this file.
+ added 114 packages in 5.066s
+</code></pre>
+    </div>
+
+    <p><strong>이제 실행해본다</strong></p>
+
+    <div class="language-text highlighter-rouge"><pre class="highlight"><code> $ DEBUG=nemv:* npm start
+ &gt; nemv@0.0.0 start /Users/fkkmemi/WebstormProjects/nemv
+ &gt; node ./bin/www
+    
+   nemv:server Listening on port 3000 +0ms
+</code></pre>
+    </div>
+
+    <p>웹브라우저에서 http://localhost:3000 를 눌러본다..</p>
+
+    <p>아래 그림이 떳다면 성공..</p>
+
+    <p><img src="/images/nemv/5.png" alt="alt hello world!" /></p>
+
+    <blockquote>
+      <p>아파치니 iis니도 없이 그냥 웹이 떠억 나왔다.. 간만에 다시봐도 놀라운 간결함..</p>
+    </blockquote>
+
+    <p>더 자세한 것은 아래 링크를 눌러서 확인해보면다.</p>
+
+    <p><a href="http://expressjs.com/ko/starter/generator.html">http://expressjs.com/ko/starter/generator.html</a></p>
+  </li>
+  <li>
+    <p>mongoDB</p>
+
+    <p><strong>설치 및 설명은 이전 링크를 참고한다. <a href="/mongo-sharding-1/">1편 : shard 구성</a></strong></p>
+
+    <p>위 링크는 샤딩에 대한 내용이라 사실 아래의 링크를 보고 따라하는 것이 낫다</p>
+
+    <p><a href="https://www.mongodb.com/download-center#community">https://www.mongodb.com/download-center#community</a></p>
+
+    <blockquote>
+      <p>설치는 너무 쉬워서 패스..</p>
+    </blockquote>
+  </li>
+</ol>
+
+<p><strong>이전 <a href="/nemv-3/">NEMV 3 - git 등록</a></strong></p>
+
+<p><strong>다음 <a href="/nemv-5/">NEMV 5 - vue.js 설치</a></strong></p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fa fa-fw fa-tags" aria-hidden="true"></i> 태그: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="http://localhost:4000/tags/#node" class="page__taxonomy-item" rel="tag">node</a><span class="sep">, </span>
+    
+      
+      
+      <a href="http://localhost:4000/tags/#vue" class="page__taxonomy-item" rel="tag">vue</a><span class="sep">, </span>
+    
+      
+      
+      <a href="http://localhost:4000/tags/#webpack" class="page__taxonomy-item" rel="tag">webpack</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fa fa-fw fa-folder-open" aria-hidden="true"></i> 카테고리: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="http://localhost:4000/categories/#nemv" class="page__taxonomy-item" rel="tag">nemv</a>
+    
+    </span>
+  </p>
+
+
+        
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> 업데이트:</strong> <time datetime="2017-08-02T00:00:00+09:00">August 02, 2017</time></p>
+        
+      </footer>
+
+      
+
+      
+  <nav class="pagination">
+    
+      <a href="http://localhost:4000/nemv/nemv-3/" class="pagination--pager" title="NEMV 3 - git 등록
+">이전</a>
+    
+    
+      <a href="http://localhost:4000/nemv/nemv-5/" class="pagination--pager" title="NEMV 5 - vue.js 설치
+">다음</a>
+    
+  </nav>
+
+    </div>
+
+    
+      <div class="page__comments">
+  
+    
+        <h4 class="page__comments-title">댓글남기기</h4>
+        <section id="disqus_thread"></section>
+      
+</div>
+    
+  </article>
+
+  
+  
+</div>
+
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>팔로우:</strong></li>
+    
+    
+      <li><a href="https://twitter.com/fkkmemi"><i class="fa fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+    
+    
+      <li><a href="https://facebook.com/fkkmemi"><i class="fa fa-fw fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
+    
+    
+    
+    
+    <li><a href="http://localhost:4000/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> 피드</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2017 fkkmemi. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    <script src="http://localhost:4000/assets/js/main.min.js"></script>
+
+
+
+
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-93372301-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+
+  
+      
+  <script type="text/javascript">
+  	/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+  	var disqus_shortname = 'fkkmemi';
+
+  	/* * * DON'T EDIT BELOW THIS LINE * * */
+  	(function() {
+  		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+  		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  	})();
+
+  	/* * * DON'T EDIT BELOW THIS LINE * * */
+  	(function () {
+  		var s = document.createElement('script'); s.async = true;
+  		s.type = 'text/javascript';
+  		s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+  		(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+  	}());
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+    
+
+
+
+  </body>
+</html>

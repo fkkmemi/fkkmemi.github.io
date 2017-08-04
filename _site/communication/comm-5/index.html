@@ -1,0 +1,656 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.4.2 by Michael Rose
+  Copyright 2017 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE.txt
+-->
+<html lang="ko" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>Communication(통신) 5. 구현-수신 - fkkmemi.notes</title>
+
+
+
+
+<meta name="description" content="개요">
+
+
+
+
+<meta name="author" content="jh">
+
+<meta property="og:locale" content="ko">
+<meta property="og:site_name" content="fkkmemi.notes">
+<meta property="og:title" content="Communication(통신) 5. 구현-수신">
+
+
+  <link rel="canonical" href="http://localhost:4000/communication/comm-5/">
+  <meta property="og:url" content="http://localhost:4000/communication/comm-5/">
+
+
+
+  <meta property="og:description" content="개요">
+
+
+
+  <meta name="twitter:site" content="@fkkmemi">
+  <meta name="twitter:title" content="Communication(통신) 5. 구현-수신">
+  <meta name="twitter:description" content="개요">
+  <meta name="twitter:url" content="http://localhost:4000/communication/comm-5/">
+
+  
+    <meta name="twitter:card" content="summary">
+    
+  
+
+  
+    <meta name="twitter:creator" content="@jh">
+  
+
+
+
+  
+
+  
+
+
+
+
+
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2017-07-20T00:00:00+09:00">
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "fkkmemi",
+      "url" : "http://localhost:4000",
+      "sameAs" : ["https://twitter.com/fkkmemi","https://facebook.com/fkkmemi","https://www.linkedin.com/in/fkkmemi"]
+    }
+  </script>
+
+
+
+
+
+
+<!-- end SEO -->
+
+
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="fkkmemi.notes Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+
+<!--[if lte IE 9]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+<meta http-equiv="cleartype" content="on">
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use http://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+  </head>
+
+  <body class="layout--post">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <a class="site-title" href="http://localhost:4000/">fkkmemi.notes</a>
+        <ul class="visible-links">
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/categories/">Categories</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/about/">About</a></li>
+          
+        </ul>
+        <button><div class="navicon"></div></button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    
+
+
+
+<div id="main" role="main">
+  
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Communication(통신) 5. 구현-수신">
+    <meta itemprop="description" content="개요">
+    <meta itemprop="datePublished" content="July 20, 2017">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">Communication(통신) 5. 구현-수신
+</h1>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        <h3 id="개요">개요</h3>
+
+<p>이제 바이트 단위로 파악하여 원하는 데이터를 꺼내보도록 하겠다..</p>
+
+<h3 id="수신">수신</h3>
+
+<p>우선 코드를 작성 후 설명해보겠다.</p>
+
+<p><strong>rx(r)</strong></p>
+
+<div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">R</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="na">step</span> <span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+    <span class="na">com</span> <span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="c1">//command</span>
+    <span class="na">len</span> <span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+    <span class="na">d</span> <span class="p">:</span> <span class="p">[],</span>
+    <span class="na">log</span> <span class="p">:</span> <span class="p">(</span><span class="nx">d</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+        <span class="c1">//중략  </span>
+    <span class="p">},</span>
+    <span class="na">tx</span> <span class="p">:</span> <span class="p">(</span><span class="nx">command</span><span class="p">,</span> <span class="nx">data</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+        <span class="c1">//중략</span>
+    <span class="p">},</span>
+    <span class="na">rx</span> <span class="p">:</span> <span class="p">(</span><span class="nx">r</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+        <span class="k">switch</span> <span class="p">(</span><span class="nx">R</span><span class="p">.</span><span class="nx">step</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">case</span> <span class="mi">0</span><span class="p">:</span>
+                <span class="k">if</span><span class="p">(</span><span class="nx">r</span> <span class="o">===</span> <span class="mh">0x09</span><span class="p">)</span> <span class="nx">R</span><span class="p">.</span><span class="nx">step</span><span class="o">++</span><span class="p">;</span>
+                <span class="k">break</span><span class="p">;</span>
+            <span class="k">case</span> <span class="mi">1</span><span class="p">:</span>
+                <span class="nx">R</span><span class="p">.</span><span class="nx">com</span> <span class="o">=</span> <span class="nx">r</span><span class="p">;</span> 
+                <span class="nx">R</span><span class="p">.</span><span class="nx">d</span> <span class="o">=</span> <span class="p">[];</span>
+                <span class="nx">R</span><span class="p">.</span><span class="nx">step</span><span class="o">++</span><span class="p">;</span>
+                <span class="k">break</span><span class="p">;</span>
+            <span class="k">case</span> <span class="mi">2</span><span class="p">:</span>
+                <span class="nx">R</span><span class="p">.</span><span class="nx">d</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">r</span><span class="p">);</span>
+                <span class="k">if</span><span class="p">(</span><span class="nx">R</span><span class="p">.</span><span class="nx">d</span><span class="p">.</span><span class="nx">length</span> <span class="o">&gt;=</span> <span class="mi">4</span><span class="p">)</span> <span class="p">{</span>
+                    <span class="nx">R</span><span class="p">.</span><span class="nx">len</span> <span class="o">=</span> <span class="nx">Buffer</span><span class="p">.</span><span class="nx">from</span><span class="p">(</span><span class="nx">R</span><span class="p">.</span><span class="nx">d</span><span class="p">).</span><span class="nx">readUInt32LE</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+                    <span class="nx">R</span><span class="p">.</span><span class="nx">d</span> <span class="o">=</span> <span class="p">[];</span>
+                    <span class="k">if</span><span class="p">(</span><span class="nx">R</span><span class="p">.</span><span class="nx">len</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="nx">R</span><span class="p">.</span><span class="nx">len</span> <span class="o">&lt;</span> <span class="mi">1000</span><span class="p">)</span> <span class="nx">R</span><span class="p">.</span><span class="nx">step</span><span class="o">++</span><span class="p">;</span>
+                    <span class="k">else</span>                          <span class="nx">R</span><span class="p">.</span><span class="nx">step</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
+                <span class="p">}</span>
+                <span class="k">break</span><span class="p">;</span>
+            <span class="k">case</span> <span class="mi">3</span><span class="p">:</span>
+                <span class="nx">R</span><span class="p">.</span><span class="nx">d</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">r</span><span class="p">);</span>
+                <span class="k">if</span><span class="p">(</span><span class="nx">R</span><span class="p">.</span><span class="nx">d</span><span class="p">.</span><span class="nx">length</span> <span class="o">&gt;=</span> <span class="nx">R</span><span class="p">.</span><span class="nx">len</span><span class="p">)</span> <span class="p">{</span>
+                    <span class="nx">R</span><span class="p">.</span><span class="nx">step</span><span class="o">++</span><span class="p">;</span>
+                <span class="p">}</span>
+                <span class="k">break</span><span class="p">;</span>
+            <span class="k">case</span> <span class="mi">4</span><span class="p">:</span>
+                <span class="kd">let</span> <span class="nx">chksum</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+                <span class="k">for</span><span class="p">(</span><span class="kd">let</span> <span class="nx">c</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">c</span> <span class="o">&lt;</span> <span class="nx">R</span><span class="p">.</span><span class="nx">d</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">c</span><span class="o">++</span><span class="p">)</span> <span class="nx">chksum</span> <span class="o">+=</span> <span class="nx">R</span><span class="p">.</span><span class="nx">d</span><span class="p">[</span><span class="nx">c</span><span class="p">];</span>
+                <span class="nx">chksum</span> <span class="o">=</span> <span class="nx">chksum</span><span class="o">%</span><span class="mh">0x100</span><span class="p">;</span>
+                <span class="k">if</span><span class="p">(</span><span class="nx">r</span> <span class="o">===</span> <span class="nx">chksum</span><span class="p">)</span> <span class="nx">R</span><span class="p">.</span><span class="nx">step</span><span class="o">++</span><span class="p">;</span>
+                <span class="k">else</span> <span class="nx">R</span><span class="p">.</span><span class="nx">step</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
+                <span class="k">break</span><span class="p">;</span>
+            <span class="k">case</span> <span class="mi">5</span><span class="p">:</span>
+                <span class="k">if</span><span class="p">(</span><span class="nx">r</span> <span class="o">===</span> <span class="mh">0x90</span><span class="p">)</span> <span class="p">{</span>
+                    <span class="nx">R</span><span class="p">.</span><span class="nx">step</span><span class="o">++</span><span class="p">;</span>
+                    <span class="nx">R</span><span class="p">.</span><span class="nx">decode</span><span class="p">();</span>                    
+                <span class="p">}</span>                
+                <span class="k">break</span><span class="p">;</span>
+            <span class="k">case</span> <span class="mi">6</span><span class="p">:</span>
+                <span class="c1">//idle</span>
+                <span class="k">break</span><span class="p">;</span>
+                
+        <span class="p">}</span>
+    <span class="p">},</span>
+    <span class="na">decode</span> <span class="p">:</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+        <span class="c1">//data 처리</span>
+        <span class="nx">R</span><span class="p">.</span><span class="nx">step</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+</div>
+
+<p>제어변수 R.step과 지난번 “ABCD” 패킷이 왔다고 생각하고 확인해보자.</p>
+
+<div class="language-text highlighter-rouge"><pre class="highlight"><code>0x9 0x0 0x4 0x0 0x0 0x0 0x41 0x42 0x43 0x44 0xa 0x90 
+</code></pre>
+</div>
+
+<h4 id="해석">해석</h4>
+
+<ul>
+  <li>
+    <p>0<br />
+9(0x09) 인지 확인하고 넘김.</p>
+  </li>
+  <li>1<br />
+‘커맨드 : 0’ 저장하고 가용버퍼 비우고 넘김.
+    <blockquote>
+      <p>다음 받을 것이 4바이트를 채워야하기 때문</p>
+    </blockquote>
+  </li>
+  <li>
+    <p>2<br />
+스텝이 2인 상태에서 4번에 걸쳐 [0x4 0x0 0x0 0x0] 데이터를 받는다.<br />
+형변환 하여 ‘길이 : 4’ 저장하고 가용버퍼 비우고 넘김.<br />
+최소한의 예외처리 0보다 크고 1000보다 작으면 넘김.<br />
+그렇지 않을 경우 다시 처음부터 시작한다.</p>
+  </li>
+  <li>
+    <p>3<br />
+스텝이 3인 상태에서 앞전에 받아 놓은 ‘길이 : 4’ 만큼 [0x41 0x42 0x43 0x44] 데이터를 받고 넘김.</p>
+  </li>
+  <li>
+    <p>4<br />
+‘보낸 데이터 : 0xa’ 와 받은 데이터[0x41 0x42 0x43 0x44]의 ‘checksum : 0x0A’ 과 맞는지 확인하고 맞으면 넘김.<br />
+그렇지 않을 경우 다시 처음부터 시작한다.</p>
+  </li>
+  <li>
+    <p>5<br />
+144(0x90) 인지 확인하고 넘기고 디코드</p>
+  </li>
+  <li>6
+아무것도 안하고 decode가 끝나길 기다림…</li>
+</ul>
+
+<blockquote>
+  <p>스텝6는 대체 왜 필요할까?<br />
+스텝5에서 0으로 만들면 되지 않을까? 라고 생각할 수 있다..<br />
+데이터가 연달아서 오면 어떻게 될까?<br />
+0x9 0x0 0x4 0x0 0x0 0x0 0x41 0x42 0x43 0x44 0xa 0x90 0x9 0x3 0x3 0x0 0x0 0x0 0x31 0x32 0x33 0xa 0x90<br />
+decode가 10초 이상 걸리는(DB work) 펑션인데 블러킹해놓고 돌리지 않으면 decode 중에 R.len R.com 등이 바뀔 수 있다..<br />
+그러므로 queue,ring등의 개념을 활용해 decode가 아닐때만 rx(r)의 r은 queue에서 빼다 쓰고 평소엔 queue 적재를 하는 방법을 구상해야한다..(이건 추후에..)   <br />
+node는 callback을 활용해서 처리해야하지만..<br />
+다른 플랫폼 c/java등은 대부분 decode중 블러킹(decode가 끝나야 다음 일을 함) 상태이 때문에 간단하게 작성한 코드이다..</p>
+</blockquote>
+
+<p>상당히 단순해 보이는 코드지만 규약되지 않는 이상한 데이터들을 다 막아주며 본코드와 차이가 있지만 기본은 검증이 다 된 코드다..</p>
+
+<hr />
+
+<p>이제 데이터를 프로토콜에 맞춰 만들어서 디코드를 해보겠다.</p>
+
+<p>이전에 만든 가공 펑션을 이용해서 패킷을 만들어보자.</p>
+
+<div class="language-text highlighter-rouge"><pre class="highlight"><code>let msg = Buffer.alloc(20);
+msg.write("FKKMEMI"); //10byte는 보내는 사람 이름
+msg.write("U LOVE ME?",10); //10byte는 내용
+console.log(logh(makebuf(0x00,msg)));
+//printed
+//0x9 0x0 0x14 0x0 0x0 0x0 0x46 0x4b 0x4b 0x4d 0x45 0x4d 0x49 0x0 0x0 0x0 0x55 0x20 0x4c 0x4f 0x56 0x45 0x20 0x4d 0x45 0x3f 0xa0 0x90 
+</code></pre>
+</div>
+
+<p><strong>다시 프로토콜을 확인 해보면</strong> 아래와 같은 패킷이었다.</p>
+
+<h5 id="send">send</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th>받는 사람</th>
+      <th>내용</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>길이</td>
+      <td>10</td>
+      <td>1~140</td>
+    </tr>
+    <tr>
+      <td>유형</td>
+      <td>char</td>
+      <td>char</td>
+    </tr>
+  </tbody>
+</table>
+
+<h5 id="ack">ack</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th>내용</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>길이</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>유형</td>
+      <td>int</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>decode()</strong></p>
+
+<div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">R</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="na">step</span> <span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+    <span class="na">com</span> <span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="c1">//command</span>
+    <span class="na">len</span> <span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+    <span class="na">d</span> <span class="p">:</span> <span class="p">[],</span>
+    <span class="na">log</span> <span class="p">:</span> <span class="p">(</span><span class="nx">d</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+        <span class="c1">//중략  </span>
+    <span class="p">},</span>
+    <span class="na">tx</span> <span class="p">:</span> <span class="p">(</span><span class="nx">command</span><span class="p">,</span> <span class="nx">data</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+        <span class="c1">//중략</span>
+    <span class="p">},</span>
+    <span class="na">rx</span> <span class="p">:</span> <span class="p">(</span><span class="nx">r</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+        <span class="c1">//중략</span>
+    <span class="p">},</span>
+    <span class="na">decode</span> <span class="p">:</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+        <span class="kd">let</span> <span class="nx">d</span> <span class="o">=</span> <span class="nx">Buffer</span><span class="p">.</span><span class="nx">from</span><span class="p">(</span><span class="nx">R</span><span class="p">.</span><span class="nx">d</span><span class="p">);</span>
+        <span class="kd">let</span> <span class="nx">p</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="k">switch</span> <span class="p">(</span><span class="nx">R</span><span class="p">.</span><span class="nx">com</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">case</span> <span class="mi">0</span> <span class="p">:</span> <span class="c1">//message</span>
+                <span class="nx">p</span><span class="p">.</span><span class="nx">user</span> <span class="o">=</span> <span class="nx">d</span><span class="p">.</span><span class="nx">toString</span><span class="p">(</span><span class="s1">'ascii'</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">10</span><span class="p">).</span><span class="nx">replace</span><span class="p">(</span><span class="sr">/</span><span class="se">[\0]</span><span class="sr">/g</span><span class="p">,</span> <span class="s1">''</span><span class="p">);</span>
+                <span class="nx">p</span><span class="p">.</span><span class="nx">msg</span> <span class="o">=</span> <span class="nx">d</span><span class="p">.</span><span class="nx">toString</span><span class="p">(</span><span class="s1">'ascii'</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">20</span><span class="p">).</span><span class="nx">replace</span><span class="p">(</span><span class="sr">/</span><span class="se">[\0]</span><span class="sr">/g</span><span class="p">,</span> <span class="s1">''</span><span class="p">);</span>
+                <span class="k">break</span><span class="p">;</span>
+            <span class="k">case</span> <span class="mi">1</span> <span class="p">:</span> <span class="k">break</span><span class="p">;</span><span class="c1">//another commands ...</span>
+            <span class="nl">default</span> <span class="p">:</span> <span class="k">break</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">p</span><span class="p">);</span>
+        <span class="nx">MSGs</span><span class="p">.</span><span class="nx">update</span><span class="p">({</span><span class="na">user</span><span class="p">:</span><span class="nx">p</span><span class="p">.</span><span class="nx">user</span><span class="p">},{</span><span class="na">$set</span><span class="p">:</span><span class="nx">p</span><span class="p">},</span><span class="kd">function</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span><span class="nx">r</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">if</span><span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">{</span>
+                <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="nx">err</span><span class="p">);</span>
+                <span class="nx">R</span><span class="p">.</span><span class="nx">tx</span><span class="p">(</span><span class="mh">0x00</span><span class="p">,[</span><span class="mh">0x00</span><span class="p">]);</span>
+            <span class="p">}</span>
+            <span class="k">else</span> <span class="nx">R</span><span class="p">.</span><span class="nx">tx</span><span class="p">(</span><span class="mh">0x00</span><span class="p">,[</span><span class="mh">0x01</span><span class="p">]);</span>
+            <span class="nx">R</span><span class="p">.</span><span class="nx">step</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>            
+        <span class="p">})</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+</div>
+
+<h4 id="해석-1">해석</h4>
+
+<p>decode는 아래와 같이 최소한 4단계의 과정이 필요하다.</p>
+
+<p>*parse &gt; store &gt; send ack &gt; ready</p>
+
+<h5 id="parse">parse</h5>
+
+<p><strong>let d 는 현재 [0x46 0x4b 0x4b 0x4d 0x45 0x4d 0x49 0x0 0x0 0x0 0x55 0x20 0x4c 0x4f 0x56 0x45 0x20 0x4d 0x45 0x3f] 의 데이터를 가지고 있다.</strong></p>
+
+<ul>
+  <li>받는 사람은 10바이트로 지정했기 때문에 [0x46 0x4b 0x4b 0x4d 0x45 0x4d 0x49 0x0 0x0 0x0] 가 된다.
+    <ul>
+      <li>아스키 테이블을 확인하며 한바이트 씩 확인 해보면 7byte는 “FKKMEMI” 임을 알 수 있다.</li>
+      <li>스트링에서 0의 의미는 문자가 끝났다는 표현이다.</li>
+      <li>하지만 별도의 스트링파서를 넣지 않았기 때문에 이상한 문자가 될 수 있다.</li>
+      <li>그래서 regexp로 종료케릭터(‘\0’ : 0x00)는 제거했다.</li>
+    </ul>
+  </li>
+  <li>내용은 가변이며 length(0x14:20)개 이기 때문에 나머지 바이트는 [0x55 0x20 0x4c 0x4f 0x56 0x45 0x20 0x4d 0x45 0x3f] 가 된다.
+    <ul>
+      <li>아스키 테이블을 확인하며 한바이트 씩 확인 해보면 10byte는 “U LOVE ME?” 임을 알 수 있다.</li>
+    </ul>
+  </li>
+</ul>
+
+<h5 id="store">store</h5>
+
+<ul>
+  <li>file로 저장하든 db에 저장하든..</li>
+</ul>
+
+<blockquote>
+  <p>위의 예제는 mongoose를 이용한 방법이다..</p>
+</blockquote>
+
+<h5 id="send-1">send</h5>
+
+<ul>
+  <li>저장은 오래 걸릴 수 있으므로 꼭 callback을 받고 보낸다.</li>
+  <li>DB 처리중 에러가 있다면
+    <ul>
+      <li>R.tx(0x00,[0x00]); 못 저장했다고 0을 보낸다.</li>
+      <li>R.tx(0x00,[0x01]); 잘 저장했다고 1을 보낸다.
+        <blockquote>
+          <p>실제 패킷 : 0x9 0x0 0x1 0x0 0x0 0x0 0x01 0x01 0x90</p>
+        </blockquote>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h5 id="ready">ready</h5>
+
+<ul>
+  <li>모든 처리 완료 후 스텝을 0으로 만든다.
+    <blockquote>
+      <p>사실 Send도 callback을 받아야 명확하다…<br />
+R.tx(0x00,[0x01],function(err) {R.step=0}); 형태로 제작해야한다..</p>
+    </blockquote>
+  </li>
+</ul>
+
+<h2 id="통신-연재는-여기까지">통신 연재는 여기까지..</h2>
+
+<blockquote>
+  <p>피곤해서 급 종료..</p>
+</blockquote>
+
+<p><strong>이전 <a href="/comm-4/">4편 : Communication(통신) 4. 구현-송신</a></strong></p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fa fa-fw fa-tags" aria-hidden="true"></i> 태그: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="http://localhost:4000/tags/#communication" class="page__taxonomy-item" rel="tag">communication</a><span class="sep">, </span>
+    
+      
+      
+      <a href="http://localhost:4000/tags/#idea" class="page__taxonomy-item" rel="tag">idea</a><span class="sep">, </span>
+    
+      
+      
+      <a href="http://localhost:4000/tags/#talk" class="page__taxonomy-item" rel="tag">talk</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fa fa-fw fa-folder-open" aria-hidden="true"></i> 카테고리: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="http://localhost:4000/categories/#communication" class="page__taxonomy-item" rel="tag">communication</a>
+    
+    </span>
+  </p>
+
+
+        
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> 업데이트:</strong> <time datetime="2017-07-20T00:00:00+09:00">July 20, 2017</time></p>
+        
+      </footer>
+
+      
+
+      
+  <nav class="pagination">
+    
+      <a href="http://localhost:4000/communication/comm-4/" class="pagination--pager" title="Communication(통신) 4. 구현-송신
+">이전</a>
+    
+    
+      <a href="http://localhost:4000/nemv/nemv-1/" class="pagination--pager" title="NEMV 1 - 소개
+">다음</a>
+    
+  </nav>
+
+    </div>
+
+    
+      <div class="page__comments">
+  
+    
+        <h4 class="page__comments-title">댓글남기기</h4>
+        <section id="disqus_thread"></section>
+      
+</div>
+    
+  </article>
+
+  
+  
+</div>
+
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>팔로우:</strong></li>
+    
+    
+      <li><a href="https://twitter.com/fkkmemi"><i class="fa fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+    
+    
+      <li><a href="https://facebook.com/fkkmemi"><i class="fa fa-fw fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
+    
+    
+    
+    
+    <li><a href="http://localhost:4000/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> 피드</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2017 fkkmemi. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    <script src="http://localhost:4000/assets/js/main.min.js"></script>
+
+
+
+
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-93372301-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+
+  
+      
+  <script type="text/javascript">
+  	/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+  	var disqus_shortname = 'fkkmemi';
+
+  	/* * * DON'T EDIT BELOW THIS LINE * * */
+  	(function() {
+  		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+  		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  	})();
+
+  	/* * * DON'T EDIT BELOW THIS LINE * * */
+  	(function () {
+  		var s = document.createElement('script'); s.async = true;
+  		s.type = 'text/javascript';
+  		s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+  		(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+  	}());
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+    
+
+
+
+  </body>
+</html>

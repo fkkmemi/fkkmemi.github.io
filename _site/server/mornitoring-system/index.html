@@ -1,0 +1,592 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.4.2 by Michael Rose
+  Copyright 2017 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE.txt
+-->
+<html lang="ko" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>Monitoring System - fkkmemi.notes</title>
+
+
+
+
+<meta name="description" content="개요">
+
+
+
+
+<meta name="author" content="jh">
+
+<meta property="og:locale" content="ko">
+<meta property="og:site_name" content="fkkmemi.notes">
+<meta property="og:title" content="Monitoring System">
+
+
+  <link rel="canonical" href="http://localhost:4000/server/mornitoring-system/">
+  <meta property="og:url" content="http://localhost:4000/server/mornitoring-system/">
+
+
+
+  <meta property="og:description" content="개요">
+
+
+
+  <meta name="twitter:site" content="@fkkmemi">
+  <meta name="twitter:title" content="Monitoring System">
+  <meta name="twitter:description" content="개요">
+  <meta name="twitter:url" content="http://localhost:4000/server/mornitoring-system/">
+
+  
+    <meta name="twitter:card" content="summary">
+    
+  
+
+  
+    <meta name="twitter:creator" content="@jh">
+  
+
+
+
+  
+
+  
+
+
+
+
+
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2017-03-01T00:00:00+09:00">
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "fkkmemi",
+      "url" : "http://localhost:4000",
+      "sameAs" : ["https://twitter.com/fkkmemi","https://facebook.com/fkkmemi","https://www.linkedin.com/in/fkkmemi"]
+    }
+  </script>
+
+
+
+
+
+
+<!-- end SEO -->
+
+
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="fkkmemi.notes Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+
+<!--[if lte IE 9]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+<meta http-equiv="cleartype" content="on">
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use http://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+  </head>
+
+  <body class="layout--post">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <a class="site-title" href="http://localhost:4000/">fkkmemi.notes</a>
+        <ul class="visible-links">
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/categories/">Categories</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/about/">About</a></li>
+          
+        </ul>
+        <button><div class="navicon"></div></button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    
+
+
+
+<div id="main" role="main">
+  
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Monitoring System">
+    <meta itemprop="description" content="개요">
+    <meta itemprop="datePublished" content="March 01, 2017">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">Monitoring System
+</h1>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        <h2 id="개요">개요</h2>
+
+<p>서버를 구성할 때 가장 유의해야할 것은 유지보수라고 할 수 있다.</p>
+
+<p>이미 구성되어진 서버 플로우를 차후에 바꾸는 것은 어렵다.</p>
+
+<blockquote>
+  <p>돈이면 안되는 일이 없긴 하지만 비용을 최소화하기 위함이다.</p>
+</blockquote>
+
+<p>모니터링 시스템을 구성하기 위한 scale-out 서버 설정을 직접해보도록 하겠다.</p>
+
+<h2 id="구성도">구성도</h2>
+
+<p><img src="/images/monitoring_system/1.png" alt="alt sys" /></p>
+
+<ol>
+  <li>comm(데이터수신서버) 2대
+    <ul>
+      <li>communication server tcp socket data를 수신 받고 db에 저장</li>
+      <li>by node.js</li>
+    </ul>
+  </li>
+  <li>web(웹서버) 2대
+    <ul>
+      <li>사용자로 부터 https요청을 받아서 처리함</li>
+      <li>by node.js</li>
+    </ul>
+  </li>
+  <li>db(데이터베이스서버) 3대
+    <ul>
+      <li>comm, web 서버의 데이터 저장소</li>
+      <li>3대는 데이터를 분산해서 가져간다(sharding)</li>
+      <li>by mongoDB</li>
+    </ul>
+  </li>
+  <li>lb(로드밸런서) 2대
+    <ul>
+      <li>comm, web 서버의 수평확장을 위한 트래픽 분산 시스템</li>
+      <li>type : round robin</li>
+    </ul>
+  </li>
+</ol>
+
+<blockquote>
+  <p>Round robin 방식은 Client 의 요청을 순차적으로 순환을 하여 Load Balancing 을 하는 방식입니다.</p>
+</blockquote>
+
+<h2 id="흐름">흐름</h2>
+
+<ul>
+  <li>
+    <p>device들은 lb(comm)에 접속한다.</p>
+  </li>
+  <li>
+    <p>lb(comm)는 타겟 comm vm을 정해준다.</p>
+  </li>
+</ul>
+
+<blockquote>
+  <p>타겟이 3개의 서버일 경우, 마지막 접속이 0이면 1로 1이면 2로 2면 0으로</p>
+</blockquote>
+
+<ul>
+  <li>
+    <p>comm은 db로 연결하여 현재 데이터가 유효한지 판단 후 저장</p>
+  </li>
+  <li>
+    <p>db는 데이터를 서로 나눠 가진다</p>
+  </li>
+</ul>
+
+<blockquote>
+  <p>3개의 db vm에 60개의 데이터를 쓰면 각 db vm에 20개씩 나눠 가진다.</p>
+</blockquote>
+
+<ul>
+  <li>
+    <p>user들은 lb(web)에 https request 한다.</p>
+  </li>
+  <li>
+    <p>lb(web)는 타겟 web vm을 정해준다.</p>
+  </li>
+  <li>
+    <p>정해진 web vm에 https request 한다.</p>
+  </li>
+</ul>
+
+<blockquote>
+  <p>https bridge mode로 lb가 인증서를 가지고 있지 않다.<br />
+각 web vm이 인증서 복사본을 가지고 있고 각각 구동한다.</p>
+</blockquote>
+
+<ul>
+  <li>db에서 데이터를 찾아서 https response 한다.</li>
+</ul>
+
+<h2 id="구성">구성</h2>
+
+<p>기본적으로 web,comm vm들이 상대경로로 독립실행 가능하게 작성되어 있어야한다.</p>
+
+<blockquote>
+  <p>복제해서도 실행될 수 있어야된다.(수평확장 고려)<br />
+eg)  <br />
+req.redirect(‘https://xxx.com/info’) X<br />
+req.redirect(‘../info’) O</p>
+</blockquote>
+
+<h3 id="vm--comm">vm : comm</h3>
+
+<ul>
+  <li>
+    <p>vm(cs0)생성</p>
+  </li>
+  <li>
+    <p>cs0 서버 설정을 한 후 이미지 생성을 한다.</p>
+  </li>
+</ul>
+
+<p>[이미지명 cs0-init]</p>
+
+<p><img src="/images/monitoring_system/2.png" alt="alt image" /></p>
+
+<ul>
+  <li>cs1이란 호스트명으로 복제하여 시작한다.</li>
+</ul>
+
+<p><img src="/images/monitoring_system/3.png" alt="alt start" /></p>
+
+<ul>
+  <li>편의를 위해 cs0.xxx.com, cs1.xxx.com 각각 도메인을 연결하여 접속한다.</li>
+</ul>
+
+<h3 id="lb--comm">lb : comm</h3>
+
+<ul>
+  <li>Load balancer를 추가한다.</li>
+</ul>
+
+<p><img src="/images/monitoring_system/4.png" alt="alt lbadd" /></p>
+
+<ul>
+  <li>cs0와 cs1의 호스트를 등록하고 사용할 포트를 지정한다.</li>
+</ul>
+
+<blockquote>
+  <p>포트는 한개만 가능하며, 다른 포트를 등록해야한다면 lb를 추가해야한다.<br />
+<a href="https://ucloudbiz.olleh.com/manual/ucloud_loadbalancer_user_manual.pdf">참고 : https://ucloudbiz.olleh.com/manual/ucloud_loadbalancer_user_manual.pdf</a></p>
+</blockquote>
+
+<ul>
+  <li>각각의 서버에 상태를 확인할 수 있다.</li>
+</ul>
+
+<p><img src="/images/monitoring_system/5.png" alt="alt status" /></p>
+
+<ul>
+  <li>
+    <p>cs0, cs1에 ssh 접속해본다</p>
+  </li>
+  <li>
+    <p>console에 접속 로그를 작성하여 확인해 보면</p>
+  </li>
+</ul>
+
+<p><img src="/images/monitoring_system/6.png" alt="alt log" /></p>
+
+<ul>
+  <li>어떤 아이피가 계속 접속하고 끊고를 매초마다 반복하는 것이 보인다.</li>
+</ul>
+
+<blockquote>
+  <p>tcp socket의 health 상태를 주기적으로 체크하는 것이며 lb의 타겟선정을 위한 행위라고 할 수 있다.<br />
+그러므로 이런 잦은 소켓 접속에 대비한 프로그램을 작성해야한다.</p>
+</blockquote>
+
+<h3 id="db--sharding">db : sharding</h3>
+
+<ul>
+  <li><a href="/mongo-sharding-1/">세팅 : mongo-sharding</a></li>
+</ul>
+
+<h3 id="vm--web">vm : web</h3>
+
+<ul>
+  <li>
+    <p>vm(ws0)생성</p>
+  </li>
+  <li>
+    <p>ws0 서버 설정을 한 후 이미지 생성을 한다.</p>
+  </li>
+</ul>
+
+<blockquote>
+  <p>각각의 서버에는 복제한 인증서와 키를 가지고 서버 실행을 해둔다.</p>
+</blockquote>
+
+<ul>
+  <li>
+    <p>ws1이란 호스트명으로 복제하여 시작한다.</p>
+  </li>
+  <li>
+    <p>편의를 위해 ws0.xxx.com, ws1.xxx.com 각각 도메인을 연결하여 접속한다.</p>
+  </li>
+</ul>
+
+<blockquote>
+  <p>위의 cs 설정과 동일하다.</p>
+</blockquote>
+
+<h3 id="lb--web">lb : web</h3>
+
+<ul>
+  <li>lb : comm 과 같이 세팅한다.</li>
+</ul>
+
+<blockquote>
+  <p>이때 설정 Load balancer type을 https(bridge) 로 설정하고 well-known port 인 443 포트를 지정하면 된다.</p>
+</blockquote>
+
+<h2 id="검증">검증</h2>
+
+<ul>
+  <li>아래와 같이 vm cs0,cs1,ws0,ws1 4개를 띄어 놓는다.</li>
+</ul>
+
+<p><img src="/images/monitoring_system/7.png" alt="alt 4ea" /></p>
+
+<ul>
+  <li>cs0,cs1,ws0,ws1을 껏다 켰다 해보고 특정한 곳에 부하를 주고 lb가 switching이 되는지 확인 해본다.</li>
+</ul>
+
+<h2 id="결론">결론</h2>
+
+<p>사실 처음에는 소규모의 데이터를 운용할 것이기에 lb의 존재 자체가 오버헤드인데 나중에 lb를 추가하기가 여러가지로 불편하고, 서비스의 연속성을 가지며 변경하긴 어렵다.</p>
+
+<p>lb가 제일 중요한 타겟 서버 아이피를 가져야되기 때문이다.</p>
+
+<p>아무래도 단순하게 접근하기에는 aws보다는 훨씬 설정이 간편하게 느껴진다.</p>
+
+<p>점수 : 8점</p>
+
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fa fa-fw fa-tags" aria-hidden="true"></i> 태그: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="http://localhost:4000/tags/#mongo" class="page__taxonomy-item" rel="tag">mongo</a><span class="sep">, </span>
+    
+      
+      
+      <a href="http://localhost:4000/tags/#node" class="page__taxonomy-item" rel="tag">node</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fa fa-fw fa-folder-open" aria-hidden="true"></i> 카테고리: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="http://localhost:4000/categories/#server" class="page__taxonomy-item" rel="tag">server</a>
+    
+    </span>
+  </p>
+
+
+        
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> 업데이트:</strong> <time datetime="2017-03-01T00:00:00+09:00">March 01, 2017</time></p>
+        
+      </footer>
+
+      
+
+      
+  <nav class="pagination">
+    
+      <a href="http://localhost:4000/idea/new-language/" class="pagination--pager" title="New language
+">이전</a>
+    
+    
+      <a href="http://localhost:4000/server/server-log/" class="pagination--pager" title="Server log
+">다음</a>
+    
+  </nav>
+
+    </div>
+
+    
+      <div class="page__comments">
+  
+    
+        <h4 class="page__comments-title">댓글남기기</h4>
+        <section id="disqus_thread"></section>
+      
+</div>
+    
+  </article>
+
+  
+  
+</div>
+
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>팔로우:</strong></li>
+    
+    
+      <li><a href="https://twitter.com/fkkmemi"><i class="fa fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+    
+    
+      <li><a href="https://facebook.com/fkkmemi"><i class="fa fa-fw fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
+    
+    
+    
+    
+    <li><a href="http://localhost:4000/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> 피드</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2017 fkkmemi. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    <script src="http://localhost:4000/assets/js/main.min.js"></script>
+
+
+
+
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-93372301-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+
+  
+      
+  <script type="text/javascript">
+  	/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+  	var disqus_shortname = 'fkkmemi';
+
+  	/* * * DON'T EDIT BELOW THIS LINE * * */
+  	(function() {
+  		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+  		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  	})();
+
+  	/* * * DON'T EDIT BELOW THIS LINE * * */
+  	(function () {
+  		var s = document.createElement('script'); s.async = true;
+  		s.type = 'text/javascript';
+  		s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+  		(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+  	}());
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+    
+
+
+
+  </body>
+</html>

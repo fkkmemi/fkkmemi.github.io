@@ -1,0 +1,551 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.4.2 by Michael Rose
+  Copyright 2017 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE.txt
+-->
+<html lang="ko" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>Mongo Sharding 2 (config,router) - fkkmemi.notes</title>
+
+
+
+
+<meta name="description" content="개요">
+
+
+
+
+<meta name="author" content="jh">
+
+<meta property="og:locale" content="ko">
+<meta property="og:site_name" content="fkkmemi.notes">
+<meta property="og:title" content="Mongo Sharding 2 (config,router)">
+
+
+  <link rel="canonical" href="http://localhost:4000/mongodb/mongo-sharding-2/">
+  <meta property="og:url" content="http://localhost:4000/mongodb/mongo-sharding-2/">
+
+
+
+  <meta property="og:description" content="개요">
+
+
+
+  <meta name="twitter:site" content="@fkkmemi">
+  <meta name="twitter:title" content="Mongo Sharding 2 (config,router)">
+  <meta name="twitter:description" content="개요">
+  <meta name="twitter:url" content="http://localhost:4000/mongodb/mongo-sharding-2/">
+
+  
+    <meta name="twitter:card" content="summary">
+    
+  
+
+  
+    <meta name="twitter:creator" content="@jh">
+  
+
+
+
+  
+
+  
+
+
+
+
+
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2017-02-23T00:00:00+09:00">
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "fkkmemi",
+      "url" : "http://localhost:4000",
+      "sameAs" : ["https://twitter.com/fkkmemi","https://facebook.com/fkkmemi","https://www.linkedin.com/in/fkkmemi"]
+    }
+  </script>
+
+
+
+
+
+
+<!-- end SEO -->
+
+
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="fkkmemi.notes Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+
+<!--[if lte IE 9]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+<meta http-equiv="cleartype" content="on">
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use http://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+  </head>
+
+  <body class="layout--post">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <a class="site-title" href="http://localhost:4000/">fkkmemi.notes</a>
+        <ul class="visible-links">
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/categories/">Categories</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/about/">About</a></li>
+          
+        </ul>
+        <button><div class="navicon"></div></button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    
+
+
+
+<div id="main" role="main">
+  
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Mongo Sharding 2 (config,router)">
+    <meta itemprop="description" content="개요">
+    <meta itemprop="datePublished" content="February 23, 2017">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">Mongo Sharding 2 (config,router)
+</h1>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        <h2 id="개요">개요</h2>
+
+<p>원리는 만들어 놓았던 shardsvr들에 연결하기 위해 router를 통해야하는데 그 config meta 정보를 configsvr에 담는 것이다.</p>
+
+<blockquote>
+  <p>대략 이런 구성이라고 보면 된다<br />
+client -&gt; router -&gt; configsvr -&gt; shards[?]</p>
+</blockquote>
+
+<h2 id="구성">구성</h2>
+
+<h3 id="configsvr">configsvr</h3>
+
+<p>각 서버의 conf 파일을 만들어 아래의 내용으로 작성한다.</p>
+
+<div class="language-text highlighter-rouge"><pre class="highlight"><code>vi /data/mongo/configsvr.conf
+</code></pre>
+</div>
+
+<div class="language-yaml highlighter-rouge"><pre class="highlight"><code><span class="c1"># configsvr.conf</span>
+
+<span class="s">systemLog</span><span class="pi">:</span>
+  <span class="s">destination</span><span class="pi">:</span> <span class="s">file</span>
+  <span class="s">logAppend</span><span class="pi">:</span> <span class="s">true</span>
+  <span class="s">path</span><span class="pi">:</span> <span class="s">/data/mongo/log/configsvr.log</span>
+
+<span class="s">storage</span><span class="pi">:</span>
+  <span class="s">dbPath</span><span class="pi">:</span> <span class="s">/data/mongo/configsvr</span>
+  <span class="s">journal</span><span class="pi">:</span>
+    <span class="s">enabled</span><span class="pi">:</span> <span class="s">true</span>
+
+<span class="s">processManagement</span><span class="pi">:</span>
+  <span class="s">fork</span><span class="pi">:</span> <span class="s">true</span>  <span class="c1"># fork and run in background</span>
+  <span class="s">pidFilePath</span><span class="pi">:</span> <span class="s">/data/mongo/pid/configsvr.pid</span>  <span class="c1"># location of pidfile</span>
+
+<span class="s">net</span><span class="pi">:</span>
+  <span class="s">port</span><span class="pi">:</span> <span class="s">27019</span>
+<span class="c1">#  bindIp: 127.0.0.1  # Listen to local interface only, comment to listen on all interfaces.</span>
+
+<span class="s">replication</span><span class="pi">:</span>
+  <span class="s">replSetName</span><span class="pi">:</span> <span class="s">configReplSet</span>
+
+<span class="s">sharding</span><span class="pi">:</span>
+  <span class="s">clusterRole</span><span class="pi">:</span> <span class="s">configsvr</span>
+</code></pre>
+</div>
+
+<p>shardsvr구성과 거의 같지만 여러개의 replset을 묶어줄 세트가 필요하고</p>
+
+<p>clusterRole: configsvr 이란 옵션을 넣어줘야한다.</p>
+
+<blockquote>
+  <p>3.x 이전 버전엔 없던 것 같다.</p>
+</blockquote>
+
+<p>각서버 작성후 옵션을 –configsvr를 넣어서 실행한다.</p>
+
+<div class="language-text highlighter-rouge"><pre class="highlight"><code>mongod --configsvr -f configsvr.conf
+mongo dbc:27019
+</code></pre>
+</div>
+
+<p>이제 replset를 만들어줘야하는데 shard 구성했을때의 rs method를 통해 멤버를 추가하면 된다..</p>
+
+<blockquote>
+  <p>shard구성할때 귀찮게 reconfig 했었는데. 이번엔 멤버 추가와 함께 initiate를 해보겠다..</p>
+</blockquote>
+
+<div class="language-text highlighter-rouge"><pre class="highlight"><code>rs.initiate( { _id: "configReplSet", configsvr: true, members: [ { _id: 0, host: "dbc:27019" }, { _id: 1, host: "dbs1:27019" } ] } )
+rs.status()
+</code></pre>
+</div>
+
+<p>shardsvr test와 마찬가지로 primary secondary를 껏다 켜보면서 잘 바뀌는지 테스트 해보면 된다.</p>
+
+<h3 id="router">router</h3>
+
+<p>mongos 라고하는 프로세스로 분산되어있는 서버들의 연결을 담당한다.</p>
+
+<div class="language-text highlighter-rouge"><pre class="highlight"><code>vi /data/mongo/mongos.conf
+</code></pre>
+</div>
+
+<div class="language-yaml highlighter-rouge"><pre class="highlight"><code><span class="c1"># mongos.conf</span>
+<span class="s">systemLog</span><span class="pi">:</span>
+  <span class="s">destination</span><span class="pi">:</span> <span class="s">file</span>
+  <span class="s">logAppend</span><span class="pi">:</span> <span class="s">true</span>
+  <span class="s">path</span><span class="pi">:</span> <span class="s">/data/mongo/log/mongos.log</span>
+
+<span class="s">processManagement</span><span class="pi">:</span>
+  <span class="s">fork</span><span class="pi">:</span> <span class="s">true</span>
+  <span class="s">pidFilePath</span><span class="pi">:</span> <span class="s">/data/mongo/pid/mongos.pid</span>
+
+<span class="s">net</span><span class="pi">:</span>
+  <span class="s">port</span><span class="pi">:</span> <span class="s">27017</span>
+<span class="c1">#  bindIp: 127.0.0.1  # Listen to local interface only, comment to listen on all interfaces.</span>
+
+<span class="s">sharding</span><span class="pi">:</span>
+  <span class="s">configDB</span><span class="pi">:</span> <span class="s">configReplSet/dbc:27019,dbs1:27019</span>
+</code></pre>
+</div>
+
+<blockquote>
+  <p>configDB라는 세팅 외에는 별 특별한 것이 없다.<br />
+기존엔 configsvr들의 ip만 컴마로 주욱 썼는데 3.x 이후 부터 replset를 명시하고 호스트:포트 방식으로 작성법이 바뀐것 같다.<br />
+기존처럼 192.168.111.111, 192.168.111.112 이런식으로 작성하면 에러가 난다.<br />
+추후 로드밸런서로 공인망 부하를 줄이기 위해 mongos역시 두대 다 세팅하였다.  <br />
+일반적인 상황이면 접근하고 싶은 서버에서 하나만 구성하면 된다.</p>
+</blockquote>
+
+<div class="language-text highlighter-rouge"><pre class="highlight"><code>mongos -f /data/mongo/mongos.conf
+</code></pre>
+</div>
+
+<p>실행해보면 워닝이 뜨는데 configsvr 3대를 권장한다는 메세지가 뜬다.</p>
+
+<blockquote>
+  <p>권장사항은 왠지 거부하기가 두렵기 때문에 다음 서버 수평확장 때 컨픽서버도 하나 더 세팅해보겠다.</p>
+</blockquote>
+
+<p>라우터의 포트를 27017로 했기 때문에 그냥 mongo 만 치면 접속된다</p>
+
+<p>그래서 아래와 같이 접속해보면 된다.</p>
+
+<div class="language-text highlighter-rouge"><pre class="highlight"><code>mongo
+mongo dbc
+mongo dbs1
+mongo dbc:27017
+</code></pre>
+</div>
+
+<blockquote>
+  <p>워닝이 뜰 경우 (Access control is not enabled for the database.)<br />
+rdbms처럼 계정을 쓰라는 얘기다<br />
+mongos.conf에 auth관련 세팅을해서 실행하라는 건데…<br />
+이건 나중에 세팅해보기로하겠다<br />
+<a href="https://medium.com/@raj_adroit/mongodb-enable-authentication-enable-access-control-e8a75a26d332#.ebau7ien8">참고:https://medium.com/@raj_adroit/mongodb-enable-authentication-enable-access-control-e8a75a26d332#.ebau7ien8</a></p>
+</blockquote>
+
+<p>sh method로 shard들을 추가해야한다</p>
+
+<div class="language-text highlighter-rouge"><pre class="highlight"><code>sh.addShard("rs0/dbc:27018")
+sh.addShard("rs0/dbs1:27018")
+</code></pre>
+</div>
+
+<p>복제셋/샤드주소 이렇게 추가하면된다. 다른 복제셋/샤드주소 도 얼마든지 추가 가능하다</p>
+
+<p>다른 커맨드는 아래를 참조한다..</p>
+
+<p><a href="https://docs.mongodb.com/manual/reference/method/js-sharding/">https://docs.mongodb.com/manual/reference/method/js-sharding/</a></p>
+
+<p>더 디테일한 세팅이나 서버 추가는 공식사이트를 확인하여 변경하면된다.</p>
+
+<blockquote>
+  <p>이제 확인해볼 차례다 세팅이 완료 된 상황이기 때문에..<br />
+더이상 mongo shell로 접근해서 피곤한 command 레퍼런스 찾아보기는 안해도 된다.  <br />
+다양한 visual client가 있기 때문에 이제부터는 mongobooster라는 프로그램으로 마우스 콕콕 누르며 확인하면 된다..</p>
+</blockquote>
+
+<p>[mongobooster]</p>
+
+<p><img src="/images/mongo_sharding/6.png" alt="alt mongobooster" /></p>
+
+<blockquote>
+  <p>사실 이정도 말고 아는 것도 없고, 알 필요도 없기 때문이다..<br />
+front-back end 개발을 해야하는 상황에 DBA수준의 관리 능력은 가질 여력이 안된다.. <br />
+mongos 2대 shards 1set 확인 되었음..<br />
+이제 read/write 장애발생 상황은 QA에 맡기고 싶지만, 없기 때문에 여러가지 셀프테스트를 해보면 된다.. :(</p>
+</blockquote>
+
+<h2 id="결론">결론</h2>
+
+<p>간단한 설정 몇개로 심플한 구성은 완료가 되었다.</p>
+
+<p>mongodb.com 에서는 서버 한대를 쓰더라도 replSet를 구성하기를 권하고있다.</p>
+
+<p>사실 한대로 무언가를 한다는 것 자체가 테스트용도라는 것이다.</p>
+
+<p>어짜피 해야될 구성 replSet, sharding을 고려해서 설계하는 것이 좋을 것 같다.</p>
+
+<blockquote>
+  <p>역시 설정이 너무 복잡함.. 여전히 복제와 샤딩이 정확히는 이해가 안감(3대중 한대가 죽어도 데이터가 있는 것 외에는 아는 것이 없음)</p>
+</blockquote>
+
+<p>점수 : 7점</p>
+
+<h2 id="의견">의견</h2>
+
+<p>개발자로 살며 늘 생각하지만 출제자의 의도를 파악하는 것이 중요하다..</p>
+
+<p>stackoverflow.com등의 정보는 고맙지만 배껴 쓰고 더 혼란이 가중되었던 적이 많다..</p>
+
+<p>특히 deprecated 된 항목이 많아서 갱신된 최신 레퍼런스 매뉴얼을 참고해야한다..</p>
+
+<blockquote>
+  <p>nodejs를 할꺼면 nodejs.org, mongo를 할꺼면 mongodb.com, android를 할꺼면 google.com, angularjs를 할꺼면 angularjs.org</p>
+</blockquote>
+
+<p><strong>이전 <a href="/mongo-sharding-1/">1편 : shard 구성</a></strong>
+<strong>다음 <a href="/mongo-sharding-3/">3편 : add shards</a></strong></p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fa fa-fw fa-tags" aria-hidden="true"></i> 태그: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="http://localhost:4000/tags/#database" class="page__taxonomy-item" rel="tag">database</a><span class="sep">, </span>
+    
+      
+      
+      <a href="http://localhost:4000/tags/#mongo" class="page__taxonomy-item" rel="tag">mongo</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fa fa-fw fa-folder-open" aria-hidden="true"></i> 카테고리: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="http://localhost:4000/categories/#mongodb" class="page__taxonomy-item" rel="tag">mongoDB</a>
+    
+    </span>
+  </p>
+
+
+        
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> 업데이트:</strong> <time datetime="2017-02-23T00:00:00+09:00">February 23, 2017</time></p>
+        
+      </footer>
+
+      
+
+      
+  <nav class="pagination">
+    
+      <a href="http://localhost:4000/mongodb/mongo-sharding-1/" class="pagination--pager" title="Mongo Sharding 1 (shard 구성)
+">이전</a>
+    
+    
+      <a href="http://localhost:4000/mongodb/mongo-sharding-3/" class="pagination--pager" title="Mongo Sharding 3 (add servers)
+">다음</a>
+    
+  </nav>
+
+    </div>
+
+    
+      <div class="page__comments">
+  
+    
+        <h4 class="page__comments-title">댓글남기기</h4>
+        <section id="disqus_thread"></section>
+      
+</div>
+    
+  </article>
+
+  
+  
+</div>
+
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>팔로우:</strong></li>
+    
+    
+      <li><a href="https://twitter.com/fkkmemi"><i class="fa fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+    
+    
+      <li><a href="https://facebook.com/fkkmemi"><i class="fa fa-fw fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
+    
+    
+    
+    
+    <li><a href="http://localhost:4000/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> 피드</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2017 fkkmemi. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    <script src="http://localhost:4000/assets/js/main.min.js"></script>
+
+
+
+
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-93372301-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+
+  
+      
+  <script type="text/javascript">
+  	/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+  	var disqus_shortname = 'fkkmemi';
+
+  	/* * * DON'T EDIT BELOW THIS LINE * * */
+  	(function() {
+  		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+  		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  	})();
+
+  	/* * * DON'T EDIT BELOW THIS LINE * * */
+  	(function () {
+  		var s = document.createElement('script'); s.async = true;
+  		s.type = 'text/javascript';
+  		s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+  		(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+  	}());
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+    
+
+
+
+  </body>
+</html>

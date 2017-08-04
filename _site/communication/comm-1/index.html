@@ -1,0 +1,472 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.4.2 by Michael Rose
+  Copyright 2017 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE.txt
+-->
+<html lang="ko" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>Communication(통신) 1. 개념 - fkkmemi.notes</title>
+
+
+
+
+<meta name="description" content="개요">
+
+
+
+
+<meta name="author" content="jh">
+
+<meta property="og:locale" content="ko">
+<meta property="og:site_name" content="fkkmemi.notes">
+<meta property="og:title" content="Communication(통신) 1. 개념">
+
+
+  <link rel="canonical" href="http://localhost:4000/communication/comm-1/">
+  <meta property="og:url" content="http://localhost:4000/communication/comm-1/">
+
+
+
+  <meta property="og:description" content="개요">
+
+
+
+  <meta name="twitter:site" content="@fkkmemi">
+  <meta name="twitter:title" content="Communication(통신) 1. 개념">
+  <meta name="twitter:description" content="개요">
+  <meta name="twitter:url" content="http://localhost:4000/communication/comm-1/">
+
+  
+    <meta name="twitter:card" content="summary">
+    
+  
+
+  
+    <meta name="twitter:creator" content="@jh">
+  
+
+
+
+  
+
+  
+
+
+
+
+
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2017-07-16T00:00:00+09:00">
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "fkkmemi",
+      "url" : "http://localhost:4000",
+      "sameAs" : ["https://twitter.com/fkkmemi","https://facebook.com/fkkmemi","https://www.linkedin.com/in/fkkmemi"]
+    }
+  </script>
+
+
+
+
+
+
+<!-- end SEO -->
+
+
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="fkkmemi.notes Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+
+<!--[if lte IE 9]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+<meta http-equiv="cleartype" content="on">
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use http://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+  </head>
+
+  <body class="layout--post">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <a class="site-title" href="http://localhost:4000/">fkkmemi.notes</a>
+        <ul class="visible-links">
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/categories/">Categories</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/about/">About</a></li>
+          
+        </ul>
+        <button><div class="navicon"></div></button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    
+
+
+
+<div id="main" role="main">
+  
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Communication(통신) 1. 개념">
+    <meta itemprop="description" content="개요">
+    <meta itemprop="datePublished" content="July 16, 2017">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">Communication(통신) 1. 개념
+</h1>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        <h3 id="개요">개요</h3>
+
+<p>한동안 펌웨어쪽 일을 하면서 모뎀을 통해 서버쪽에 데이터를 전송하는 인터페이스를 많이 하게 되었는데..<br />
+대부분 백엔드서버 엔지니어들이 <strong>바이너리</strong> 통신을 통해 수신받아서 처리(파스)하는 부분에 상당히 무지한 것을 알았다..</p>
+
+<blockquote>
+  <p>미숙한 서버 개발자라서가 아니다.. 다른 부분은 다 전문적이지만 그저 바이너리 통신에 대한 경험이 없는 것이다.</p>
+</blockquote>
+
+<blockquote>
+  <p>예를 들어 [0x02, 0x03, 0x04] 3바이트를 서버에서 Ack를 보내줘야하는데 [0x30, 0x78, 0x30, 0x32, 0x30, 0x78, 0x30, 0x33, 0x30, 0x78, 0x30, 0x34] 12바이트를 받은 적이 있다..<br />
+이것이 무슨 의미인지 아는 개발자라면 상황의 심각성을 이해할 수 있을 것이다..<br />
+사실 이 것 때문에 이 포스트를 작성해본다..</p>
+</blockquote>
+
+<p>이야기를 들어보면 대부분 http method GET,POST(RESTful API라고 보기 어려운..)를 통한 단순 http 서버(대부분 apache, iis) 데이터 처리만 해본 것이다.</p>
+
+<blockquote>
+  <p>아마도 이쪽 장비들(그리고 대부분의 임베디드 장비들)과 통신을 많이 안해본 듯 하다 os 포팅 안된 임베디드 장비들(http packing이 쉽지 않다.)이 내가 하는 쪽엔 95%이상이 확실하기 때문이다.</p>
+</blockquote>
+
+<p>디바이스의 통신은 socket이 아닌 http로 보낼 경우 데이터 증가로 의미없는 트래픽 상승(IoT 요금제는 용량이 매우 작다)과 보안도 되지 않기 때문에 ssl(https) 적용하지 않으면 부적절한 통신 방식이라고 볼 수 있다.</p>
+
+<p>대부분의 서버업체들은 전용 프로토콜을 만들어놓고 맞추라고 하지 않고 디바이스 제조사가 서버로 보내는 프로토콜이 있으면 맞추겠다 라고 하는 쪽이었다.</p>
+
+<blockquote>
+  <p>막상 잘 안 되어서 샘플 패킷과 내 서버 코드를 드르륵 긁어서 보내주는 일이 대부분이었다. 그래야 일이 끝나는 것이니……….. 라고 생각했지 사실 남의 코드 본다고 달라질 것은 없었다.. 이해를 하는 것이 중요한 것이지..<br />
+어짜피 메일 주고 받고 전화통화해서 설명하느니 여기 박제해버리는 것이 좋을 듯해서 저장해본다.</p>
+</blockquote>
+
+<p>서버개발자들이 바이너리 tcp 프로토콜을 어려워 하는 이유는 크게 3가지였다.</p>
+
+<ol>
+  <li>
+    <p>Byte를 잘 모른다.<br />
+스트링으로 받은 다음(사실 바이트들) 온갖 스트링 메쏘드들을 총 출동해 파싱(특히 java)을 한다.<br />
+실제 코드로 본 것은 이미 받은 것이 바이트(s)인데도 불구하고 그걸 다시 stringbuffer에 넣었다 split 시켰다 join 시켰다 정도의 과정을 3개 반복해서 원래의 바이트가 되는 코드를 봤다..(표현 : byte -&gt; string -&gt; buf -&gt; ? -&gt; string -&gt; byte)<br />
+eg1) 차속도는 한바이트로 0~255의 값을 가지고 있기 때문에 한바이트 자체가 곧 값이고 타입캐스팅만 unsigned하게 변경하면 끝난 것이었는데…<br />
+eg2) 위에 언급한 것 처럼 서버송신을 보면 바이트를 모르는 것을 알수 있었다.</p>
+  </li>
+  <li>
+    <p>데이터를 일부러 나눠 보낸다고 생각한다.<br />
+클라이언트 소켓으로 10000바이트를 정해서 서버에 전송 하면 대부분의 TCP 특성상 수신부 버퍼는 통신속도, 서버 세팅에 따라 다르지만 나누어 받게된다..<br />
+이런식으로 1(2550),2(2849),3(3213),4(1388) 식으로 나뉘어 받게된다.<br />
+이런 4개의 무작위 뭉탱이를 chunk라고 하며 백엔드 개발자들은 이미지 업로드등에서 다뤄본적이 있을 것이다.. <br />
+스트링처럼 리턴 제어문자등으로 수신완료 인식을 할 수 없기 때문에 세션동안 프로토콜로 데이터를 판단해야 한다.</p>
+  </li>
+  <li>
+    <p>TCP소켓방식과 http를 완전 다른 방식으로 알고 있다.<br />
+사실 http는 말그대로 html(하이퍼텍스트)을 전송하기 위한 규약이며 원리는 소켓통신과 같다..<br />
+http는 간단히 socket open -&gt; data send -&gt; data recieve -&gt; socket close 형태로 그중 데이터가 http 프로토콜일 뿐이고 모듈(브라우저)들이 오픈 클로즈를 자동으로 해줄 뿐이다..</p>
+  </li>
+</ol>
+
+<blockquote>
+  <p>한 서버 업체는 http 규격서를 보내줘서 회사에서 맞춘 적이 있다.  <br />
+http method도 없는 모뎀이라 http header body(쌩 텍스트. 데이터 간격은 캐리지 리턴으로 구분)를 만들어서 POST로 보낸 것이다.  <br />
+규격서에서 놀라운 것은 Ack였는데 json은 기대도 안했지만 http 기본 ‘200 OK’를 보낸다는 사실!(당연히 403 이런것도… 서버 입장에서는 은근 괜찮은데? :D)</p>
+</blockquote>
+
+<hr />
+
+<p>웹서버, 스트링파서등이 처리해주는 것들을 이용하는 것이 제일 좋은 방법이지만 결국엔 스트링이라하는 것은 바이트 덩어리일 뿐이다.</p>
+
+<blockquote>
+  <p>string 이라는 사전적의미가 끈 이고 그냥 연결되어 있다는 것이다.(바이트들이)</p>
+</blockquote>
+
+<p>네이티브 통신의 개념을 알고 라이브러리를 가져다 써야 적절한 곳에서 사용이 가능할 것이다.</p>
+
+<p>그래서 정리도 할겸 내가 생각하는 통신에 대해 자료로 만들어 보기로 결정했다.</p>
+
+<h3 id="통신">통신?</h3>
+
+<p>내가 서버, 장비, 모바일등 관심을 가지고 뭐든 쉽게 접근하고 만들 수 있는 이유는 모두 통신이 기반이다.</p>
+
+<p>운 좋게도 나름 통신의 기초 부터 했기 때문에 단순한 원리는 알고 있다.</p>
+
+<p>프로그램에 입문 전에 제일 궁금한 했던 것은 채팅창에서 “ABCD”를 전송하면 다른 사람이 “ABCD”를 어떻게 받을 것인지였다.</p>
+
+<p>바이너리 통신이 바이트 통신으로 많이 알고 있지만.. 맞지도 틀리지도 않은 답이다..</p>
+
+<p>실제 바이너리 통신의 뜻은 이진 통신이란 것이다. 다양한 물리적 신호(대표적인게 전기일 뿐이며 최근 박테리아로도 구현했다고 하더라는..)로 0과1을 표현해 전송할 뿐이다.</p>
+
+<p>010101010100001…. 랜이든 블루투스든 와이파이든 이런 형태로 올 뿐인데 리시버들이 알아듣는 최소가 바이트라 채워서 알아들을 뿐인 것이다.</p>
+
+<p>실제로 “ABCD”는 아래와 같은 형태로 오는 것이다.</p>
+
+<p><img src="/images/comm/1.png" alt="alt image" /></p>
+
+<blockquote>
+  <p>직접 엑셀로 그려봤다 :/<br />
+실제 데이터를 보내면서 파형을 오실로스코프로 보면 이해가 빠르다.</p>
+</blockquote>
+
+<p>RS-232(Serial) 한 비트가 속도에 따라 판단하기 때문에 속도가 안맞으면 당연히 115200bps, 9600bps 마다 다른 데이터로 판단이 되어지는 것이다</p>
+
+<p>노이즈등에도 상당히 취약하다.</p>
+
+<p>비트 한번 튀면 ‘A’ 가 ‘C’로 변할 수 있기 때문에 프로토콜에는 꼭 checksum, crc 등으로 유효성 판단을 해야한다.</p>
+
+<p>i2c, spi는 비슷하지만 속도가 아닌 클럭과의 동기를 보고 데이터를 판단하는 정도다.</p>
+
+<h3 id="결론">결론</h3>
+
+<p>오랫동안 다양한 통신을 경험했지만..</p>
+
+<p>엄청나게 복잡해 보이는 통신 방식도 결국엔 이진데이터 처리를 위한 물리적인 장비(lan,wifi,bluetooth,232,spi,smb,etc…)와 프로토콜(modbus,http,ftp,ssh,etc…) 즉 약속만 있으면 되는 것이다.</p>
+
+<p>한바이트 송/수신 만 확인 되면 비즈니스 로직 구현은 자연스럽게 이어진다..</p>
+
+<blockquote>
+  <p>eg) putchar(d) -&gt; putstring(s) -&gt; printp(…) -&gt; streamp()</p>
+</blockquote>
+
+<p>어떤 통신이든 한바이트가 중요한 것이다..</p>
+
+<p><strong>다음 <a href="/comm-2/">2편 : Communication(통신) 2. Protocol</a></strong></p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fa fa-fw fa-tags" aria-hidden="true"></i> 태그: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="http://localhost:4000/tags/#communication" class="page__taxonomy-item" rel="tag">communication</a><span class="sep">, </span>
+    
+      
+      
+      <a href="http://localhost:4000/tags/#idea" class="page__taxonomy-item" rel="tag">idea</a><span class="sep">, </span>
+    
+      
+      
+      <a href="http://localhost:4000/tags/#talk" class="page__taxonomy-item" rel="tag">talk</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fa fa-fw fa-folder-open" aria-hidden="true"></i> 카테고리: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="http://localhost:4000/categories/#communication" class="page__taxonomy-item" rel="tag">communication</a>
+    
+    </span>
+  </p>
+
+
+        
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> 업데이트:</strong> <time datetime="2017-07-16T00:00:00+09:00">July 16, 2017</time></p>
+        
+      </footer>
+
+      
+
+      
+  <nav class="pagination">
+    
+      <a href="http://localhost:4000/idea/again-1/" class="pagination--pager" title="Again posting
+">이전</a>
+    
+    
+      <a href="http://localhost:4000/communication/comm-2/" class="pagination--pager" title="Communication(통신) 2. Protocol
+">다음</a>
+    
+  </nav>
+
+    </div>
+
+    
+      <div class="page__comments">
+  
+    
+        <h4 class="page__comments-title">댓글남기기</h4>
+        <section id="disqus_thread"></section>
+      
+</div>
+    
+  </article>
+
+  
+  
+</div>
+
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>팔로우:</strong></li>
+    
+    
+      <li><a href="https://twitter.com/fkkmemi"><i class="fa fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+    
+    
+      <li><a href="https://facebook.com/fkkmemi"><i class="fa fa-fw fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
+    
+    
+    
+    
+    <li><a href="http://localhost:4000/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> 피드</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2017 fkkmemi. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    <script src="http://localhost:4000/assets/js/main.min.js"></script>
+
+
+
+
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-93372301-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+
+  
+      
+  <script type="text/javascript">
+  	/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+  	var disqus_shortname = 'fkkmemi';
+
+  	/* * * DON'T EDIT BELOW THIS LINE * * */
+  	(function() {
+  		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+  		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  	})();
+
+  	/* * * DON'T EDIT BELOW THIS LINE * * */
+  	(function () {
+  		var s = document.createElement('script'); s.async = true;
+  		s.type = 'text/javascript';
+  		s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+  		(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+  	}());
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+    
+
+
+
+  </body>
+</html>
