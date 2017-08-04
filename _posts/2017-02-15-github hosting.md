@@ -6,6 +6,8 @@ tag: [web, github]
 comments: true
 ---
 
+{% include toc %}
+
 ## 개요
 
 github를 이용해 무료로 블로그를 운영할 수 있다는 소식을 듣고 찾아보았다.

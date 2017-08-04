@@ -6,6 +6,8 @@ tag: [database, mongo]
 comments: true
 ---
 
+{% include toc %}
+
 ## 개요
 
 Mongodb는 분명히 좋은 백업 솔루션이 있겠지만..

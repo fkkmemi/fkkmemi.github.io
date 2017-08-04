@@ -6,6 +6,8 @@ tag: [mctc, gsm, talk]
 comments: true
 ---
 
+{% include toc %}
+
 ## 개요
 
 해외에 디바이스를 팔려면 팔 곳에 가서 만들고 테스트하면 되지만..

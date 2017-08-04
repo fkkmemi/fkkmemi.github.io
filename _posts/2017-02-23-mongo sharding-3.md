@@ -8,6 +8,8 @@ sidebar:
   nav: "mongos"
 ---
 
+{% include toc %}
+
 ## 개요
 
 configsvr 권장 3세트와 shardsvr를 더 추가해서 수평확장(scale-out)이 잘 이루어지는지 확인

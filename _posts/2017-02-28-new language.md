@@ -6,6 +6,8 @@ tag: [talk]
 comments: true
 ---
 
+{% include toc %}
+
 ## 과거엔...
 
 나는 어쩌다 보니 몇가지 언어를 쓰고 있게 되었다..

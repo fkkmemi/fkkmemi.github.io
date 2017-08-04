@@ -6,6 +6,8 @@ tag: [server, node, mongo]
 comments: true
 ---
 
+{% include toc %}
+
 ## 개요
 
 서버를 구성할 때 가장 유의해야할 것은 유지보수라고 할 수 있다.

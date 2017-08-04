@@ -8,6 +8,8 @@ sidebar:
   nav: "mongos"
 ---
 
+{% include toc %}
+
 ## 개요
 
 원리는 만들어 놓았던 shardsvr들에 연결하기 위해 router를 통해야하는데 그 config meta 정보를 configsvr에 담는 것이다.
