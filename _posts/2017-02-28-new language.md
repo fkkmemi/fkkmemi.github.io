@@ -1,8 +1,8 @@
 ---
 layout: single
 title: New language
-category: idea
-tag: [idea, talk]
+category: talk
+tag: [talk]
 comments: true
 ---
 

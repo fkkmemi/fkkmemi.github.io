@@ -56,3 +56,13 @@ mongos:
         url: /mongodb/mongo-sharding-2/
       - title: "3. 서버 확장"
         url: /mongodb/mongo-sharding-3/
+
+categories:
+  - title: Notes
+    children:
+      - title: Commnunication
+        url: /communication/comm-1/
+      - title: NEMV
+        url: /nemv/nemv-1/
+      - title: MongoDB Sharding
+        url: /mongodb/mongo-sharding-1/

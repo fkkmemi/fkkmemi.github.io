@@ -3,6 +3,8 @@ layout: single
 title: "Links"
 permalink: /links/
 author_profile: true
+sidebar:
+  nav: categories
 --- 
 
 **node.js**

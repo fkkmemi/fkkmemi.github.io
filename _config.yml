@@ -7,8 +7,8 @@
 
 # Site Settings
 locale                   : "ko"
-title                    : "fkkmemi.notes"
-title_separator          : "-"
+title                    : "fkkmemi.notes | dev.logs --save"
+title_separator          : "|"
 name                     : "fkkmemi"
 description              : "dev.logs --save"
 url                      : "https://fkkmemi.github.io"
