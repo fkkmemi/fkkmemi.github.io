@@ -57,6 +57,16 @@ mongos:
       - title: "3. 서버 확장"
         url: /mongodb/mongo-sharding-3/
 
+npm:
+  - title: npm
+    children:
+      - title: "1. intro"
+        url: /npm/npm-intro/
+      - title: "2. pug"
+        url: /npm/npm-pug/
+      - title: "3. geoip"
+        url: /npm/npm-geoip/
+
 categories:
   - title: Notes
     children:
@@ -66,3 +76,5 @@ categories:
         url: /nemv/nemv-1/
       - title: MongoDB Sharding
         url: /mongodb/mongo-sharding-1/
+      - title: npm
+        url: /npm/npm-intro/
