@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "ko"
-title                    : "fkkmemi.notes | dev.logs --save"
+title                    : "memi.notes --save"
 title_separator          : "|"
 name                     : "fkkmemi"
 description              : "dev.logs --save"
