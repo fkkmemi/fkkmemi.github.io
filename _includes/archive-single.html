@@ -39,7 +39,7 @@
     <p class="archive__item-excerpt" itemprop="description">
       {{ post.content | markdownify | strip_html | truncate: 160 }}
       &nbsp;
-      <a href="{{ site.baseurl }}{{ post.url }}#disqus_thread" class="read-more">Comments</a>
+      <a href="{{ site.baseurl }}{{ post.url }}#disqus_thread" class="read-more btn btn-info btn-xs">Comment</a>
     </p>{% endif %}
   </article>
 </div>
