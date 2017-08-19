@@ -73,10 +73,18 @@ categories:
   - title: Notes
     children:
       - title: Commnunication
-        url: /communication/comm-1/
+        url: /categories/#communication
       - title: NEMV
-        url: /nemv/nemv-1/
+        url: /categories/#nemv
       - title: MongoDB Sharding
-        url: /mongodb/mongo-sharding-1/
+        url: /categories/#mongodb
       - title: npm
-        url: /npm/npm-intro/
+        url: /categories/#npm
+      - title: javascript
+        url: /categories/#javascript
+      - title: github
+        url: /categories/#github
+      - title: server
+        url: /categories/#server
+      - title: talk
+        url: /categories/#talk
