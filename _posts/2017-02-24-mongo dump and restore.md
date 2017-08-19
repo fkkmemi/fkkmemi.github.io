@@ -12,6 +12,8 @@ Mongodb는 분명히 좋은 백업 솔루션이 있겠지만..
 
 crontab 등으로 매 일 자정에 다른 서버에 덤프를 해놓는 것이 목표..
 
+{% include toc %}
+
 ## 사용
 
 다양한 방법으로 자료를 백업, 복구 할 수 있다..
@@ -50,4 +52,3 @@ mongorestore -v --host localhost:27017 /data/bk --objcheck
 
 Mongo backup 솔루션이 훌륭한 게 있을텐데 고전적인 방법 밖에 쓸 수 밖에 없는 안타까운 현실
 
-{% include toc %}

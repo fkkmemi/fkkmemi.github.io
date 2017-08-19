@@ -13,6 +13,8 @@ sidebar:
 > 대략 이런 구성이라고 보면 된다  
 client -> router -> configsvr -> shards[?] 
 
+{% include toc %}
+
 ## 구성
 
 ### configsvr
@@ -185,5 +187,3 @@ stackoverflow.com등의 정보는 고맙지만 배껴 쓰고 더 혼란이 가�
 특히 deprecated 된 항목이 많아서 갱신된 최신 레퍼런스 매뉴얼을 참고해야한다..
 
 > nodejs를 할꺼면 nodejs.org, mongo를 할꺼면 mongodb.com, android를 할꺼면 google.com, angularjs를 할꺼면 angularjs.org
-
-{% include toc %}

@@ -14,6 +14,8 @@ comments: true
 
 모니터링 시스템을 구성하기 위한 scale-out 서버 설정을 직접해보도록 하겠다.
 
+{% include toc %}
+
 ## 구성도
 
 ![alt sys](/images/monitoring_system/1.png)
@@ -154,5 +156,4 @@ lb가 제일 중요한 타겟 서버 아이피를 가져야되기 때문이다.
 
 아무래도 단순하게 접근하기에는 aws보다는 훨씬 설정이 간편하게 느껴진다. 
 
-{% include toc %}
 

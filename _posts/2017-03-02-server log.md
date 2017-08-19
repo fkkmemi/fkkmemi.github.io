@@ -12,6 +12,8 @@ comments: true
 
 서버 로깅을 통해 어떤 공격들이 있는지 기록해본다.
 
+{% include toc %}
+
 ## Log
 
 - phpmyadmin 공격  
@@ -37,5 +39,3 @@ comments: true
 [2017-3-8]
 
 ![alt sys](/images/server_log/3.png)
-
-{% include toc %}

@@ -14,6 +14,8 @@ id.github.io -> xxx.com 로 접속되게 가능하다.
 
 > [godaddy.com](https://godaddy.com) 도메인이 있기 때문에 이 기준으로 설정해보겠다.
 
+{% include toc %}
+
 ## 사용
 
 ### 1. cname change
@@ -55,4 +57,3 @@ fkkmemi.com.		3600	IN	A	192.30.252.153
 
 아직 ssl setting을 안해서 id.github.io 가 더 있어보이기 때문에 쓰고 싶진 않다.
 
-{% include toc %}

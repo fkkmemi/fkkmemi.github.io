@@ -25,6 +25,8 @@ comments: true
 
 해당 페이지 : [https://www.google.com/recaptcha](https://www.google.com/recaptcha) 에 너무 잘나와 있어서 리뷰하기도 시간낭비지만 까먹을까봐 기록해본다.
 
+{% include toc %}
+
 ## 사용
 
 구글 계정으로 로그인하여 절차대로 따라하면 붙힐 수 있게 코드조각까지 준다.
@@ -63,5 +65,3 @@ if(g.length === 0) return alert('로봇이 아닙니다를 체크해주세요');
 깔끔하고 좋긴한데 가끔 문제 난이도가 높고 3,4회 이상 재도전하라고 하면 짜증이 난다.
 
 다음엔 invisible recaptcha를 사용해보겠다.
-
-{% include toc %}
