@@ -6,10 +6,6 @@ tag: [server]
 comments: true
 ---
 
-{% include toc %}
-
-## 개요
-
 서버를 구성하여 러닝 시키는 것은 간단하지만 운영과 유지보수가 어려운데, 그 이유중 하나가 보안이다.
 
 클라이언트와 달리 서버는 늘 정적인 어딘가에 위치하고 있기 때문에 침입자들은 다양한 시도를 하며 서버의 정보를 탈취하려고 한다.
@@ -41,3 +37,5 @@ comments: true
 [2017-3-8]
 
 ![alt sys](/images/server_log/3.png)
+
+{% include toc %}

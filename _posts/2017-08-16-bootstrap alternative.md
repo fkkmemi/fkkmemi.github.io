@@ -6,8 +6,6 @@ tag: [talk]
 comments: true
 ---
 
-{% include toc %}
-
 ## bootstrap vs
 
 한동안 vue.js 파느라 즐거웠다.
@@ -47,3 +45,5 @@ bootstrap의 class 작명이 이제 겨우 버튼 정도만 눈감고 작성이 
 슬프지만 내 수준에서는 jquery랑 같이 쓸 수 밖에 없다. 
 
 > 시간이 남아 돌면 한번 파보겠지만.. 내년을 기약해야할 듯 
+
+{% include toc %}

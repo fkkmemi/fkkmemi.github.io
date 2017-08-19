@@ -6,10 +6,6 @@ tag: [database, mongo]
 comments: true
 ---
 
-{% include toc %}
-
-## 개요
-
 Mongodb는 분명히 좋은 백업 솔루션이 있겠지만..
 
 아직 습득하지 못했기 때문에.. 기초적인 방법으로 백업을 받고 복구 하는 방법에 대해 알아보겠다..
@@ -54,4 +50,4 @@ mongorestore -v --host localhost:27017 /data/bk --objcheck
 
 Mongo backup 솔루션이 훌륭한 게 있을텐데 고전적인 방법 밖에 쓸 수 밖에 없는 안타까운 현실
 
-점수 8점
+{% include toc %}

@@ -8,10 +8,6 @@ sidebar:
   nav: "mongos"
 ---
 
-{% include toc %}
-
-## 개요
-
 configsvr 권장 3세트와 shardsvr를 더 추가해서 수평확장(scale-out)이 잘 이루어지는지 확인
 
 ## 구성
@@ -207,3 +203,5 @@ arbiter 설정도 해야하고, 백업 플랜도 짜야하지만...
 여기까지 하고 이제 화려한 front-end로 넘어가야할 시기인 것 같다..
 
 > 더 파면 가성비가 안나온다..
+
+{% include toc %}

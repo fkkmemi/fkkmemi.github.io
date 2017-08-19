@@ -6,10 +6,6 @@ tag: [talk]
 comments: true
 ---
 
-{% include toc %}
-
-## 과거엔...
-
 나는 어쩌다 보니 몇가지 언어를 쓰고 있게 되었다..
 
 펌웨어를 다뤄야했기 때문에 C를 배우면서 수년이 흘러서야 포인터, 링버퍼 큐등을 자의로 원하는 곳에쓸 수 있었다..
@@ -183,3 +179,4 @@ MongoClient.connect('localhost', function(err,db) {
 
 알고 있는 언어에 맞추면 안되고 필요한 언어에 맞춰야 한다.. 
 
+{% include toc %}
