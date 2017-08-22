@@ -47,11 +47,27 @@ script를 추가만하면 전역변수 **grecaptcha** 를 사용할 수 있는�
 let g = grecaptcha.getResponse();
 
 if(g.length === 0) return alert('로봇이 아닙니다를 체크해주세요');
-
 ```
-
 코드대로 체크 안되어 있으면 내용이 없기 때문이다.
 
+### 로컬 테스트
+
+해당 도메인에서 밖에 테스트가 안되는데..
+
+요즘 세상에 ftp로 서버소스를 손봐가며 테스트 할 수 없는 노릇이라
+
+로컬 테스트 완료 후 디플로이하려면 테스트 키 확인해보도록 한다..
+
+공식 테스트 키
+
+- Site key: 6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI
+- Secret key: 6LeIxAcTAAAAAGG-vFI1TnRWxMZNFuojJ4WifJWe
+
+하지만 그림 문제가 팝업이 안되서 제대로 적용하려면 역시 해당 도메인에서 해야한다.
+
+아래 링크에 더 자세한 내용이 있다.
+
+[https://developers.google.com/recaptcha/docs/faq](https://developers.google.com/recaptcha/docs/faq)
 
 **팝업 모습**  
 ![alt rc](/images/javascript/3.png)
