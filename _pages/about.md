@@ -1,10 +1,17 @@
 ---
-layout: single
+layout: splash
 permalink: /about/
 title: "About"
-author_profile: true
-sidebar:
-  nav: categories
+author_profile: false
+---
+
+![alt fkkmemi](https://s.gravatar.com/avatar/fb8e318ec64f25e2bef47a26dde12270?s=80){: .align-left}
+새로운 도전을 좋아하기 때문에 개발 스펙트럼이 넓고 얕습니다. :/  
+개발자는 언제든 문의 주세요.  
+환영입니다.
+{: .notice--info}
+
+
 ---
 
 ```javascript
@@ -13,7 +20,7 @@ let me = {
         name : 'memi',
         email : 'fkkmemi@gmail.com',
         company : 'LOOP',
-        page : [
+        pages : [
             'https://fkkmemi.github.io',
             'http://fkkmemi.com'
         ]
@@ -22,36 +29,36 @@ let me = {
         git : {
             url : 'https://github.com/fkkmemi',
             repo : {
-                private : [],
-                public : []
+                privates : [],
+                publics : []
             }           
         },
         web : {
-            backend : [
+            backends : [
                 'node.js',
                 'express.js',
                 'php'
             ],
-            frontend : [
+            frontends : [
                 'vue.js',
                 'jquery',
                 'bootstrap',
                 'pug/jade',
                 'jekyll'
             ],
-            tool : [
+            tools : [
                 'webstorm',
                 'bash terminal'
             ]
         },
-        database : [
+        databases : [
             { 
                 name : 'mongodb',
-                tool : 'mongobooster 3.2'
+                tool : 'mongobooster 4'
             },
             {
                 name : 'mariadb(mysql)',
-                tool : [
+                tools : [
                     'sequel Pro',
                     'heidiSQL',
                     'razorSQL'
@@ -62,7 +69,7 @@ let me = {
                 tool : 'inApp'
             }
         ],
-        desktop : [
+        desktops : [
             {
                 name : 'window application',
                 tool : 'c++builder6,XE4,XE7'
@@ -70,18 +77,26 @@ let me = {
             {
                 name : 'nw.js : multi platform application',
                 tool : 'webstorm'
-            }    
+            } ,
+            {
+                name : 'electron : multi platform application',
+                tool : 'webstorm'
+            }      
         ],
-        mobile : [
+        mobiles : [
             { 
-                name : 'android',
+                name : 'android app',
                 tool : 'android studio'
+            },
+            {
+                name : 'iOS app',
+                tool : 'xcode'
             }
         ],
-        embedded : [
+        embeddeds : [
             {
                 name : 'ARTIK',
-                tool : [
+                tools : [
                     'webstorm',
                     'bash terminal'
                 ]
@@ -95,22 +110,23 @@ let me = {
                 tool : 'coolterm'
             }
         ],
-        language : [
+        languages : [
             'c/c++',
+            'delphi',
             'javascript',
             'java',
             'markdown',
             'liquid',
             'python'
         ],
-        weapon : [
+        weapons : [
             'Macbook Pro touchbar 13',
             'iMac 21',
             'Macbook 13'        
         ]
     },
     project : {
-        private : [
+        privates : [
             {
                 name : 'lw',
                 url : 'hidden',
@@ -170,11 +186,13 @@ let me = {
                 }
             }          
         ],
-        public : [
+        publics : [
             //as soon
         ]
     
     },
-    hobby : null
+    hobbies : [
+        'dev'
+    ]
 }
 ```

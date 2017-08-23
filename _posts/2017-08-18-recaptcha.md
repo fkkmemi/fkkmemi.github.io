@@ -1,5 +1,4 @@
 ---
-layout: single
 title: recaptcha
 category: javascript
 tag: [javascript]

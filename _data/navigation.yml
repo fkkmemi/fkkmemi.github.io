@@ -1,7 +1,7 @@
 # main links
 main:
   - title: "Recent"
-    url: /
+    url: /recent/
   - title: "Categories"
     url: /categories/
   - title: "Tags"
@@ -73,18 +73,18 @@ categories:
   - title: Notes
     children:
       - title: Commnunication
-        url: /categories/#communication
+        url: /communication/comm-1/
       - title: NEMV
-        url: /categories/#nemv
+        url: /nemv/nemv-1/
       - title: MongoDB Sharding
-        url: /categories/#mongodb
+        url: /mongodb/mongo-sharding-1/
       - title: npm
-        url: /categories/#npm
-      - title: javascript
-        url: /categories/#javascript
-      - title: github
-        url: /categories/#github
-      - title: server
-        url: /categories/#server
-      - title: talk
-        url: /categories/#talk
+        url: /npm/npm-intro/
+#      - title: javascript
+#        url: /categories/#javascript
+#      - title: github
+#        url: /categories/#github
+#      - title: server
+#        url: /categories/#server
+#      - title: talk
+#        url: /categories/#talk

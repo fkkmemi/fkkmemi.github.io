@@ -1,5 +1,4 @@
 ---
-layout: single
 title: jquery validate
 category: javascript
 tag: [javascript, jquery, form]
