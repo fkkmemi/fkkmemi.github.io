@@ -296,8 +296,10 @@ $(function() {
                 success: function (res) {
                     if(res.status === 'OK') {
                         $("#smart-form-register").addClass('submited');
-                        location.href = '/';
-                        //location.reload();
+                        setTimeout(function() {                          
+                            location.href = '/'; //가입되었다라고 표시 후 넘어감.. ->모양을 위해
+                            //location.reload();
+                        },1500)
                     }
                     else {
                         return pop('Error', res.msg, false, 4000);
