@@ -8,7 +8,8 @@ author_profile: false
 ![alt fkkmemi](https://s.gravatar.com/avatar/fb8e318ec64f25e2bef47a26dde12270?s=80){: .align-left}
 새로운 도전을 좋아하기 때문에 개발 스펙트럼이 넓고 얕습니다. :/  
 개발자는 언제든 문의 주세요.  
-환영입니다.
+지식 공유는 언제나 환영입니다.  
+디자인때문에 한라인 더 넣습니다..
 {: .notice--info}
 
 
