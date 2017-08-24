@@ -2,7 +2,7 @@
 layout: archive
 title: "Portfolio"
 permalink: /portfolio/
-author_profile: false
+author_profile: true
 ---
 
 <div class="grid__wrapper">
