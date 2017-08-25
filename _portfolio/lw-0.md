@@ -1,6 +1,6 @@
 ---
-title: "LW Beta"
-excerpt: "LOOP Web"
+title: "LW(LOOP Web) Beta"
+excerpt: "처음 웹을 시작할 때"
 author_profile: false
 header:
   teaser: /images/pf/lwb/2.png
@@ -8,13 +8,14 @@ sidebar:
   - title: "Date"
     text: "10.2015"
   - title: platform
-    text: "**Web server** : IIS<br>
+    text: "**Server** : cloud vm Window2012<br>
+    **Web server** : IIS<br>
     **Communcation server** : Window Application<br>
     **Server script** : PHP<br>
     **Database** : MySQL<br>
     **Raw data** : File<br>
-    **front-end** : html only<br>
-    **device** : DTG, GPS-tracker<br>"
+    **front-end** : html<br>
+    **devices** : DTG, GPS-tracker<br>"
 gallery:
   - url: /images/pf/lwb/1.png
     image_path: /images/pf/lwb/1.png
@@ -47,18 +48,18 @@ apache,php,javascript만 좀 다루면 목표에 접근할 것 같았다.
 
 {% include toc %}
 
-## 개발
+## 개요
 
 처음부터 제대로 할 리는 없다...
 
 시행착오의 연속에서 경험을 얻고 특성을 이해해야 비로소 다음 스테이지로 갈 수 있다.
 
-### 웹서버
+## 웹서버
 
 아파치를 깔고 싶었다.. 웬지 그래야 될 것 같아서... 하지만 굳이 윈도우서버인데 IIS를 쓰면 될 것 같았다.  
 IIS서버 구동 후 루트에 default.htm 에 '헬로' 쓰고 마무리.
 
-### PHP
+## PHP
 
 #### 설치
 
@@ -77,15 +78,15 @@ IIS서버 구동 후 루트에 default.htm 에 '헬로' 쓰고 마무리.
 ```javascript
 if($session.uid == 'admin' && $session.pwd == '1111122222') else if (session.u...
 ```  
-데이터베이스에 id,pwd 딱 두개의 컬럼의 user라는 테이블을 만들고 php로 읽기/쓰기가 되는지 확인 끝.
+데이터베이스에 id,pwd 딱 두개의 컬럼의 users라는 테이블을 만들고 php로 읽기/쓰기가 되는지 확인 끝.
 
 #### html
 
-아는 거라고는 body table tr td p a 정도가 전부였는데  
+아는 거라고는 body table tr td p a 정도였는데  
 table과 a를 사용하여 메뉴를 만들었다.  
 문제는 모든 페이지마다 똑같은 top 내용이 하나 바뀔때마다 몇개의 파일을 수정해야했는데 include top의 방법을 알아내고 기뻤다.. :) 
 
-### javascript
+## javascript
 
 GET요청 파라메터로 php렌더링을 해버렸기 때문에 항상 페이지 리프레쉬 상태라 깊게 들어갈 필요는 없었지만...  
 하면 할 수록 거를 수 없는 것이었다..   
@@ -112,7 +113,7 @@ GET요청 파라메터로 php렌더링을 해버렸기 때문에 항상 페이�
 
 처음엔 취미로 했었는데..  
 마침 외국관제사업이 시작되었다..  
-외주업체를 써서 작업을 하는데 시간적이 너무 오래 걸려 모두 걱정이 될 무렵..
+외주업체를 써서 작업을 하는데 시간이 너무 오래 걸려 모두 걱정이 될 무렵..
 
 '짜잔' 하고 이런 정도는 시험삼아 해봤습니다.. 라고 보여주었다.  
 
