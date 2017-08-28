@@ -4,6 +4,8 @@ main:
     url: /recent/
   - title: "Portfolio"
     url: /portfolio/
+  - title: "Docs"
+    url: /docs/
   - title: "Categories"
     url: /categories/
   - title: "Tags"
@@ -80,3 +82,10 @@ categories:
 #        url: /categories/#server
 #      - title: talk
 #        url: /categories/#talk
+
+# documentation links
+docs:
+  - title: documents
+    children:
+      - title: "Variable definition"
+        url: /docs/variable-definition/
