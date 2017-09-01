@@ -136,7 +136,7 @@ reboot //시작시 잘 마운트 되는지 확인
 
 [https://docs.mongodb.com/manual/tutorial/install-mongodb-on-red-hat/](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-red-hat/)
 
-> 이런건 항상 공식사이트의 레러런스대로 하는게 좋다.. 괜히 한글 사이트 찾아서 쉽게 해보려다가 더 나락으로 떨어질 수 있다. 
+> 이런건 항상 공식사이트의 레퍼런스대로 하는게 좋다.. 괜히 한글 사이트 찾아서 쉽게 해보려다가 더 나락으로 떨어질 수 있다. 
 
 ```text
 vi /etc/yum.repos.d/mongodb-org-3.4.repo //repo에 아래 내용 추가
