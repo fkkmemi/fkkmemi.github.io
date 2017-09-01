@@ -62,6 +62,8 @@ npm:
         url: /npm/npm-pug/
       - title: "3. geoip"
         url: /npm/npm-geoip/
+      - title: "4. del"
+        url: /npm/npm-del/
 
 categories:
   - title: Notes
