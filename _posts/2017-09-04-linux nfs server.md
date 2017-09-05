@@ -99,7 +99,7 @@ CentOS 7 환경에서 설치
 **자동 마운트**
 ```text
 #vi /etc/fstab
-192.168.0.33:/data/nfs /data/xxx   nfs     hard    0 0
+192.168.0.33:/data/nfs /data/xxx   nfs     default    0 0
 ```
 
 ## 결론
