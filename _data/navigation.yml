@@ -68,22 +68,30 @@ npm:
 categories:
   - title: Notes
     children:
+#      - title: Commnunication
+#        url: /communication/comm-1/
+#      - title: NEMV
+#        url: /nemv/nemv-1/
+#      - title: MongoDB Sharding
+#        url: /mongodb/mongo-sharding-1/
+#      - title: npm
+#        url: /npm/npm-intro/
       - title: Commnunication
-        url: /communication/comm-1/
+        url: /categories/#communication
       - title: NEMV
-        url: /nemv/nemv-1/
+        url: /categories/#nemv
       - title: MongoDB Sharding
-        url: /mongodb/mongo-sharding-1/
+        url: /categories/#mongodb
       - title: npm
-        url: /npm/npm-intro/
-#      - title: javascript
-#        url: /categories/#javascript
-#      - title: github
-#        url: /categories/#github
-#      - title: server
-#        url: /categories/#server
-#      - title: talk
-#        url: /categories/#talk
+        url: /categories/#npm
+      - title: javascript
+        url: /categories/#javascript
+      - title: github
+        url: /categories/#github
+      - title: server
+        url: /categories/#server
+      - title: talk
+        url: /categories/#talk
 
 # documentation links
 docs:
