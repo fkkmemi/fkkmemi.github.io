@@ -68,7 +68,7 @@ module.exports = {
         // url : 'mongodb+srv://id:pwd@cluster0-xxx.net/yyy' // 3.6이상
     },    
     web: {
-      // 추후 http, https, port등 지
+      // 추후 http, https, port등 
     },
 };
 ```
@@ -80,10 +80,45 @@ module.exports = {
 ```javascript
 const mongoose = require('mongoose');
 const cfg = require('./cfg/cfg');
+
+if (!cfg) {
+  console.error('./cfg/cfg.js file not exists');
+  process.exit(1);
+}
+
 mongoose.connect(cfg.db.url, (err) => {
   if (err) return console.error(err);
   console.log('mongoose connected');
 });
 ```
+cfg 파일이 없을 경우에 대한 예외 처리를 해준다. 
 
 커넥션 풀은 한번 연결하면 매번 연결 종료가 필요 없으며 장시간 미연결시 끊어지지만 요청에 의해 쿼리가 들어가면 자동 연결된다.
+
+- README.md 작성  
+    cfg.js 파일은 git에 없기 때문에 분명 까먹는다. [마크다운](/github/markdown/) 문법도 익힐겸 작성해놓는다.
+    
+```markdown
+# nembv
+Node Express Mongo Bootstrap Vue Stack
+
+## config file definition
+
+**cfg/cfg.js**
+
+```javascript
+module.exports = {
+  db: {
+    url: 'mongodb://nembv:비밀번호@cluster0-xxx.mongodb.net:27017,cluster0-xxx.mongodb.net:27017,cluster0-xxx.mongodb.net:27017/nembv?ssl=true&replicaSet=Cluster0-xxx&authSource=admin',
+    // url : "mongodb://xxx.com:27170/xxx"
+    // url : 'mongodb+srv://id:pwd@cluster0-xxx.net/yyy' // 3.6이상
+  },
+  web: {
+    // 추후 http, https, port등 
+  },
+};
+```
+
+``` 
+
+
