@@ -1,6 +1,6 @@
 ---
 layout: single
-title: NEMBV 8 Database setting
+title: NEMBV 6 Database setting
 category: nembv
 tag: [nembv,mongodb,atlas]
 comments: true
