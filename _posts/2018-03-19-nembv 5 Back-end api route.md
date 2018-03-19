@@ -182,7 +182,7 @@ router.all('*', (req, res) => {
 module.exports = router;
 ```  
 
-> 사실 나도 처음에는 api.js 하나에 다 때려 박고 작업을 했었다...
+> 사실 나도 처음에는 api.js 하나에 다 때려 박고 작업을 했었다... 결국 위의 방법은 추천하지 않는다..
 
 ### uri 테스트
 
@@ -199,9 +199,9 @@ localhost:3000/api/test/hello2/plz 등은 404로 안내해줌을 알 수 있다.
 내부오류라 함은 예를 들어 파일을 읽어서 응답을 주려다 파일이 깨진 경우등이 될 수 있다.
 
 ```javascript
-router.get('/test/hello/plz', (req, res) => {
+exports.plz = (req, res) => {
   throw new Error('서버가 이상함');
-  res.send({ success: true, msg: '여기까지 오느라 쉬웠지만 index.js가 더러워지겠죠?' });
+  res.send({ success: true, msg: '여기까지 오느라 힘들었죠?' });
 });
 module.exports = router;
 ```   
