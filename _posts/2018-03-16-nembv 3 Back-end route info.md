@@ -1,8 +1,8 @@
 ---
 layout: single
-title: NEMBV Back-end route 이해
+title: NEMBV 3 Back-end route 이해
 category: nembv
-tag: [nembv,express,node,pug]
+tag: [nembv,express,nodejs,pug]
 comments: true
 ---
 

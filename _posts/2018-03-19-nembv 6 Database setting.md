@@ -1,14 +1,14 @@
 ---
 layout: single
-title: NEMBV Database setting
+title: NEMBV 8 Database setting
 category: nembv
-tag: [nembv,express,mongo]
+tag: [nembv,mongodb,atlas]
 comments: true
 ---
 
-이제 실제 데이터베이스를 이용해 api와의 연동을 해보도록하겠다.
+이제 api와의 연동할 MongoDB를 세팅 해보도록하겠다.
 
-그러려면 mongoDB가 필요한데 사용중인 디비가 있다면 다음 챕터로 이동. 
+이미 사용중인 디비가 있다면 다음 챕터로 이동. 
 
 mongoDB를 이용할 것인데 무거운 디비를 로컬에 까는 것 보다는 무료 호스팅 서버를 이용하도록 하겠다.
 

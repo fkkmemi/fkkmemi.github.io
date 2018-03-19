@@ -1,6 +1,6 @@
 ---
 layout: single
-title: NEMBV Front-end Setup
+title: NEMBV 2 Front-end Setup
 category: nembv
 tag: [nembv,bootstrap,vue]
 comments: true
