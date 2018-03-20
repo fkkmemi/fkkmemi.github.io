@@ -499,3 +499,29 @@ export default {
 
 **출력 화면**  
 ![테스트페이지 2](/images/nembv/2018-03-20 14-42-19 fe.png)
+
+### bootstrap mobile
+
+bootstrap의 장점중 제일 중요한 것은 모바일 지원인데
+
+모바일 지원을 위해서는 기본 골격 meta tag에 viewport를 추가해야한다.
+
+**fe/index.html**  
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>nembv project</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
+```
+
+**추가후 모바일 화면**  
+![테스트페이지 3](/images/nembv/2018-03-20 16-15-36 nembv project.png)
