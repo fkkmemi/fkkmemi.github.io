@@ -99,3 +99,5 @@ docs:
     children:
       - title: "Variable definition"
         url: /docs/variable-definition/
+      - title: "CentOS7 VM Setup"
+        url: /docs/centos7-vm-setup/
