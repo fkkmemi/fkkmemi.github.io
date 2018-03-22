@@ -102,7 +102,7 @@ analytics:
 author:
   name             : "fkkmemi"
   avatar           : "https://s.gravatar.com/avatar/fb8e318ec64f25e2bef47a26dde12270?s=80" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "github page fixing..."
+  bio              : "vue studying..."
   #location         : "Somewhere"
   email            : "fkkmemi@gmail.com"
   #uri              : "http://fkkmemi.com"
@@ -110,7 +110,7 @@ author:
   codepen          :
   dribbble         :
   flickr           :
-  facebook         : # "fkkmemi"
+  facebook         : "fkkmemi"
   foursquare       :
   github           : "fkkmemi"
   gitlab           :
