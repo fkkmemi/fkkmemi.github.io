@@ -69,13 +69,15 @@ $ npm i fontawesome-markers --save
 ```javascript
 module.exports = {
   path: {
-    // api : '/api/', // npm run build 용
-    api: 'http://localhost:3000/api/', // npm run dev 용
+    api : '/api/', // npm run build 용
+    // api: 'http://localhost:3000/api/', // npm run dev 용
   },
 };
 ```
 
-> 빌드 별로 경로를 바꿔주면 사실 이건 안해도 되는데 아직 webpack 사용이 미숙해서 일단 이런 파일이 필요하다..
+> 빌드 별로 경로를 바꿔주면 사실 이건 안해도 되는데 아직 ~~webpack 사용이 미숙해서 일단 이런 파일이 필요하다..~~ - 빌드용 process 변수로 구분할 수 있다. 
+
+
 
 # 설치된 라이브러리 추가
 
@@ -84,23 +86,24 @@ module.exports = {
 // The Vue build version to load with the `import` command
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue';
-import BootstrapVue from "bootstrap-vue";
-import App from './App';
-import router from './router';
+import BootstrapVue from 'bootstrap-vue';
 import axios from 'axios';
 import moment from 'moment';
 import swal from 'sweetalert';
 import Icon from 'vue-awesome/components/Icon';
-import fam from 'fontawesome-markers';
 import * as VueGoogleMaps from 'vue2-google-maps';
-import 'vue-awesome/icons'
+import App from './App';
+import router from './router';
 
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import '../node_modules/bootstrap-vue/dist/bootstrap-vue.css';
+import '../node_modules/vue-awesome/icons';
+import fam from '../node_modules/fontawesome-markers/fontawesome-markers.json';
 import cfg from '../static/cfg';
 
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap-vue/dist/bootstrap-vue.css';
-
 moment.locale('ko');
+
+if (process.env.NODE_ENV === 'development') cfg.path.api = 'http://localhost:3000/api/';
 
 Vue.prototype.$axios = axios;
 Vue.prototype.$cfg = cfg;
@@ -130,9 +133,9 @@ new Vue({
   template: '<App/>',
   components: { App },
 });
-
 ```  
 
+- process.env.NODE_ENV 가 'production' 면 npm run build 'development' 면 npm run dev
 - moment 표현 한글로 변경
 - 전역으로 쓰기 위한 prototype 구성
 - 하위 템플릿에서 icon 태그 쓰기 위해 등록

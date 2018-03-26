@@ -321,3 +321,13 @@ $ git clone git@github.com:fkkmemi/projectname.git
 $ ssh-copy-id account@serverurl
 ```
 
+# git update
+
+기본 깔려있는 git v1은 pm2 deploy 문제가 있음
+
+```bash
+$ yum install http://opensource.wandisco.com/centos/7/git/x86_64/wandisco-git-release-7-2.noarch.rpm
+$ yum install git
+$ yum --version
+git version 2.14.1
+```
