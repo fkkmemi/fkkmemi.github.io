@@ -1,6 +1,6 @@
 ---
 layout: single
-title: NEMBV 19 jwt를 이용한 인증
+title: NEMBV 20 jwt를 이용한 인증
 category: nembv
 tag: [nembv,api,mongoose,vue,bootstrap,bootstrap-vue,jwt]
 comments: true

@@ -22,6 +22,8 @@ $ npm run dev # fe server on
 > fe server가 켜질때 브라우저가 자동으로 켜지는데 불편하면 config/index.js 중 dev.autoOpenBrowser를 false로 변경하면된다.  
 기본브라우저가 사파리인데 개발용도는 역시 크롬이 좋기 때문이다.
 
+{% include toc %}
+
 # 화면표시 동작 순서
 fe가 브라우저에 켜지면 'Welcome to Your Vue.js App' 이 표시되는데
 

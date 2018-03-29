@@ -18,7 +18,9 @@ app.js
 package.json
 ``` 
 
-### 작동 정의
+{% include toc %}
+
+# 작동 정의
 
 1. 백엔드서버는 /, /api 두 곳을 라우팅한다.
     - /(fe/dist): vue로 빌드된 정적인 html 요소가 있는 곳을 라우트
@@ -28,7 +30,7 @@ package.json
 2. 프론트엔드는 fe/dist 디렉토리에 정적인 파일들을 보관  
     - / 이하 라우트는 해쉬태그 이하로 다시 라우트 된다 eg) /#/group/
     
-### 프론트엔드 빌드
+# 프론트엔드 빌드
 
 지난번 npm run dev는 개발자용으로 디버그를 위한 것이었다.
 
@@ -47,7 +49,7 @@ $ npm run build
 
 ![변환된 파일들](/images/nembv/2018-03-19 11-41-18 nembv fe_dist.png)
 
-### 백엔드에서 스태틱으로 vue 배포 디렉토리를 지정
+# 백엔드에서 스태틱으로 vue 배포 디렉토리를 지정
 
 백엔드에 있는 app.js에서 /fe/dist를 스태틱 라우트 포인트로 추가해본다.
 
@@ -58,7 +60,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 이제 최우선 순위로 /fe/dist/index.html을 먼저 라우트 할 것이다.
 
-### 백+프론트엔드 확인
+# 백+프론트엔드 확인
 
 ```bash
 $ npm start

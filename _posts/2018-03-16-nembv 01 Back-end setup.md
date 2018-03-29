@@ -12,9 +12,21 @@ nembv를 사용한 새로운 프로젝트를 시작해보겠다.
 
 Back-end 기본 설치 부터 시작한다.
 
+{% include toc %}
+
+# git 사용
+
 git 사용 없이 진행하려면 밑으로 이동
 
-### git 저장소 만들기
+git은 혼자 쓸때는 딱 3가지면 끝나니 써두면 절대 후회 없을 것이다. 3가지만 학습해보고 오길 권장한다.
+
+- commit
+- push
+- pull
+
+이력관리도 좋고, 나중에 협업 필요시 매우 좋은 솔루션이다.
+
+## git 저장소 만들기
 
 [https://github.com](https://github.com) 에서 계정이 없다면 가입하고 있으면
 
@@ -32,7 +44,7 @@ git 사용 없이 진행하려면 밑으로 이동
 
 ![alt git repo](/images/nembv/fkkmemi:nembv: Node Express Mongo Bootstrap Vue 2018-03-16 12-06-54.png) 
 
-### git download
+## git download
 
 적당한 위치를 찾아서 소스를 다운 받는다
 
@@ -41,16 +53,17 @@ ssh 방식과 https 방식이 있는데 ssh 방식은 디바이스 세팅이 필
 > 물론 편리함과 보안때문에 ssh로 세팅하기를 추천한다.
 
 ```bash
-$ git clone https://github.com/fkkmemi/nembv
+$ git clone https://github.com/fkkmemi/nembv // 현재 제작중인 소스를 받을때
+$ git clone https://github.com/만든 계정/nembv // 만든 계정
 ```
 
 > private 저장소의 경우 id/password를 물어본다.
 
-### node.js 설치
+# node.js 설치
 
 [https://nodejs.org/en/](https://nodejs.org/en/) 에서 최신버전을 받아서 설치한다
 
-### express generator 설치
+## express generator 설치
 
 express 제네레이터를 이용해서 미리 짜여진 구성으로 nembv 디렉토리에 덮어 씌우도록 하겠다.
 
@@ -60,7 +73,7 @@ $ npm install express-generator -g
 
 > -g는 전역 설치이며 앞으로 express 명령을 통해 어디서나 코드를 생성할 수 있다.
 
-### express 설치
+## express 설치
 
 nembv 디렉토리 바로 위로 이동하여 아래와 같이 입력한다 
 
@@ -73,29 +86,30 @@ $ destination is not empty, continue? [y/N]
 
 > --view=pug 를 넣은 이유는 기본으로 설치하면 pug의 옛버전인 jade가 설치되는데 어짜피 디프리케이트되었다고 워닝이 뜬다
 
-### directory 구성
+## directory 구성
 
 아래와 같이 디렉토리가 구성되었다.
 
 ![alt dir](/images/nembv/nembv 2018-03-16 12-54-46.png)
 
-### 의존 요소 설치
+## 의존 요소 설치
 
 해당 위치로 내려가서 express에 필요한 의존요소들을 설치한다.
 
-```bash
-$ yarn 
-```
-
-or
 
 ```bash
 $ npm install
 ```
 
+or
+
+```bash
+$ yarn 
+```
+
 > 최근에는 npm 보다는 [yarn](https://yarnpkg.com/en/)을 많이 사용하는 추세다 명령이 간단하고 병렬로 데이터를 다운로드 받아서 많은 양의 모듈을 받을 때 좋다
 
-### 웹서버 구동
+# 웹서버 구동
 
 ```bash
 $ npm start

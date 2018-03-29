@@ -29,7 +29,9 @@ package.json
 
 ![browser](/images/nembv/Express 2018-03-16 13-53-54.png)  
 
-### node 사용법
+{% include toc %}
+
+# node 사용법
 
 node의 사용법은 간단히 
 
@@ -55,7 +57,7 @@ $ node a.test
 = 5
 ```
 
-### express 구동원리
+# express 구동원리
 
 마찬가지로 'npm start' 는 곧 'node bin/www' 이기 때문에 www라는 파일로 실행을 한것이다.
 
@@ -127,7 +129,7 @@ module.exports = app;
 - 만일 없는 패스를 지정하면 어떻게 될까?  
     localhost:3000/xxx -> 많이 들어본 404 페이지가 나온다
 
-#### pug?
+## pug?
 
 index.js를 보면 res.render('index', { title: 'Express' }); 항목은
 
@@ -143,7 +145,7 @@ pug는 html을 편리하게 쓸 수 있는 툴이라고 생각하면된다.
 
 > php와 비슷한 것 같다. 
 
-#### 정적인 파일
+## 정적인 파일
 
 app.use(express.static(path.join(__dirname, 'public')));
 
@@ -173,7 +175,7 @@ http://localhost:3000을 들어가보면 hi?가 있다는 것을 알 수 있다.
 
 그러면 원래 있던 welcome to express는 어떻게 된것일까?
 
-#### 라우트 우선순위
+## 라우트 우선순위
 
 라우트 우선순위는 선언 순이며 그중 하나가 응답을 해버리면 더이상 아래로 내려가지 않는다.
 

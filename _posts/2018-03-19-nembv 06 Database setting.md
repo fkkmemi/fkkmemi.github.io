@@ -20,9 +20,11 @@ mongoDB를 이용할 것인데 무거운 디비를 로컬에 까는 것 보다�
 
 새로운 디비 생성과 접근을 위해 계정을 새로 만들어 보도록 한다.
 
-### mongoDB setting
+{% include toc %}
 
-#### atlas 계정 생성
+# mongoDB setting
+
+## atlas 계정 생성
 
 - Security -> MongoDB Users -> ADD NEW USER button click
 
@@ -36,7 +38,7 @@ mongoDB를 이용할 것인데 무거운 디비를 로컬에 까는 것 보다�
 
 ![계정 생성 3](/images/nembv/2018-03-19 16-41-07 Security.png)
 
-#### atlas 접속
+## atlas 접속
 
 - connect click
 
@@ -68,7 +70,7 @@ mongoDB를 이용할 것인데 무거운 디비를 로컬에 까는 것 보다�
 MongoDB server version: 3.4.13
 ```
 
-#### 데이터베이스 생성 및 테스트
+## 데이터베이스 생성 및 테스트
 
 - 현재 데이터베이스를 확인해본다.
 
@@ -113,6 +115,8 @@ nembv db에 hello라는 collection에 make:'gogo'라는 내용아 딤긴 도큐�
 > db.hello.find();
 { "_id" : ObjectId("5aaf6a883248872586b6ee49"), "make" : "gogo" }
 ```
+
+# 결론
 
 이것으로 더이상 복잡한 shell을 통해 무언가를 할필요는 없다 이후 부터는 백엔드에서 mongoose로 편리하게 작업할 것이다.
 

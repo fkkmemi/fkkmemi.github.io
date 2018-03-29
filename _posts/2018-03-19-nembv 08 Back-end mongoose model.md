@@ -49,7 +49,9 @@ name은 string이어야 하며 age는 숫자여야한다.
 
 이제 name에 1234를 넣으면 '1234' age에 '01011'를 넣으면 1011이 들어간다. 
 
-## models 추가
+{% include toc %}
+
+# models 추가
 
 일반적으로 상용 웹을 구현할 때 꼭 필요하면서 상호 연관이 되야하는
 
@@ -92,7 +94,7 @@ const groupSchema = mongoose.Schema({
 module.exports = mongoose.model('Group', groupSchema);
 ```
 
-## playground 추가
+# playground 추가
 
 일단 모델이 만들어 졌으면 당장 쓰고 읽고 싶은데 api router까지 적용하기엔 너무 멀고 복잡하기 때문에 나 같은 경우 놀이터를 하나 만들어 놓고 모듈테스트를 진행한다.
 
@@ -122,9 +124,9 @@ mongoose.connect(cfg.db.url, (err) => {
 });
 ```
 
-## company test
+# company test
 
-### 쓰기
+## 쓰기
 
 정상적으로 '모델 테스트'라고 떳다면 컴패니에 데이터를 넣어보자
 
@@ -168,7 +170,7 @@ exports.test = {
 
 - __v는 mongoose에서 자동으로 부여하는 필드다. *무슨 용도인지는 잘 모르겠지만 냅두자*
 
-### 읽기
+## 읽기
 
 하나를 썼으니 이번엔 읽기만 해본다..
 
@@ -211,13 +213,13 @@ person -> people, company -> companies, 가 되니 mongoose로만 읽고 쓸때�
 native-mongo driver로 처리할 때 기겁할 수 있으니 주의...
 
 
-## group test
+# group test
 
 그룹은 조금 난이도가 있는데 company와 엮여 있기 때문이다.
 
 company가 없는 group은 존재할 수 없다고 칠 경우 그렇다.
 
-### 쓰기
+## 쓰기
 
 **playGround.js**
 
@@ -285,7 +287,7 @@ exports.test = {
 
 - update 결과는 nModified: 1 로 확인이 되었다.
 
-### 개선된 쓰기
+## 개선된 쓰기
 
 nModified: 1 로 잘되었다는 소식은 들었지만 실제 데이터를 확인해 보고 싶을 것이다.. 그리고 앞으로 api에서 보내줘야할 정보 또한 추가된 데이터다.
 

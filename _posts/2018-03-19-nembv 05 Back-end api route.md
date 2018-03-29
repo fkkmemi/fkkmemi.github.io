@@ -15,7 +15,9 @@ comments: true
 
 public/favicon.ico를 하나 추가하였고 routes/api 디렉토리를 계층적으로 생성한것을 볼 수 있다.
 
-### app.js
+{% include toc %}
+
+# app.js
 
 ```javascript
 var express = require('express');
@@ -73,7 +75,7 @@ app.use('/api', require('./routes/api'));
 res.send({ success: false, msg: err.message }); 
 ```
 
-### routes/api
+# routes/api
 
 website 에서 루트(/) 를 지정하면 index.htm, index.html, default.html 등을 찾아 표시하듯
 
@@ -184,7 +186,7 @@ module.exports = router;
 
 > 사실 나도 처음에는 api.js 하나에 다 때려 박고 작업을 했었다... 결국 위의 방법은 추천하지 않는다..
 
-### uri 테스트
+# uri 테스트
 
 작성된 파일로 서버를 구동하고
 

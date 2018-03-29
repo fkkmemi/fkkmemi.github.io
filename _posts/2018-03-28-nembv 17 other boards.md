@@ -12,6 +12,8 @@ board와 comment라는 모델로 게시판을 구현해봤다.  이번에는 qna
 
 talk 와 qna 게시판을 둘로 나눠보도록 하겠다.
 
+{% include toc %}
+
 # api 변경
 
 board에서 한계층 더 만들어서 나누었다. /api/data/board/talk 이런식이 된다.

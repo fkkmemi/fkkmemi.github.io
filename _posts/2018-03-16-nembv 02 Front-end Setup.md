@@ -16,7 +16,9 @@ front-end는 javascript는 vue로 css는 bootstrap으로 설치할 것이다
 
 설치는 [https://bootstrap-vue.js.org/docs](https://bootstrap-vue.js.org/docs) 중 풀패키지로 아예 vue-cli 까지 통합된 버전으로 설치 해보겠다
 
-### BootstrapVue 설치
+{% include toc %}
+
+# BootstrapVue 설치
 
 기존 nembv 디렉토리 하부에 fe라는 디렉토리에 설치할 것이다.
 
@@ -60,7 +62,7 @@ $ npm run dev
 - ctrl+c 로 서버를 정지하고 다시 npm run dev를 하면 정상 작동을 한다.  
     ![vue 화면](/images/nembv/2018-03-16 14-40-56 fe.png) 가 나오면 성공!  
     
-### 설치 확인
+# 설치 확인
 
 이제 백엔드+프론트엔드의 기본 골격이 모두 갖춰졌다.
 

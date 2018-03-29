@@ -10,6 +10,8 @@ comments: true
 
 지난번에 구현했던 내용(company, group)과 거의 같기 때문에 소스를 확인 하면 충분히 이해할 수 있을 것이다. 
 
+{% include toc %}
+
 # api 추가
 
 **routes/api/data/index.js**  
