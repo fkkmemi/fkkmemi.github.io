@@ -11,7 +11,7 @@ redirect_from:
 
 {% include toc %}
 
-## 일반
+# 일반
 
 - 전역변수,함수 외에는 대문자(Uppercase)를 사용하지 않는다  
 - 전역변수는 충분히 검토 후, 꼭 필요한 곳에만 사용한다(가급적 사용하지 않는다)
@@ -25,10 +25,10 @@ redirect_from:
     ******/
     ```
 - 용도에 맞는 형을 사용한다.  
-    eg) const, var, let, long, double, etc..
+    eg) const, let, long, double, etc..
 - Array type 변수 뒤에는 복수를 의미하는 's'를 넣는다.
 
-## 전역변수 : global
+# 전역변수 : global
 
 - 단어의 첫글자만 대문자를 사용한다. 이니셜 대문자도 예외가 아님  
     eg) TCPhandle X, TcpHandle O
@@ -37,7 +37,7 @@ redirect_from:
 - 비슷한 단어가 두개 이상일 경우 객체 생성 후 소문자(Lowercase) 멤버로 넣는다  
     eg) RawCount, RawSize -> Raw.count, Raw.size
     
-## 지역변수 : local
+# 지역변수 : local
 
 - 두단어 이상일 경우 언더바로 구분  
     eg) member_cnt_rst
@@ -72,7 +72,7 @@ redirect_from:
       //...
     ```
 
-## 함수 : function
+# 함수 : function
 
 - parameter는 소문자를 사용한다  
     eg)
@@ -82,8 +82,30 @@ redirect_from:
     ```c
     int foo(int a, short b, unsigned char* c) {} //c
     ```
+- parameter의 입력, 출력은 달라야한다.  
+eg)    
+**함수**  
+```javascript
+const foo = (a, b) => {
+    return a + b;
+}
+```
 
-## 주석 : description
+**잘못된 예: 입력 변수명과 함수 인자 변수명이 같다**  
+```javascript
+const a = 3, b = 4;
+
+foo(a, b);
+```
+
+**수정: 다르게 변경**  
+```javascript
+const ai = 3, bi = 4;
+
+foo(ai, bi);
+```
+
+# 주석 : description
 
 - 코드 스니펫(조각)의 경우 시작과 끝을 명시한다.  
     eg) 
@@ -96,11 +118,11 @@ redirect_from:
 - 나중에 참고 해야할 내용의 경우 'todo:'를 사용한다  
     eg)
     ```javascript    
-    if(c > 0.0) //todo : 다음 버전에서 삭제, 다음 버전에서는 c는 항상 0보다 크다
+    if(c > 0.0) // todo : 다음 버전에서 삭제, 다음 버전에서는 c는 항상 0보다 크다
         a = b/c; 
     ```
     
-## 데이터베이스 : database
+# 데이터베이스 : database
 
-- 데이터베이스에서 가져온 값은 시작 문자를 언더바로 구분한다.  
-    eg) _member._id, _params[3]._set._max_payment
+- ~~데이터베이스에서 가져온 값은 시작 문자를 언더바로 구분한다.~~  
+    ~~eg) _member._id, _params[3]._set._max_payment~~

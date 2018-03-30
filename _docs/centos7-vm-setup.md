@@ -318,7 +318,7 @@ $ git clone git@github.com:fkkmemi/projectname.git
 서버접속시 키 복사(암호를 입력하지 않기 위함)
 
 ```bash
-$ ssh-copy-id account@serverurl
+$ ssh-copy-id account@serverurl -p12345
 ```
 
 # git update

@@ -643,6 +643,10 @@ new Vue({
 
 # 구현된 화면
 
+![db 연동](/images/nembv/2018-03-21 14-55-12 nembv project.png)
+
+# 시연 영상
+
 직접 눈으로 확인하는게 좋을 것 같아서 영상으로 만들어봤다.
 
 {% include video id="A92u4s2nCZ8" provider="youtube" %}    
