@@ -46,7 +46,7 @@ $ cat /etc/firewalld/zones/public.xml
 # package update
 
 ```bash
-$ yum update
+$ yum update -y
 ```
 
 # hard disk add
@@ -202,6 +202,7 @@ $ reboot
  
 ```bash
 $ mongo
+> use admin
 > db.createUser(
     {
         user: "adminid",
@@ -227,6 +228,7 @@ $ service mongod restart
 
 ```bash
 $ mongo
+> use dbname
 > db.createUser(
     {
         user: "dbid",
@@ -241,6 +243,10 @@ Successfully added user: {
 		{
 			"role" : "readWrite",
 			"db" : "dbname"
+		},
+		{
+		    "role" : "dbAdmin",
+		    "db" : "dbname"
 		}
 	]
 }
@@ -328,6 +334,28 @@ $ ssh-copy-id account@serverurl -p12345
 ```bash
 $ yum install http://opensource.wandisco.com/centos/7/git/x86_64/wandisco-git-release-7-2.noarch.rpm
 $ yum install git
-$ yum --version
+$ git --version
 git version 2.14.1
+```
+
+# yarn install
+
+package install update
+
+```bash
+$ curl --silent --location https://dl.yarnpkg.com/rpm/yarn.repo | sudo tee /etc/yum.repos.d/yarn.repo
+$ yum install yarn
+```
+
+# pm2 install
+
+node run
+
+```bash
+$ npm i pm2 -g
+$ pm2 install pm2-logrotate
+$ pm2 startup
+
+# after run
+$ pm2 save
 ```
