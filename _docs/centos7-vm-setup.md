@@ -233,7 +233,7 @@ $ mongo
     {
         user: "dbid",
         pwd: "dbpassword",
-        roles: [ { role: "readWrite", db: "dbname" } ]
+        roles: [ { role: "readWrite", db: "dbname" }, { role: "dbAdmin", db: "dbname" } ]
     }
   );
 # ctrl+c
