@@ -54,8 +54,8 @@ else {
 - case 2: return error 처리
 
 ```javascript
-if(userId === 'user') return res.send({ success: false, msg: 'id wrong' });
-if(userPwd === '12345') return res.send({ success: false, msg: 'pwd wrong' });
+if(userId !== 'user') return res.send({ success: false, msg: 'id wrong' });
+if(userPwd !== '12345') return res.send({ success: false, msg: 'pwd wrong' });
 
 User.findOne(userId, (err, u) => {
     if(err) return res.send({ success: false, msg: err.message });
