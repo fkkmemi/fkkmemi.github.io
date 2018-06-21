@@ -64,6 +64,8 @@ npm:
         url: /npm/npm-geoip/
       - title: "4. del"
         url: /npm/npm-del/
+      - title: "5. unorm"
+        url: /npm/npm-unorm/
 
 categories:
   - title: Notes
