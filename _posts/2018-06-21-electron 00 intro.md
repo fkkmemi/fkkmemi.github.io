@@ -69,7 +69,7 @@ node로 데스크탑앱을 만들기위해 nw.js라는 것을 써본적도 있�
 이젠 윈도우 프로그램 개발자 -> 데스크탑 앱 개발자가 되겠네요
 
 2. 언어: javascript(vue.js)  
-C/C++, java등의 전통 언어는 여전히 우수한 언어이지만 대부분의 용도에서는 javascript에 비해 생산성이 떨어집니다.(_물론 코어나 정밀 모듈쪽은 당연히 c/c++같은 네이티브 언어가 좋다고 봅니다. mongoDB도 c기반입니다)  
+C/C++, java등의 전통 언어는 여전히 우수한 언어이지만 대부분의 용도에서는 javascript에 비해 생산성이 떨어집니다.(_물론 코어나 정밀 모듈쪽은 당연히 c/c++같은 네이티브 언어가 좋다고 봅니다. mongoDB도 c기반입니다_)  
 javascript는 처음 접하는 사람도 익히기 쉽고 웹개발하시던 분은 보너스죠  
 특히나 비동기 방식이라 C/C++때 늘 고민했던 블러킹 되서 프리징 걸리지 않게 하기 위한 쓰레드 처리가 거의 필요가 없습니다.  
 사실 javascript자체가 익히기 쉽다기보다는 진화된 javascript프레임웤인 vue.js로 작업할 것이기 때문이기 때문입니다.  
@@ -459,23 +459,27 @@ Welcome 과 Inspire라는 메뉴가 있네요..
 
 연습장으로 쓸 빈 깡통을 만들어 보겠습니다.
 
+> {{ }} 는 github code에서 처리하는 방법을 몰라서..  
+{ { } } 로 한칸 띄었습니다 혹시 코드를 카피한후 다시 {{ }} 붙혀주세요  
+{ {msg1} } -> {{msg1}}
+
 **src/renderer/components/test.vue**  
 ```html
 <template>
   <v-layout row wrap>
     <v-flex xs12 sm4>
       <v-chip color="red" text-color="white">
-        {{msg1}}
+        { {msg1} }
       </v-chip>
     </v-flex>
     <v-flex xs12 sm4>
       <v-chip color="orange">
-        {{msg2}}
+        { {msg2} }
       </v-chip>
     </v-flex>
     <v-flex xs12 sm4>
       <v-chip color="orange">
-        {{msg3}}
+        { {msg3} }
       </v-chip>
     </v-flex>
   </v-layout>
@@ -598,23 +602,23 @@ export default {
   <v-layout row wrap>
     <v-flex xs12 sm4>
       <v-chip color="red" text-color="white">
-        {{msg1}}
+        { {msg1} }
       </v-chip>
     </v-flex>
     <v-flex xs12 sm4>
       <v-chip color="orange" text-color="white">
-        {{msg2}}
+        { {msg2} }
       </v-chip>
     </v-flex>
     <v-flex xs12 sm4>
       <v-chip color="orange" text-color="white">
-        {{msg3}}
+        { {msg3} }
       </v-chip>
     </v-flex>
     <v-flex xs12>
       <v-card>
         <v-card-title>
-          {{fileContent}}
+          { {fileContent} }
         </v-card-title>
         <v-card-actions>
           <v-btn color="primary" @click="dialogOpen">
@@ -674,27 +678,27 @@ ab,cd,ef,g
   <v-layout row wrap>
     <v-flex xs12 sm4>
       <v-chip color="red" text-color="white">
-        {{msg1}}
+        { {msg1} }
       </v-chip>
     </v-flex>
     <v-flex xs12 sm4>
       <v-chip color="orange" text-color="white">
-        {{msg2}}
+        { {msg2} }
       </v-chip>
     </v-flex>
     <v-flex xs12 sm4>
       <v-chip color="orange" text-color="white">
-        {{msg3}}
+        { {msg3} }
       </v-chip>
     </v-flex>
     <v-flex xs12>
       <v-card>
         <v-card-title>
-          {{fileContent}}
+          { {fileContent} }
         </v-card-title>
         <v-card-text>
           <v-chip color="info" v-for="c in chips">
-            {{c}}
+            { {c} }
             <v-icon right>school</v-icon>
           </v-chip>
         </v-card-text>
@@ -713,7 +717,7 @@ ab,cd,ef,g
         v-model="snackbar.act"
         :color="snackbar.color"
     >
-      {{ snackbar.text }}
+      { { snackbar.text } }
       <v-spacer></v-spacer>
       <v-btn flat color="white" @click.native="snackbar.act = false">닫기</v-btn>
     </v-snackbar>
