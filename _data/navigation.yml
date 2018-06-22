@@ -78,6 +78,8 @@ categories:
 #        url: /mongodb/mongo-sharding-1/
 #      - title: npm
 #        url: /npm/npm-intro/
+      - title: Electron
+        url: /categories/#electron
       - title: NEMVV
         url: /categories/#nemvv
       - title: NEMBV
