@@ -554,8 +554,8 @@ export default {
       fixed: false,
       items: [
         { icon: 'cloud', title: '메뉴바꿈!', to: '/' },
-        { icon: 'bubble_chart', title: 'Inspire', to: '/test' },
-        { icon: 'title', title: 'title', to: '/title' } // 추가
+        { icon: 'bubble_chart', title: 'Inspire', to: '/inspire' }, 
+        { icon: 'title', title: 'test', to: '/test' } // 추가
       ],
       miniVariant: false,
       right: true,
