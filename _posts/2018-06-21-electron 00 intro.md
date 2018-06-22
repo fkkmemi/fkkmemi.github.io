@@ -459,9 +459,8 @@ Welcome 과 Inspire라는 메뉴가 있네요..
 
 연습장으로 쓸 빈 깡통을 만들어 보겠습니다.
 
-> {{ }} 는 github code에서 처리하는 방법을 몰라서..  
-{ { } } 로 한칸 띄었습니다 혹시 코드를 카피한후 다시 {{ }} 붙혀주세요  
-{ {msg1} } -> {{msg1}}
+{% raw %}
+  In Handlebars, {{ this }} will be HTML-escaped, but {{{ that }}} will not.
 
 **src/renderer/components/test.vue**  
 ```html
@@ -469,17 +468,17 @@ Welcome 과 Inspire라는 메뉴가 있네요..
   <v-layout row wrap>
     <v-flex xs12 sm4>
       <v-chip color="red" text-color="white">
-        { {msg1} }
+        {{msg1}}
       </v-chip>
     </v-flex>
     <v-flex xs12 sm4>
       <v-chip color="orange">
-        { {msg2} }
+        {{msg2}}
       </v-chip>
     </v-flex>
     <v-flex xs12 sm4>
       <v-chip color="orange">
-        { {msg3} }
+        {{msg3}}
       </v-chip>
     </v-flex>
   </v-layout>
@@ -602,23 +601,23 @@ export default {
   <v-layout row wrap>
     <v-flex xs12 sm4>
       <v-chip color="red" text-color="white">
-        { {msg1} }
+        {{msg1}}
       </v-chip>
     </v-flex>
     <v-flex xs12 sm4>
       <v-chip color="orange" text-color="white">
-        { {msg2} }
+        {{msg2}}
       </v-chip>
     </v-flex>
     <v-flex xs12 sm4>
       <v-chip color="orange" text-color="white">
-        { {msg3} }
+        {{msg3}}
       </v-chip>
     </v-flex>
     <v-flex xs12>
       <v-card>
         <v-card-title>
-          { {fileContent} }
+          {{fileContent}}
         </v-card-title>
         <v-card-actions>
           <v-btn color="primary" @click="dialogOpen">
@@ -678,27 +677,27 @@ ab,cd,ef,g
   <v-layout row wrap>
     <v-flex xs12 sm4>
       <v-chip color="red" text-color="white">
-        { {msg1} }
+        {{msg1}}
       </v-chip>
     </v-flex>
     <v-flex xs12 sm4>
       <v-chip color="orange" text-color="white">
-        { {msg2} }
+        {{msg2}}
       </v-chip>
     </v-flex>
     <v-flex xs12 sm4>
       <v-chip color="orange" text-color="white">
-        { {msg3} }
+        {{msg3}}
       </v-chip>
     </v-flex>
     <v-flex xs12>
       <v-card>
         <v-card-title>
-          { {fileContent} }
+          {{fileContent}}
         </v-card-title>
         <v-card-text>
           <v-chip color="info" v-for="c in chips">
-            { {c} }
+            {{c}}
             <v-icon right>school</v-icon>
           </v-chip>
         </v-card-text>
@@ -717,7 +716,7 @@ ab,cd,ef,g
         v-model="snackbar.act"
         :color="snackbar.color"
     >
-      { { snackbar.text } }
+      {{ snackbar.text }}
       <v-spacer></v-spacer>
       <v-btn flat color="white" @click.native="snackbar.act = false">닫기</v-btn>
     </v-snackbar>
@@ -799,3 +798,5 @@ ab,cd,ef,g
 이것으로 뷰일렉트론으로 적은 시간을 들여 우아한 데스크탑앱을 만들 수 있다는 가능성을 보여주었다고 생각합니다.
 
 다음에는 외부 라이브러리(chartjs, nedb 등)를 이용해서 더 많은 것을 할 수 있다는 가능성을 다시 보여드리겠습니다.
+
+{% endraw %}
