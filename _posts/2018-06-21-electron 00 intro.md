@@ -460,7 +460,6 @@ Welcome 과 Inspire라는 메뉴가 있네요..
 연습장으로 쓸 빈 깡통을 만들어 보겠습니다.
 
 {% raw %}
-  In Handlebars, {{ this }} will be HTML-escaped, but {{{ that }}} will not.
 
 **src/renderer/components/test.vue**  
 ```html
