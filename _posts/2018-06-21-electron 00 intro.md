@@ -4,6 +4,8 @@ title: Electron 0 일렉트론뷰로 우아한 데스크탑 앱 만들기 기초
 category: electron
 tag: [electron,talk,idea,nodejs,vue,vuetify]
 comments: true
+sidebar:
+  nav: "electron"
 ---
 
 javascript는 정말 편리한 언어입니다.

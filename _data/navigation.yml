@@ -67,6 +67,14 @@ npm:
       - title: "5. unorm"
         url: /npm/npm-unorm/
 
+electron:
+  - title: electron
+    children:
+      - title: "0. 기초"
+        url: /electron/electron-00-intro/
+      - title: "1. 데이터 처리"
+        url: /electron/electron-01-data/
+
 categories:
   - title: Notes
     children:
