@@ -358,4 +358,7 @@ $ pm2 startup
 
 # after run
 $ pm2 save
+
+# log retain 7day
+$ pm2 set pm2-logrotate:retain 7
 ```
