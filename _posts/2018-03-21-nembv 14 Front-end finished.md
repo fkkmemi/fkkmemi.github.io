@@ -14,6 +14,8 @@ sidebar:
 
 {% include toc %}
 
+{% raw %}
+
 # 라이브러리 설치
 
 ## 목록
@@ -148,7 +150,7 @@ new Vue({
 # company 화면 구성
 
 **fe/src/components/page/setting/company.vue**  
-```html
+```vue
 <template>
   <div>
     <b-row class="mb-4">
@@ -168,10 +170,10 @@ new Vue({
               :sub-title="v.rmk"
               :key="v._id">
         <b-card-header>
-            <h4>{ { v.name } }</h4>
+            <h4>{{ v.name }}</h4>
         </b-card-header>
         <b-card-body>
-          <p class="card-text">{ {v.rmk} }</p>
+          <p class="card-text">{{v.rmk}}</p>
           <gmap-map
             :id="'map' + i.toString()"
             :center="v.pos"
@@ -190,13 +192,13 @@ new Vue({
         </b-card-body>
         <!--<b-list-group flush>-->
           <!--<b-list-group-item v-for="(w, j) in v.gr_ids" :key="w._id" class="d-flex justify-content-between align-items-center">-->
-            <!--<span> { { w.name } } </span>-->
+            <!--<span> {{ w.name }} </span>-->
           <!--</b-list-group-item>-->
         <!--</b-list-group>-->
 
         <b-list-group flush>
           <b-list-group-item v-for="(gr, j) in v.gr_ids" :key="gr._id">
-            <span> { { gr.name } } </span>
+            <span> {{ gr.name }} </span>
             <b-button-group class="float-right" size="sm">
               <b-btn variant="outline-warning" @click="modGr(gr)"><icon name="pencil"></icon></b-btn>
               <b-btn variant="outline-danger" @click="delGr(gr)"><icon name="trash"></icon></b-btn>
@@ -213,7 +215,7 @@ new Vue({
 
         <b-card-footer>
           <p>
-            <small class="text-muted">{ { ago(v.ut) } }</small>
+            <small class="text-muted">{{ ago(v.ut) }}</small>
             <b-button-group class="float-right">
               <b-btn variant="outline-warning" @click="modalOpen(v)"><icon name="pencil"></icon></b-btn>
               <b-btn variant="outline-danger" @click="del(v)"><icon name="trash"></icon></b-btn>
@@ -609,7 +611,7 @@ new Vue({
 </style>
 ```
 
-> 우선 현재 이 블로그의 liquid 문법과 vue Mustache( { { } }) 가 겹쳐서 띄어 쓰여져있으니 카피했다면 붙혀야한다 ..
+> ~~우선 현재 이 블로그의 liquid 문법과 vue Mustache( {{ }}) 가 겹쳐서 띄어 쓰여져있으니 카피했다면 붙혀야한다 ..~~
 
 ## html
 
@@ -670,3 +672,5 @@ new Vue({
 이 소스가 도움이 될 만한 사람들이 많아졌으면 좋겠다.
 
 다음에는 한국형 게시판과 jwt 인증등을 2편에서 이어 진행해보려한다.     
+
+{% endraw %}

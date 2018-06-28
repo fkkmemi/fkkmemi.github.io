@@ -26,6 +26,8 @@ $ npm run dev # fe server on
 
 {% include toc %}
 
+{% raw %}
+
 # 화면표시 동작 순서
 fe가 브라우저에 켜지면 'Welcome to Your Vue.js App' 이 표시되는데
 
@@ -39,10 +41,10 @@ index.html > src/main.js > app.vue > src/components/hello.vue 정도라고 보�
 ### test.vue를 추가
 **fe/src/components/test.vue**  
 
-```html
+```vue
 <template>
   <div>
-    <h1>{ { msg } }</h1>
+    <h1>{{ msg }}</h1>
   </div>
 </template>
 
@@ -62,7 +64,7 @@ export default {
 </style>
 ```
 
-- ``` { { msg } } ``` 는 code highlight vue를 아직 안받아서 띄어 쓴것이 다 원래는 붙여야한다.  
+- ``` {{ msg }} ``` 는 code highlight vue를 아직 안받아서 띄어 쓴것이 다 원래는 붙여야한다.  
 vue.js의 시작하기 첫장에 나오는 예제다. *선언적 렌더링*
 
 > [https://kr.vuejs.org/v2/guide/index.html](https://kr.vuejs.org/v2/guide/index.html) vue는 한글화가 너무 잘되어있다.
@@ -529,3 +531,5 @@ bootstrap의 장점중 제일 중요한 것은 모바일 지원인데
 
 **추가후 모바일 화면**  
 ![테스트페이지 3](/images/nembv/2018-03-20 16-15-36 nembv project.png)
+
+{% endraw %}

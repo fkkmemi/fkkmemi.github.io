@@ -100,7 +100,7 @@ exports.act = (req, res) => {
 
   if (_id === undefined) return res.redirect('/#/register');
 
-  User.update({ _id: _id }, { $set: { act: true } })
+  User.update({ _id: _id }, { $set: { act: true }})
     .then(() => { res.redirect('/#/sign'); })
     .catch(() => { res.redirect('/#/register'); })
 };

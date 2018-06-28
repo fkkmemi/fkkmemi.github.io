@@ -244,7 +244,7 @@ exports.test = {
       })
       .then((gr) => {
         console.log(gr);
-        return Company.update({ _id: gr.cp_id }, { $addToSet: { gr_ids : gr._id } });
+        return Company.update({ _id: gr.cp_id }, { $addToSet: { gr_ids : gr._id }});
       })
       .then((r) => {
         console.log(r);
@@ -317,7 +317,7 @@ exports.test = {
       .then((gr) => {
         return Company.findOneAndUpdate(
           { _id: gr.cp_id }, 
-          { $addToSet: { gr_ids : gr._id } }, 
+          { $addToSet: { gr_ids : gr._id }}, 
           { new: true })
           .populate('gr_ids');
       })

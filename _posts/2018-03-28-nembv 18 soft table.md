@@ -167,7 +167,7 @@ let cr;
     .then((r) => {
       cr = r; // add
       const f = { _id: r.bd_id };
-      const s = { $addToSet: { cmt_ids: r._id } };
+      const s = { $addToSet: { cmt_ids: r._id }};
       return Talk.updateOne(f, s);
     })
     .then((r) => {

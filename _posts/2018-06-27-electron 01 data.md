@@ -16,7 +16,7 @@ sidebar:
 
 저시절 보안으로 랜섬웨어를 만든다면 아마도 
 
-```javascript
+```c
 const char Keys[] = "this is my secret key 어쩌구 저꺼구 길고 긴 키";
 
 recursiveFiles("C:\\"); // 시작할때

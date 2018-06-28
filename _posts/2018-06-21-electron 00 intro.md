@@ -258,7 +258,7 @@ $ yarn build
 우선 빌드를 위한 것을 간단하게 알아보겠습니다.
 
 **package.json**  
-```javascript
+```json
 {
   "name": "elecapp",
   "version": "0.0.0",
@@ -283,7 +283,8 @@ $ yarn build
     "unit": "karma start test/unit/karma.conf.js",
     "postinstall": "npm run lint:fix"
   },
-  ...
+  // ...
+}
 ```
 
 빌드, 런등 모든 행위는 package.json이라는 파일의 정의에 의해서 일어납니다.
@@ -418,7 +419,6 @@ Welcome 과 Inspire라는 메뉴가 있네요..
 **App.vue**  
 ```javascript
 // 파일 하단의 내용 수정
-<script>
   export default {
     name: 'elecapp',
     data: () => ({
@@ -435,7 +435,6 @@ Welcome 과 Inspire라는 메뉴가 있네요..
       title: 'Vuetify.js'
     })
   }
-</script>
 ```
 
 수정후 저장을 하면 바로 적용이 됩니다.(_참 쉽죠?_)
@@ -464,7 +463,7 @@ Welcome 과 Inspire라는 메뉴가 있네요..
 {% raw %}
 
 **src/renderer/components/test.vue**  
-```html
+```vue
 <template>
   <v-layout row wrap>
     <v-flex xs12 sm4>
@@ -597,7 +596,7 @@ export default {
 코드를 작성한 후 저장을 눌러보도록 합시다.
 
 **src/renderer/components/test.vue**  
-```html
+```vue
 <template>
   <v-layout row wrap>
     <v-flex xs12 sm4>
@@ -673,7 +672,7 @@ electron에서 제공하는 다이얼로그와 node.js에 기본 포함되어 �
 ab,cd,ef,g
 
 **src/renderer/components/test.vue**  
-```html
+```vue
 <template>
   <v-layout row wrap>
     <v-flex xs12 sm4>

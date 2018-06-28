@@ -138,7 +138,7 @@ exports.del = (req, res) => {
   Company.findOne({ _id: id })
     .then((r) => {
       cp = r;
-      return Group.remove({ _id: { $in: r.gr_ids } });
+      return Group.remove({ _id: { $in: r.gr_ids }});
     })
     .then(() => {
       return Company.remove({ _id: id });
@@ -236,7 +236,7 @@ exports.add = (req, res) => {
   gr.save()
     .then((r) => {
       const f = { _id: r.cp_id };
-      const s = { $addToSet: { gr_ids: r._id } };
+      const s = { $addToSet: { gr_ids: r._id }};
       return Company.updateOne(f, s);
     })
     .then((r) => {
@@ -271,7 +271,7 @@ exports.del = (req, res) => {
     .then((r) => {
       if (!r) throw new Error('group not exists');
       const f = { _id: r.cp_id };
-      const s = { $pull: { gr_ids: r._id } };
+      const s = { $pull: { gr_ids: r._id }};
       return Company.updateOne(f, s);
     })
     .then(() => { // { n: 1, nModified: 1, ok: 1 }

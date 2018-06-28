@@ -14,6 +14,8 @@ sidebar:
 
 {% include toc %}
 
+{% raw %}
+
 # api 추가
 
 **routes/api/data/index.js**  
@@ -81,7 +83,7 @@ exports.add = (req, res) => {
   cmt.save()
     .then((r) => {
       const f = { _id: r.bd_id };
-      const s = { $addToSet: { cmt_ids: r._id } };
+      const s = { $addToSet: { cmt_ids: r._id }};
       return Board.updateOne(f, s);
     })
     .then((r) => {
@@ -120,7 +122,7 @@ exports.del = (req, res) => {
     .then((r) => {
       if (!r) throw new Error('group not exists');
       const f = { _id: r.bd_id };
-      const s = { $pull: { cmt_ids: r._id } };
+      const s = { $pull: { cmt_ids: r._id }};
       return Board.updateOne(f, s);
     })
     .then(() => { // { n: 1, nModified: 1, ok: 1 }
@@ -142,7 +144,7 @@ exports.del = (req, res) => {
 # front-end
 
 **fe/src/components/page/board/talk.vue**  
-```html
+```vue
 <template>
   <div>
     <b-row class="mb-4">
@@ -175,46 +177,46 @@ exports.del = (req, res) => {
       <!--:no-local-sorting="true"-->
       <template slot="_id" slot-scope="row">
         <b-badge variant="info">
-          <!--{ { row.item._id } }-->
-          { { id2time(row.item._id) } }
+          <!--{{ row.item._id }}-->
+          {{ id2time(row.item._id) }}
         </b-badge>
       </template>
       <template slot="ut" slot-scope="row">
         <b-badge variant="info">
-          { { ago(row.item.ut) } }
+          {{ ago(row.item.ut) }}
         </b-badge>
       </template>
       <template slot="cmt_ids" slot-scope="row">
         <b-badge pill variant="success">
-          { { row.item.cmt_ids.length } }
+          {{ row.item.cmt_ids.length }}
         </b-badge>
       </template>
       <template slot="actions" slot-scope="row">
         <!-- We use @click.stop here to prevent a 'row-clicked' event from also happening -->
         <b-button size="sm" variant="primary" @click.stop="row.toggleDetails" @click="read(row)">
-          { { row.detailsShowing ? '숨기기' : '보기' } }
+          {{ row.detailsShowing ? '숨기기' : '보기' }}
         </b-button>
-        <!--<b-btn>{ {row.item._id} }</b-btn>-->
+        <!--<b-btn>{{row.item._id}}</b-btn>-->
       </template>
       <template slot="row-details" slot-scope="row">
         <b-card no-body
                 :title="row.item.title"
         >
           <b-card-body>
-            <p class="card-text" style="white-space: pre;">{ {row.item.content} }</p>
+            <p class="card-text" style="white-space: pre;">{{row.item.content}}</p>
           </b-card-body>
 
           <b-list-group flush>
             <b-list-group-item v-for="(cmt) in row.item.cmt_ids" :key="cmt._id">
               <b-row>
                 <b-col cols="2">
-                  <b-badge>{ { cmt.id } }</b-badge>
+                  <b-badge>{{ cmt.id }}</b-badge>
                 </b-col>
                 <b-col cols="6">
-                  <span style="white-space: pre;">  { { cmt.content} }</span>
+                  <span style="white-space: pre;">  {{ cmt.content}}</span>
                 </b-col>
                 <b-col cols="2">
-                  <small class="text-muted"> { { cmt.ip } } | { { ago(cmt.ut) } }</small>
+                  <small class="text-muted"> {{ cmt.ip }} | {{ ago(cmt.ut) }}</small>
                 </b-col>
                 <b-col cols="2">
                   <b-button-group class="float-right" size="sm">
@@ -236,7 +238,7 @@ exports.del = (req, res) => {
           </b-list-group>
 
           <b-card-footer>
-            <small class="text-muted">{ { ago(row.item.ut) } }</small>
+            <small class="text-muted">{{ ago(row.item.ut) }}</small>
             <b-button-group class="float-right">
               <b-btn variant="outline-warning" @click="mdModOpen(row.item)"><icon name="pencil"></icon></b-btn>
               <b-btn variant="outline-danger" @click="del(row.item)"><icon name="trash"></icon></b-btn>
@@ -773,3 +775,5 @@ exports.del = (req, res) => {
 bootstrap은 사실 배치가 중요한 것인데 정신없이 코딩하다보니 모양이 좋진 않다..
 
 다음번엔 invisible recaptcha로 로봇들이 쓰지 못하게 최전방 수비수를 구현해보겠다.
+
+{% endraw %}

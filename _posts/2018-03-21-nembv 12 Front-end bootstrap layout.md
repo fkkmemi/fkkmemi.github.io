@@ -12,6 +12,8 @@ sidebar:
 
 {% include toc %}
 
+{% raw %}
+
 # 파일 추가
 편의를 위해 아래와 같이 구조를 변경하였다.  
 ![src struct](/images/nembv/2018-03-21 10-03-32 nembv.png)
@@ -24,7 +26,7 @@ sidebar:
 ## 시작 페이지 레이아웃 변경
 
 **fe/src/app.vue**  
-```html
+```vue
 <template>
   <div id="app">
     <b-container fluid class="px-0">
@@ -47,7 +49,7 @@ sidebar:
 ## 메뉴를 포함한 껍데기 생성
 
 **fe/src/components/index.vue**  
-```html
+```vue
 <template>
   <div>
     <top></top>
@@ -79,7 +81,7 @@ sidebar:
 ## 상단 메뉴 추가
 
 **fe/src/components/layout/top.vue**  
-```html
+```vue
 <template>
   <div>
     <b-navbar toggleable="md" type="dark" variant="secondary">
@@ -161,7 +163,7 @@ sidebar:
 ### 상단 메뉴 아이템 추가
 
 **fe/src/components/layout/topMenu.vue**  
-```html
+```vue
 <template>
   <router-link :to="link" tag="b-dropdown-item" exact-active-class="active" exact>
     <slot></slot>
@@ -278,7 +280,7 @@ export default new Router({
 ## 하위 페이지 추가
 
 **fe/src/components/page/intro.vue**  
-```html
+```vue
 <template>
   <div>
     <b-jumbotron header="NEMBV Stack" lead="Node.js Express.js MongoDB BootstrapVue" >
@@ -298,7 +300,7 @@ export default {
 - b-jumbotron을 이용한 인트로 화면이다
 
 **fe/src/components/page/setting/company.vue**  
-```html
+```vue
 <template>
   <div>
     <h1>company...</h1>
@@ -323,7 +325,7 @@ export default {
 - 우선 껍데기만 만들어두었다.
 
 **fe/src/components/page/setting/group.vue**  
-```html
+```vue
 <template>
   <div>
     <h1>group...</h1>
@@ -348,10 +350,10 @@ export default {
 - 역시 껍데기만 만들어두었다.
 
 **fe/src/components/page/e404.vue**  
-```html
+```vue
 <template>
   <div>
-    <h1>{ { msg } }</h1>
+    <h1>{{ msg }}</h1>
   </div>
 </template>
 
@@ -367,7 +369,7 @@ export default {
 </script>
 ```
 
-- 없는 페이지 들어왔을때 설명 페이지다. *머시태그가 '{ {' 으로 한칸 떨어져 있으니 복사후 붙혀야한다*
+- 없는 페이지 들어왔을때 설명 페이지다. ~~머시태그가 '{{' 으로 한칸 떨어져 있으니 복사후 붙혀야한다~~
 
 # 시험
 
@@ -395,5 +397,4 @@ bootstrap을 쓰기로 마음 먹었다면 가급적 custom style은 넣지 말�
 
 https://github.com/fkkmemi/nembv 에 소스는 있으나 단순 클론 후 수정하기 보다는 한땀한땀 만들면서 느낌을 받기를 추천한다.
 
-
-
+{% endraw %}
