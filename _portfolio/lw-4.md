@@ -1,5 +1,5 @@
 ---
-title: "LW(LOOP Web) V4"
+title: "LW V4"
 excerpt: "개념을 정리하다"
 author_profile: false
 header:

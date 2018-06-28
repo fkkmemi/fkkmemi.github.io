@@ -1,5 +1,5 @@
 ---
-title: "LW(LOOP Web) V1"
+title: "LW V1"
 excerpt: "디자인 개선을 위한 노력"
 author_profile: false
 header:

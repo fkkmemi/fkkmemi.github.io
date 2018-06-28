@@ -1,5 +1,5 @@
 ---
-title: "LW(LOOP Web) 4.1 Keynote"
+title: "LW 4.1 Keynote"
 excerpt: "history lw ~ 4.1"
 author_profile: true
 header:

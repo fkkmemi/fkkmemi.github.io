@@ -1,5 +1,5 @@
 ---
-title: "LW(LOOP Web) V3"
+title: "LW V3"
 excerpt: "완전 새로운 도전"
 author_profile: false
 header:

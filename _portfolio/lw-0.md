@@ -1,5 +1,5 @@
 ---
-title: "LW(LOOP Web) Beta"
+title: "LW Beta"
 excerpt: "처음 웹을 시작할 때"
 author_profile: false
 header:
