@@ -4,6 +4,8 @@ title: NEMVV 1 설정파일
 category: nemvv
 tag: [nemvv,config]
 comments: true
+sidebar:
+  nav: "nemvv"
 ---
 
 설정파일에 대해 알아봅니다.

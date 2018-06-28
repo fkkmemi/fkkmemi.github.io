@@ -4,6 +4,8 @@ title: NEMBV 5 Back-end api route
 category: nembv
 tag: [nembv,express,nodejs,api]
 comments: true
+sidebar:
+  nav: "nembv"
 ---
 
 프론트엔드에서 동기적으로 데이터에 따른 페이지 변화를 주기 위해 api 서버를 만들기로 한다.

@@ -4,6 +4,8 @@ title: NEMBV 21 운영과 배포 방법
 category: nembv
 tag: [nembv,pm2]
 comments: true
+sidebar:
+  nav: "nembv"
 ---
 
 지금까지 개발환경에서만 테스트를 했다. 실제 서비스를 해야할 곳은 어딘가의 서버인데..

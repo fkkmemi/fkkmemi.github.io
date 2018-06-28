@@ -4,6 +4,8 @@ title: NEMBV 14 Front-end finished
 category: nembv
 tag: [nembv,vue,bootstrap,bootstrap-vue,googlemap]
 comments: true
+sidebar:
+  nav: "nembv"
 ---
 
 이제 본격적으로 쓸만한 라이브러리들을 추가하여 화면을 구성해보도록 하겠다.

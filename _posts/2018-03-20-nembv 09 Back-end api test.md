@@ -4,6 +4,8 @@ title: NEMBV 9 Back-end api test
 category: nembv
 tag: [nembv,nodejs,express,api]
 comments: true
+sidebar:
+  nav: "nembv"
 ---
 
 api 설계를 하기전 어떻게 테스트를 하며 기능을 추가하는 지가 중요하다.

@@ -4,6 +4,8 @@ title: NEMBV 17 다른 게시판 운영
 category: nembv
 tag: [nembv,api,mongoose,vue,bootstrap,bootstrap-vue]
 comments: true
+sidebar:
+  nav: "nembv"
 ---
 
 board와 comment라는 모델로 게시판을 구현해봤다.  이번에는 qna라는 게시판을 만들고 싶은데 또 복사해서 만들어야 할까?

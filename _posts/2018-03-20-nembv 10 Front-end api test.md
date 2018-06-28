@@ -4,6 +4,8 @@ title: NEMBV 10 Front-end api test
 category: nembv
 tag: [nembv,nodejs,vue,api,bootstrap,cors]
 comments: true
+sidebar:
+  nav: "nembv"
 ---
 
 front-end에서 최소한의 RESTful api 요청/응답을 받을 수 있는 페이지를 만들어보도록 하겠다.

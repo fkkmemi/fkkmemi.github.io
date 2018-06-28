@@ -4,6 +4,8 @@ title: NEMBV 3 Back-end route 이해
 category: nembv
 tag: [nembv,express,nodejs,pug]
 comments: true
+sidebar:
+  nav: "nembv"
 ---
 
 express의 라우트 개념을 알고 있으면 다음 챕터로 이동하면 된다.

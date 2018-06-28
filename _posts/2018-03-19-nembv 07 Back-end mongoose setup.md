@@ -4,6 +4,8 @@ title: NEMBV 7 Back-end mongoose setup
 category: nembv
 tag: [nembv,nodejs,mongodb,mongoose]
 comments: true
+sidebar:
+  nav: "nembv"
 ---
 
 이제 백엔드에서 디비에 직접 연결해보도록 한다.

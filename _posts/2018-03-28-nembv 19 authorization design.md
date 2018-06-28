@@ -4,6 +4,8 @@ title: NEMBV 19 인증 시스템 준비
 category: nembv
 tag: [nembv,api,mongoose,vue,bootstrap,bootstrap-vue]
 comments: true
+sidebar:
+  nav: "nembv"
 ---
 
 jwt(Json Web Token)을 이용해 사용자를 구분할 수 있는 인증 시스템을 만들어 보겠다.

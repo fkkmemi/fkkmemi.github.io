@@ -4,6 +4,8 @@ title: NEMBV 20 jwt를 이용한 인증
 category: nembv
 tag: [nembv,api,mongoose,vue,bootstrap,bootstrap-vue,jwt]
 comments: true
+sidebar:
+  nav: "nembv"
 ---
 
 이제 임시 토큰이 아닌 실제 토큰을 사용한 인증 구현을 해보겠다.

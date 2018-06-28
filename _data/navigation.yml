@@ -67,6 +67,70 @@ npm:
       - title: "5. unorm"
         url: /npm/npm-unorm/
 
+nembv:
+  - title: nembv
+    children:
+      - title: "0. 소개"
+        url: /nembv/nembv-00-intro/
+      - title: "1. 백엔드 설정"
+        url: /nembv/nembv-01-back-end-setup/
+      - title: "2. 프론트엔드 설정"
+        url: /nembv/nembv-02-front-end-setup/
+      - title: "3. 백엔드 라우팅: 개념"
+        url: /nembv/nembv-03-back-end-route-info/
+      - title: "4. 백엔드 라우팅: 설정"
+        url: /nembv/nembv-04-back-end-route-setup/
+      - title: "5. 백엔드 라우팅: API"
+        url: /nembv/nembv-05-back-end-api-route/
+      - title: "6. 데이터베이스 설정"
+        url: /nembv/nembv-06-database-setting/
+      - title: "7. 백엔드 mongoose 설정"
+        url: /nembv/nembv-07-back-end-mongoose-setup/
+      - title: "8. 백엔드 mongoose 모델"
+        url: /nembv/nembv-08-back-end-mongoose-model/
+      - title: "9. 백엔드 API 테스트"
+        url: /nembv/nembv-09-back-end-api-test/
+      - title: "10. 프론트엔드 API 테스트"
+        url: /nembv/nembv-10-front-end-api-test/
+      - title: "11. 백-프론트엔드 API 테스트"
+        url: /nembv/nembv-11-back-end-and-front-end-api-test/
+      - title: "12. 프론트엔드 부트스트랩 구성"
+        url: /nembv/nembv-12-front-end-bootstrap-layout/
+      - title: "13. 백엔드 API 페이징"
+        url: /nembv/nembv-13-back-end-api-paging/
+      - title: "14. 프론트엔드 완성"
+        url: /nembv/nembv-14-front-end-finished/
+      - title: "15. 게시판 골격 구현"
+        url: /nembv/nembv-15-board/
+      - title: "16. 댓글 기능 구현"
+        url: /nembv/nembv-16-comment/
+      - title: "17. 게시판 복제"
+        url: /nembv/nembv-17-other-boards/
+      - title: "18. 부드러운 게시판 처리"
+        url: /nembv/nembv-18-soft-table/
+      - title: "19. 인증 설계"
+        url: /nembv/nembv-19-authorization-design/
+      - title: "20. 인증 토큰 로직"
+        url: /nembv/nembv-20-authorization-token/
+      - title: "21. 웹 배포"
+        url: /nembv/nembv-21-deploy-web/
+
+nemvv:
+  - title: nemvv
+    children:
+      - title: "0. 소개"
+        url: /nemvv/nemvv-00-intro/
+      - title: "1. 설정파일"
+        url: /nemvv/nemvv-01-config/
+      - title: "2. 전역처리"
+        url: /nemvv/nemvv-02-global/
+      - title: "3. 웹서버"
+        url: /nemvv/nemvv-03-www/
+      - title: "4. 사용자관리: 모델"
+        url: /nemvv/nemvv-04-user-model/
+      - title: "5. 사용자관리: API"
+        url: /nemvv/nemvv-05-user-api/
+
 electron:
   - title: electron
     children:
@@ -74,6 +138,8 @@ electron:
         url: /electron/electron-00-intro/
       - title: "1. 데이터 처리"
         url: /electron/electron-01-data/
+      - title: "2. UI 이해"
+        url: /electron/electron-02-ui/
 
 categories:
   - title: Notes

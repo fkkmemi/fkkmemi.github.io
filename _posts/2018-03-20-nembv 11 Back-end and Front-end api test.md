@@ -4,6 +4,8 @@ title: NEMBV 11 Back-end and Front-end api test
 category: nembv
 tag: [nembv,nodejs,vue,api,bootstrap]
 comments: true
+sidebar:
+  nav: "nembv"
 ---
 
 fe에서 xhr로 최소한의 Debug를 할 수 있으므로 이제 be api를 실제 데이터로 채워 보겠다. 

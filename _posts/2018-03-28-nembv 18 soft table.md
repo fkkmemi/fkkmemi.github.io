@@ -4,6 +4,8 @@ title: NEMBV 18 부드러운 게시판
 category: nembv
 tag: [nembv,api,mongoose,vue,bootstrap,bootstrap-vue]
 comments: true
+sidebar:
+  nav: "nembv"
 ---
 
 글을 작성하거나 수정하면 테이블을 갱신하게 되어있다. 댓글을 작성후 갱신되어버려서 영 보기가 좋지 않다. 그리고 vue스럽지도 않고..

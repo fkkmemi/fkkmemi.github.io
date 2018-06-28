@@ -4,6 +4,8 @@ title: NEMBV 12 Front-end bootstrap layout
 category: nembv
 tag: [nembv,nodejs,vue,bootstrap]
 comments: true
+sidebar:
+  nav: "nembv"
 ---
 
 나중을 위해 최소한의 메뉴바등을 추가한 화면을 먼저 만들어 놓고 실제 돌아갈 페이지를 추가해보도록 하겠다.

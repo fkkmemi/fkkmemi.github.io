@@ -4,6 +4,8 @@ title: NEMBV 16 게시판 댓글 만들기
 category: nembv
 tag: [nembv,api,mongoose,vue,bootstrap,bootstrap-vue]
 comments: true
+sidebar:
+  nav: "nembv"
 ---
 
 게시판에 댓글을 추가할 수 있게 만들어보겠다.

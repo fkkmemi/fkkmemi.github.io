@@ -4,6 +4,8 @@ title: NEMVV 5 계정 api
 category: nemvv
 tag: [nemvv,api]
 comments: true
+sidebar:
+  nav: "nemvv"
 ---
 
 설계된 모델을 이용해 xhr요청이 왔을때 데이터를 보내줄 수 있는 api를 만들어보겠습니다.

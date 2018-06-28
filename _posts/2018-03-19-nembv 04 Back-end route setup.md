@@ -4,6 +4,8 @@ title: NEMBV 4 Back-end route setup
 category: nembv
 tag: [nembv,express,nodejs]
 comments: true
+sidebar:
+  nav: "nembv"
 ---
 
 지난번 라우트 원리를 이해했다면 이제 계획을 새울 차례다.

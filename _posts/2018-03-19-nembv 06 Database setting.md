@@ -4,6 +4,8 @@ title: NEMBV 6 Database setting
 category: nembv
 tag: [nembv,mongodb,atlas]
 comments: true
+sidebar:
+  nav: "nembv"
 ---
 
 이제 api와의 연동할 MongoDB를 세팅 해보도록하겠다.

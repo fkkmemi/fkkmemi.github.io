@@ -4,6 +4,8 @@ title: NEMBV 8 Back-end mongoose model
 category: nembv
 tag: [nembv,nodejs,mongodb,mongoose,model,playground]
 comments: true
+sidebar:
+  nav: "nembv"
 ---
 
 mongoose는 ODM(Object Document Mapping)이다. 

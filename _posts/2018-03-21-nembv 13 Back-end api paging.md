@@ -4,6 +4,8 @@ title: NEMBV 13 Back-end api paging
 category: nembv
 tag: [nembv,nodejs,express,mongoose,api,paging]
 comments: true
+sidebar:
+  nav: "nembv"
 ---
 
 데이터를 여러개 부를 때 db, be, fe 등 어딘가에 무리가 가는 것은 당연하다.

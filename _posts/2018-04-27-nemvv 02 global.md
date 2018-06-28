@@ -4,6 +4,8 @@ title: NEMVV 2 전역파일
 category: nemvv
 tag: [nemvv,global,nodemailer,crypto]
 comments: true
+sidebar:
+  nav: "nemvv"
 ---
 
 전역적으로 쓰고 싶은 기능을 모아봤습니다.

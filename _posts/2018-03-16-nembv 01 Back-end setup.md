@@ -4,6 +4,8 @@ title: NEMBV 1 Back-end Setup
 category: nembv
 tag: [nembv,nodejs,express,yarn,git]
 comments: true
+sidebar:
+  nav: "nembv"
 ---
 
 nembv를 사용한 새로운 프로젝트를 시작해보겠다.

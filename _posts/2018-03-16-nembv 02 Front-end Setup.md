@@ -4,6 +4,8 @@ title: NEMBV 2 Front-end Setup
 category: nembv
 tag: [nembv,bootstrap,vue]
 comments: true
+sidebar:
+  nav: "nembv"
 ---
 
 front-end는 javascript는 vue로 css는 bootstrap으로 설치할 것이다

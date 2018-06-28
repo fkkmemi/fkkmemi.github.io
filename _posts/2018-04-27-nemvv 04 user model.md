@@ -4,6 +4,8 @@ title: NEMVV 4 계정 모델링
 category: nemvv
 tag: [nemvv,mongoose,model]
 comments: true
+sidebar:
+  nav: "nemvv"
 ---
 
 어떤 식으로 구현을 할 것인지를 설계를 해놓아야 다음 스텝 밟기가 쉽습니다.
