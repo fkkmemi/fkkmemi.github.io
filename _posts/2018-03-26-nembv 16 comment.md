@@ -756,6 +756,8 @@ exports.del = (req, res) => {
 </style>
 ```
            
+{% endraw %}
+
 # 구현된 화면
 
 {% include video id="muvEky4tkCM" provider="youtube" %}    
@@ -776,4 +778,3 @@ bootstrap은 사실 배치가 중요한 것인데 정신없이 코딩하다보�
 
 다음번엔 invisible recaptcha로 로봇들이 쓰지 못하게 최전방 수비수를 구현해보겠다.
 
-{% endraw %}

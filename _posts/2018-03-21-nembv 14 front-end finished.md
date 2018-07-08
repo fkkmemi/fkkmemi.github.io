@@ -613,6 +613,8 @@ new Vue({
 
 > ~~우선 현재 이 블로그의 liquid 문법과 vue Mustache( {{ }}) 가 겹쳐서 띄어 쓰여져있으니 카피했다면 붙혀야한다 ..~~
 
+{% endraw %}
+
 ## html
 
 - b-row, b-col: grid system의 기초인데 cols="4" 선언으로 4/12 영역에 검색창을 만들었다.
@@ -673,4 +675,3 @@ new Vue({
 
 다음에는 한국형 게시판과 jwt 인증등을 2편에서 이어 진행해보려한다.     
 
-{% endraw %}
