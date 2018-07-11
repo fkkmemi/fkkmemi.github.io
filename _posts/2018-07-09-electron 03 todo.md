@@ -438,7 +438,7 @@ vuetify에서 참조한 콤포넌트는 list, dialog, picker 정도 입니다.
 - v-flex x12로 리스트를 꽉 차게 구현했습니다.
 
 - v-list도 어찌보면 v-card와 비슷한 느낌으로 접근 하시면 됩니다.  
-v-list-tile 하나가 v-card 하나 같은 것입니다.
+v-list-tile 하나가 v-card 하나 같은 것입니다.  
 v-list-tile = v-card  
 v-list-tile-avatar = v-card-title  
 v-list-tile-content = v-card-text  
@@ -1153,6 +1153,10 @@ title 이나 content 수정은 직접 dialog 개조해서 테스트 해보시기
 ```bash
 $ yarn build
 ```
+
+# 원본 소스
+
+[https://github.com/fkkmemi/todo](https://github.com/fkkmemi/todo)
 
 # 결론
 
