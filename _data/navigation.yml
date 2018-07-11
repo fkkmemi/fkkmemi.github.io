@@ -140,6 +140,8 @@ electron:
         url: /electron/electron-01-data/
       - title: "2. UI 이해"
         url: /electron/electron-02-ui/
+      - title: "3. todo 앱 제작"
+        url: /electron/electron-03-todo/
 
 categories:
   - title: Notes
