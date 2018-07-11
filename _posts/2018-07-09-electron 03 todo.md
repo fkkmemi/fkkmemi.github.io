@@ -444,7 +444,7 @@ v-list-tile-avatar = v-card-title
 v-list-tile-content = v-card-text  
 v-list-tile-action = v-cart-action  
 
-- v-list 안에서 totos 만큼 반복해서 데이터를 찍게 되는데요  
+- v-list 안에서 todos 만큼 반복해서 데이터를 찍게 되는데요  
 template으로 돌리고 있는데 사실 v-list-tile 에서 v-for 반복 시켜도 됩니다.  
 template은 실제 표시되는 html코드가 아닙니다.  
 v-list-tile을 돌릴 때 조건에 따라 다르게 표시하거나.. i, j, k로 2중 3중 배열 데이터를 표시할 때..    
@@ -1118,7 +1118,7 @@ CRUD가 잘 되는 지 영상으로 확인해보세요.(_대충 보세요_)
 
 ## 설명
 
-CRUD를 보여주기 위해 직접 디비 핸들링을하고 읽고 있지만.. 사실 권장사항은 내부적으로 한번 받고 변경사항만 패치하는 것이 좋습니다.
+CRUD를 보여주기 위해 직접 디비 핸들링을하고 읽고 있지만.. 사실 권장사항은 한번 받고 내부적으로 처리하다 변경사항만 패치하는 것이 좋습니다.
 
 1000개의 할일이 있다면 매번 1000개의 할일을 읽어오는 구조입니다.
 
