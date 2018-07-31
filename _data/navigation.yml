@@ -1,18 +1,16 @@
 # main links
 main:
-  - title: "Recent"
+  - title: "최근"
     url: /recent/
-  - title: "Portfolio"
-    url: /portfolio/
-  - title: "Docs"
-    url: /docs/
-  - title: "Categories"
+  - title: "종류별"
     url: /categories/
-  - title: "Tags"
-    url: /tags/
-  - title: "Links"
+  - title: "박물관"
+    url: /portfolio/
+  - title: "정리자료"
+    url: /docs/
+  - title: "링크"
     url: /links/
-  - title: "About"
+  - title: "소개"
     url: /about/
 
 comm:
