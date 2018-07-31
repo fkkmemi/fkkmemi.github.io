@@ -13,6 +13,7 @@ redirect_from:
 
 # 일반
 
+- eslint standard 규격에 일반적으로 맞춘다.
 - 전역변수,함수 외에는 대문자(Uppercase)를 사용하지 않는다  
 - 전역변수는 충분히 검토 후, 꼭 필요한 곳에만 사용한다(가급적 사용하지 않는다)
 - 영어, 숫자, 언더바로 구성
@@ -30,21 +31,24 @@ redirect_from:
 
 # 전역변수 : global
 
-- 단어의 첫글자만 대문자를 사용한다. 이니셜 대문자도 예외가 아님  
-    eg) TCPhandle X, TcpHandle O
+
+- ~~단어의 첫글자만 대문자를 사용한다. 이니셜 대문자도 예외가 아님~~  
+    ~~eg) TCPhandle X, TcpHandle O~~
+- 단어의 첫글자는 소문자를 사용한다.
 - 두단어 이상일 경우 단어마다 대문자로 구분  
-    eg) MemberCountReset
+    eg) memberCountReset
 - 비슷한 단어가 두개 이상일 경우 객체 생성 후 소문자(Lowercase) 멤버로 넣는다  
-    eg) RawCount, RawSize -> Raw.count, Raw.size
+    eg) rawCount, rawSize -> raw.count, raw.size
+
     
 # 지역변수 : local
 
-- 두단어 이상일 경우 언더바로 구분  
-    eg) member_cnt_rst
+- ~~두단어 이상일 경우 언더바로 구분~~  
+    eg) ~~member_cnt_rst~~
 - 가능하다면 단어 길이를 알아 볼 수 있을 만큼 줄임  
     eg) count -> cnt, length -> len
 - 비슷한 단어가 두개 이상일 경우 객체 생성 후 멤버로 넣는다  
-    eg) raw_count, raw_size -> raw.count, raw.size
+    eg) rawCount, rawSize -> raw.count, raw.size
 - 컴파일러가 지원된다면 휘발성 변수는 행위 바로 위에 놓는다  
     eg)
     ```c
@@ -61,7 +65,7 @@ redirect_from:
     ```javascript
       // O 
       let vals = [], add = '';
-      for(let f = 0; f < 10; f++) {
+      for (let f = 0; f < 10; f++) {
         let b = GetData(f);
         vals.push(b);
         add += b;
@@ -74,10 +78,13 @@ redirect_from:
 
 # 함수 : function
 
+- 함수선언 다음의 괄호는 공백이 앞뒤로 한칸씩 추가된다.
+- 파라메터는 소문자를 사용한다.
+- 파라메터가 여러개일 경우 콤마 뒤에 한칸씩 공백이 추가된다.
 - parameter는 소문자를 사용한다  
     eg)
     ```javascript
-    function foo(a,b,c) {} //javascript
+    function foo (a, b, c) {} //javascript
     ```
     ```c
     int foo(int a, short b, unsigned char* c) {} //c
@@ -126,3 +133,29 @@ foo(ai, bi);
 
 - ~~데이터베이스에서 가져온 값은 시작 문자를 언더바로 구분한다.~~  
     ~~eg) _member._id, _params[3]._set._max_payment~~
+    
+## NoSQL
+
+- _id 값을 참고 할 경우 언더바를 포함한 값을 가진다.
+
+```javascript
+company = {
+  _id: 1,
+  name: 'n',
+  _dv: device._id
+}
+device = {
+  _id: 54321,
+  name: '장치1',
+  _cp: company._id
+}
+```
+
+- gps 좌표값은 구글 객체와 같게 한다.(그래야 변환이 필요 없다.)
+
+```javascript
+pos = {
+  lat: 37.1,
+  lng: 127.1
+}
+```
