@@ -50,8 +50,7 @@ KT의 경우 커널은 업데이트 하지말라고 해서 추가..(18.8.9)
 처음 시작할 때는 커널업데이트가 되는데 예전 것을 업데이트하면 망하는 것 같다.
 
 ```bash
-$ yum update --exclude=kernel*
-$ yum update -y
+$ yum update --exclude=kernel* -y
 ```
 
 # hard disk add
