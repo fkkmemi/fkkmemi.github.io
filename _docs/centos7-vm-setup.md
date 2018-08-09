@@ -89,12 +89,12 @@ UUID=copieduuid /data                   ext4    defaults        1 2
 # node.js install
 
 ```bash
-$ curl --silent --location https://rpm.nodesource.com/setup_9.x | sudo bash -
+$ curl --silent --location https://rpm.nodesource.com/setup_10.x | sudo bash -
 $ yum -y install nodejs
 $ node -v
-v9.9.0
+v10.8.0
 $ npm -v
-5.6.0
+6.2.0
 ```
 
 # mongoDB install
@@ -289,6 +289,17 @@ local   0.000GB
 
 # git ssh regist
 
+## git update
+
+기본 깔려있는 git v1은 pm2 deploy 문제가 있음
+
+```bash
+$ yum install http://opensource.wandisco.com/centos/7/git/x86_64/wandisco-git-release-7-2.noarch.rpm
+$ yum install git
+$ git --version
+git version 2.14.1
+```
+
 ## github.com > personal setting
 ![git setting](/images/server/2018-03-22 11-36-14 git ssh.png)
 
@@ -331,16 +342,6 @@ $ git clone git@github.com:fkkmemi/projectname.git
 $ ssh-copy-id account@serverurl -p12345
 ```
 
-# git update
-
-기본 깔려있는 git v1은 pm2 deploy 문제가 있음
-
-```bash
-$ yum install http://opensource.wandisco.com/centos/7/git/x86_64/wandisco-git-release-7-2.noarch.rpm
-$ yum install git
-$ git --version
-git version 2.14.1
-```
 
 # yarn install
 
