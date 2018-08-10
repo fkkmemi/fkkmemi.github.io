@@ -183,5 +183,7 @@ docs:
         url: /docs/exception-definition/
       - title: "CentOS7 VM Setup"
         url: /docs/centos7-vm-setup/
+      - title: "CentOS7 VM Update"
+        url: /docs/centos7-vm-update/
       - title: "ruby update osx"
         url: /docs/ruby-update-osx/
