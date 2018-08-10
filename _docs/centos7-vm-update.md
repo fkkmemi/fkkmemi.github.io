@@ -26,7 +26,7 @@ $ yum update --exclude=kernel* -y
 아래의 파일을 지워야 정상 업데이트가 된다. 
 
 ```bash
-$ rm /etc/yum.repos.d/nodesource-el.repo
+$ rm -rf /etc/yum.repos.d/nodesource-el.repo
 ```
 
 그후에 공식사이트대로 진행하면 된다.
