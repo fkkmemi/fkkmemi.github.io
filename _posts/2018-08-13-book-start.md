@@ -309,3 +309,10 @@ sidebar:
 독서의 계절, 가을이 다가와서 한번 남겨봅니다.
 
 요새는 어디 섬에가서 그냥 책속에 파묻히고 싶을 때도 있습니다. 
+
+
+# 커뮤니티 공개
+
+클리앙 팁과강좌
+
+[https://www.clien.net/service/board/lecture/12468115](https://www.clien.net/service/board/lecture/12468115)

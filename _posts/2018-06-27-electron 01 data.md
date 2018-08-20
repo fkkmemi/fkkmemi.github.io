@@ -570,3 +570,9 @@ this.$db.remove({})는 원래 mongoDB에서는 싹다 날리는 것을 의미합
 다음에는 우아하게 만들기 위한 UI를 짚어보도록 하겠습니다..
 
 {% endraw %}
+
+# 커뮤니티 공개
+
+클리앙 팁과강좌
+
+[https://www.clien.net/service/board/lecture/12288374](https://www.clien.net/service/board/lecture/12288374)

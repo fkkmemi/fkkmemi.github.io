@@ -800,3 +800,9 @@ ab,cd,ef,g
 다음에는 외부 라이브러리(chartjs, nedb 등)를 이용해서 더 많은 것을 할 수 있다는 가능성을 다시 보여드리겠습니다.
 
 {% endraw %}
+
+# 커뮤니티 공개
+
+클리앙 팁과강좌
+
+[https://www.clien.net/service/board/lecture/12267795](https://www.clien.net/service/board/lecture/12267795)

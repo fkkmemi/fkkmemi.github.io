@@ -1199,3 +1199,9 @@ vuetify, vue, electron 죄다 한글이라 정말 좋습니다.
 특히 요새 공식사이트의 예제는 절대 무시하면 안됩니다.(_예전에는 진짜 참고만 했었죠 쓸만한 코드가 없어서_)
 
 나름 엄격한 룰을 적용한 샘플코드들입니다. 기이한 습관 지저분한 배치 같은 게 없는 아주 퓨어하면서도 권장 소스니 잘 배껴쓰시기 바랍니다.
+
+# 커뮤니티 공개
+
+클리앙 팁과강좌
+
+[https://www.clien.net/service/board/lecture/12345695](https://www.clien.net/service/board/lecture/12345695)
