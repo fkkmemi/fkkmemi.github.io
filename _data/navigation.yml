@@ -131,8 +131,34 @@ nemvv:
 nemv:
 - title: nemv
   children:
-  - title: "0. 소개"
-    url: /nemvv/nemv-00-intro/
+  - title: "0. 신기능 소개"
+    url: /nemv/nemv-00-intro/
+  - title: "0. 영상화 소개"
+    url: /nemv/nemv-000-youtube/
+  - title: "1. 에디터 설치"
+    url: /nemv/nemv-001-editor/
+  - title: "2. 노드 설치"
+    url: /nemv/nemv-002-node/
+  - title: "3. 익스프레스 설정"
+    url: /nemv/nemv-003-express-setup/
+  - title: "4. 익스프레스 수정"
+    url: /nemv/nemv-004-express-modify/
+  - title: "5. 익스프레스 라우터"
+    url: /nemv/nemv-005-express-router/
+  - title: "6. 뷰티파이란"
+    url: /nemv/nemv-006-vuetify-about/
+  - title: "7. 뷰티파이 설치"
+    url: /nemv/nemv-007-vuetify-install/
+  - title: "8. 익스프레스와 뷰티파이 연동"
+    url: /nemv/nemv-008-express-vuetify-setup/
+  - title: "9. 뷰티파이 수정"
+    url: /nemv/nemv-009-vuetify-modify/
+  - title: "10. 뷰티파이 추가"
+    url: /nemv/nemv-010-vuetify-add/
+  - title: "11. 익스프레스와 뷰라우터"
+    url: /nemv/nemv-011-express-vue-router/
+  - title: "12. 뷰티파이 콤포넌트 사용해보기"
+    url: /nemv/nemv-012-vuetify-components-example/
 
 electron:
   - title: electron
