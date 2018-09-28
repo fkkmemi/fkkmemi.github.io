@@ -26,5 +26,6 @@ sidebar:
 
 # 영상
 
+{% include video id="WQ_GDbG-mvA" provider="youtube" %}   
 
  

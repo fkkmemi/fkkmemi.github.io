@@ -32,7 +32,7 @@ angular, react, vue가 요새 잘나가는 것들인데요.
 
 # 영상
 
-유튜브
+{% include video id="BRRfWRvY9AI" provider="youtube" %}   
 
 
  

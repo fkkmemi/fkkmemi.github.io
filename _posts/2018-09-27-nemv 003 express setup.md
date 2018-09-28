@@ -49,7 +49,7 @@ $ DEBUG=be:* npm start
 
 # 영상
 
-유튜브
+{% include video id="P7B6RzNrO7M" provider="youtube" %}   
 
 
  

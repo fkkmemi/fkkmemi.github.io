@@ -8,11 +8,7 @@ sidebar:
   nav: "nemv"
 ---
 
-뷰티파이 설치
-
-# 뷰티파이 설치에 대해 알아보기
-
-뷰티파이 설치에 사전 정보 알아보기
+뷰티파이 설치에 대해 알아보기
 
 # vue cli 설치
 
@@ -40,7 +36,7 @@ vue-cli3 설치
 
 # 영상
 
-유튜브
+{% include video id="wHa9w_BB3yQ" provider="youtube" %}   
 
 
  

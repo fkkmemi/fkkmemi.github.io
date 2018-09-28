@@ -18,7 +18,7 @@ sidebar:
 
 # 영상
 
-유튜브
+{% include video id="uQk6ozqxQYQ" provider="youtube" %}   
 
 
  
