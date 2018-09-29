@@ -258,6 +258,6 @@ let result = sl.join(',')
 
 # 영상
 
-추가 준비중
+{% include video id="VNeOdvR12DE" provider="youtube" %}   
 
  
