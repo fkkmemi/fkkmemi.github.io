@@ -131,8 +131,8 @@ nemvv:
 nemv:
 - title: nemv
   children:
-  - title: "0. 신기능 소개"
-    url: /nemv/nemv-00-intro/
+#  - title: "0. 신기능 소개"
+#    url: /nemv/nemv-00-intro/
   - title: "0. 영상화 소개"
     url: /nemv/nemv-000-youtube/
   - title: "1. 에디터 설치"

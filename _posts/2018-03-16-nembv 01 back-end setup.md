@@ -152,4 +152,4 @@ package.json에 start를 이렇게 등록했기 때문에 실행되는 것이다
 
 브라우저에서 http://localhost:3000 을 입력하여 아래 이미지가 뜨면 익스프레스 기본 설치가 완료된 것이다..
 
-![browser](/images/nembv/Express 2018-03-16 13-53-54.png)
+![alt browser](/images/nembv/Express 2018-03-16 13-53-54.png)

@@ -34,6 +34,12 @@ xxx.com/api/user/id : delete로 회원 삭제
 $ npm i express-generator -g
 ```
 
+제네레이터를 전역으로 설치합니다.
+
+자세한 경로는 아래에서 확인 가능합니다.
+
+[http://expressjs.com/en/starter/generator.html](http://expressjs.com/en/starter/generator.html)
+
 # 익스프레스 설치
 
 ```bash
@@ -43,9 +49,13 @@ $ npm i
 $ DEBUG=be:* npm start 
 ```
 
+be라는 프로젝트로 
+
 # 익스프레스 확인
 
 브라우저로 http://localhost:3000에 접속해서 웰컴 메세지가 나오면 성공입니다. 
+
+![alt browser](/images/nembv/Express 2018-03-16 13-53-54.png)
 
 # 영상
 
