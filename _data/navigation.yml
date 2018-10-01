@@ -161,6 +161,8 @@ nemv:
     url: /nemv/nemv-012-vuetify-components-example/
   - title: "13. 자바스크립트 언어 사용 시작에 대해"
     url: /nemv/nemv-013-javascript-about-start/
+  - title: "14. 자바스크립트 기본"
+    url: /nemv/nemv-014-javascript-study/
 
 electron:
   - title: electron
