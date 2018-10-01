@@ -579,4 +579,4 @@ this.cards = [
 
 # 영상
 
-준비중
+{% include video id="earBVtOH_Qw" provider="youtube" %}  
