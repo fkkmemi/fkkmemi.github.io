@@ -163,6 +163,8 @@ nemv:
     url: /nemv/nemv-013-javascript-about-start/
   - title: "14. 자바스크립트 기본"
     url: /nemv/nemv-014-javascript-study/
+  - title: "15. 뷰티파이 레이아웃"
+    url: /nemv/nemv-015-vuetify-layout/
 
 electron:
   - title: electron
