@@ -112,5 +112,9 @@ vuetify가 이미 설계가 잘 되어있기 때문에 저 3요소만 잘 이용
 
 - 카드 height로 높이 맞추기
 
+# 영상
+
+{% include video id="NGYAoSv1k3E" provider="youtube" %}  
+
 
 
