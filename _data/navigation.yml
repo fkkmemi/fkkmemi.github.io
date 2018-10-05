@@ -165,6 +165,9 @@ nemv:
     url: /nemv/nemv-014-javascript-study/
   - title: "15. 뷰티파이 레이아웃"
     url: /nemv/nemv-015-vuetify-layout/
+  - title: "16. 깃 사용하기"
+    url: /nemv/nemv-016-git-start/
+
 
 electron:
   - title: electron
