@@ -167,6 +167,8 @@ nemv:
     url: /nemv/nemv-015-vuetify-layout/
   - title: "16. 깃 사용하기"
     url: /nemv/nemv-016-git-start/
+  - title: "17. SPA란"
+    url: /nemv/nemv-016-about-spa/
 
 
 electron:
