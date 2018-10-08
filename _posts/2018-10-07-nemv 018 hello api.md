@@ -2,7 +2,7 @@
 layout: single
 title: 모던웹(NEMV) 혼자 제작 하기 3기 - 18 api 설정하기
 category: nemv
-tag: [nemv,spa,talk]
+tag: [nemv,node,api,express]
 comments: true
 sidebar:
   nav: "nemv"
@@ -21,7 +21,6 @@ sidebar:
 # 기존 소스 코드 정리
 
 - pug 부분 삭제
-- history mode 추가
 - api 추가
 - 예외 처리
 
