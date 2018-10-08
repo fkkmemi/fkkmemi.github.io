@@ -10,6 +10,8 @@ sidebar:
 
 프론트에서 api를 통해 데이터를 받아서 화면을 변경.
 
+본문 작업중
+
 # history mode
 
 # api 만들기
@@ -24,5 +26,6 @@ sidebar:
 
 # 영상
 
+{% include video id="QckudpVdZS4" provider="youtube" %}  
 
 
