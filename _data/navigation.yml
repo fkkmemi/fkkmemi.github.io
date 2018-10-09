@@ -172,8 +172,9 @@ nemv:
   - title: "18. API 정리"
     url: /nemv/nemv-018-hello-api/
   - title: "19. axios 사용하기"
-    url: /nemv/nemv-018-hello-api/
-
+    url: /nemv/nemv-019-hello-axios/
+  - title: "20. RESTful한 api 만들기"
+    url: /nemv/nemv-020-make-rest/
 
 electron:
   - title: electron
