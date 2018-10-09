@@ -22,12 +22,12 @@ REST(Representational State Transfer)는 구글링해보면 잘 나와 있지만
 
 CRUD를 HTTP로는 이렇게 하자는 게 결국 REST죠
 
-    | name	| desc. |	db  | http |
-    | --- | --- | --- | --- |
-    | Create	| 생성 |	INSERT | POST  |
-    | Read(또는 Retrieve)	 | 읽기(또는 인출) | 	SELECT | GET |
-    | Update | 갱신 | UPDATE | PUT |
-    | Delete(또는 Destroy)	| 삭제(또는 파괴) | 	DELETE | DELETE |   
+| name	| desc. |	db  | http |
+| --- | --- | --- | --- |
+| Create	| 생성 |	INSERT | POST  |
+| Read(또는 Retrieve)	 | 읽기(또는 인출) | 	SELECT | GET |
+| Update | 갱신 | UPDATE | PUT |
+| Delete(또는 Destroy)	| 삭제(또는 파괴) | 	DELETE | DELETE |   
     
 # 왜 REST REST 난리인가
 
@@ -59,6 +59,6 @@ get post put delete만 다룹니다.
 
 # 영상
 
-{% include video id="" provider="youtube" %}  
+{% include video id="yVCP-nohVSc" provider="youtube" %}  
 
 
