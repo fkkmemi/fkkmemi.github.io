@@ -16,6 +16,8 @@ REST(Representational State Transfer)는 구글링해보면 잘 나와 있지만
 
 실제 사용해보면 별 것도 없습니다.
 
+{% include toc %}
+
 # CRUD와 비교표
 
 결국 통신으로 읽고 쓰고 수정하고 지울 뿐이죠..

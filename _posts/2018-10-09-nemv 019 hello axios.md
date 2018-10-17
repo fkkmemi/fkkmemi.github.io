@@ -10,6 +10,9 @@ sidebar:
 
 프론트에서 api를 통해 데이터를 받아서 화면을 변경해보겠습니다.
 
+{% include toc %}
+{% raw %}
+
 # api 만들기
 
 **be/api/user/index.js**  
@@ -178,6 +181,8 @@ export default {
 ```
 
 뷰티파이 card 콤포넌트를 이용해서 화면을 채워봤습니다.
+
+{% endraw %}
 
 # 영상
 

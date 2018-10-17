@@ -10,11 +10,17 @@ sidebar:
 
 노드에서 몽고디비를 사용하는 방법은 여러가지 입니다.
 
-그중 몽구스(mongoose)라는 것이 디비를 핸들링하기 쉽게 해줍니다.
+그 중 몽구스(mongoose)라는 것이 디비를 핸들링하기 쉽게 해줍니다.
+
+몽구스는 몽고디비 기반 ODM(Object Data Mapping) 이란 것입니다.  
+
+공식 홈페이지: [https://mongoosejs.com](https://mongoosejs.com) 
 
 몽구스를 이용해서 CRUD(Create Read Update Delete) 쓰고 읽고 수정하고 지우고를 해보도록 하겠습니다.
 
-# 몽고디비 켜놓기
+{% include toc %}
+
+# 몽고디비서버 켜놓기
 
 ```bash
 $ mongod
@@ -134,7 +140,7 @@ Company.findOne()
          return Student.findOne()
     })
     .then(r => {
-      if (!r) throw new Error('데이터가 없으면 수정할 수 없잖아') // 하단 캐치로 내려가게 할 수 있음
+      if (!r) throw new Error('데이터가 없으면 수정할 수 없잖아') // 하단 캐치로 내려가게 할 수 있음 하단의 e.message가 '데이터가 없으면 수정할 수 없잖아' 임
          return Parent.updateOne()
     })
     .then(r => {

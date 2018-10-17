@@ -10,6 +10,8 @@ sidebar:
 
 몽고디비 셸로 설치 확인하기
 
+{% include toc %}
+
 # 디비 생성
 
 ```bash

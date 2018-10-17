@@ -16,6 +16,8 @@ sidebar:
 
 단순 설치이니 크게 어렵지 않습니다.
 
+{% include toc %}
+
 # 맥에서 할 경우 brew 이용
 
 ```bash

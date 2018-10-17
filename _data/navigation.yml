@@ -163,7 +163,7 @@ nemv1:
   - title: "13. 자바스크립트 언어 사용 시작에 대해"
     url: /nemv/nemv-013-javascript-about-start/
 - title: 모던웹(NEMV) 제작 기본편
-  url: /nemv/nemv-013-javascript-about-start/
+  url: /nemv/nemv-014-javascript-study/
 
 nemv2:
 - title: 모던웹(NEMV) 제작 기초편
@@ -194,6 +194,8 @@ nemv2:
     url: /nemv/nemv-024-mongoose-and-api/
   - title: "25. API와 프론트 통신 정리"
     url: /nemv/nemv-025-mongoose-and-api-2/
+  - title: "26. 기본편 정리"
+    url: /nemv/nemv-026-standard-end/
 
 nemv3:
 - title: 모던웹(NEMV) 제작 응용
