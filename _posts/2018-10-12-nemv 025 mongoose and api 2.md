@@ -5,7 +5,7 @@ category: nemv
 tag: [nemv,mongo,mongodb,node,express,vuetify,vue]
 comments: true
 sidebar:
-  nav: "nemv"
+  nav: "nemv2"
 ---
 
 프론트와 api와 디비의 통신 예제입니다.

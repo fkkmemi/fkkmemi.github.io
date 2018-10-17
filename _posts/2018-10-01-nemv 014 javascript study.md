@@ -5,12 +5,12 @@ category: nemv
 tag: [nemv,vue,vuetify,javascript]
 comments: true
 sidebar:
-  nav: "nemv"
+  nav: "nemv2"
 ---
 
 이제부터 기본편 시작합니다.
 
-기초편보다 어려운 것이 아니고 기초편은 개발환경 구축이라면 기본편은 응용의 시간인 거죠~
+기초편보다 어려운 것이 아니고 기초편이 개발환경 구축이라면 기본편은 개발환경으로 가능성을 만들 시간인 거죠~
 
 언어란 무엇인지 초심을 다듬으며 떠올려봅니다.
 
@@ -37,6 +37,7 @@ _편의를 위해 자바스크립트는 자스로 줄여 부르겠습니다._
 자바스크립트를 처음 다뤘을 때를 떠올리며 작성해봅니다.
 
 {% include toc %}
+{% raw %}
 
 # 개요
 
@@ -437,7 +438,7 @@ for (let k in obj) {
 }
 console.log(obj.c) // 3
 console.log(obj['c']) // 3
-console.log(obj['gggg']) // gggg
+console.log(obj['xxx']) // gggg
 ```
 
 바로 키와 값을 조회 할 수 있습니다.
@@ -452,7 +453,7 @@ obj.c와 obj['c']는 같은 값인 거죠~
 
 한땀한땀 재미 들려서 다른 것도 해보고 싶으신 분은 좀 촌스러운 사이트지만 아래 사이트들을 추천합니다.
 
-https://www.w3schools.com/js/default.asp
+[https://www.w3schools.com/js/default.asp](https://www.w3schools.com/js/default.asp)
 
 # 뷰티파이와 연동 해보기
 
@@ -576,6 +577,8 @@ this.cards = [
 바로 디버그라고 할 수 있는 것이죠.
 
 이 강좌에서 추구하는 방향은 고수의 길이 아닌 구현의 길입니다~
+
+{% endraw %}
 
 # 영상
 

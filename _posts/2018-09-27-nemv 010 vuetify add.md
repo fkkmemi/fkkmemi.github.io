@@ -5,7 +5,7 @@ category: nemv
 tag: [nemv,node,express,vue,vuetify]
 comments: true
 sidebar:
-  nav: "nemv"
+  nav: "nemv1"
 ---
 
 뷰티파이 기본 설치된 상태에서 페이지 추가해서 브라우저로 확인해보도록 하겠습니다.
@@ -59,6 +59,18 @@ export default {
 ```
 
 위와 같이 items를 늘려주고 html 요소중 v-list-tile에 :to를 지정해주면 됩니다.
+
+:to는 뷰라우터가 처리해주는 것입니다. 
+
+뷰라우터 공식 문서를 보면 알 수 있습니다.
+
+[https://router.vuejs.org/kr/guide/#javascript](https://router.vuejs.org/kr/guide/#javascript)
+
+뷰라우터를 너무 심도있게 공부할 필요는 없습니다.
+
+저정도 기능말고 쓸 것이 없기 때문입니다. 
+
+:to 말고도 v-for key등이 뭔지 모르지만 다음에 배우고 이번 챕터는 메뉴가 잘 추가된 것만 확인하고 넘어갑니다.
 
 # 아이콘 바꾸기
 

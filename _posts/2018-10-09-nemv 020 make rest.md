@@ -5,7 +5,7 @@ category: nemv
 tag: [nemv,api,express,vue,axios]
 comments: true
 sidebar:
-  nav: "nemv"
+  nav: "nemv2"
 ---
 
 REST(Representational State Transfer)는 구글링해보면 잘 나와 있지만 대체 뭔소린지 알아먹기가 힘드실 겁니다.
@@ -47,6 +47,60 @@ get post put delete만 다룹니다.
 
 사실 업데이트는 put patch 개념이 조금 다른데.. 뭐 나중에 필요를 느끼시면 알아보고 메쏘드 하나 추가하시면 됩니다.
 
+**be/routes/api/user/index.js**  
+```javascript
+var express = require('express');
+var createError = require('http-errors');
+var router = express.Router();
+
+const us = [
+  {
+    name: '김김김',
+    age: 14
+  },
+  {
+    name: '이이이',
+    age: 24
+  }
+]
+
+router.get('/', function(req, res, next) {
+  console.log(req.query)
+    console.log(req.body)
+
+  res.send({ users: us })
+});
+
+router.post('/', (req, res, next) => {
+  console.log(req.query)
+    console.log(req.body)
+  res.send({ success: true, msg: 'post ok' })
+})
+
+router.put('/', (req, res, next) => {
+  console.log(req.query)
+    console.log(req.body)
+  res.send({ success: true, msg: 'put ok' })
+})
+
+router.delete('/', (req, res, next) => {
+  console.log(req.query)
+    console.log(req.body)
+  res.send({ success: true, msg: 'del ok' })
+})
+
+
+router.all('*', function(req, res, next) {
+  next(createError(404, '그런 api 없어'));
+});
+
+module.exports = router;
+```
+
+브라우저로 확인 할 수 있는 것은 get 밖에 안됩니다.
+
+그래서 프론트를 만듭니다.
+
 # 프론트 요청 ui 만들기
 
 레스트 테스트는 크롬 확장앱인 포스트맨이 최고입니다.
@@ -56,6 +110,152 @@ get post put delete만 다룹니다.
 굳이..
 
 공부도 할겸 직접 만듭시다.
+
+**fe/src/views/user.vue**  
+```vue
+<template>
+  <v-container grid-list-md text-xs-center>
+    <v-layout row wrap>
+      <v-flex xs12 sm3>
+        <v-card>
+
+          <v-card-title primary-title>
+            <div>
+              <h3 class="headline mb-0">get</h3>
+            </div>
+          </v-card-title>
+          <v-card-text>
+            <v-textarea v-model='getMd'>
+            </v-textarea>
+          </v-card-text>
+
+          <v-card-actions>
+            <v-btn flat color="orange" @click="getReq">submit</v-btn>
+          </v-card-actions>
+        </v-card>
+      </v-flex>
+      <v-flex xs12 sm3>
+        <v-card>
+
+          <v-card-title primary-title>
+            <div>
+              <h3 class="headline mb-0">post</h3>
+            </div>
+          </v-card-title>
+          <v-card-text>
+            <v-textarea v-model='postMd'>
+            </v-textarea>
+          </v-card-text>
+
+          <v-card-actions>
+            <v-btn flat color="orange" @click="postReq">submit</v-btn>
+          </v-card-actions>
+        </v-card>
+      </v-flex>
+      <v-flex xs12 sm3>
+        <v-card>
+
+          <v-card-title primary-title>
+            <div>
+              <h3 class="headline mb-0">put</h3>
+            </div>
+          </v-card-title>
+          <v-card-text>
+            <v-textarea v-model='putMd'>
+            </v-textarea>
+          </v-card-text>
+
+          <v-card-actions>
+            <v-btn flat color="orange" @click="putReq">submit</v-btn>
+          </v-card-actions>
+        </v-card>
+      </v-flex>
+      <v-flex xs12 sm3>
+        <v-card>
+
+          <v-card-title primary-title>
+            <div>
+              <h3 class="headline mb-0">del</h3>
+            </div>
+          </v-card-title>
+          <v-card-text>
+            <v-textarea v-model='delMd'>
+            </v-textarea>
+          </v-card-text>
+
+          <v-card-actions>
+            <v-btn flat color="orange" @click="delReq">submit</v-btn>
+          </v-card-actions>
+        </v-card>
+      </v-flex>
+    </v-layout>
+  </v-container>
+</template>
+<script>
+import axios from 'axios'
+export default {
+  data () {
+    return {
+      users: [],
+      getMd: '',
+      postMd: '',
+      putMd: '',
+      delMd: ''
+    }
+  },
+  mounted () {
+  },
+  methods: {
+    getReq () {
+      axios.get('http://localhost:3000/api/user', {
+        user: 'getMan'
+      })
+        .then((r) => {
+          this.getMd = JSON.stringify(r.data)
+        })
+        .catch((e) => {
+          console.error(e.message)
+        })
+    },
+    postReq () {
+      axios.post('http://localhost:3000/api/user', {
+        user: 'postMan'
+      })
+        .then((r) => {
+          this.postMd = JSON.stringify(r.data)
+        })
+        .catch((e) => {
+          console.error(e.message)
+        })
+    },
+    putReq () {
+      axios.put('http://localhost:3000/api/user', {
+        user: 'putMan'
+      })
+        .then((r) => {
+          this.putMd = JSON.stringify(r.data)
+        })
+        .catch((e) => {
+          console.error(e.message)
+        })
+    },
+    delReq () {
+      axios.delete('http://localhost:3000/api/user')
+        .then((r) => {
+          this.delMd = JSON.stringify(r.data)
+        })
+        .catch((e) => {
+          console.error(e.message)
+        })
+    }
+  }
+}
+</script>
+```
+
+# 구현된 화면
+
+![alt 구현 화면](/images/nemv/스크린샷 2018-10-17 오후 3.45.28.png)
 
 # 영상
 

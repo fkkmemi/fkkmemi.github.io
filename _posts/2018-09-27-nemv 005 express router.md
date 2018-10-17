@@ -5,14 +5,14 @@ category: nemv
 tag: [nemv,node,express]
 comments: true
 sidebar:
-  nav: "nemv"
+  nav: "nemv1"
 ---
 
 생성된 익스프레스 소스에 라우터, 페이지를 추가해봅니다.
 
 # 익스프레스 라우터 추가
 
-http://localhost:3000/users에 가면
+브라우저에서 http://localhost:3000/users에 가면
 
 respond with a resource 라는 텍스트가 있습니다.
 

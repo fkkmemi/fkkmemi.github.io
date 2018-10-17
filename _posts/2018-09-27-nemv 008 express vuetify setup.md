@@ -5,10 +5,10 @@ category: nemv
 tag: [nemv,node,express,vue,vuetify]
 comments: true
 sidebar:
-  nav: "nemv"
+  nav: "nemv1"
 ---
 
-http://localhost:8080은 뷰 개발모드입니다.
+전 강좌에서 yarn serve로 실행한 http://localhost:8080은 뷰 개발모드입니다.
 
 실제 구현되어야할 곳은 백엔드가 구동하는 http://localhost:3000에서 돌아가야 합니다.
 
@@ -39,6 +39,15 @@ app.use(express.static(path.join(__dirname, 'fe', 'dist')));
 
 # 백엔드 라우팅에 대한 설명
 
+스태틱(static)이란 것은 정적이다, 즉 동적이 아니라는 것입니다.
+
+- 정적인 라우터의 예: /image/1.png /about.html
+- 동적인 라우터의 예: /user/xxx /user/yyy
+
+정적인 라우터는 정해진 곳에 파일이 있다면 응답으로 그 파일을 전송하는 것이고,
+
+동적인 라우터는 주소가 변경됨에 따라 다른 파일 혹은 내용을 전송하는 것입니다.
+
 # API 서버 만들기
 
 정적인 파일 라우트 위에 api를 만들어 줍니다.
@@ -62,6 +71,10 @@ module.exports = router;
 ```
 
 백엔드서버를 다시 구동(npm start) 후, 브라우저에서 http://localhost:3000/api 를 입력해보면 "나는 api입니다."가 잘 나오는 것을 확인 할 수 있습니다.
+
+이제 /api/어쩌고 로 들어오면 우선 처리해주고 /xxy/ 같은 모르는 패스가 들어오면 정적인 라우팅을 해주게 됩니다.
+
+정적인 라우터도 모르는 곳이면 더 아래에 있는 예외처리 라우터로 넘어가서 우리가 흔히 보는 404 에러를 보내주는 것입니다.
 
 # 정리
 

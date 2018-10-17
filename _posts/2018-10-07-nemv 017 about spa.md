@@ -5,7 +5,7 @@ category: nemv
 tag: [nemv,spa,talk]
 comments: true
 sidebar:
-  nav: "nemv"
+  nav: "nemv2"
 ---
 
 웹사이트를 처음 만드시는 분들도 있기 때문에 SPA에 대해 간략하게 설명해보겠습니다.

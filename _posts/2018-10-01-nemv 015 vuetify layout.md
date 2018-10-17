@@ -5,7 +5,7 @@ category: nemv
 tag: [nemv,vue,vuetify]
 comments: true
 sidebar:
-  nav: "nemv"
+  nav: "nemv2"
 ---
 
 모던웹, 즉 현대적인 웹에서 가장 큰 부분을 담당하는 반응형에 대한 이야기입니다.
@@ -96,23 +96,92 @@ xs6로 해두면 12 나누기 6 = 2개가 나오겠죠.
 
 vuetify가 이미 설계가 잘 되어있기 때문에 저 3요소만 잘 이용해주면 배치의 문제는 끝난 것입니다.
 
-# 해볼 것들
+# 아톰에디터에 터미널 추가하기
 
-- 아톰에디터에 터미널 추가하기
+Preferences/install 에서 터미널을 찾아서 설치하면 편리합니다.
 
-- mounted로 시작 테스트하기
+![alt terminal](/images/nemv/스크린샷 2018-10-08 오후 3.53.19.png)
 
-- v-text-area로 디버그 내용 뿌려보기
+우측 하단에 + 버튼을 눌러서 yarn serve등을 해주면 좋습니다.
 
-- $vuetify.breakpoint 확인해보기
+# mounted로 시작 테스트하기
 
-- v-if 사용해서 모바일과 데스크탑에서 조건으로 보이고 안보이고 하기 
+페이지 구동시 들어갑니다.
 
-- v-for 조건으로 개수 변경하기
+**fe/src/views/About.vue**  
+```vue
+<script>
+export default {
+  mounted () {
+    console.log('page start')
+  }
+}
+</script>
+```
 
-- 카드 height로 높이 맞추기
+페이지 수정 후 저장하고 브라우저에서 콘솔을 보며 확인하면 편리합니다. 
+
+# v-text-area로 디버그 내용 뿌려보기
+
+**fe/src/views/About.vue**  
+```vue
+<template>
+  <v-container>
+    <v-layout>
+      <v-textarea
+        outline
+        v-model="ta"
+      </v-textarea>
+    </v-layout>
+  </v-container>
+</template>
+<script>
+export default {
+  name: 'about',
+  data () {
+    return {
+      ta: 'debug'
+    }
+  },
+  mounted () {
+    const a = { a: 1, b: 2 }
+    this.ta = JSON.stringify(a)
+    console.log('page start')
+  }
+}
+</script>
+```
+
+이제부터는 this.ta를 이용해 콘솔 대신 textarea에 이것저것 표시해볼수 있게 되었습니다.
+
+# $vuetify.breakpoint 확인해보기
+
+$vuetify라는 전역변수를 살펴볼 수 있습니다.
+ 
+**fe/src/views/About.vue**  
+```javascript
+  mounted () {
+    this.ta = JSON.stringify(this.$vuetify.breakpoint)
+  }
+```
+
+현재 브라우저 화면이 어떤 상태인지 전역 뷰티파이 변수로 확인할 수 있습니다.
+
+# v-for 조건으로 개수 변경하기
+
+간단하게 요소를 복사할 때 숫자를 넣어서도 가능합니다.
+
+```vue
+<v-flex xs12 sm6 md4 v-for="x in 4">
+  {{x}} 
+</v-flex>
+```
+
+주의해야할 것은 x는 0이 아닌 1부터 시작합니다. 
 
 # 영상
+
+이번 강좌는 코드보다는 영상을 봐야 이해가 빠릅니다..
 
 {% include video id="NGYAoSv1k3E" provider="youtube" %}  
 

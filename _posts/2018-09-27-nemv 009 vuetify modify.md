@@ -5,7 +5,7 @@ category: nemv
 tag: [nemv,node,express,vue,vuetify]
 comments: true
 sidebar:
-  nav: "nemv"
+  nav: "nemv1"
 ---
 
 뷰티파이 기본 설치된 파일을 수정해서 브라우저로 확인해보기

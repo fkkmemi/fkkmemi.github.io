@@ -5,7 +5,7 @@ category: nemv
 tag: [nemv,vue,vuetify]
 comments: true
 sidebar:
-  nav: "nemv"
+  nav: "nemv1"
 ---
 
 뷰티파이 설치에 대해 알아보기
@@ -16,9 +16,9 @@ sidebar:
 
 {% include toc %}
 
-# yarn이란
+# yarn 이란
 
-yarn은 패키지 매니저라고 하는 것입니다. npm이랑 같지만 빨릅니다.
+yarn은 패키지 매니저라고 하는 것입니다. npm이랑 같지만 빠릅니다.
 
 그런데 최근에는 npm 보다 yarn을 선호하는데요 설치가 어렵지 않으니
 

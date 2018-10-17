@@ -5,7 +5,7 @@ category: nemv
 tag: [nemv,node,vue,vuetify,javascript,c]
 comments: true
 sidebar:
-  nav: "nemv"
+  nav: "nemv1"
 ---
 
 현재 진행중인 모던웹 NEMV, 즉 노드, 익스프레스, 몽고디비, 뷰 모두 자바스크립트를 기반으로 합니다.
@@ -206,7 +206,7 @@ result = str + i
 
 ## 편의성
 
-자주 쓰던 C++큻래스가 있었습니다.
+자주 쓰던 C++클래스가 있었습니다.
 
 ```c
 String result;
@@ -257,6 +257,8 @@ let result = sl.join(',')
 더 나은 방법으로 잘하시는 분들이 계실테지만 이런 것도 있다 라는 느낌으로 봐주시기 바랍니다.
 
 # 영상
+
+자세한 것은 영상을 보며 확인하세요~
 
 {% include video id="VNeOdvR12DE" provider="youtube" %}   
 

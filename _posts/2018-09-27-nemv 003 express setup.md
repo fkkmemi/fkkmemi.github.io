@@ -5,7 +5,7 @@ category: nemv
 tag: [nemv,node,express]
 comments: true
 sidebar:
-  nav: "nemv"
+  nav: "nemv1"
 ---
 
 익스프레스 설치 및 약간의 설명입니다.
@@ -49,7 +49,7 @@ $ npm i
 $ DEBUG=be:* npm start 
 ```
 
-be라는 프로젝트로 
+be라는 프로젝트로 익스프레스 고수들이 만들어 줬다고 생각하면 됩니다.
 
 # 익스프레스 확인
 

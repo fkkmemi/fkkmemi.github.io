@@ -5,7 +5,7 @@ category: nemv
 tag: [nemv,vue,vuetify,git,express,node]
 comments: true
 sidebar:
-  nav: "nemv"
+  nav: "nemv2"
 ---
 
 지금까지 프로젝트를 깃을 사용해 다시 만들어 보겠습니다.

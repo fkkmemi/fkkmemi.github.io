@@ -5,7 +5,7 @@ category: nemv
 tag: [nemv,mongo,mongodb,node,express,vuetify,vue]
 comments: true
 sidebar:
-  nav: "nemv"
+  nav: "nemv2"
 ---
 
 mongoose 를 통해 api 테스트 하기

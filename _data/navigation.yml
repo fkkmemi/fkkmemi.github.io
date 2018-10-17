@@ -128,8 +128,9 @@ nemvv:
         url: /nemvv/nemvv-04-user-model/
       - title: "5. 사용자관리: API"
         url: /nemvv/nemvv-05-user-api/
-nemv:
-- title: nemv
+
+nemv1:
+- title: 모던웹(NEMV) 제작 기초편
   children:
 #  - title: "0. 신기능 소개"
 #    url: /nemv/nemv-00-intro/
@@ -161,6 +162,14 @@ nemv:
     url: /nemv/nemv-012-vuetify-components-example/
   - title: "13. 자바스크립트 언어 사용 시작에 대해"
     url: /nemv/nemv-013-javascript-about-start/
+- title: 모던웹(NEMV) 제작 기본편
+  url: /nemv/nemv-013-javascript-about-start/
+
+nemv2:
+- title: 모던웹(NEMV) 제작 기초편
+  url: /nemv/nemv-000-youtube/
+- title: 모던웹(NEMV) 제작 기본편
+  children:
   - title: "14. 자바스크립트 기본"
     url: /nemv/nemv-014-javascript-study/
   - title: "15. 뷰티파이 레이아웃"
@@ -175,9 +184,23 @@ nemv:
     url: /nemv/nemv-019-hello-axios/
   - title: "20. RESTful한 api 만들기"
     url: /nemv/nemv-020-make-rest/
+  - title: "21. 몽고디비 설치"
+    url: /nemv/nemv-021-mongo-install/
+  - title: "22. 몽고디비 설치 확인"
+    url: /nemv/nemv-022-mongo-shell/
+  - title: "23. 몽구스 설치 및 확인"
+    url: /nemv/nemv-023-mongoose-setup/
+  - title: "24. api와 몽구스 연결"
+    url: /nemv/nemv-024-mongoose-and-api/
+  - title: "25. API와 프론트 통신 정리"
+    url: /nemv/nemv-025-mongoose-and-api-2/
+
+nemv3:
+- title: 모던웹(NEMV) 제작 응용
+  children:
 
 electron:
-  - title: electron
+  - title: Electron과 Vue로 데스크탑 앱 제작해보기
     children:
       - title: "0. 기초"
         url: /electron/electron-00-intro/
@@ -205,9 +228,11 @@ categories:
 #        url: /mongodb/mongo-sharding-1/
 #      - title: npm
 #        url: /npm/npm-intro/
-      - title: NEMV
-        url: /categories/#nemv
-      - title: Electron
+      - title: 모던웹(NEMV) 제작 기초편
+        url: /nemv/nemv-000-youtube/
+      - title: 모던웹(NEMV) 제작 기본편
+        url: /nemv/nemv-014-javascript-study/
+      - title: Electron과 Vue로 데스크탑 앱 제작해보기
         url: /categories/#electron
       - title: NEMVV
         url: /categories/#nemvv
