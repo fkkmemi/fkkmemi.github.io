@@ -202,7 +202,7 @@ nemv3:
   children:
 
 electron:
-  - title: Electron과 Vue로 데스크탑 앱 제작해보기
+  - title: Electron과 Vue로 데스크탑 앱 만들기
     children:
       - title: "0. 기초"
         url: /electron/electron-00-intro/
@@ -212,6 +212,8 @@ electron:
         url: /electron/electron-02-ui/
       - title: "3. todo 앱 제작"
         url: /electron/electron-03-todo/
+      - title: "4. vue-cli3 업그레이드"
+        url: /electron/electron-04-vuecli3/
 
 book:
 - title: book
