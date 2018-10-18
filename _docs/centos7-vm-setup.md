@@ -367,3 +367,14 @@ $ pm2 save
 # log retain 7day
 $ pm2 set pm2-logrotate:retain 7
 ```
+
+pm2 startup을 했다는 것은 /etc/systemd/system/pm2-root.service 가 생성되었다는 것
+
+**/etc/systemd/system/pm2-root.service**  
+```bash
+ExecStart=/var/www/xxx/source/build.sh
+```
+
+필요할 경우 수동 시작 파일을 지정한다.
+
+> 재시작시 yarn, yarn build 후 pm2 start를 하려는 경우에 필요
