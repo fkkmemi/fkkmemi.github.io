@@ -24,6 +24,12 @@ comments: true
 
 # 업데이트 1.3
 
+```bash
+$ yarn upgrade vuetify
+```
+
+**OR**
+
 **package.json**  
 ```javascript
 "vuetify": "^1.3.0",
