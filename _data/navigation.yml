@@ -196,10 +196,16 @@ nemv2:
     url: /nemv/nemv-025-mongoose-and-api-2/
   - title: "26. 기본편 정리"
     url: /nemv/nemv-026-standard-end/
+- title: 모던웹(NEMV) 제작 응용편
+  url: /nemv/nemv-027-toast-regist/
 
 nemv3:
-- title: 모던웹(NEMV) 제작 응용
+- title: 모던웹(NEMV) 제작 기본편
+  url: /nemv/nemv-014-javascript-study/
+- title: 모던웹(NEMV) 제작 응용편
   children:
+  - title: "27. 클라우드 서버 가입하기"
+    url: /nemv/nemv-027-toast-regist/
 
 electron:
   - title: Electron과 Vue로 데스크탑 앱 만들기
