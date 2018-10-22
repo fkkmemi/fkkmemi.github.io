@@ -29,7 +29,15 @@ sidebar:
 - cd 대상 : 아래 대상으로
 - cd .. : 위로
 
-## vi cp mv rm mkdir
+## cp mv rm
+
+복사 이동 삭제입니다.
+
+## mkdir
+
+디렉토리 만들기
+
+## vi
 
 # 영상
 
