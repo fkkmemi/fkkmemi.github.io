@@ -285,7 +285,7 @@ $ yarn pr
 
 # 영상
 
-{% include video id="" provider="youtube" %}   
+{% include video id="-YCA3KVkZCA" provider="youtube" %}   
 
 
 
