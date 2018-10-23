@@ -252,6 +252,8 @@ categories:
         url: /nemv/nemv-000-youtube/
       - title: 모던웹(NEMV) 제작 기본편
         url: /nemv/nemv-014-javascript-study/
+      - title: 모던웹(NEMV) 제작 응용편
+        url: /nemv/nemv-027-toast-regist/
       - title: Electron과 Vue로 데스크탑 앱 제작해보기
         url: /categories/#electron
       - title: NEMVV
