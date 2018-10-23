@@ -216,6 +216,12 @@ nemv3:
     url: /nemv/nemv-031-linux-git-install/
   - title: "32. 클라우드 서버 디비 설치 및 테스트"
     url: /nemv/nemv-032-linux-db-install/
+  - title: "33. 배포를 위한 개발환경 설정"
+    url: /nemv/nemv-033-deploy-dev-setting/
+  - title: "34. pm2로 안정적인 서버 만들기"
+    url: /nemv/nemv-034-hello-pm2/
+  - title: "35. pm2로 실제 서버에 배포하기"
+    url: /nemv/nemv-035-pm2-deploy/
 
 electron:
   - title: Electron과 Vue로 데스크탑 앱 만들기

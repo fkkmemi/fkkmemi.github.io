@@ -8,13 +8,15 @@ sidebar:
   nav: "nemv3"
 ---
 
-얀, 몽고디비설치 후 서버가 동작이 되는 것 까지 확인했습니다.
+서버가 개발했을 때와 같이 동작하게 하려면 얀, 몽고디비를 설치해야합니다.
 
 {% include toc %}
 
 # 얀 설치하기
 
-[https://yarnpkg.com/en/docs/install#centos-stable](https://yarnpkg.com/en/docs/install#centos-stable)
+CentOS에 맞는 설치 방법으로 설치합니다.
+
+참고: [https://yarnpkg.com/en/docs/install#centos-stable](https://yarnpkg.com/en/docs/install#centos-stable)
 
 ```bash
 $ curl --silent --location https://dl.yarnpkg.com/rpm/yarn.repo | sudo tee /etc/yum.repos.d/yarn.repo
@@ -30,6 +32,9 @@ $ cd /vaw/www/nemv3/be
 $ yarn
 ```
 
+yarn 혹은 yarn install로 package.json에 적혀있는 대로 종속 요소들(익스프레스, 코스등)이 설치됩니다.
+
+
 # 프론트 서버 패키지 설치
 
 ```bash
@@ -38,12 +43,20 @@ $ yarn
 $ yarn build
 ```
 
+종속 요소 설치후 백엔드에서 사용할 수 있는 정적인 파일들을 만듭니다.
+
 # 서버 구동
 
 ```bash
 $ cd /vaw/www/nemv3/be
 $ npm start
 ```
+
+이제 서버를 구동하면 몽고디비 에러가 납니다..
+
+아직 몽고디비를 설치하지 않았죠?
+
+사실 같은 서버에 디비를 놓는 것은 좋지 않지만, 테스트를 위해 설치해봅니다.
 
 # 리눅스 패키지 업데이트
 
@@ -99,6 +112,11 @@ $ service mongod start
 Redirecting to /bin/systemctl start  mongod.service
 ```
 
+공식 홈대로 실행을 진행했는데 아래 메세지가 의미 하는 것은..
+
+> CentOS7부터 service 대신 systemctl이라는 명령어를 사용한다는 것입니다.  
+저도 가급적 systemctl을 주로 이용하는 편이지만, 그냥 공식홈의 룰을 따릅니다. 
+
 ## 몽고디비 실행 저장
 
 다시 시작했을 때 자동 실행 가능하게
@@ -106,6 +124,8 @@ Redirecting to /bin/systemctl start  mongod.service
 ```bash
 $ chkconfig mongod on
 ```
+
+> 안해도 자동 실행 될 듯 한데.. 뭐 공식홈에서 하라는데로 스텝 진행합니다.
 
 ## 몽고디비 확인
 
@@ -119,6 +139,8 @@ config 0.000GB
 local 0.000GB
 nemv 0.000GB
 ```
+
+의미 없는 데이터를 써보고 디비가 잘 생성되는 지 판단합니다.
 
 # 포트 3000 열어주기
 
