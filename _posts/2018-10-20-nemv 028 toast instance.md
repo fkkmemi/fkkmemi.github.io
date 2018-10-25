@@ -137,6 +137,19 @@ $ ssh -i nemvKey.pem root@x.x.x.x
 
 해당 키가 있는 위치에서 접속합니다.
 
+**중요: 2018.10.23 연결 변경**
+
+이제 토스트에서 새로운 인스턴스 생성시 루트로 접근을 못하게 막아놓았습니다..
+
+```bash
+$ ssh -i nemvKey.pem centos@x.x.x.x
+$ sudo -i
+```
+
+centos라는 일반 유저로 접속한 후에 sudo -i 루트로 다시 접근해야합니다..
+
+> 귀찮아 졌지만.. 사실 root로 바로 뭔가를 한다는 게 무서운 일이긴 합니다..
+
 # 영상
 
 {% include video id="zs6OXllWuAA" provider="youtube" %}   
