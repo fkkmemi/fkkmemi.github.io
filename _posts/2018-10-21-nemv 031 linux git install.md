@@ -21,6 +21,8 @@ $ sudo -i
 
 centos라는 일반 유저로 접속한 후에 sudo -i 루트로 다시 접근해야합니다..
 
+{% include toc %}
+
 # 깃 설치
 
 ```bash

@@ -21,6 +21,8 @@ $ sudo -i
 
 centos라는 일반 유저로 접속한 후에 sudo -i 루트로 다시 접근해야합니다..
 
+{% include toc %}
+
 # 노드 설치
 
 CentOS node 설치 참고: [https://nodejs.org/en/download/package-manager/#enterprise-linux-and-fedora](https://nodejs.org/en/download/package-manager/#enterprise-linux-and-fedora)
