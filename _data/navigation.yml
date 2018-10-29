@@ -196,13 +196,13 @@ nemv2:
     url: /nemv/nemv-025-mongoose-and-api-2/
   - title: "26. 기본편 정리"
     url: /nemv/nemv-026-standard-end/
-- title: 모던웹(NEMV) 제작 응용편
+- title: 모던웹(NEMV) 제작 응용 서버편
   url: /nemv/nemv-027-server-intro/
 
 nemv3:
 - title: 모던웹(NEMV) 제작 기본편
   url: /nemv/nemv-014-javascript-study/
-- title: 모던웹(NEMV) 제작 응용편
+- title: 모던웹(NEMV) 제작 응용 서버편
   children:
   - title: "응용 서버편 시작"
     url: /nemv/nemv-027-server-intro/
@@ -226,6 +226,19 @@ nemv3:
     url: /nemv/nemv-035-pm2-deploy/
   - title: "36. 서버 오토스케일 정리"
     url: /nemv/nemv-036-autoscale/
+- title: 모던웹(NEMV) 제작 응용 사용자편
+  url: /nemv/nemv-037-mongodb-atlas/
+
+nemv4:
+- title: 모던웹(NEMV) 제작 응용 서버편
+  url: /nemv/nemv-027-server-intro/
+- title: 모던웹(NEMV) 제작 응용 사용자편
+  children:
+  - title: "몽고 클라우드(ATLAS) 가입 및 테스트"
+    url: /nemv/nemv-037-mongodb-atlas/
+  - title: "깃헙에서 안보이는 설정파일 만들기"
+    url: /nemv/nemv-038-config-file/
+
 
 electron:
   - title: Electron과 Vue로 데스크탑 앱 만들기
@@ -262,8 +275,10 @@ categories:
         url: /nemv/nemv-000-youtube/
       - title: 모던웹(NEMV) 제작 기본편
         url: /nemv/nemv-014-javascript-study/
-      - title: 모던웹(NEMV) 제작 응용편
+      - title: 모던웹(NEMV) 제작 응용 서버편
         url: /nemv/nemv-027-server-intro/
+      - title: 모던웹(NEMV) 제작 응용 사용자편
+        url: /nemv/nemv-037-mongodb-atlas/
       - title: Electron과 Vue로 데스크탑 앱 제작해보기
         url: /categories/#electron
       - title: NEMVV

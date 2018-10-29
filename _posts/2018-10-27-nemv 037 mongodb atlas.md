@@ -5,7 +5,7 @@ category: nemv
 tag: [nemv,mongodb,atlas,cloud,node]
 comments: true
 sidebar:
-  nav: "nemv3"
+  nav: "nemv4"
 ---
 
 몽고디비 클라우드 서비스인 아틀라스를 가입 후 테스트 까지 해봅니다.
@@ -59,6 +59,7 @@ M0를 선택하면 무료로 사용가능합니다.
 CONNECT를 눌러서 연결설정을 합니다.
 
 ![alt atlas add ip](/images/nemv/스크린샷 2018-10-29 오후 3.11.02.png)
+
 ![alt atlas add ip2](/images/nemv/스크린샷 2018-10-29 오후 3.12.14.png)
 
 Add Your Current IP Address 를 눌러서 현재 접속된 아이피를 허용시킵니다.
