@@ -243,7 +243,7 @@ nemv4:
   - title: "40. 토큰(JWT)이란?"
     url: /nemv/nemv-040-hello-token/
   - title: 41. 프라미스(promise) 어씽크(async) 이정도만 하자!
-    url: /nemv/nemv-040-hello-token/
+    url: /nemv/nemv-041-promise-async/
 
 
 electron:
