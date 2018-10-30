@@ -234,10 +234,14 @@ nemv4:
   url: /nemv/nemv-027-server-intro/
 - title: 모던웹(NEMV) 제작 응용 사용자편
   children:
-  - title: "몽고 클라우드(ATLAS) 가입 및 테스트"
+  - title: "37. 몽고 클라우드(ATLAS) 가입 및 테스트"
     url: /nemv/nemv-037-mongodb-atlas/
-  - title: "깃헙에서 안보이는 설정파일 만들기"
+  - title: "38. 깃헙에서 안보이는 설정파일 만들기"
     url: /nemv/nemv-038-config-file/
+  - title: "39. API 미들웨어란?"
+    url: /nemv/nemv-039-api-middleware/
+  - title: "40. 토큰(JWT)이란?"
+    url: /nemv/nemv-040-hello-token/
 
 
 electron:
