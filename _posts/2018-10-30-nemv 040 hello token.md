@@ -2,7 +2,7 @@
 layout: single
 title: 모던웹(NEMV) 혼자 제작 하기 3기 - 40 토큰(JWT)이란?
 category: nemv
-tag: [nemv,mongodb,atlas,cloud,node]
+tag: [nemv,express,token,jwt,node]
 comments: true
 sidebar:
   nav: "nemv4"
@@ -87,6 +87,7 @@ id와 email로 알 수 없는 문자열을 만들었습니다.
 나중에 클라이언트에게 전달 될 토큰이죠..
 
 > 키 뒤에 암호화 방식등도 옵션으로 지정할 수 있으나 패스합니다.  
+공식 문서에는 옵션이 없을 때는 Sign with default (HMAC SHA256) 로 되어 있네요..  
 자세한 내용은 위의 공식 링크 참고
 
 ## 토큰 풀기
