@@ -244,8 +244,18 @@ nemv4:
     url: /nemv/nemv-040-hello-token/
   - title: 41. 프라미스(promise) 어씽크(async) 이정도만 하자!
     url: /nemv/nemv-041-promise-async/
-
-
+  - title: 42. HTTP 헤더 알아보기
+    url: /nemv/nemv-042-http-header/
+  - title: 43. 사이트 저장소 다루기
+    url: /nemv/nemv-043-localstorage/
+  - title: 44. 로그인 간단히 만들어보기
+    url: /nemv/nemv-044-sign-in/
+  - title: 45. 사용자 모델 정리하기
+    url: /nemv/nemv-045-user-model/
+  - title: 46. 실제 데이터로 로그인하기
+    url: /nemv/nemv-046-sign-in-api/
+  - title: 47. 토큰 인증하기
+    url: /nemv/nemv-047-token-send/
 electron:
   - title: Electron과 Vue로 데스크탑 앱 만들기
     children:
