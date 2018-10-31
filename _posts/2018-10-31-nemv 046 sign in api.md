@@ -83,7 +83,7 @@ router.post('/in', (req, res) => {
 
 준비중..
 
-{% include video id="" provider="youtube" %}   
+{% include video id="ynsaaXJq_iU" provider="youtube" %}   
 
 
 

@@ -116,7 +116,7 @@ module.exports = User
 
 준비중..
 
-{% include video id="" provider="youtube" %}   
+{% include video id="JHLmkGnktyg" provider="youtube" %}   
 
 
 
