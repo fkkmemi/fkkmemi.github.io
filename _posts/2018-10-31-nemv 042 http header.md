@@ -146,8 +146,6 @@ xxx가 잘 전송된 것이 확인 됩니다.
 
 # 영상
 
-준비중..
-
 {% include video id="KW3sCB60UqI" provider="youtube" %}   
 
 

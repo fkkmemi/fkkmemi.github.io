@@ -114,8 +114,6 @@ module.exports = User
 
 # 영상
 
-준비중..
-
 {% include video id="JHLmkGnktyg" provider="youtube" %}   
 
 

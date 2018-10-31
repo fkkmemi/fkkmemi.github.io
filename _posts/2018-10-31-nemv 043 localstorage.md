@@ -111,8 +111,6 @@ localStorage.clear()
 
 # 영상
 
-준비중..
-
 {% include video id="xzrEZzBGGik" provider="youtube" %}   
 
 
