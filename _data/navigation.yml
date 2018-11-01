@@ -256,6 +256,9 @@ nemv4:
     url: /nemv/nemv-046-sign-in-api/
   - title: 47. 토큰 인증하기
     url: /nemv/nemv-047-token-send/
+  - title: 48. 로그인 해야 들어갈 수 있는 페이지 만들기(네비게이션 가드)
+    url: /nemv/nemv-048-auth-guard/
+
 electron:
   - title: Electron과 Vue로 데스크탑 앱 만들기
     children:
