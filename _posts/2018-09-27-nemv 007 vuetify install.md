@@ -147,6 +147,8 @@ ctrl+c를 눌러서 서버를 꺼버리고 뷰티파이를 설치합니다.
 
 **뷰티파이 설치**
 
+필독!: [2018 10월 이후 뷰티파이 설치하시는 분들](/talk/vuetify-update-cli/)
+
 ```bash
 $ vue add vuetify
 ```

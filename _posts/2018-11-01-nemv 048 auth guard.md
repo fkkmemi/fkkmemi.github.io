@@ -245,29 +245,6 @@ beforeEnter: (to, from, next) => {
 
 역시 토큰 유무만으로는 자연스럽지 못하므로 유저 정보를 담아 놓을 저장소 시나리오가 필요합니다.
 
-# 토큰 존재 유무로 페이지 바꾸기
-
-우측 상단 메뉴에 로그인은 토큰이 있을 때는 안보여야겠죠?
-
-```vue
-<v-list-tile v-if="localStorage.getItem('token')" @click="$router.push('/sign')">
-  <v-list-tile-title>로그인</v-list-tile-title>
-</v-list-tile>
-<v-list-tile v-else @click="signOut">
-  <v-list-tile-title>로그아웃</v-list-tile-title>
-</v-list-tile>
-```
-
-이렇게 하면 될 것 같은데 안됩니다.
-
-
-
-
-
-
-
-
-
 # 영상
 
 준비중
