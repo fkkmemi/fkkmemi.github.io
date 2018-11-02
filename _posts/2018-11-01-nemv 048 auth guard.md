@@ -141,7 +141,7 @@ export default {
 
 # 가드 알아보기
 
-페이지에 들어가기 전에 beforEnter 함수에 먼저 들어갑니다.
+페이지에 들어가기 전에 beforeEnter 함수에 먼저 들어갑니다.
 
 > 문서상에는 router.beforeEach 처음으로 등장하는데 그것은 전체 페이지 적용입니다.  
 여기서는 특정 페이지만 막기 때문에 쓰지 않습니다.  
@@ -247,9 +247,7 @@ beforeEnter: (to, from, next) => {
 
 # 영상
 
-준비중
-
-{% include video id="" provider="youtube" %}   
+{% include video id="e9ihBg1CPW4" provider="youtube" %}   
 
 
 
