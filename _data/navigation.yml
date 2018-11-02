@@ -258,6 +258,12 @@ nemv4:
     url: /nemv/nemv-047-token-send/
   - title: 48. 로그인 해야 들어갈 수 있는 페이지 만들기(네비게이션 가드)
     url: /nemv/nemv-048-auth-guard/
+  - title: 49. 뷰저장소(vuex) 이정도만 쓰자
+    url: /nemv/nemv-049-vuex/
+  - title: 50. 사용자 및 페이지 관리하기
+    url: /nemv/nemv-050-manage-user-and-page/
+  - title: 51. 백엔드로 페이지 권한 얻기
+    url: /nemv/nemv-051-auth-page/
 
 electron:
   - title: Electron과 Vue로 데스크탑 앱 만들기
