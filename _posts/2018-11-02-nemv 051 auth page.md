@@ -188,6 +188,8 @@ export default new Router({
 
 동적 매치 참고: [https://router.vuejs.org/kr/guide/essentials/dynamic-matching.html](https://router.vuejs.org/kr/guide/essentials/dynamic-matching.html)
 
+{% endraw %}
+
 # 테스트 방법
 
 - 먼저 사용자가 있다면 지우고 백엔드 서버를 다시 시작해서 생성합니다.
@@ -204,15 +206,11 @@ export default new Router({
 
 - 로그아웃을 한 후 새로운 토큰을 받아서 각 페이지에 들어가 봅니다.
 
-![alt result](/images/nemv/스크린샷 2018-11-02 오후 9.01.32.png)
-
-{% endraw %}
+![alt result](/images/nemv/스크린샷 2018-11-02 오후 9.01.32.png)
 
 # 영상
 
-준비중
-
-{% include video id="" provider="youtube" %}   
+{% include video id="ZNF6QrwHT_4" provider="youtube" %}   
 
 
 

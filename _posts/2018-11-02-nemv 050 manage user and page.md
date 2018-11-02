@@ -738,9 +738,7 @@ export default {
 
 # 영상
 
-준비중
-
-{% include video id="" provider="youtube" %}   
+{% include video id="7FHHTvrmBU8" provider="youtube" %}   
 
 
 
