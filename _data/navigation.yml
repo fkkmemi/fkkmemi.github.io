@@ -234,13 +234,13 @@ nemv4:
   url: /nemv/nemv-027-server-intro/
 - title: 모던웹(NEMV) 제작 응용 사용자편
   children:
-  - title: "37. 몽고 클라우드(ATLAS) 가입 및 테스트"
+  - title: 37. 몽고 클라우드(ATLAS) 가입 및 테스트
     url: /nemv/nemv-037-mongodb-atlas/
-  - title: "38. 깃헙에서 안보이는 설정파일 만들기"
+  - title: 38. 깃헙에서 안보이는 설정파일 만들기
     url: /nemv/nemv-038-config-file/
-  - title: "39. API 미들웨어란?"
+  - title: 39. API 미들웨어란?
     url: /nemv/nemv-039-api-middleware/
-  - title: "40. 토큰(JWT)이란?"
+  - title: 40. 토큰(JWT)이란?
     url: /nemv/nemv-040-hello-token/
   - title: 41. 프라미스(promise) 어씽크(async) 이정도만 하자!
     url: /nemv/nemv-041-promise-async/
@@ -270,6 +270,12 @@ nemv4:
     url: /nemv/nemv-053-axios-interceptor/
   - title: 54. 한 소스로 사이트 다르게 사용하기
     url: /nemv/nemv-054-one-source-use-site/
+  - title: 55. 회원가입 유효성 판단
+    url: /nemv/nemv-055-register-validate/
+  - title: 56. 회원가입 프론트 적용하기
+    url: /nemv/nemv-056-register-custom/
+  - title: 57. 회원가입 완성하기
+    url: /nemv/nemv-057-register-finish/
 
 electron:
   - title: Electron과 Vue로 데스크탑 앱 만들기
