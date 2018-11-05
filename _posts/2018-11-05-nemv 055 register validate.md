@@ -257,6 +257,8 @@ this.$validator.validateAll()
 
 예상했던 데로 true or false를 리턴으로 보내 줍니다.
 
+true 일때만 서버 전송하면 되는 것이죠..
+
 # 해야할 일
 
 - 전송할 내용을 변경
