@@ -264,6 +264,12 @@ nemv4:
     url: /nemv/nemv-050-manage-user-and-page/
   - title: 51. 백엔드로 페이지 권한 얻기
     url: /nemv/nemv-051-auth-page/
+  - title: 52. 모든 요청 토큰 설정으로 접근 막기
+    url: /nemv/nemv-052-all-request-token/
+  - title: 53. 새로고침 없이 로그인 하기(by 인터셉터)
+    url: /nemv/nemv-053-axios-interceptor/
+  - title: 54. 한 소스로 사이트 다르게 사용하기
+    url: /nemv/nemv-054-one-source-use-site/
 
 electron:
   - title: Electron과 Vue로 데스크탑 앱 만들기

@@ -427,7 +427,7 @@ const Site = require('../../../../models/sites')
 
 새로고침해야 변경된 것이 확인 가능합니다.
 
-![alt site fin.](/images/nemv/스크린샷 2018-11-05 오전 11.51.44.png)
+![alt site fin](/images/nemv/스크린샷 2018-11-05 오전 11.51.44.png)
 
 # 마치며
 
