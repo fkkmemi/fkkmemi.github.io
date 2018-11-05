@@ -270,8 +270,6 @@ true 일때만 서버 전송하면 되는 것이죠..
 
 # 영상
 
-준비중
-
 {% include video id="U26GIthP8Wc" provider="youtube" %}   
 
 

@@ -273,7 +273,7 @@ nemv4:
   - title: 55. 회원가입 유효성 판단
     url: /nemv/nemv-055-register-validate/
   - title: 56. 회원가입 프론트 적용하기
-    url: /nemv/nemv-056-register-custom/
+    url: /nemv/nemv-056-register-custum/
   - title: 57. 회원가입 완성하기
     url: /nemv/nemv-057-register-finish/
   - title: 58. 사용자편 정리
