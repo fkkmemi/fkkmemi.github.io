@@ -413,6 +413,8 @@ const Site = require('../../../../models/sites')
 </script>
 ```
 
+{% endraw %}
+
 기존 page.vue를 복사해서 시험할 수 있는 정도로만 변경했습니다.
 
 # 결과
@@ -430,8 +432,6 @@ const Site = require('../../../../models/sites')
 # 마치며
 
 별 것 없는 기능이지만 지금까지의 지식으로 이제 응용만 잘하면 되겠다는 생각이 들 것입니다.
-
-{% endraw %}
 
 # 영상
 
