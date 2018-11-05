@@ -276,6 +276,8 @@ nemv4:
     url: /nemv/nemv-056-register-custom/
   - title: 57. 회원가입 완성하기
     url: /nemv/nemv-057-register-finish/
+  - title: 58. 사용자편 정리
+    url: /nemv/nemv-058-auth-end/
 
 electron:
   - title: Electron과 Vue로 데스크탑 앱 만들기

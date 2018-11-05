@@ -272,7 +272,7 @@ true 일때만 서버 전송하면 되는 것이죠..
 
 준비중
 
-{% include video id="" provider="youtube" %}   
+{% include video id="U26GIthP8Wc" provider="youtube" %}   
 
 
 
