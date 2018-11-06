@@ -278,6 +278,16 @@ nemv4:
     url: /nemv/nemv-057-register-finish/
   - title: 58. 사용자편 정리
     url: /nemv/nemv-058-auth-end/
+- title: 모던웹(NEMV) 제작 고급편
+  url: /nemv/nemv-059-crypto/
+
+nemv5:
+- title: 모던웹(NEMV) 제작 응용 사용자편
+  url: /nemv/nemv-037-mongodb-atlas/
+- title: 모던웹(NEMV) 제작 고급편
+  children:
+  - title: 59. 비밀번호 암호화하기
+    url: /nemv/nemv-059-crypto/
 
 electron:
   - title: Electron과 Vue로 데스크탑 앱 만들기
