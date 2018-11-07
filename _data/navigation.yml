@@ -288,6 +288,8 @@ nemv5:
   children:
   - title: 59. 비밀번호 암호화하기
     url: /nemv/nemv-059-crypto/
+  - title: 60. 뷰 컴포넌트 사용하기
+    url: /nemv/nemv-059-vue-component/
 
 electron:
   - title: Electron과 Vue로 데스크탑 앱 만들기
