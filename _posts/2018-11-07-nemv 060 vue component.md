@@ -451,4 +451,4 @@ export default {
 
 준비중
 
-{% include video id="" provider="youtube" %}
+{% include video id="bEM5tv1SuZg" provider="youtube" %}
