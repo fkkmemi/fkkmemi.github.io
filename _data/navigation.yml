@@ -296,6 +296,8 @@ nemv5:
     url: /nemv/nemv-062-refresh-token/
   - title: 63. 게시판 관리 만들기
     url: /nemv/nemv-063-board-manage/
+  - title: 64. 게시판 모델 만들기(populate)
+    url: /nemv/nemv-064-board-populate/
 
 electron:
   - title: Electron과 Vue로 데스크탑 앱 만들기
