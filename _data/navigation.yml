@@ -294,6 +294,8 @@ nemv5:
     url: /nemv/nemv-061-moment/
   - title: 62. 로그인 시간 제한하기(토큰 갱신)
     url: /nemv/nemv-062-refresh-token/
+  - title: 63. 게시판 관리 만들기
+    url: /nemv/nemv-063-board-manage/
 
 electron:
   - title: Electron과 Vue로 데스크탑 앱 만들기

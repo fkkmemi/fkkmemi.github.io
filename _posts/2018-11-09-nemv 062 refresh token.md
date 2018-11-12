@@ -422,6 +422,4 @@ GET /api/manage/page 200 243.887 ms - 634
 
 # 영상
 
-준비중
-
 {% include video id="xsK5raJfvd4" provider="youtube" %}
