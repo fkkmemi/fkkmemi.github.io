@@ -233,6 +233,4 @@ $ git checkout master
 
 # 영상
 
-준비중
-
-{% include video id="" provider="youtube" %}
+{% include video id="5fU2BHJ72Gc" provider="youtube" %}

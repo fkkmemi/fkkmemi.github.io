@@ -335,12 +335,10 @@ export default {
 
 # 소스
 
-[소스 확인](https://github.com/fkkmemi/nemv3/commit/f14e12b15f27b0e7760d813205af2464f6027b1c)
+[소스 확인](https://github.com/fkkmemi/nemv3/commit/140bd7a0a037d22f1ba4943ed2f4c450d40e9db3)
 
 {% endraw %}
 
 # 영상
 
-준비중
-
-{% include video id="" provider="youtube" %}
+{% include video id="wIfZVsqOMCU" provider="youtube" %}

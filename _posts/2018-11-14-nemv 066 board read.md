@@ -8,7 +8,7 @@ sidebar:
   nav: "nemv5"
 ---
 
-기본적인 게시판 기능 중 쓰고 읽기만 해봅니다. 
+게시물들을 가져오기 위해 먼저 게시판 정보를 가져와보겠습니다.
 
 {% include toc %}
 
@@ -308,6 +308,4 @@ $ git checkout master
 
 # 영상
 
-준비중
-
-{% include video id="" provider="youtube" %}
+{% include video id="R4zVgBpe7-w" provider="youtube" %}
