@@ -298,6 +298,18 @@ nemv5:
     url: /nemv/nemv-063-board-manage/
   - title: 64. 게시판 모델 만들기(populate)
     url: /nemv/nemv-064-board-populate/
+  - title: 65. 게시판을 위한 메뉴 구성
+    url: /nemv/nemv-065-board-menu/
+  - title: 66. 게시판 정보 읽기
+    url: /nemv/nemv-066-board-read/
+  - title: 67. 게시판 게시물 API 만들기
+    url: /nemv/nemv-067-board-article-api/
+  - title: 68. 게시판 게시물 쓰고 읽기
+    url: /nemv/nemv-068-board-article-vue/
+  - title: 69. 게시판 뷰티파이 테이블 사용하기
+    url: /nemv/nemv-069-board-datatable/
+  - title: 70. 게시판 내용 읽기
+    url: /nemv/nemv-070-board-read/
 
 electron:
   - title: Electron과 Vue로 데스크탑 앱 만들기
