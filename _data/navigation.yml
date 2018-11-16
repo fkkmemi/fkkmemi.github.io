@@ -315,7 +315,7 @@ nemv5:
   - title: 72. 게시판 페이징과 정렬 처리하기
     url: /nemv/nemv-072-board-paging/
   - title: 73. 게시판 재활용하기(뷰라우터)
-    url: /nemv/nemv-072-board-paging/
+    url: /nemv/nemv-073-board-multi/
 
 electron:
   - title: Electron과 Vue로 데스크탑 앱 만들기
