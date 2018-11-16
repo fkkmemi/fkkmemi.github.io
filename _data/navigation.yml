@@ -310,6 +310,12 @@ nemv5:
     url: /nemv/nemv-069-board-datatable/
   - title: 70. 게시판 내용 읽기
     url: /nemv/nemv-070-board-read/
+  - title: 71. 게시판 내용 수정과 삭제
+    url: /nemv/nemv-071-board-ud/
+  - title: 72. 게시판 페이징과 정렬 처리하기
+    url: /nemv/nemv-072-board-paging/
+  - title: 73. 게시판 재활용하기(뷰라우터)
+    url: /nemv/nemv-072-board-paging/
 
 electron:
   - title: Electron과 Vue로 데스크탑 앱 만들기
