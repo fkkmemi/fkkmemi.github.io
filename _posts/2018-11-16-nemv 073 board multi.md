@@ -127,7 +127,7 @@ this.$axios.get(`board/${this.$route.params.name}`)
 
 # 메뉴 자동화 및 최종 정리
 
-![alt boards](/images/nemv/스크린샷 2018-11-15 오전 10.58.06.png)
+![alt boards](/images/nemv/스크린샷%202018-11-15%20오전%2010.58.06.png)
 
 App.vue에 수동으로 등록해둔 부분을 위의 리스트 정보를 얻어서 자동으로 구현해주면 편리하겠죠?
 
