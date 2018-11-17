@@ -149,12 +149,10 @@ loading이 true 이면 테이블 상단에 프로그레스바가 표시됩니다
 
 # 소스
 
-[소스 확인](https://github.com/fkkmemi/nemv3/commit/72e32ac00de7b6d479095f09c9bac4393c111ce4)
+[소스 확인](https://github.com/fkkmemi/nemv3/commit/9a62dd478b39f8d3a92abd3c5d504e363970739f)
 
 {% endraw %}
 
 # 영상
 
-준비중
-
-{% include video id="" provider="youtube" %}
+{% include video id="WwR7hccrt60" provider="youtube" %}
