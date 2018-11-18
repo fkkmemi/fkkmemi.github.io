@@ -295,6 +295,4 @@ r._user._id 부분에서 바로 에러가 나서 수정해봤습니다.
 
 # 영상
 
-준비중
-
-{% include video id="" provider="youtube" %}
+{% include video id="iYqHiVM6Djo" provider="youtube" %}
