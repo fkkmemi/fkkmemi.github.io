@@ -316,6 +316,10 @@ nemv5:
     url: /nemv/nemv-072-board-paging/
   - title: 73. 게시판 재활용하기(뷰라우터)
     url: /nemv/nemv-073-board-multi/
+  - title: 74. 공용 알림 메세지 만들기(vuex)
+    url: /nemv/nemv-074-global-snackbar/
+  - title: 75. HTTP 예외처리 제대로 하기
+    url: /nemv/nemv-075-http-error/
 
 electron:
   - title: Electron과 Vue로 데스크탑 앱 만들기
