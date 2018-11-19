@@ -280,7 +280,5 @@ const pageCheck = (to, from, next) => {
 
 # 영상
 
-준비중
-
-{% include video id="" provider="youtube" %}
+{% include video id="J-kLNWm6PKI" provider="youtube" %}
 
