@@ -320,6 +320,10 @@ nemv5:
     url: /nemv/nemv-074-global-snackbar/
   - title: 75. HTTP 예외처리 제대로 하기
     url: /nemv/nemv-075-http-error/
+  - title: 76. 반응형 게시판 만들기
+    url: /nemv/nemv-076-board-responsive/
+  - title: 77. 구글 리캡챠로 로봇 막아보기(recaptcha)
+    url: /nemv/nemv-077-google-recaptcha/
 
 electron:
   - title: Electron과 Vue로 데스크탑 앱 만들기
