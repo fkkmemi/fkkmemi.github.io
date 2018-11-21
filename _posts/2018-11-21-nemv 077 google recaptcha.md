@@ -28,7 +28,7 @@ sidebar:
 
 # 구글에서 사용키 받기
 
-![alt google register](/images/nemv/스크린샷 2018-11-21 오후 3.01.40.png)
+![alt google register](/images/nemv/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202018-11-21%20%EC%98%A4%ED%9B%84%203.01.40.png)
 
 구글로 로그인 한 후 사이트 등록을 합니다.
 
@@ -43,7 +43,7 @@ sidebar:
 - 도메인은 적용시킬 사이트 명입니다. 우선 테스트 해볼 것이기 때문에 localhost 하나만 남깁니다.
 
 **사이트 생성 후 화면**  
-![alt google site](/images/nemv/스크린샷 2018-11-21 오후 3.08.29.png)
+![alt google site](/images/nemv/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202018-11-21%20%EC%98%A4%ED%9B%84%203.08.29.png)
 
 위 화면처럼 클라이언트와 서버 두개다 인증을 받아 사용하게 됩니다.
 
@@ -349,7 +349,7 @@ router.post('/up', (req, res, next) => {
 
 # 결과
 
-![alt result](/images/nemv/스크린샷 2018-11-21 오후 5.02.48.png)
+![alt result](/images/nemv/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202018-11-21%20%EC%98%A4%ED%9B%84%205.02.48.png)
 
 # 소스
 
