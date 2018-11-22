@@ -365,7 +365,5 @@ git checkout bafa9a2a71415fab3377b234ac9ed69ab9067f46
 
 # 영상
 
-준비중
-
-{% include video id="" provider="youtube" %}
+{% include video id="oU5NIQkhTd0" provider="youtube" %}
 
