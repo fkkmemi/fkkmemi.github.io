@@ -135,7 +135,7 @@ module.exports = router;
 
 ```javascript
 const router = require('express').Router();
-const plz = require('./ctrls');
+const ctrl = require('./ctrls');
 
 router.get('/plz', ctrl.plz);
 
