@@ -59,6 +59,8 @@ sidebar:
 
 다이얼로그의 fullscreen 을 바인드 시켜서 모바일에서는 전체화면으로 보게 변경 했습니다.
 
+{% endraw %}
+
 # 결과
 
 ## 큰 화면
@@ -77,7 +79,6 @@ sidebar:
 
 [소스 확인](https://github.com/fkkmemi/nemv3/commit/ac431c4a3f257c735260c5895aa973df1455e3ae)
 
-{% endraw %}
 
 # 영상
 
