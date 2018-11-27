@@ -326,6 +326,16 @@ nemv5:
     url: /nemv/nemv-077-google-recaptcha/
   - title: 78. 고급편 정리
     url: /nemv/nemv-078-adv-finish/
+- title: 모던웹(NEMV) 제작 활용편
+  url: /nemv/nemv-079-ssl/
+
+nemv6:
+  - title: 모던웹(NEMV) 제작 고급편
+    url: /nemv/nemv-059-crypto/
+  - title: 모던웹(NEMV) 제작 활용편
+    children:
+      - title: 79. 보안연결(ssl) 적용하기
+        url: /nemv/nemv-079-ssl/
 
 electron:
   - title: Electron과 Vue로 데스크탑 앱 만들기
