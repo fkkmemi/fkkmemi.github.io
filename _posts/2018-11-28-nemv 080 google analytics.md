@@ -120,7 +120,5 @@ SPA임에도 불구하고 잘 트랙킹하는 것을 확인할 수 있습니다.
 
 # 영상
 
-준비중
-
-{% include video id="" provider="youtube" %}
+{% include video id="3EEu_Wq5-HI" provider="youtube" %}
 
