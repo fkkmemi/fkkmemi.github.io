@@ -338,6 +338,8 @@ nemv6:
         url: /nemv/nemv-079-ssl/
       - title: 80. 구글 애널리틱스로 사이트 현황 파악하기
         url: /nemv/nemv-080-google-analytics/
+      - title: 81. 대시보드 게시판 다르게 표현하기
+        url: /nemv/nemv-081-dashboard-tab/
 
 electron:
   - title: Electron과 Vue로 데스크탑 앱 만들기
