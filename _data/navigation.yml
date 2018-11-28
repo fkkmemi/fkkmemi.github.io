@@ -380,6 +380,8 @@ categories:
         url: /nemv/nemv-037-mongodb-atlas/
       - title: 모던웹(NEMV) 제작 고급편
         url: /nemv/nemv-059-crypto/
+      - title: 모던웹(NEMV) 제작 활용편
+        url: /nemv/nemv-079-ssl/
       - title: Electron과 Vue로 데스크탑 앱 제작해보기
         url: /categories/#electron
       - title: NEMVV
