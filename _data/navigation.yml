@@ -340,6 +340,8 @@ nemv6:
         url: /nemv/nemv-080-google-analytics/
       - title: 81. 대시보드 게시판 다르게 표현하기
         url: /nemv/nemv-081-dashboard-tab/
+      - title: 82. 대시보드 꾸며보기
+        url: /nemv/nemv-082-dashboard-layout/
 
 electron:
   - title: Electron과 Vue로 데스크탑 앱 만들기
