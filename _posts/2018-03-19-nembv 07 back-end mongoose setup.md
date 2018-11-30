@@ -8,6 +8,10 @@ sidebar:
   nav: "nembv"
 ---
 
+> 이 강좌는 종료되었습니다.  
+새로운 강좌로 시작하세요~  
+[모던웹(NEMV) 제작 강좌](/nemv/){: .btn .btn--success}  
+
 이제 백엔드에서 디비에 직접 연결해보도록 한다.
 
 기본적인 mongoClient도 있으나 래핑한 mongoose를 이용하도록 하겠다.

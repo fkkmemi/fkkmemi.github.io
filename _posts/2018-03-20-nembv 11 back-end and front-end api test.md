@@ -8,6 +8,10 @@ sidebar:
   nav: "nembv"
 ---
 
+> 이 강좌는 종료되었습니다.  
+새로운 강좌로 시작하세요~  
+[모던웹(NEMV) 제작 강좌](/nemv/){: .btn .btn--success}  
+
 fe에서 xhr로 최소한의 Debug를 할 수 있으므로 이제 be api를 실제 데이터로 채워 보겠다. 
 
 {% include toc %}

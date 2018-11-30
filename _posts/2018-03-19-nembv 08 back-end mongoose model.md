@@ -8,6 +8,10 @@ sidebar:
   nav: "nembv"
 ---
 
+> 이 강좌는 종료되었습니다.  
+새로운 강좌로 시작하세요~  
+[모던웹(NEMV) 제작 강좌](/nemv/){: .btn .btn--success}  
+
 mongoose는 ODM(Object Document Mapping)이다. 
 
 문서(Document)를 자바스크립트 객체(Object)로 바꿔준다고 생각하면 될 것 같다.

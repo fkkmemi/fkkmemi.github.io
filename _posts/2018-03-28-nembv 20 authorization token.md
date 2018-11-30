@@ -8,6 +8,10 @@ sidebar:
   nav: "nembv"
 ---
 
+> 이 강좌는 종료되었습니다.  
+새로운 강좌로 시작하세요~  
+[모던웹(NEMV) 제작 강좌](/nemv/){: .btn .btn--success}  
+
 이제 임시 토큰이 아닌 실제 토큰을 사용한 인증 구현을 해보겠다.
 
 {% include toc %}

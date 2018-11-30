@@ -8,6 +8,10 @@ sidebar:
   nav: "nembv"
 ---
 
+> 이 강좌는 종료되었습니다.  
+새로운 강좌로 시작하세요~  
+[모던웹(NEMV) 제작 강좌](/nemv/){: .btn .btn--success}  
+
 express의 라우트 개념을 알고 있으면 다음 챕터로 이동하면 된다.
 
 지난번의 http://localhost:8080 로 표출된 화면은 프론트 개발용도이며 실제 사용할 서버는 익스프레스의 http://localhost:3000 이다.

@@ -2,6 +2,8 @@
 main:
   - title: "최근"
     url: /recent/
+  - title: "강좌"
+    url: /nemv/
   - title: "종류별"
     url: /categories/
   - title: "박물관"
@@ -130,232 +132,234 @@ nemvv:
         url: /nemvv/nemvv-05-user-api/
 
 nemv1:
+- title: 모던웹(NEMV) 제작 전체 목록
+  url: /nemv/
 - title: 모던웹(NEMV) 제작 기초편
   children:
 #  - title: "0. 신기능 소개"
 #    url: /nemv/nemv-00-intro/
-  - title: "0. 영상화 소개"
+  - title: 0 영상화 소개
     url: /nemv/nemv-000-youtube/
-  - title: "1. 에디터 설치"
+  - title: 1 에디터 설치
     url: /nemv/nemv-001-editor/
-  - title: "2. 노드 설치"
+  - title: 2 노드 설치
     url: /nemv/nemv-002-node/
-  - title: "3. 익스프레스 설정"
+  - title: 3 익스프레스 설정
     url: /nemv/nemv-003-express-setup/
-  - title: "4. 익스프레스 수정"
+  - title: 4 익스프레스 수정
     url: /nemv/nemv-004-express-modify/
-  - title: "5. 익스프레스 라우터"
+  - title: 5 익스프레스 라우터
     url: /nemv/nemv-005-express-router/
-  - title: "6. 뷰티파이란"
+  - title: 6 뷰티파이란
     url: /nemv/nemv-006-vuetify-about/
-  - title: "7. 뷰티파이 설치"
+  - title: 7 뷰티파이 설치
     url: /nemv/nemv-007-vuetify-install/
-  - title: "8. 익스프레스와 뷰티파이 연동"
+  - title: 8 익스프레스와 뷰티파이 연동
     url: /nemv/nemv-008-express-vuetify-setup/
-  - title: "9. 뷰티파이 수정"
+  - title: 9 뷰티파이 수정
     url: /nemv/nemv-009-vuetify-modify/
-  - title: "10. 뷰티파이 추가"
+  - title: 10 뷰티파이 추가
     url: /nemv/nemv-010-vuetify-add/
-  - title: "11. 익스프레스와 뷰라우터"
+  - title: 11 익스프레스와 뷰라우터
     url: /nemv/nemv-011-express-vue-router/
-  - title: "12. 뷰티파이 콤포넌트 사용해보기"
+  - title: 12 뷰티파이 콤포넌트 사용해보기
     url: /nemv/nemv-012-vuetify-components-example/
-  - title: "13. 자바스크립트 언어 사용 시작에 대해"
+  - title: 13 자바스크립트 언어 사용 시작에 대해
     url: /nemv/nemv-013-javascript-about-start/
 - title: 모던웹(NEMV) 제작 기본편
   url: /nemv/nemv-014-javascript-study/
 
 nemv2:
-- title: 모던웹(NEMV) 제작 기초편
-  url: /nemv/nemv-000-youtube/
+- title: 모던웹(NEMV) 제작 전체 목록
+  url: /nemv/
 - title: 모던웹(NEMV) 제작 기본편
   children:
-  - title: "14. 자바스크립트 기본"
+  - title: 14 자바스크립트 기본
     url: /nemv/nemv-014-javascript-study/
-  - title: "15. 뷰티파이 레이아웃"
+  - title: 15 뷰티파이 레이아웃
     url: /nemv/nemv-015-vuetify-layout/
-  - title: "16. 깃 사용하기"
+  - title: 16 깃 사용하기
     url: /nemv/nemv-016-git-start/
-  - title: "17. SPA란"
+  - title: 17 SPA란
     url: /nemv/nemv-017-about-spa/
-  - title: "18. API 정리"
+  - title: 18 API 정리
     url: /nemv/nemv-018-hello-api/
-  - title: "19. axios 사용하기"
+  - title: 19 axios 사용하기
     url: /nemv/nemv-019-hello-axios/
-  - title: "20. RESTful한 api 만들기"
+  - title: 20 RESTful한 api 만들기
     url: /nemv/nemv-020-make-rest/
-  - title: "21. 몽고디비 설치"
+  - title: 21 몽고디비 설치
     url: /nemv/nemv-021-mongo-install/
-  - title: "22. 몽고디비 설치 확인"
+  - title: 22 몽고디비 설치 확인
     url: /nemv/nemv-022-mongo-shell/
-  - title: "23. 몽구스 설치 및 확인"
+  - title: 23 몽구스 설치 및 확인
     url: /nemv/nemv-023-mongoose-setup/
-  - title: "24. api와 몽구스 연결"
+  - title: 24 api와 몽구스 연결
     url: /nemv/nemv-024-mongoose-and-api/
-  - title: "25. API와 프론트 통신 정리"
+  - title: 25 API와 프론트 통신 정리
     url: /nemv/nemv-025-mongoose-and-api-2/
-  - title: "26. 기본편 정리"
+  - title: 26 기본편 정리
     url: /nemv/nemv-026-standard-end/
 - title: 모던웹(NEMV) 제작 응용 서버편
   url: /nemv/nemv-027-server-intro/
 
 nemv3:
-- title: 모던웹(NEMV) 제작 기본편
-  url: /nemv/nemv-014-javascript-study/
+- title: 모던웹(NEMV) 제작 전체 목록
+  url: /nemv/
 - title: 모던웹(NEMV) 제작 응용 서버편
   children:
-  - title: "응용 서버편 시작"
+  - title: 응용 서버편 시작
     url: /nemv/nemv-027-server-intro/
-  - title: "27. 클라우드 서버 가입하기"
+  - title: 27 클라우드 서버 가입하기
     url: /nemv/nemv-027-toast-regist/
-  - title: "28. 클라우드 서버 만들기"
+  - title: 28 클라우드 서버 만들기
     url: /nemv/nemv-028-toast-instance/
-  - title: "29. 클라우드 서버 리눅스 다루기"
+  - title: 29 클라우드 서버 리눅스 다루기
     url: /nemv/nemv-029-hello-linux/
-  - title: "30. 클라우드 서버 노드 설치"
+  - title: 30 클라우드 서버 노드 설치
     url: /nemv/nemv-030-linux-node-install/
-  - title: "31. 클라우드 서버 깃 설치 및 테스트"
+  - title: 31 클라우드 서버 깃 설치 및 테스트
     url: /nemv/nemv-031-linux-git-install/
-  - title: "32. 클라우드 서버 디비 설치 및 테스트"
+  - title: 32 클라우드 서버 디비 설치 및 테스트
     url: /nemv/nemv-032-linux-db-install/
-  - title: "33. 배포를 위한 개발환경 설정"
+  - title: 33 배포를 위한 개발환경 설정
     url: /nemv/nemv-033-deploy-dev-setting/
-  - title: "34. pm2로 안정적인 서버 만들기"
+  - title: 34 pm2로 안정적인 서버 만들기
     url: /nemv/nemv-034-hello-pm2/
-  - title: "35. pm2로 실제 서버에 배포하기"
+  - title: 35 pm2로 실제 서버에 배포하기
     url: /nemv/nemv-035-pm2-deploy/
-  - title: "36. 서버 오토스케일 정리"
+  - title: 36 서버 오토스케일 정리
     url: /nemv/nemv-036-autoscale/
 - title: 모던웹(NEMV) 제작 응용 사용자편
   url: /nemv/nemv-037-mongodb-atlas/
 
 nemv4:
-- title: 모던웹(NEMV) 제작 응용 서버편
-  url: /nemv/nemv-027-server-intro/
+- title: 모던웹(NEMV) 제작 전체 목록
+  url: /nemv/
 - title: 모던웹(NEMV) 제작 응용 사용자편
   children:
-  - title: 37. 몽고 클라우드(ATLAS) 가입 및 테스트
+  - title: 37 몽고 클라우드(ATLAS) 가입 및 테스트
     url: /nemv/nemv-037-mongodb-atlas/
-  - title: 38. 깃헙에서 안보이는 설정파일 만들기
+  - title: 38 깃헙에서 안보이는 설정파일 만들기
     url: /nemv/nemv-038-config-file/
-  - title: 39. API 미들웨어란?
+  - title: 39 API 미들웨어란?
     url: /nemv/nemv-039-api-middleware/
-  - title: 40. 토큰(JWT)이란?
+  - title: 40 토큰(JWT)이란?
     url: /nemv/nemv-040-hello-token/
-  - title: 41. 프라미스(promise) 어씽크(async) 이정도만 하자!
+  - title: 41 프라미스(promise) 어씽크(async) 이정도만 하자!
     url: /nemv/nemv-041-promise-async/
-  - title: 42. HTTP 헤더 알아보기
+  - title: 42 HTTP 헤더 알아보기
     url: /nemv/nemv-042-http-header/
-  - title: 43. 사이트 저장소 다루기
+  - title: 43 사이트 저장소 다루기
     url: /nemv/nemv-043-localstorage/
-  - title: 44. 로그인 간단히 만들어보기
+  - title: 44 로그인 간단히 만들어보기
     url: /nemv/nemv-044-sign-in/
-  - title: 45. 사용자 모델 정리하기
+  - title: 45 사용자 모델 정리하기
     url: /nemv/nemv-045-user-model/
-  - title: 46. 실제 데이터로 로그인하기
+  - title: 46 실제 데이터로 로그인하기
     url: /nemv/nemv-046-sign-in-api/
-  - title: 47. 토큰 인증하기
+  - title: 47 토큰 인증하기
     url: /nemv/nemv-047-token-send/
-  - title: 48. 로그인 해야 들어갈 수 있는 페이지 만들기(네비게이션 가드)
+  - title: 48 로그인 해야 들어갈 수 있는 페이지 만들기(네비게이션 가드)
     url: /nemv/nemv-048-auth-guard/
-  - title: 49. 뷰저장소(vuex) 이정도만 쓰자
+  - title: 49 뷰저장소(vuex) 이정도만 쓰자
     url: /nemv/nemv-049-vuex/
-  - title: 50. 사용자 및 페이지 관리하기
+  - title: 50 사용자 및 페이지 관리하기
     url: /nemv/nemv-050-manage-user-and-page/
-  - title: 51. 백엔드로 페이지 권한 얻기
+  - title: 51 백엔드로 페이지 권한 얻기
     url: /nemv/nemv-051-auth-page/
-  - title: 52. 모든 요청 토큰 설정으로 접근 막기
+  - title: 52 모든 요청 토큰 설정으로 접근 막기
     url: /nemv/nemv-052-all-request-token/
-  - title: 53. 새로고침 없이 로그인 하기(by 인터셉터)
+  - title: 53 새로고침 없이 로그인 하기(by 인터셉터)
     url: /nemv/nemv-053-axios-interceptor/
-  - title: 54. 한 소스로 사이트 다르게 사용하기
+  - title: 54 한 소스로 사이트 다르게 사용하기
     url: /nemv/nemv-054-one-source-use-site/
-  - title: 55. 회원가입 유효성 판단
+  - title: 55 회원가입 유효성 판단
     url: /nemv/nemv-055-register-validate/
-  - title: 56. 회원가입 프론트 적용하기
+  - title: 56 회원가입 프론트 적용하기
     url: /nemv/nemv-056-register-custum/
-  - title: 57. 회원가입 완성하기
+  - title: 57 회원가입 완성하기
     url: /nemv/nemv-057-register-finish/
-  - title: 58. 사용자편 정리
+  - title: 58 사용자편 정리
     url: /nemv/nemv-058-auth-end/
 - title: 모던웹(NEMV) 제작 고급편
   url: /nemv/nemv-059-crypto/
 
 nemv5:
-- title: 모던웹(NEMV) 제작 응용 사용자편
-  url: /nemv/nemv-037-mongodb-atlas/
+- title: 모던웹(NEMV) 제작 전체 목록
+  url: /nemv/
 - title: 모던웹(NEMV) 제작 고급편
   children:
-  - title: 59. 비밀번호 암호화하기
+  - title: 59 비밀번호 암호화하기
     url: /nemv/nemv-059-crypto/
-  - title: 60. 뷰 컴포넌트 사용하기
+  - title: 60 뷰 컴포넌트 사용하기
     url: /nemv/nemv-060-vue-component/
-  - title: 61. 시간 계산하기(moment)
+  - title: 61 시간 계산하기(moment)
     url: /nemv/nemv-061-moment/
-  - title: 62. 로그인 시간 제한하기(토큰 갱신)
+  - title: 62 로그인 시간 제한하기(토큰 갱신)
     url: /nemv/nemv-062-refresh-token/
-  - title: 63. 게시판 관리 만들기
+  - title: 63 게시판 관리 만들기
     url: /nemv/nemv-063-board-manage/
-  - title: 64. 게시판 모델 만들기(populate)
+  - title: 64 게시판 모델 만들기(populate)
     url: /nemv/nemv-064-board-populate/
-  - title: 65. 게시판을 위한 메뉴 구성
+  - title: 65 게시판을 위한 메뉴 구성
     url: /nemv/nemv-065-board-menu/
-  - title: 66. 게시판 정보 읽기
+  - title: 66 게시판 정보 읽기
     url: /nemv/nemv-066-board-read/
-  - title: 67. 게시판 게시물 API 만들기
+  - title: 67 게시판 게시물 API 만들기
     url: /nemv/nemv-067-board-article-api/
-  - title: 68. 게시판 게시물 쓰고 읽기
+  - title: 68 게시판 게시물 쓰고 읽기
     url: /nemv/nemv-068-board-article-vue/
-  - title: 69. 게시판 뷰티파이 테이블 사용하기
+  - title: 69 게시판 뷰티파이 테이블 사용하기
     url: /nemv/nemv-069-board-datatable/
-  - title: 70. 게시판 내용 읽기
+  - title: 70 게시판 내용 읽기
     url: /nemv/nemv-070-board-read/
-  - title: 71. 게시판 내용 수정과 삭제
+  - title: 71 게시판 내용 수정과 삭제
     url: /nemv/nemv-071-board-ud/
-  - title: 72. 게시판 페이징과 정렬 처리하기
+  - title: 72 게시판 페이징과 정렬 처리하기
     url: /nemv/nemv-072-board-paging/
-  - title: 73. 게시판 재활용하기(뷰라우터)
+  - title: 73 게시판 재활용하기(뷰라우터)
     url: /nemv/nemv-073-board-multi/
-  - title: 74. 공용 알림 메세지 만들기(vuex)
+  - title: 74 공용 알림 메세지 만들기(vuex)
     url: /nemv/nemv-074-global-snackbar/
-  - title: 75. HTTP 예외처리 제대로 하기
+  - title: 75 HTTP 예외처리 제대로 하기
     url: /nemv/nemv-075-http-error/
-  - title: 76. 반응형 게시판 만들기
+  - title: 76 반응형 게시판 만들기
     url: /nemv/nemv-076-board-responsive/
-  - title: 77. 구글 리캡챠로 로봇 막아보기(recaptcha)
+  - title: 77 구글 리캡챠로 로봇 막아보기(recaptcha)
     url: /nemv/nemv-077-google-recaptcha/
-  - title: 78. 고급편 정리
+  - title: 78 고급편 정리
     url: /nemv/nemv-078-adv-finish/
 - title: 모던웹(NEMV) 제작 활용편
   url: /nemv/nemv-079-ssl/
 
 nemv6:
-  - title: 모던웹(NEMV) 제작 고급편
-    url: /nemv/nemv-059-crypto/
-  - title: 모던웹(NEMV) 제작 활용편
-    children:
-      - title: 79. 보안연결(ssl) 적용하기
-        url: /nemv/nemv-079-ssl/
-      - title: 80. 구글 애널리틱스로 사이트 현황 파악하기
-        url: /nemv/nemv-080-google-analytics/
-      - title: 81. 대시보드 게시판 다르게 표현하기
-        url: /nemv/nemv-081-dashboard-tab/
-      - title: 82. 대시보드 꾸며보기
-        url: /nemv/nemv-082-dashboard-layout/
+- title: 모던웹(NEMV) 제작 전체 목록
+  url: /nemv/
+- title: 모던웹(NEMV) 제작 활용편
+  children:
+  - title: 79 보안연결(ssl) 적용하기
+    url: /nemv/nemv-079-ssl/
+  - title: 80 구글 애널리틱스로 사이트 현황 파악하기
+    url: /nemv/nemv-080-google-analytics/
+  - title: 81 대시보드 게시판 다르게 표현하기
+    url: /nemv/nemv-081-dashboard-tab/
+  - title: 82 대시보드 꾸며보기
+    url: /nemv/nemv-082-dashboard-layout/
 
 electron:
-  - title: Electron과 Vue로 데스크탑 앱 만들기
-    children:
-      - title: "0. 기초"
-        url: /electron/electron-00-intro/
-      - title: "1. 데이터 처리"
-        url: /electron/electron-01-data/
-      - title: "2. UI 이해"
-        url: /electron/electron-02-ui/
-      - title: "3. todo 앱 제작"
-        url: /electron/electron-03-todo/
-      - title: "4. vue-cli3 업그레이드"
-        url: /electron/electron-04-vuecli3/
+- title: Electron과 Vue로 데스크탑 앱 만들기
+  children:
+  - title: "0. 기초"
+    url: /electron/electron-00-intro/
+  - title: "1. 데이터 처리"
+    url: /electron/electron-01-data/
+  - title: "2. UI 이해"
+    url: /electron/electron-02-ui/
+  - title: "3. todo 앱 제작"
+    url: /electron/electron-03-todo/
+  - title: "4. vue-cli3 업그레이드"
+    url: /electron/electron-04-vuecli3/
 
 book:
 - title: book
@@ -388,10 +392,10 @@ categories:
         url: /nemv/nemv-079-ssl/
       - title: Electron과 Vue로 데스크탑 앱 제작해보기
         url: /categories/#electron
-      - title: NEMVV
-        url: /categories/#nemvv
-      - title: NEMBV
-        url: /categories/#nembv
+#      - title: NEMVV
+#        url: /categories/#nemvv
+#      - title: NEMBV
+#        url: /categories/#nembv
       - title: Commnunication
         url: /categories/#communication
       - title: MongoDB Sharding

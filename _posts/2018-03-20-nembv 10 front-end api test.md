@@ -8,6 +8,10 @@ sidebar:
   nav: "nembv"
 ---
 
+> 이 강좌는 종료되었습니다.  
+새로운 강좌로 시작하세요~  
+[모던웹(NEMV) 제작 강좌](/nemv/){: .btn .btn--success}  
+
 front-end에서 최소한의 RESTful api 요청/응답을 받을 수 있는 페이지를 만들어보도록 하겠다.
 
 > 이하 'front-end': 'fe', 'back-end': 'be'로 설명하겠다.
