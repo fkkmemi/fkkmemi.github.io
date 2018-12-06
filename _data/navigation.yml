@@ -346,6 +346,8 @@ nemv6:
     url: /nemv/nemv-081-dashboard-tab/
   - title: 82 대시보드 꾸며보기
     url: /nemv/nemv-082-dashboard-layout/
+  - title: 83 파일 업로드 하기(multer)
+    url: /nemv/nemv-083-file-upload/
 
 electron:
 - title: Electron과 Vue로 데스크탑 앱 만들기

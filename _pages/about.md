@@ -23,7 +23,7 @@ let me = {
         company : 'LOOP',
         pages : [
             'https://fkkmemi.github.io',
-            'http://fkkmemi.com'
+            'https://fkkmemi.com'
         ]
     },
     development : {
