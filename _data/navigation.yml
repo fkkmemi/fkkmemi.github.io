@@ -348,6 +348,8 @@ nemv6:
     url: /nemv/nemv-082-dashboard-layout/
   - title: 83 파일 업로드 하기(multer)
     url: /nemv/nemv-083-file-upload/
+  - title: 84 이미지 변환하기(base64, sharp)
+    url: /nemv/nemv-084-img-convert/
 
 electron:
 - title: Electron과 Vue로 데스크탑 앱 만들기
