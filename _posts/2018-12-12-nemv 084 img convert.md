@@ -313,6 +313,35 @@ javascript 배열과 같이 fd 버퍼는 length로 사이즈를 알 수 있습�
 
 200x200 사이즈로 잘 잘려 있습니다~
 
+# 보너스: 프라미스형 모듈 사용하기
+
+왠지 콜백형은 코드가 보기가 싫죠..
+
+다행히 버퍼로 처리하는 모듈이 있었네요..
+
+참고: [https://www.npmjs.com/package/image-data-uri](https://www.npmjs.com/package/image-data-uri)
+
+**설치**  
+```bash
+$ cd be && yarn add image-data-uri
+```
+
+**be/routes/api/user/index.js**  
+```javascript
+const imageDataURI = require('image-data-uri')
+// ..
+  sharp(req.file.path).resize(200,200).crop(sharp.strategy.entropy).toBuffer()
+    .then(bf => {      
+      fs.unlinkSync(req.file.path)
+      res.send(imageDataURI.encode(bf, 'png'))
+    })
+    .catch(e => next(e))
+```
+
+샤프도 버퍼를 프라미스로 리턴하게 해서 쓸 데 없는 파일이 안생기게 해서 코드가 깨끗해졌습니다.
+
+npm에는 좋은 모듈들이 많으니 잘 찾아보면 보물을 득템할 수 있습니다.
+
 # 마치며
 
 노드의 버퍼와 문자는 다르기 때문에 바이트에 대해 조금 길게 설명했습니다.
