@@ -368,7 +368,5 @@ npm에는 좋은 모듈들이 많으니 잘 찾아보면 보물을 득템할 수
 
 # 영상
 
-준비중
-
-{% include video id="" provider="youtube" %}
+{% include video id="B20votLkMNU" provider="youtube" %}
 
