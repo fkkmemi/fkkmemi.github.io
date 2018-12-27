@@ -364,8 +364,8 @@ electron:
     url: /electron/electron-02-ui/
   - title: "3. todo 앱 제작"
     url: /electron/electron-03-todo/
-  - title: "4. vue-cli3 업그레이드"
-    url: /electron/electron-04-vuecli3/
+  - title: "5. vue-cli3 업그레이드"
+    url: /electron/electron-05-vuecli3-update/
 
 book:
 - title: book
