@@ -352,6 +352,8 @@ nemv6:
     url: /nemv/nemv-084-img-convert/
   - title: 85 이미지 컴포넌트로 업로드하기(filepond)
     url: /nemv/nemv-085-img-upload/
+  - title: 86 사용자 정보 표시하기
+    url: /nemv/nemv-086-get-user/
 
 electron:
 - title: Electron과 Vue로 데스크탑 앱 만들기

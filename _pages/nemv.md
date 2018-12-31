@@ -526,3 +526,7 @@ pm2라는 것을 이용해서 모던웹 서버가 죽어도 되살아나게 설�
 ## 85 이미지 컴포넌트로 업로드하기(filepond)
 
 [바로가기](/nemv/nemv-085-img-upload/){: .btn .btn--success}
+
+## 86 사용자 정보 표시하기
+
+[바로가기](/nemv/nemv-086-get-user/){: .btn .btn--success}
