@@ -204,7 +204,5 @@ v-card light를 주지 않으면 뷰티파이의 다크모드에서 잘 안보�
 
 # 영상
 
-준비중
-
-{% include video id="" provider="youtube" %}
+{% include video id="_qSt3wP3BzI" provider="youtube" %}
 
