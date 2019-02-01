@@ -534,3 +534,7 @@ pm2라는 것을 이용해서 모던웹 서버가 죽어도 되살아나게 설�
 ## 87 위지웍 에디터 사용하기(toast ui editor)
 
 [바로가기](/nemv/nemv-087-editor-toast/){: .btn .btn--success}
+
+## 88 게시물에 댓글 추가하기
+
+[바로가기](/nemv/nemv-088-comment/){: .btn .btn--success}
