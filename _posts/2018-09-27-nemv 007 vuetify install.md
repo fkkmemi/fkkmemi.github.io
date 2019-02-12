@@ -185,7 +185,14 @@ $ yarn serve
 
 # 영상
 
+시커먼 터미널창이 익숙치 않으신 분은 vue-ui 설치법을 참고하세요.
+
+## 기본 설치법
+
 {% include video id="wHa9w_BB3yQ" provider="youtube" %}   
 
+## vue-ui 설치법
 
- 
+{% include video id="R6NmDe-TDBY" provider="youtube" %}   
+
+
