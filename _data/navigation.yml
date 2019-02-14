@@ -358,6 +358,8 @@ nemv6:
     url: /nemv/nemv-087-editor-toast/
   - title: 88 게시물에 댓글 추가하기
     url: /nemv/nemv-088-comment/
+  - title: 89 활용편 정리
+    url: /nemv/nemv-089-use-finish/
 
 electron:
 - title: Electron과 Vue로 데스크탑 앱 만들기

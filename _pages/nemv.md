@@ -538,3 +538,7 @@ pm2라는 것을 이용해서 모던웹 서버가 죽어도 되살아나게 설�
 ## 88 게시물에 댓글 추가하기
 
 [바로가기](/nemv/nemv-088-comment/){: .btn .btn--success}
+
+## 89 활용편 정리
+
+[바로가기](/nemv/nemv-089-use-finish/){: .btn .btn--success}

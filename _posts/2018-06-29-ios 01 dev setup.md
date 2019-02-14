@@ -1,8 +1,8 @@
 ---
 layout: single
 title: iOS 개발 - 개발환경 세팅
-category: iOS
-tag: [iOS,iPhone]
+category: mobile
+tag: [iOS,iPhone,mobile]
 comments: true
 ---
 
