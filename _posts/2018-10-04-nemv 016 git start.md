@@ -54,7 +54,7 @@ nemv3라는 디렉토리에 README.md와 숨겨진 파일들(.gitignore등)이 �
 # 백엔드 설치하기
 
 ```bash
-$ express --view=pub be
+$ express --view=pug be
 $ cd be
 $ yarn
 ```
