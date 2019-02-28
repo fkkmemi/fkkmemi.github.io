@@ -171,3 +171,7 @@ Connection을 Outlet으로 설정하고 Name은 tfEdit로 지정합니다.(_기�
 뭐든 어렵게 생각하면 시작이 안됩니다.
 
 앱스토어에 올리진 못하지만 우선 돌아간 다는 것에 만족을 해봅니다~
+
+# 영상
+
+{% include video id="iICRtWcEbVw" provider="youtube" %}
