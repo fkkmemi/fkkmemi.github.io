@@ -6,8 +6,8 @@ main:
     url: /nemv/
   - title: "종류별"
     url: /categories/
-  - title: "박물관"
-    url: /portfolio/
+#  - title: "박물관"
+#    url: /portfolio/
   - title: "정리자료"
     url: /docs/
   - title: "링크"
@@ -375,6 +375,16 @@ electron:
   - title: "5. vue-cli3 업그레이드"
     url: /electron/electron-05-vuecli3-update/
 
+mobile:
+  - title: 앱(iOS Android) 둘 다 만들기
+    children:
+      - title: 하이브리드 vs 네이티브 앱 선택
+        url: /mobile/mobile-000-ready/
+      - title: iOS 준비하기
+        url: /mobile/mobile-000-ios-ready/
+      - title: 1 iOS UI 기초
+        url: /mobile/mobile-001-ios-ui-base/
+
 book:
 - title: book
   children:
@@ -392,6 +402,8 @@ categories:
 #        url: /mongodb/mongo-sharding-1/
 #      - title: npm
 #        url: /npm/npm-intro/
+      - title: 모바일앱(iOS Android) 둘 다 만들기
+        url: /mobile/mobile-000-ready/
       - title: 모던웹(NEMV) 제작 기초편
         url: /nemv/nemv-000-youtube/
       - title: 모던웹(NEMV) 제작 기본편
