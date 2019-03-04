@@ -384,6 +384,9 @@ mobile:
         url: /mobile/mobile-000-ios-ready/
       - title: 1 iOS UI 기초
         url: /mobile/mobile-001-ios-ui-base/
+      - title: 2 iOS UI 네비게이션 콘트롤러
+        url: /mobile/mobile-002-ios-ui-nav/
+
 
 book:
 - title: book
