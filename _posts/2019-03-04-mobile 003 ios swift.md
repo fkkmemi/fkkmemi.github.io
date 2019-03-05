@@ -578,4 +578,4 @@ c.good()
 
 # 영상
 
-{% include video id="" provider="youtube" %}
+{% include video id="udaevG5SYVA" provider="youtube" %}
