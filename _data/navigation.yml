@@ -386,6 +386,8 @@ mobile:
         url: /mobile/mobile-001-ios-ui-base/
       - title: 2 iOS UI 네비게이션 콘트롤러
         url: /mobile/mobile-002-ios-ui-nav/
+      - title: 3 iOS 스위프트 이정도만 하고 넘어가자
+        url: /mobile/mobile-003-ios-swift/
 
 
 book:

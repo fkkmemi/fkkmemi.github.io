@@ -2,13 +2,15 @@
 layout: single
 title: 모바일앱(iOS Android) 둘 다 만들기 - 2 iOS UI 네비게이션 콘트롤러
 category: mobile
-tag: [mobile,ios,talk,idea,navigation]
+tag: [mobile,ios,navigation]
 comments: true
 sidebar:
   nav: "mobile"
 ---
 
 스토리보드로 네비게이션 콘트롤러를 구현해봅니다. 
+
+{% include toc %}
 
 # 싱글뷰앱 선택
 
