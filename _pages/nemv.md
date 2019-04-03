@@ -12,6 +12,8 @@ NEMV(Node.js, Express.js, MongoDB, Vue.js)를 이용해 웹사이트를 전체�
 - vue.js(프론트엔드): 화면구성
 - vuetify.js(프론트엔드): 머터리얼 화면구성
 
+{% include video id="i7i5yOrE_60" provider="youtube" %}
+
 {% include toc %}
 
 # 강좌 소개
