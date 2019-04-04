@@ -23,15 +23,6 @@ sidebar:
 
 # Electron + vue
 
-## 언어 알아보기 
-
-[https://developer.mozilla.org/ko/docs/Web/JavaScript](https://developer.mozilla.org/ko/docs/Web/JavaScript){: .btn .btn--warning}
-
-- const, let 등 변수
-- 오브젝트
-- 배열
-- 반복문
-
 ## 화면 구현 
 
 [https://kr.vuejs.org/v2/guide/index.html](https://kr.vuejs.org/v2/guide/index.html){: .btn .btn--warning}
@@ -51,6 +42,21 @@ sidebar:
 - v-container v-layout v-flex 등 화면 배치 이해 [https://vuetifyjs.com/ko/framework/grid](https://vuetifyjs.com/ko/framework/grid){: .btn .btn--secondary}
 - 표현용 v-alert, v-card, v-list 등
 - 입력용 v-select, v-btn, v-textfield 등
+
+## 언어 알아보기 
+
+최고의 가이드북: [https://developer.mozilla.org/ko/docs/Web/JavaScript](https://developer.mozilla.org/ko/docs/Web/JavaScript){: .btn .btn--warning}
+
+의미 없이 너무 복잡하니 필요할 때만 열람할 것
+
+[다른 언어와의 비교](/nemv/nemv-013-javascript-about-start/){: .btn .btn--info}
+
+[기초](/nemv/nemv-014-javascript-study/){: .btn .btn--info}
+
+- const, let 등 변수
+- 오브젝트
+- 배열
+- 반복문
 
 ## API 
 
