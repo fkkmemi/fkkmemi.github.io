@@ -16,14 +16,15 @@ minimal_mistakes_skin    : "air" # "default", "air", "aqua", "contrast", "dark",
 
 # Site Settings
 locale                   : "ko"
-title                    : "memi.notes --save"
-title_separator          : "|"
+title                    : # "memi.notes --save"
+title_separator          : # "|"
 name                     : "fkkmemi"
 description              : "dev.logs --save"
 url                      : "https://fkkmemi.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : fkkmemi/fkkmemi.github.io # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : images/jekyll-logo.png # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+logo : images/logo.png
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
@@ -207,6 +208,7 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jemoji
+  - jekyll-include-cache
 
 # mimic GitHub Pages with --safe
 whitelist:
