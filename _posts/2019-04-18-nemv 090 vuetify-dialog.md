@@ -240,4 +240,4 @@ $ rm -rf newtest
 
 # 영상
 
-{% include video id="" provider="youtube" %}
+{% include video id="YAY0HLwmxOA" provider="youtube" %}
