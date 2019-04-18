@@ -542,3 +542,9 @@ pm2라는 것을 이용해서 모던웹 서버가 죽어도 되살아나게 설�
 ## 89 활용편 정리
 
 [바로가기](/nemv/nemv-089-use-finish/){: .btn .btn--success}
+
+# 보너스편
+
+## 90 알림창 쉽게 구현하기(vuetify-dialog)
+
+[바로가기](/nemv/nemv-090-vuetify-dialog/){: .btn .btn--success}

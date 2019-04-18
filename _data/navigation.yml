@@ -361,6 +361,15 @@ nemv6:
   - title: 89 활용편 정리
     url: /nemv/nemv-089-use-finish/
 
+nemv7:
+- title: 모던웹(NEMV) 제작 전체 목록
+  url: /nemv/
+- title: 모던웹(NEMV) 제작 보너스
+  children:
+  - title: 90 알림창 쉽게 구현하기(vuetify-dialog)
+    url: /nemv/nemv-090-vuetify-dialog/
+
+
 electron:
 - title: Electron과 Vue로 데스크탑 앱 만들기
   children:
@@ -421,6 +430,8 @@ categories:
         url: /nemv/nemv-059-crypto/
       - title: 모던웹(NEMV) 제작 활용편
         url: /nemv/nemv-079-ssl/
+      - title: 모던웹(NEMV) 제작 보너스편
+        url: /nemv/nemv-090-vuetify-dialog/
       - title: Electron과 Vue로 데스크탑 앱 제작해보기
         url: /categories/#electron
 #      - title: NEMVV
