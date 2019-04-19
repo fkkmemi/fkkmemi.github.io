@@ -548,3 +548,7 @@ pm2라는 것을 이용해서 모던웹 서버가 죽어도 되살아나게 설�
 ## 90 알림창 쉽게 구현하기(vuetify-dialog)
 
 [바로가기](/nemv/nemv-090-vuetify-dialog/){: .btn .btn--success}
+
+## 91 국제화 쉽게 구현하기(vue-i18n)
+
+[바로가기](/nemv/nemv-091-i18n/){: .btn .btn--success}

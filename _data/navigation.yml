@@ -368,6 +368,8 @@ nemv7:
   children:
   - title: 90 알림창 쉽게 구현하기(vuetify-dialog)
     url: /nemv/nemv-090-vuetify-dialog/
+  - title: 91 국제화 쉽게 구현하기(vue-i18n)
+    url: /nemv/nemv-091-i18n/
 
 
 electron:
