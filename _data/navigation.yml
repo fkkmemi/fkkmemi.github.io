@@ -2,8 +2,10 @@
 main:
   - title: "최근"
     url: /recent/
-  - title: "강좌"
+  - title: "강좌:NEMV"
     url: /nemv/
+  - title: "강좌:NUXT"
+    url: /nuxt/
   - title: "종류별"
     url: /categories/
 #  - title: "박물관"
@@ -371,6 +373,15 @@ nemv7:
   - title: 91 국제화 쉽게 구현하기(vue-i18n)
     url: /nemv/nemv-091-i18n/
 
+nuxt1:
+- title: NUXT로 혼자 웹사이트 만들기 전체 목록
+  url: /nuxt/
+- title: NUXT로 혼자 웹사이트 만들기 시작
+  children:
+  - title: 1 소개
+    url: /nuxt/nuxt-001-intro/
+  - title: 2 설치
+    url: /nuxt/nuxt-002-install/
 
 electron:
 - title: Electron과 Vue로 데스크탑 앱 만들기
@@ -418,8 +429,7 @@ categories:
 #        url: /mongodb/mongo-sharding-1/
 #      - title: npm
 #        url: /npm/npm-intro/
-      - title: 모바일앱(iOS Android) 둘 다 만들기
-        url: /mobile/mobile-000-ready/
+
       - title: 모던웹(NEMV) 제작 기초편
         url: /nemv/nemv-000-youtube/
       - title: 모던웹(NEMV) 제작 기본편
@@ -434,6 +444,10 @@ categories:
         url: /nemv/nemv-079-ssl/
       - title: 모던웹(NEMV) 제작 보너스편
         url: /nemv/nemv-090-vuetify-dialog/
+      - title: NUXT로 혼자 웹사이트 만들기
+        url: /nuxt/
+      - title: 모바일앱(iOS Android) 둘 다 만들기
+        url: /mobile/mobile-000-ready/
       - title: Electron과 Vue로 데스크탑 앱 제작해보기
         url: /categories/#electron
 #      - title: NEMVV
