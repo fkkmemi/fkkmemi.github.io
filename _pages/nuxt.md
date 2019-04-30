@@ -3,10 +3,13 @@ layout: splash
 permalink: /nuxt/
 title: "NUXT로 혼자 웹사이트 만들기 제작 강좌"
 author_profile: false
-toc: true
-toc_label: "목차"
-toc_icon: "cog"
 ---
+
+[모던웹](/nemv/) 의 심화과정입니다.
+
+기존의 복잡했던 백&프론트엔드를 묶어서 다른 디비와 연결해 보는 것이 핵심입니다.
+
+{% include toc %}
 
 # 기본편
 
