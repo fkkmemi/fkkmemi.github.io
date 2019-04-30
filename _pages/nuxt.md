@@ -31,3 +31,11 @@ toc_icon: "cog"
 NUXT를 설치하고 간단히 구조를 알아봅니다. 
 
 [바로가기](/nuxt/nuxt-002-install/){: .btn .btn--success}
+
+## 3 라우팅
+
+서버사이드 렌더링도 중요하지만, 기존에 하던 동적 화면 전환이 잘 되는 것이 더 중요합니다.
+
+간단하게 axios를 이용해서 서버 미들웨어와의 통신을 해보겠습니다.
+
+[바로가기](/nuxt/nuxt-003-routing/){: .btn .btn--success}

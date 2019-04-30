@@ -382,6 +382,8 @@ nuxt1:
     url: /nuxt/nuxt-001-intro/
   - title: 2 설치
     url: /nuxt/nuxt-002-install/
+  - title: 3 라우팅
+    url: /nuxt/nuxt-003-routing/
 
 electron:
 - title: Electron과 Vue로 데스크탑 앱 만들기
