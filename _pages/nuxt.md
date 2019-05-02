@@ -42,3 +42,9 @@ NUXT를 설치하고 간단히 구조를 알아봅니다.
 간단하게 axios를 이용해서 서버 미들웨어와의 통신을 해보겠습니다.
 
 [바로가기](/nuxt/nuxt-003-routing/){: .btn .btn--success}
+
+## 4 플러그인 설치
+
+전역으로 사용할 플러그인 설치에 대해 알아봅니다.
+
+[바로가기](/nuxt/nuxt-004-plugin/){: .btn .btn--success}
