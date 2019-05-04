@@ -386,6 +386,8 @@ nuxt1:
     url: /nuxt/nuxt-003-routing/
   - title: 4 플러그인
     url: /nuxt/nuxt-004-plugin/
+  - title: 5 firebase로 hosting해보기
+    url: /nuxt/nuxt-005-firebase-hosting/
 
 electron:
 - title: Electron과 Vue로 데스크탑 앱 만들기

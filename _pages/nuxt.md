@@ -48,3 +48,9 @@ NUXT를 설치하고 간단히 구조를 알아봅니다.
 전역으로 사용할 플러그인 설치에 대해 알아봅니다.
 
 [바로가기](/nuxt/nuxt-004-plugin/){: .btn .btn--success}
+
+## 5 firebase로 hosting해보기
+
+넉스트(nuxt) 소스를 파이어베이스 호스팅(google firebase hosting)을 이용해서 배포(deploy)해봅니다.
+
+[바로가기](/nuxt/nuxt-005-firebase-hosting/){: .btn .btn--success}
