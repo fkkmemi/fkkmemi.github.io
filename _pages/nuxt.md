@@ -54,3 +54,15 @@ NUXT를 설치하고 간단히 구조를 알아봅니다.
 넉스트(nuxt) 소스를 파이어베이스 호스팅(google firebase hosting)을 이용해서 배포(deploy)해봅니다.
 
 [바로가기](/nuxt/nuxt-005-firebase-hosting/){: .btn .btn--success}
+
+## 6 firebase로 데이터베이스(firestore) 사용하기 
+
+파이어베이스의 noSQL 데이터베이스인 firestore를 파이어베이스 호스팅 환경에서 사용해봅니다.
+
+[바로가기](/nuxt/nuxt-006-firebase-firestore/){: .btn .btn--success}
+
+## 7 닷엔브(dotenv)로 파이어베이스 프로젝트 정리하기 
+
+넉스트 프로젝트에서 닷엔브로 파이어베이스를 사용하기 위한 설정을 해보겠습니다.
+
+[바로가기](/nuxt/nuxt-007-firebase-dotenv/){: .btn .btn--success}

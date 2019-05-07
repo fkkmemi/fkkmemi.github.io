@@ -388,6 +388,10 @@ nuxt1:
     url: /nuxt/nuxt-004-plugin/
   - title: 5 firebase로 hosting해보기
     url: /nuxt/nuxt-005-firebase-hosting/
+  - title: 6 firebase로 데이터베이스(firestore) 사용하기
+    url: /nuxt/nuxt-006-firebase-firestore/
+  - title: 7 닷엔브(dotenv)와 파이어베이스 프로젝트 정리하기
+    url: /nuxt/nuxt-007-firebase-dotenv/
 
 electron:
 - title: Electron과 Vue로 데스크탑 앱 만들기
