@@ -405,4 +405,4 @@ $ yarn firebase:deploy
 
 # 영상
 
-{% include video id="" provider="youtube" %}
+{% include video id="vYZPB4vQV6E" provider="youtube" %}
