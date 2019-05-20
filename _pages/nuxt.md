@@ -66,3 +66,10 @@ NUXT를 설치하고 간단히 구조를 알아봅니다.
 넉스트 프로젝트에서 닷엔브로 파이어베이스를 사용하기 위한 설정을 해보겠습니다.
 
 [바로가기](/nuxt/nuxt-007-firebase-dotenv/){: .btn .btn--success}
+
+
+## 8 파이어베이스(firebase) 펑션스(functions) 시작하기
+
+파이어베이스 펑션스를 이용해서 API를 간단히 구현해봅니다.
+
+[바로가기](/nuxt/nuxt-008-firebase-functions-start/){: .btn .btn--success}

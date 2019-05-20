@@ -392,6 +392,8 @@ nuxt1:
     url: /nuxt/nuxt-006-firebase-firestore/
   - title: 7 닷엔브(dotenv)와 파이어베이스 프로젝트 정리하기
     url: /nuxt/nuxt-007-firebase-dotenv/
+  - title: 8 파이어베이스 펑션스 시작하기
+    url: /nuxt/nuxt-008-firebase-functions-start/
 
 electron:
 - title: Electron과 Vue로 데스크탑 앱 만들기
