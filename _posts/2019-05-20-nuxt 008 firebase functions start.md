@@ -299,4 +299,4 @@ cors 설정이 되어있어서 localhost:3000 -> localhost:5000으로 잘 작동
 
 # 영상
 
-{% include video id="" provider="youtube" %}
+{% include video id="kS8t_i5J7I0" provider="youtube" %}
