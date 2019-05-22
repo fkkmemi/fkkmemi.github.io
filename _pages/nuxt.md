@@ -67,9 +67,20 @@ NUXT를 설치하고 간단히 구조를 알아봅니다.
 
 [바로가기](/nuxt/nuxt-007-firebase-dotenv/){: .btn .btn--success}
 
-
 ## 8 파이어베이스(firebase) 펑션스(functions) 시작하기
 
 파이어베이스 펑션스를 이용해서 API를 간단히 구현해봅니다.
 
 [바로가기](/nuxt/nuxt-008-firebase-functions-start/){: .btn .btn--success}
+
+## 9 파이어베이스(firebase) 파이어스토어(firestore) CRUD 해보기
+
+파이어스토어를 이용해서 CRUD 를 시험해보겠습니다.
+
+[바로가기](/nuxt/nuxt-009-firebase-firestore-crud/){: .btn .btn--success}
+
+## 10 파이어베이스(firebase) 파이어스토어(firestore) 페이징(paging)처리하기
+
+파이어스토어를 이용해서 페이징처리를 해봅니다.
+
+[바로가기](/nuxt/nuxt-009-firebase-firestore-paging/){: .btn .btn--success}

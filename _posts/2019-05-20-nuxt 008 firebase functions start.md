@@ -2,7 +2,7 @@
 layout: single
 title: NUXT로 혼자 웹사이트 만들기 8 파이어베이스(firebase) 펑션스(functions) 시작하기
 category: nuxt
-tag: [nuxt,node,vue,vuetify,plugin,firebase,firestore,functions]
+tag: [nuxt,node,vue,vuetify,firebase,functions]
 comments: true
 sidebar:
   nav: "nuxt1"

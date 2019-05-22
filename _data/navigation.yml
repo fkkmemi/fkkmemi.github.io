@@ -394,6 +394,10 @@ nuxt1:
     url: /nuxt/nuxt-007-firebase-dotenv/
   - title: 8 파이어베이스 펑션스 시작하기
     url: /nuxt/nuxt-008-firebase-functions-start/
+  - title: 9 파이어베이스(firebase) 파이어스토어(firestore) CRUD 해보기
+    url: /nuxt/nuxt-009-firebase-firestore-crud/
+  - title: 10 파이어베이스(firebase) 파이어스토어(firestore) 페이징(paging)처리하기
+    url: /nuxt/nuxt-009-firebase-firestore-paging/
 
 electron:
 - title: Electron과 Vue로 데스크탑 앱 만들기
