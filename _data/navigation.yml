@@ -58,16 +58,18 @@ mongos:
 npm:
   - title: npm
     children:
-      - title: "1. intro"
+      - title: "intro"
         url: /npm/npm-intro/
-      - title: "2. pug"
+      - title: "pug"
         url: /npm/npm-pug/
-      - title: "3. geoip"
+      - title: "geoip"
         url: /npm/npm-geoip/
-      - title: "4. del"
+      - title: "del"
         url: /npm/npm-del/
-      - title: "5. unorm"
+      - title: "unorm"
         url: /npm/npm-unorm/
+      - title: "publish"
+        url: /npm/npm-publish/
 
 nembv:
   - title: nembv
