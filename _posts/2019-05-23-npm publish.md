@@ -368,4 +368,4 @@ _지우지 말고 왠만하면 디프리케이트(npm deprecate) 를 사용해�
 
 # 영상
 
-{% include video id="" provider="youtube" %}
+{% include video id="RrTxE3xOD9o" provider="youtube" %}
