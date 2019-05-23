@@ -51,3 +51,13 @@ build-iPhoneSimulator/
 
 # webstorm
 .idea/
+
+# jekyll
+.sass-cache/
+_site/
+
+# user
+temp/
+.DS_Store
+node_modules/fsevents/node_modules/are-we-there-yet/CHANGES.md~
+node_modules/fsevents/node_modules/console-control-strings/README.md~
