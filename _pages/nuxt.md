@@ -83,4 +83,10 @@ NUXT를 설치하고 간단히 구조를 알아봅니다.
 
 파이어스토어를 이용해서 페이징처리를 해봅니다.
 
-[바로가기](/nuxt/nuxt-009-firebase-firestore-paging/){: .btn .btn--success}
+[바로가기](/nuxt/nuxt-010-firebase-firestore-paging/){: .btn .btn--success}
+
+## 11 파이어베이스(firebase) 인증 기능(email&password) 사용하기
+
+파이어베이스 인증기능중 이메일+비밀번호를 사용해서 로그인해봅니다.
+
+[바로가기](/nuxt/nuxt-011-firebase-auth/){: .btn .btn--success}

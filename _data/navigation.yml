@@ -399,7 +399,9 @@ nuxt1:
   - title: 9 파이어베이스(firebase) 파이어스토어(firestore) CRUD 해보기
     url: /nuxt/nuxt-009-firebase-firestore-crud/
   - title: 10 파이어베이스(firebase) 파이어스토어(firestore) 페이징(paging)처리하기
-    url: /nuxt/nuxt-009-firebase-firestore-paging/
+    url: /nuxt/nuxt-010-firebase-firestore-paging/
+  - title: 11 파이어베이스(firebase) 인증 기능(email&password) 사용하기
+    url: /nuxt/nuxt-011-firebase-auth/
 
 electron:
 - title: Electron과 Vue로 데스크탑 앱 만들기

@@ -219,4 +219,4 @@ mounted() {
 
 # 영상
 
-{% include video id="" provider="youtube" %}
+{% include video id="1JnMsyLOa6k" provider="youtube" %}
