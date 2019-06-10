@@ -402,6 +402,8 @@ nuxt1:
     url: /nuxt/nuxt-010-firebase-firestore-paging/
   - title: 11 파이어베이스(firebase) 인증 기능(email&password) 사용하기
     url: /nuxt/nuxt-011-firebase-auth/
+  - title: 12 파이어베이스(firebase) 인증 기능 토큰 알아보기
+    url: /nuxt/nuxt-012-firebase-auth-token/
 
 electron:
 - title: Electron과 Vue로 데스크탑 앱 만들기

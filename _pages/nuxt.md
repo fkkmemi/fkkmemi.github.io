@@ -90,3 +90,9 @@ NUXT를 설치하고 간단히 구조를 알아봅니다.
 파이어베이스 인증기능중 이메일+비밀번호를 사용해서 로그인해봅니다.
 
 [바로가기](/nuxt/nuxt-011-firebase-auth/){: .btn .btn--success}
+
+## 12 파이어베이스(firebase) 인증 기능 토큰 알아보기
+
+파이어베이스 인증 기능중 토큰에 대해 알아봅니다.
+
+[바로가기](/nuxt/nuxt-012-firebase-auth-token/){: .btn .btn--success}
