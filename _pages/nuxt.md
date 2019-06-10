@@ -96,3 +96,9 @@ NUXT를 설치하고 간단히 구조를 알아봅니다.
 파이어베이스 인증 기능중 토큰에 대해 알아봅니다.
 
 [바로가기](/nuxt/nuxt-012-firebase-auth-token/){: .btn .btn--success}
+
+## 13 파이어베이스(firebase) 인증 기능 화면 표시하기
+
+파이어베이스 인증 기능을 넉스트 저장소(vuex)를 이용해 표현해봅니다.
+
+[바로가기](/nuxt/nuxt-013-firebase-auth-vuex/){: .btn .btn--success}

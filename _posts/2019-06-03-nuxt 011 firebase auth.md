@@ -49,6 +49,8 @@ Vue.prototype.$auth = firebase.auth
 
 공식홈에 있는 자료대로 쓸만한 기능 위주로 실험해봤습니다.
 
+{% raw %}
+
 ## 회원가입
 
 **src/pages/auth.vue**  
@@ -209,7 +211,7 @@ mounted() {
 
 # 마치며
 
-
+{% endraw %}
 
 # 소스
 
