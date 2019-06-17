@@ -170,7 +170,7 @@ recaptcha: {
 
 그리고 구글에 직접 로그인 하지 않고 파이어베이스 펑션스에 토큰과 함께 전송합니다.
 
-![alt localhost recaptcha](/images/2019-06-17_16.54.45.png)
+![alt localhost recaptcha](/images/nuxt/2019-06-17_16.54.45.png)
 
 > 백엔드 작성 전에 우선 구동해서 위와 같이 리캡챠가 둥둥 떠있는지 확인할 필요가 있습니다.
 
