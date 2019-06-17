@@ -21,7 +21,7 @@ toc_icon: "list"
 
 악의적인 사용자가 봇을 이용해 엄청난 게시물을 작성하거나 무한 회원가입을 하는 것등을 방지하는 것입니다.
 
-```javacsript
+```javascript
 const 악의성댓글s
 for (let 댓글 in 악의성댓글s) axios.post('공격경로', { 댓글.title, 댓글.content, 댓글.etc })
 ```
