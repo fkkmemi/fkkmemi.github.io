@@ -403,6 +403,11 @@ $ yarn firebase:deploy
 
 깃허브 링크: [https://github.com/fkkmemi/nuxt](https://github.com/fkkmemi/nuxt)
 
+```
+# 해당 코드 확인하기
+$ git checkout tags/v0.0.7
+```
+
 # 영상
 
 {% include video id="vYZPB4vQV6E" provider="youtube" %}

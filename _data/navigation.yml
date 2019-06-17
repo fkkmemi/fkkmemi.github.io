@@ -406,6 +406,10 @@ nuxt1:
     url: /nuxt/nuxt-012-firebase-auth-token/
   - title: 13 파이어베이스(firebase) 인증 기능 화면 표시하기
     url: /nuxt/nuxt-013-firebase-auth-vuex/
+  - title: 14 파이어베이스(firebase) 인증 기능 라우팅해보기
+    url: /nuxt/nuxt-014-firebase-auth-middleware/
+  - title: 15 파이어베이스(firebase) 리캡챠(recaptcha v3) 사용하기
+    url: /nuxt/nuxt-015-firebase-auth-recaptcha/
 
 electron:
 - title: Electron과 Vue로 데스크탑 앱 만들기

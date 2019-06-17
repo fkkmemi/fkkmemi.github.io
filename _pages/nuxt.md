@@ -102,3 +102,15 @@ NUXT를 설치하고 간단히 구조를 알아봅니다.
 파이어베이스 인증 기능을 넉스트 저장소(vuex)를 이용해 표현해봅니다.
 
 [바로가기](/nuxt/nuxt-013-firebase-auth-vuex/){: .btn .btn--success}
+
+## 14 파이어베이스(firebase) 인증 기능 라우팅해보기
+
+파이어베이스 인증 기능을 넉스트 저장소(vuex)를 이용해 표현해봅니다.
+
+[바로가기](/nuxt/nuxt-014-firebase-auth-middleware/){: .btn .btn--success}
+
+## 15 파이어베이스(firebase) 리캡챠(recaptcha v3) 사용하기
+
+넉스트(nuxt) 와 파이어베이스 펑션스 (firebase functions)로 리캡챠(recaptcha v3)를 사용해봅니다.
+
+[바로가기](/nuxt/nuxt-015-firebase-auth-recaptcha/){: .btn .btn--success}

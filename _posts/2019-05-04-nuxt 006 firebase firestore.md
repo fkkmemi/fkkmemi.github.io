@@ -173,6 +173,15 @@ export default {
 
 이것으로 정적프론트에서 백엔드 없이 데이터를 읽고 쓸 수 있다는 것을 알게 되었습니다.
 
+# 소스
+
+깃허브 링크: [https://github.com/fkkmemi/nuxt](https://github.com/fkkmemi/nuxt)
+
+```
+# 해당 코드 확인하기
+$ git checkout tags/v0.0.6
+```
+
 # 영상
 
 {% include video id="bWDq1Hc6SWU" provider="youtube" %}

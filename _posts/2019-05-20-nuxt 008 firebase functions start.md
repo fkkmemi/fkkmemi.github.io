@@ -297,6 +297,11 @@ cors 설정이 되어있어서 localhost:3000 -> localhost:5000으로 잘 작동
 
 깃허브 링크: [https://github.com/fkkmemi/nuxt](https://github.com/fkkmemi/nuxt)
 
+```
+# 해당 코드 확인하기
+$ git checkout tags/v0.0.8
+```
+
 # 영상
 
 {% include video id="kS8t_i5J7I0" provider="youtube" %}

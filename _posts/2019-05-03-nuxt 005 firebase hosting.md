@@ -277,6 +277,15 @@ $ firebase deploy
 
 이제 둥지는 만들어 졌으니 nuxt디렉토리에서 파이어베이스 디비에 CRUD만 하면 끝입니다.
 
+# 소스
+
+깃허브 링크: [https://github.com/fkkmemi/nuxt](https://github.com/fkkmemi/nuxt)
+
+```
+# 해당 코드 확인하기
+$ git checkout tags/v0.0.5
+```
+
 # 영상
 
 {% include video id="szRuA5_tFTU" provider="youtube" %}

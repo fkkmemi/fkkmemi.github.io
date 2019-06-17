@@ -253,6 +253,11 @@ async remove(p) {
 
 깃허브 링크: [https://github.com/fkkmemi/nuxt](https://github.com/fkkmemi/nuxt)
 
+```
+# 해당 코드 확인하기
+$ git checkout tags/v0.0.9
+```
+
 # 영상
 
 {% include video id="vF5s4iGdduI" provider="youtube" %}

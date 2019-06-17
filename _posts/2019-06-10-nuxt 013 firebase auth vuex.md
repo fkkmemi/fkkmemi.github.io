@@ -142,6 +142,11 @@ this._. 로 사용하기 위해 프로토타입 등록을 해둡니다.
 
 깃허브 링크: [https://github.com/fkkmemi/nuxt](https://github.com/fkkmemi/nuxt)
 
+```
+# 해당 코드 확인하기
+$ git checkout tags/v0.0.13
+```
+
 {% endraw %}
 
 # 영상
