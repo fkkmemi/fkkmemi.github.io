@@ -5,6 +5,8 @@ title: "NUXT로 혼자 웹사이트 만들기 제작 강좌"
 author_profile: false
 ---
 
+![alt vue+fire](/images/talk/2019-06-26_20.29.06.png)
+
 [모던웹](/nemv/) 의 심화과정입니다.
 
 기존의 복잡했던 백&프론트엔드를 묶어서 다른 디비와 연결해 보는 것이 핵심입니다.
