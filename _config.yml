@@ -103,7 +103,7 @@ analytics:
 author:
   name             : "fkkmemi"
   avatar           : "https://s.gravatar.com/avatar/fb8e318ec64f25e2bef47a26dde12270?s=80" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "모바일앱 강좌 진행중.."
+  bio              : "일렉트론 리뉴얼중..."
   #location         : "Somewhere"
   email            : "fkkmemi@gmail.com"
   #uri              : "http://fkkmemi.com"
@@ -111,7 +111,7 @@ author:
   codepen          :
   dribbble         :
   flickr           :
-  facebook         : "fkkmemi"
+  # facebook         : "fkkmemi"
   foursquare       :
   github           : "fkkmemi"
   gitlab           :
@@ -119,7 +119,7 @@ author:
   keybase          :
   instagram        :
   lastfm           :
-  linkedin         : "fkkmemi"
+  # linkedin         : "fkkmemi"
   pinterest        :
   soundcloud       :
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
@@ -207,7 +207,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
-  - jemoji
+  # - jemoji
   - jekyll-include-cache
 
 # mimic GitHub Pages with --safe
@@ -216,7 +216,7 @@ whitelist:
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
-  - jemoji
+  # - jemoji
 
 
 # Archives

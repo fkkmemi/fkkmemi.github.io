@@ -2,10 +2,10 @@
 main:
   - title: "최근"
     url: /recent/
+  - title: "강좌:VF"
+    url: /vf/
   - title: "강좌:NEMV"
     url: /nemv/
-  - title: "강좌:NUXT"
-    url: /nuxt/
   - title: "종류별"
     url: /categories/
 #  - title: "박물관"
@@ -439,12 +439,23 @@ mobile:
       - title: 3 iOS 스위프트 이정도만 하고 넘어가자
         url: /mobile/mobile-003-ios-swift/
 
-
 book:
 - title: book
   children:
   - title: "책 리뷰 시작"
     url: /book/book-start/
+
+
+vf:
+- title: Vue와 Firebase로 모던웹사이트 만들기 전체 목록
+  url: /vf/
+  children:
+    - title: 소개
+      url: /talk/vf-000-intro/
+    - title: 1 개발환경 구축하기
+      url: /vf/vf-001-dev-env/
+    - title: 2 에디터 설정하기
+      url: /vf/vf-002-editor/
 
 categories:
   - title: Notes
@@ -458,20 +469,24 @@ categories:
 #      - title: npm
 #        url: /npm/npm-intro/
 
-      - title: 모던웹(NEMV) 제작 기초편
-        url: /nemv/nemv-000-youtube/
-      - title: 모던웹(NEMV) 제작 기본편
-        url: /nemv/nemv-014-javascript-study/
-      - title: 모던웹(NEMV) 제작 응용 서버편
-        url: /nemv/nemv-027-server-intro/
-      - title: 모던웹(NEMV) 제작 응용 사용자편
-        url: /nemv/nemv-037-mongodb-atlas/
-      - title: 모던웹(NEMV) 제작 고급편
-        url: /nemv/nemv-059-crypto/
-      - title: 모던웹(NEMV) 제작 활용편
-        url: /nemv/nemv-079-ssl/
-      - title: 모던웹(NEMV) 제작 보너스편
-        url: /nemv/nemv-090-vuetify-dialog/
+      # - title: 모던웹(NEMV) 제작 기초편
+      #   url: /nemv/nemv-000-youtube/
+      # - title: 모던웹(NEMV) 제작 기본편
+      #   url: /nemv/nemv-014-javascript-study/
+      # - title: 모던웹(NEMV) 제작 응용 서버편
+      #   url: /nemv/nemv-027-server-intro/
+      # - title: 모던웹(NEMV) 제작 응용 사용자편
+      #   url: /nemv/nemv-037-mongodb-atlas/
+      # - title: 모던웹(NEMV) 제작 고급편
+      #   url: /nemv/nemv-059-crypto/
+      # - title: 모던웹(NEMV) 제작 활용편
+      #   url: /nemv/nemv-079-ssl/
+      # - title: 모던웹(NEMV) 제작 보너스편
+      #   url: /nemv/nemv-090-vuetify-dialog/
+      - title: 모던웹(NEMV) 제작
+        url: /nemv/
+      - title: Vue와 Firebase로 모던웹사이트 만들기
+        url: /vf/
       - title: NUXT로 혼자 웹사이트 만들기
         url: /nuxt/
       - title: 모바일앱(iOS Android) 둘 다 만들기
