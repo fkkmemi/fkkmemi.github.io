@@ -101,8 +101,8 @@ analytics:
 
 # Site Author
 author:
-  name             : "fkkmemi"
-  avatar           : "https://s.gravatar.com/avatar/fb8e318ec64f25e2bef47a26dde12270?s=80" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  name             : "memi"
+  # avatar           : "https://s.gravatar.com/avatar/fb8e318ec64f25e2bef47a26dde12270?s=80" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "일렉트론 리뉴얼중..."
   #location         : "Somewhere"
   email            : "fkkmemi@gmail.com"
