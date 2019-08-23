@@ -452,10 +452,112 @@ vf:
   children:
     - title: 소개
       url: /talk/vf-000-intro/
+    - title: 소스코드 사용 방법
+      url: /vf/vf-git-use/
     - title: 1 개발환경 구축하기
-      url: /vf/vf-001-dev-env/
+      url: /vf/vf-001/
     - title: 2 에디터 설정하기
-      url: /vf/vf-002-editor/
+      url: /vf/vf-002/
+    - title: 3 사이트 배포하기
+      url: /vf/vf-003/
+    - title: 4 git 사용하기
+      url: /vf/vf-004/
+    - title: 5 SPA 알아보기
+      url: /vf/vf-005/
+    - title: 6 git 다운로드 받기
+      url: /vf/vf-006/
+    - title: 7 vue 맛보기
+      url: /vf/vf-007/
+    - title: 8 vuetify로 툴바 만들기
+      url: /vf/vf-008/
+    - title: 9 vuetify로 리스트 만들기
+      url: /vf/vf-009/
+    - title: 10 vuetify로 네비게이션 드라워만들기
+      url: /vf/vf-010/
+    - title: 11 vuetify로 하위 메뉴 구성하기
+      url: /vf/vf-011/
+    - title: 12 vuetify로 카드 만들기
+      url: /vf/vf-012/
+    - title: 13 vuetify 반응형웹 구현하기
+      url: /vf/vf-013/
+    - title: 14 promise 알아보기
+      url: /vf/vf-014/
+    - title: 15 vuetify로 노트 만들기
+      url: /vf/vf-015/
+    - title: 16 firestore 설정하기
+      url: /vf/vf-016/
+    - title: 17 firestore crud 해보기
+      url: /vf/vf-017/
+    - title: 18 firebase 인증(auth) 로그인 해보기
+      url: /vf/vf-018/
+    - title: 19 firebase functions 알아보기
+      url: /vf/vf-019/
+    - title: 20 firebase functions RESTful api 만들기
+      url: /vf/vf-020/
+    - title: 21 firebase functions vue에서 axios로 접근하기
+      url: /vf/vf-021/
+    - title: 22 vue 공용 error 처리하기
+      url: /vf/vf-022/
+    - title: 23 firebase functions 공용 에러 처리
+      url: /vf/vf-023/
+    - title: 24 인증을 위한 미들웨어와 액시오스 설정하기
+      url: /vf/vf-024/
+    - title: 25 뷰(vue) 컴포넌트(component) 알아보기
+      url: /vf/vf-025/
+    - title: 26 뷰엑스(vuex)로 전역 제어하기
+      url: /vf/vf-026/
+    - title: 27 firebase 인증(auth)정보를 vuex 로 저장
+      url: /vf/vf-027/
+    - title: 28 로그인 화면 모양 내보기
+      url: /vf/vf-028/
+    - title: 29 뷰라우터 네비게이션 가드 사용하기
+      url: /vf/vf-029/
+    - title: 30 로딩 상태 표시하기
+      url: /vf/vf-030/
+    - title: 31 로그인 상태 만들어보기
+      url: /vf/vf-031/
+    - title: 32 회원가입 모양 내보기
+      url: /vf/vf-032/
+    - title: 33 v-form으로 유효성 검사하기
+      url: /vf/vf-033/
+    - title: 34 이메일로 가입과 로그인해보기
+      url: /vf/vf-034/
+    - title: 35 vuetify2로 업그레이드하기
+      url: /vf/vf-035/
+    - title: 36 firebase functions 환경변수 사용하기
+      url: /vf/vf-036/
+    - title: 37 firebase functions 맞춤 사용자 설정하기
+      url: /vf/vf-037/
+    - title: 38 firebase token 풀어보기
+      url: /vf/vf-038/
+    - title: 39 권한으로 페이지 강제 이동시키기
+      url: /vf/vf-039/
+    - title: 40 firestore에 사용자 정보 추가 삭제하기
+      url: /vf/vf-040/
+    - title: 41 파이어베이스 인증 라우터 지연시키기
+      url: /vf/vf-041/
+    - title: 42 뷰라우터로 권한별 페이지 접근하기
+      url: /vf/vf-042/
+    - title: 43 파이어베이스 함수에서 권한 확인하기
+      url: /vf/vf-043/
+    - title: 44 파이어베이스 함수에서 파이어스토어 사용하기
+      url: /vf/vf-044/
+    - title: 45 파이어스토어 컬렉션의 전체 개수 구하기
+      url: /vf/vf-045/
+    - title: 46 파이어스토어 페이징해보기
+      url: /vf/vf-046/
+    - title: 47 파이어스토어 정렬해보기
+      url: /vf/vf-047/
+    - title: 48 파이어스토어 검색해보기
+      url: /vf/vf-048/
+    - title: 49 검색어 필터 만들어보기
+      url: /vf/vf-049/
+    - title: 50 회원관리 모양 내보기
+      url: /vf/vf-050/
+    - title: 51 사용자 권한 변경하기
+      url: /vf/vf-051/
+    - title: 52 firebase storage 사용해보기
+      url: /vf/vf-052/
 
 categories:
   - title: Notes
