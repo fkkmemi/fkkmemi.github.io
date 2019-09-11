@@ -435,7 +435,7 @@ const Site = require('../../../../models/sites')
 
 # 영상
 
-{% include video id="DnHnZ7xVUPU" provider="youtube" %}   
+{% include video id="76ukiaZ6nEY" provider="youtube" %}   
 
 
 
