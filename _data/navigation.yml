@@ -4,8 +4,8 @@ main:
     url: /recent/
   - title: "강좌:VF"
     url: /vf/
-  - title: "강좌:NEMV"
-    url: /nemv/
+  - title: "강좌:FF"
+    url: /ff/
   - title: "종류별"
     url: /categories/
 #  - title: "박물관"
@@ -558,6 +558,15 @@ vf:
       url: /vf/vf-051/
     - title: 52 firebase storage 사용해보기
       url: /vf/vf-052/
+
+ff:
+- title: Flutter와 Firebase로 Android iOS 둘 다 만들기 전체 목록
+  url: /ff/
+  children:
+    - title: 소개
+      url: /mobile/talk-flutter/
+    - title: 미리보기
+      url: /ff/ff-000/
 
 categories:
   - title: Notes
