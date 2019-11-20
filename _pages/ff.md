@@ -19,3 +19,9 @@ Flutter에 대해 간략히 알아봅니다.
 Flutter와 Firebase를 이용해 앞으로 만들 앱을 미리 살펴봅니다.
 
 [바로가기](/ff/ff-000/){: .btn .btn--success}
+
+# 1 기본 레이아웃 살펴보기
+
+새로운 프로젝트를 만들고 MaterialApp에 대해 조금씩 알아봅니다.
+
+[바로가기](/ff/ff-001/){: .btn .btn--success}
