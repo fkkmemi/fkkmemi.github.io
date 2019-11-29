@@ -569,6 +569,8 @@ ff:
       url: /ff/ff-000/
     - title: 1 기본 레이아웃 살펴보기
       url: /ff/ff-001/
+    - title: 2 기본 레이아웃 정렬해보기
+      url: /ff/ff-002/
 
 categories:
   - title: Notes
