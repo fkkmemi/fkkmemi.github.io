@@ -103,7 +103,7 @@ analytics:
 author:
   name             : "memi"
   # avatar           : "https://s.gravatar.com/avatar/fb8e318ec64f25e2bef47a26dde12270?s=80" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "일렉트론 리뉴얼중..."
+  bio              : "flutter 강의 제작중..."
   #location         : "Somewhere"
   email            : "fkkmemi@gmail.com"
   #uri              : "http://fkkmemi.com"

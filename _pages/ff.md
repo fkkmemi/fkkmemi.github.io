@@ -37,3 +37,9 @@ Flutter와 Firebase를 이용해 앞으로 만들 앱을 미리 살펴봅니다.
 앱에서 자주 쓰이는 리스트 출력을 알아봅니다.
 
 [바로가기](/ff/ff-003/){: .btn .btn--success}
+
+# 4 움직이는 화면 만들기
+
+Stateful widget을 사용한 움직이는 화면에 대해 알아봅니다.
+
+[바로가기](/ff/ff-004/){: .btn .btn--success}
