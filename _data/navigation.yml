@@ -577,6 +577,8 @@ ff:
       url: /ff/ff-004/
     - title: 5 화면 전환 해보기
       url: /ff/ff-005/
+    - title: 6 구글&파이어베이스로 사용자 인증하기 1
+      url: /ff/ff-006/
 
 categories:
   - title: Notes
