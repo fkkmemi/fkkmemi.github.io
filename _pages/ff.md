@@ -49,3 +49,9 @@ Stateful widget을 사용한 움직이는 화면에 대해 알아봅니다.
 Stateful widget을 사용해서 상태값에 따라 다른 화면을 렌더링해봅니다.
 
 [바로가기](/ff/ff-005/){: .btn .btn--success}
+
+# 6 구글&파이어베이스로 사용자 인증하기 1
+
+Fire auth(Firebase authentication)를 이용해 Google 및 이메일 인증을 해봅니다.
+
+[바로가기](/ff/ff-006/){: .btn .btn--success}
