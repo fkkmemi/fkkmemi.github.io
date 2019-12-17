@@ -55,3 +55,9 @@ Stateful widget을 사용해서 상태값에 따라 다른 화면을 렌더링�
 Fire auth(Firebase authentication)를 이용해 Google 및 이메일 인증을 해봅니다.
 
 [바로가기](/ff/ff-006/){: .btn .btn--success}
+
+# 7 구글&파이어베이스로 사용자 인증하기 2
+
+구글&파이어베이스 설정 후 직접 모바일 시뮬레이터에서 구동시켜봅니다. 
+
+[바로가기](/ff/ff-007/){: .btn .btn--success}
