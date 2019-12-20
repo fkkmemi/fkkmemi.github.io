@@ -608,16 +608,18 @@ categories:
       #   url: /nemv/nemv-079-ssl/
       # - title: 모던웹(NEMV) 제작 보너스편
       #   url: /nemv/nemv-090-vuetify-dialog/
-      - title: 모던웹(NEMV) 제작
-        url: /nemv/
+      - title: Flutter와 Firebase로 Android iOS 둘 다 만들기
+        url: /ff/
       - title: Vue와 Firebase로 모던웹사이트 만들기
         url: /vf/
+      - title: 모던웹(NEMV) 제작
+        url: /nemv/
       - title: NUXT로 혼자 웹사이트 만들기
         url: /nuxt/
       - title: 모바일앱(iOS Android) 둘 다 만들기
         url: /mobile/mobile-000-ready/
-      - title: Electron과 Vue로 데스크탑 앱 제작해보기
-        url: /categories/#electron
+      # - title: Electron과 Vue로 데스크탑 앱 제작해보기
+      #   url: /categories/#electron
 #      - title: NEMVV
 #        url: /categories/#nemvv
 #      - title: NEMBV
@@ -653,3 +655,5 @@ docs:
         url: /docs/centos7-vm-update/
       - title: "ruby update osx"
         url: /docs/ruby-update-osx/
+      - title: "Raspberry pie installation"
+        url: /docs/raspberry-installation/
