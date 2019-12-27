@@ -187,3 +187,113 @@ $ sudo reboot
 ```
 
 폰트를 설치하고 재시작하면 됨.
+
+# Application
+
+## node install
+
+```bash
+$ curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+$ sudo apt-get install -y nodejs
+```
+
+bluetooth module인 noble을 사용하기 위해 8버전을 사용해야함..
+
+### 이미 다른 버전이 깔려 있는 경우
+
+```bash
+$ sudo npm i -g n
+$ sudo n 8
+$ exit
+```
+
+n module 설치 후 8버전으로 설치함.
+
+설치후 ssh 세션을 나갔다가 들어와야 버전 반영됨 
+
+### rasp zero일 경우
+
+직접다운로드 받고 옮겨야함..
+
+## yarn install
+
+```bash
+$ curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+$ sudo apt-get update && sudo apt-get install yarn
+```
+
+
+## Project
+
+### new
+
+```bash
+$ mkdir prj && cd "_$"
+$ yarn init
+```
+
+### eslint
+
+```bash
+# in project
+$ yarn add -D eslint
+$ yarn eslint --init
+```
+
+## pm2
+
+# System setup
+
+## Reboot
+
+일정시간마다 재시작
+
+```bash
+sudo crontab -e
+$ 0 1 * * * /sbin/shutdown -r now
+$ reboot
+```
+
+설정 후 한번 재시작해야 적용됨
+
+## Watchdog
+
+### additional module install
+
+```bash
+$ sudo modprobe bcm2835_wdt
+$ echo "bcm2835_wdt" >> /etc/modules 
+```
+
+> 해야할 지 안해야할 지 잘 모름 다음 세팅때 없이 한번 해봐야함.
+
+### install
+
+```bash
+$ sudo apt-get install watchdog chkconfig
+$ chkconfig watchdog on
+```
+
+### edit
+
+```bash
+$ sudo nano /etc/watchdog.conf
+# below under text input
+
+file      = /var/log/syslog
+change      = 1800
+
+watchdog-device  = /dev/watchdog
+
+realtime    = yes
+priority    = 1
+```
+
+### start
+
+```bash
+$ sudo service watchdog start
+```
+
+
