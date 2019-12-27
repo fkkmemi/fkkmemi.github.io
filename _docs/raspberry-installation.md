@@ -250,6 +250,18 @@ $ yarn eslint --init
 
 ## pm2
 
+```bash
+$ sudo npm i pm2 -g
+$ sudo pm2 install pm2-logrotate
+
+# log retain 7day
+$ sudo pm2 set pm2-logrotate:retain 7
+
+# after run
+$ sudo pm2 save
+$ sudo pm2 startup
+```
+
 # System setup
 
 ## Reboot
