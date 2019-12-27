@@ -215,6 +215,13 @@ n module 설치 후 8버전으로 설치함.
 
 직접다운로드 받고 옮겨야함..
 
+```bash
+$ curl -o nodejs.tar.gz https://nodejs.org/dist/v8.9.4/node-v8.9.4-linux-armv6l.tar.gz
+$ tar -xzf nodejs.tar.gz
+$ sudo cp -r node-v8.9.4-linux-armv6l/* /usr/local/
+$ reboot
+```
+
 ## yarn install
 
 ```bash
