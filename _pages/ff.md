@@ -61,3 +61,9 @@ Fire auth(Firebase authentication)를 이용해 Google 및 이메일 인증을 �
 구글&파이어베이스 설정 후 직접 모바일 시뮬레이터에서 구동시켜봅니다. 
 
 [바로가기](/ff/ff-007/){: .btn .btn--success}
+
+# 8 파이어스토어 사용해보기
+
+플러터에서 파이어스토어를 사용해봅니다.
+
+[바로가기](/ff/ff-008/){: .btn .btn--success}

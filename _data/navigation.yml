@@ -581,6 +581,8 @@ ff:
       url: /ff/ff-006/
     - title: 7 구글&파이어베이스로 사용자 인증하기 2
       url: /ff/ff-007/
+    - title: 8 파이어스토어 사용해보기
+      url: /ff/ff-008/
 
 categories:
   - title: Notes
