@@ -316,4 +316,25 @@ priority    = 1
 $ sudo service watchdog start
 ```
 
+### ssh root login
 
+root 로그인할 경우 필요(vscode remote 등)
+
+```bash
+$ sudo nano /etc/ssh/sshd_config
+```
+
+**sshd_config**  
+```text
+# PermitRootLogin without-password
+PermitRootLogin yes
+```
+
+PermitRootLogin를 찾아서 yes로 변경 후 저장
+
+```bash
+$ sudo passwd root
+$ sudo reboot # or sudo systemctl restart sshd
+```
+
+패스워드 변경 후, 시스템 재시작 혹은 서비스 재시작
