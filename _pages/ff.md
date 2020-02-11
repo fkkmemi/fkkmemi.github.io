@@ -73,3 +73,9 @@ Fire auth(Firebase authentication)를 이용해 Google 및 이메일 인증을 �
 플러터에서 파이어스토어 데이터를 쓰고 화면에 표시해봅니다.
 
 [바로가기](/ff/ff-009/){: .btn .btn--success}
+
+# 10 REST API 사용해보기
+
+플러터로 REST API를 시험해봅니다.
+
+[바로가기](/ff/ff-010/){: .btn .btn--success}

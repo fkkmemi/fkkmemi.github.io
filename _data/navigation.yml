@@ -585,6 +585,8 @@ ff:
       url: /ff/ff-008/
     - title: 9 파이어스토어 화면에서 읽고 쓰기
       url: /ff/ff-009/
+    - title: 10 파이어스토어 화면에서 읽고 쓰기
+      url: /ff/ff-010/
 
 categories:
   - title: Notes
