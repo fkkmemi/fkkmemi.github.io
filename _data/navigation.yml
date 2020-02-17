@@ -585,8 +585,10 @@ ff:
       url: /ff/ff-008/
     - title: 9 파이어스토어 화면에서 읽고 쓰기
       url: /ff/ff-009/
-    - title: 10 파이어스토어 화면에서 읽고 쓰기
+    - title: 10 REST API 사용해보기
       url: /ff/ff-010/
+    - title: 11 JSON 데이터 처리하기
+      url: /ff/ff-011/
 
 categories:
   - title: Notes
