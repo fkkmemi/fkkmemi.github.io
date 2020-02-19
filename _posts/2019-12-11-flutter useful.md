@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Flutter 유용한 vscode extension
+title: Flutter Tip - 유용한 vscode extension
 category: flutter
 tag: [mobile, flutter, Awesome Flutter Snippets]
 comments: true

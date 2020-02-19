@@ -6,8 +6,10 @@ main:
     url: /vf/
   - title: "강좌:FF"
     url: /ff/
-  - title: "종류별"
-    url: /categories/
+  - title: 플러터 팁
+    url: /categories/#flutter
+  # - title: "종류별"
+  #   url: /categories/
 #  - title: "박물관"
 #    url: /portfolio/
   - title: "정리자료"
