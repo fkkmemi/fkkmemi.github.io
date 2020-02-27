@@ -591,6 +591,8 @@ ff:
       url: /ff/ff-010/
     - title: 11 JSON 데이터 처리하기
       url: /ff/ff-011/
+    - title: 12 JSON 데이터 예외 처리하기
+      url: /ff/ff-012/
 
 categories:
   - title: Notes

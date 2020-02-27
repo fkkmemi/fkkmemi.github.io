@@ -85,3 +85,9 @@ Fire auth(Firebase authentication)를 이용해 Google 및 이메일 인증을 �
 플러터로 JSON 데이터를 처리하는 방법을 다룹니다.
 
 [바로가기](/ff/ff-011/){: .btn .btn--success}
+
+# 12 JSON 데이터 예외 처리하기
+
+플러터로 일반적이지 않은 JSON 데이터를 처리해봅니다.
+
+[바로가기](/ff/ff-012/){: .btn .btn--success}
