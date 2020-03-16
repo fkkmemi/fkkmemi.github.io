@@ -103,3 +103,9 @@ dart의 Stream에 대해 알아봅니다.
 앱 아이콘과 스플래쉬 페이지를 만들어봅니다.
 
 [바로가기](/ff/ff-014/){: .btn .btn--success}
+
+# 15 named router 사용하기
+
+Material class의 route를 이용해서 페이지 전환해봅니다.
+
+[바로가기](/ff/ff-015/){: .btn .btn--success}
