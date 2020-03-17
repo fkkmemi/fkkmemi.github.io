@@ -115,3 +115,9 @@ Material class의 route를 이용해서 페이지 전환해봅니다.
 TextFormInputField를 사용해서 입력부를 구현해봅니다.
 
 [바로가기](/ff/ff-016/){: .btn .btn--success}
+
+# 17 router 실제 페이지에 적용하기
+
+지금까지 얻은 지식을 토대로 실제 만들어야할 대상을 라우터를 통해서 전환해봅니다.
+
+[바로가기](/ff/ff-017/){: .btn .btn--success}
