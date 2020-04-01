@@ -611,6 +611,8 @@ ff:
       url: /ff/ff-020/
     - title: 21 페이지에 데이터 넘기기
       url: /ff/ff-021/
+    - title: 22 프로필 페이지 꾸미기
+      url: /ff/ff-022/
 
 categories:
   - title: Notes
