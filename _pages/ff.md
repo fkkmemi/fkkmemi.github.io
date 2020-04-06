@@ -157,3 +157,9 @@ TextFormInputField를 사용해서 입력부를 구현해봅니다.
 플러터 image_picker 모듈을 사용해서 카메라의 사진 혹은 내장 앨범의 사진을 가져와서 표시해봅니다.
 
 [바로가기](/ff/ff-023/){: .btn .btn--success}
+
+# 24 fire storage에 저장하기
+
+파이어베이스 스토리지에 저장하고 링크를 받아 프로필을 표시해봅니다.
+
+[바로가기](/ff/ff-024/){: .btn .btn--success}

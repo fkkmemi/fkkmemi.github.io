@@ -615,6 +615,8 @@ ff:
       url: /ff/ff-022/
     - title: 23 사진 가져오고 압축하기
       url: /ff/ff-023/
+    - title: 24 fire storage에 저장하기
+      url: /ff/ff-024/
 
 categories:
   - title: Notes
