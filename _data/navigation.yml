@@ -617,6 +617,8 @@ ff:
       url: /ff/ff-023/
     - title: 24 fire storage에 저장하기
       url: /ff/ff-024/
+    - title: 25 사용자 권한 처리하기
+      url: /ff/ff-025/
 
 categories:
   - title: Notes
