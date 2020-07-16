@@ -8,6 +8,11 @@ toc_label: "목차"
 toc_icon: "list"
 ---
 
+> 이 강의는 1기입니다.  
+> 처음 시작하시려면 2기 강의로 시작하세요~  
+> 2기 강의는 [https://fkkmemi.com/page/index?category=vf](https://fkkmemi.com/page/index?category=vf) 에서 확인하세요~  
+> 2기 강의 사이트는 강의 내용으로 만든 것입니다.
+
 Vue.js 와 Google Firebase 서비스(auth, hosting, functions, firestore)를 이용해서 웹사이트를 손쉽게 만들 수 있습니다.
 
 복잡한 서버 구성 없이(serverless) 혼자서 빠르게 무료로 웹을 제작하는 것이 목적입니다.
