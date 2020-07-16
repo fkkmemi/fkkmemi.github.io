@@ -78,13 +78,12 @@ $ cd /Volumes/boot
 ### ssh 파일 추가
 
 ```bash
-$ vi ssh
-:wq
+$ touch ssh
 ```
 
 ## wifi 접속 설정
 
-> 5G 대역은 안되는 것으로 확인됨..
+> 3의 경우 5G 대역은 안되는 것으로 확인됨..
 
 ### 파일 생성
 
@@ -97,7 +96,7 @@ $ vi wpa_supplicant.conf
 ```bash
 ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
 update_config=1
-country=KO
+country=KR
 
 network={
     ssid="yourSSID"
@@ -109,7 +108,7 @@ network={
 ```bash
 ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
 update_config=1
-country=KO
+country=KR
 
 network={
     ssid="yourSSID"
