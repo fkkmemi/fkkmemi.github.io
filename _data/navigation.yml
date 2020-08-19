@@ -1,5 +1,7 @@
 # main links
 main:
+  - title: "신규사이트"
+    url: https://memi.dev
   - title: "최근"
     url: /recent/
   - title: "강좌:VF"

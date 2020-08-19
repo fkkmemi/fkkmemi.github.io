@@ -26,6 +26,15 @@ layout: default
     <div class="page__inner-wrap">
       {% unless page.header.overlay_color or page.header.overlay_image %}
         <header>
+          <hr>
+          <p class="page__title" itemprop="text">
+            새로운 강의는 이제 https://memi.dev 에서 진행합니다.<br>
+            memi가 Vue & Firebase로 직접 만든 새로운 사이트를 소개합니다.
+          </p>
+          <p>
+            <a href="https://memi.dev" class="btn btn--success"><i class="far fa-fire" aria-hidden="true"></i> 바로가기</a>
+          </p>
+          <hr>
           {% if page.title %}<h1 id="page-title" class="page__title" itemprop="headline">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>{% endif %}
           {% if page.read_time %}
             <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
